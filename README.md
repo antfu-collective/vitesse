@@ -48,7 +48,7 @@
 ## Use It!
 
 ```bash
-git clone https://github.com/antfu/vite-starter && cd vite-starter && rm -rf .git && git init && pnpm i
+git clone https://github.com/antfu/vitesse && cd vitesse && rm -rf .git && git init && npm i
 ```
 
 ## Why

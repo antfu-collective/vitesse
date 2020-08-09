@@ -1,0 +1,26 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html, body, #app {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.schema-dark {
+  background: #222;
+}
+
+.btn {
+  @apply px-4 py-1 rounded bg-teal-600 inline-block text-white cursor-pointer;
+}
+
+.btn:hover {
+  @apply bg-teal-700;
+}
+
+.btn[disabled] {
+  @apply cursor-default bg-gray-600 opacity-50;
+}

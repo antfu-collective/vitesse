@@ -48,7 +48,10 @@
 ## Use It!
 
 ```bash
-git clone https://github.com/antfu/vite-starter && cd vite-starter && rm -rf .git && git init && pnpm i
+npx degit antfu/vitesse my-vitesse-app \
+cd my-vitesse-app \
+git init \
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
 ## Why

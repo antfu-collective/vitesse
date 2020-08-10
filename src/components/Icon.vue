@@ -4,6 +4,7 @@
 
 <script setup="props" lang="ts">
 import { watch, ref, onMounted, nextTick } from 'vue'
+import Iconify from '@purge-icons/generated'
 
 declare const props: {
   icon: string
@@ -14,14 +15,8 @@ export const el = ref<HTMLElement | null>(null)
 const update = async() => {
   if (el.value) {
     await nextTick()
-    // @ts-ignore
-    const data = window.Iconify.getSVGObject(props.icon)
-    if (data) {
-      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
-      for (const key of Object.keys(data.attributes))
-        svg.setAttribute(key, data.attributes[key])
-      svg.innerHTML = data ? data.body : null
-      el.value.textContent = ''
+    const svg = Iconify.renderSVG(props.icon, {})
+    if (svg) {
       el.value.appendChild(svg)
     }
     else {

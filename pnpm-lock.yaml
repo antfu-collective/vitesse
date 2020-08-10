@@ -1,5 +1,5 @@
 dependencies:
-  '@iconify/iconify': 1.0.7
+  '@iconify/iconify': 2.0.0-beta.5
   '@vueuse/core': 4.0.0-beta.4_vue@3.0.0-rc.5
   variantwind: 0.6.0
   vue: 3.0.0-rc.5
@@ -8,7 +8,7 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config-vue': 0.2.14_eslint@7.6.0+typescript@3.9.7
   '@iconify/json': 1.1.204
-  '@purge-icons/generated': 0.1.0
+  '@purge-icons/generated': 0.1.1
   '@typescript-eslint/eslint-plugin': 3.8.0_eslint@7.6.0+typescript@3.9.7
   '@vue/compiler-sfc': 3.0.0-rc.5_vue@3.0.0-rc.5
   eslint: 7.6.0
@@ -17,7 +17,7 @@ devDependencies:
   tailwindcss-dark-mode: 1.1.6
   typescript: 3.9.7
   vite: 1.0.0-rc.4
-  vite-plugin-purge-icons: 0.2.0
+  vite-plugin-purge-icons: 0.2.1
   vite-plugin-voie: 0.2.0_6b72416f8828a68c9ce672e874710004
 lockfileVersion: 5.1
 packages:
@@ -154,8 +154,12 @@ packages:
     resolution:
       integrity: sha512-qnKm5dIOyPGJ70kPZ5jiz0I9foVOic0j+cOzNDoo8KoCf6HjicIZ99UfO2OmE7vCYSKAAepEwJtNzpiiZAh9xw==
   /@iconify/iconify/1.0.7:
+    dev: true
     resolution:
       integrity: sha512-qCbH1V/Ceg302lrgBiiXCZAyqMAq8KqsHYokCpUvgBH6yYfAmvlSkEEBrmJdHofQvfY/+xaeQcsOOTjW7JakNw==
+  /@iconify/iconify/2.0.0-beta.5:
+    resolution:
+      integrity: sha512-+cycuWyodI5ND/YNXn9zr3lbRife8Q/wnaAWMavQQNJqxKMOPRzSlUyXMOyIT6SQRmpq2Z2oOIq5EKoV8lplDQ==
   /@iconify/json/1.1.204:
     dev: true
     resolution:
@@ -190,6 +194,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ixZczHbC6xGpmmq8EvD5zUN/yuVPH31AECvld6XpACPX6bqhZdNGIWTHMkag36AzoGsaanSrdQxPXOj1894kog==
+  /@purge-icons/generated/0.1.1:
+    dependencies:
+      '@iconify/iconify': 2.0.0-beta.5
+    dev: true
+    resolution:
+      integrity: sha512-bW6YOPtjH1eFodyfvqFA9s6X+2n499w7cTVQ3aJ/SVS2f3JlnRztwSLd0p+XqAWZr9GrkHhPBGBjh5Oeii0DpA==
   /@rollup/plugin-commonjs/14.0.0_rollup@2.23.0:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.23.0
@@ -3792,13 +3802,13 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-  /vite-plugin-purge-icons/0.2.0:
+  /vite-plugin-purge-icons/0.2.1:
     dependencies:
       '@purge-icons/generated': 0.1.0
       purge-icons: 0.1.0
     dev: true
     resolution:
-      integrity: sha512-8SBi7uNswx6ve/IvvdFbLWykNc6fCJpmrWt9mAT6H9hQTdFdVAfmvhGRYqP4mR04tAhdsMQZnvk/q4XXas4wXQ==
+      integrity: sha512-eIynYFhoU6u075WxQ6rHmdpBpQ4AKudawVu0V6LNXXIXT4Y63vu6qexeRiyLEeb4O3WaQzBYoWsUDBe0rb/yfA==
   /vite-plugin-voie/0.2.0_6b72416f8828a68c9ce672e874710004:
     dependencies:
       glob: 7.1.6
@@ -4029,9 +4039,9 @@ packages:
       integrity: sha512-faQrqNMzcPCHGVC2aaOINk13K+aaBDUPjGWl0teOXywElLjyVAB6Oe2jj62jHYtwsU49jXhScYbvPENK+6zAvQ==
 specifiers:
   '@antfu/eslint-config-vue': ^0.2.14
-  '@iconify/iconify': ^1.0.7
+  '@iconify/iconify': ^2.0.0-beta.5
   '@iconify/json': ^1.1.204
-  '@purge-icons/generated': ^0.1.0
+  '@purge-icons/generated': ^0.1.1
   '@typescript-eslint/eslint-plugin': ^3.8.0
   '@vue/compiler-sfc': ^3.0.0-rc.5
   '@vueuse/core': ^4.0.0-beta.4
@@ -4042,7 +4052,7 @@ specifiers:
   typescript: ^3.9.7
   variantwind: ^0.6.0
   vite: ^1.0.0-rc.4
-  vite-plugin-purge-icons: ^0.2.0
+  vite-plugin-purge-icons: ^0.2.1
   vite-plugin-voie: ^0.2.0
   vue: ^3.0.0-rc.5
   vue-i18n: 9.0.0-alpha.10

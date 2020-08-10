@@ -7,7 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@iconify/iconify": "^1.0.7",
+    "@iconify/iconify": "^2.0.0-beta.5",
     "@vueuse/core": "^4.0.0-beta.4",
     "variantwind": "^0.6.0",
     "vue": "^3.0.0-rc.5",
@@ -17,7 +17,7 @@
   "devDependencies": {
     "@antfu/eslint-config-vue": "^0.2.14",
     "@iconify/json": "^1.1.204",
-    "@purge-icons/generated": "^0.1.0",
+    "@purge-icons/generated": "^0.1.1",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@vue/compiler-sfc": "^3.0.0-rc.5",
     "eslint": "^7.6.0",
@@ -26,7 +26,7 @@
     "tailwindcss-dark-mode": "^1.1.6",
     "typescript": "^3.9.7",
     "vite": "^1.0.0-rc.4",
-    "vite-plugin-purge-icons": "^0.2.0",
+    "vite-plugin-purge-icons": "^0.2.1",
     "vite-plugin-voie": "^0.2.0"
   },
   "eslintConfig": {

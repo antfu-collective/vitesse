@@ -11,7 +11,7 @@
 <br>
 
 <p align='center'>
-<a href="https://vitesse.netilfy.app">Live Demo</a>
+<a href="https://vitesse.netlify.app/">Live Demo</a>
 </p>
 
 <br>

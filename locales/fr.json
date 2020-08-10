@@ -1,10 +1,12 @@
 {
   "button": {
-    "back": "Arrière",
-    "go": "ALLER"
+    "back": "Retour",
+    "go": "Commencer"
   },
   "intro": {
+    "desc": "Modèle de Vite dogmatique",
+    "dynamic-route": "Démo de dynamic route",
     "hi": "Salut, {name}!",
-    "whats-your-name": "Quel est ton nom?"
+    "whats-your-name": "Comment tu t'appelles?"
   }
 }

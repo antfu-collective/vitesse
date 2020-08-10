@@ -17,6 +17,7 @@ const update = async() => {
     await nextTick()
     const svg = Iconify.renderSVG(props.icon, {})
     if (svg) {
+      el.value.textContent = ''
       el.value.appendChild(svg)
     }
     else {

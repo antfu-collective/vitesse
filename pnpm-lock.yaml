@@ -3,7 +3,7 @@ dependencies:
   '@vueuse/core': 4.0.0-beta.4_vue@3.0.0-rc.5
   variantwind: 0.6.0
   vue: 3.0.0-rc.5
-  vue-i18n: 9.0.0-alpha.10_vue@3.0.0-rc.5
+  vue-i18n: 9.0.0-alpha.11_vue@3.0.0-rc.5
   vue-router: 4.0.0-beta.6_vue@3.0.0-rc.5
 devDependencies:
   '@antfu/eslint-config-vue': 0.2.14_eslint@7.6.0+typescript@3.9.7
@@ -3905,19 +3905,20 @@ packages:
       eslint: '>=5.0.0'
     resolution:
       integrity: sha512-Kr21uPfthDc63nDl27AGQEhtt9VrZ9nkYk/NTftJ2ws9XiJwzJJCnCr3AITQ2jpRMA0XPGDECxYH8E027qMK9Q==
-  /vue-i18n/9.0.0-alpha.10_vue@3.0.0-rc.5:
+  /vue-i18n/9.0.0-alpha.11_vue@3.0.0-rc.5:
     dependencies:
       vue: 3.0.0-rc.5
     dev: false
     engines:
       node: '>= 10'
     peerDependencies:
-      vue: ^3.0.0-beta.14
+      vue: ^3.0.0-beta.15
     resolution:
-      integrity: sha512-tkkMo4i+/kWyq7cepB/Eo+JuOaHqtUHZzqbfKmt2KEZFJ1aOJg+bBRfJuGZUupOCgs2zJJX7R6nM58nKEK5Piw==
+      integrity: sha512-Ro+85srXAO/eyG/eb1+WOqqxFln7PEP2uv8XSiBfOH1lRGYXu/h5Ixunr1cOHwLJ5cYc1BSkFWW937brYer/tA==
   /vue-router/4.0.0-beta.6_vue@3.0.0-rc.5:
     dependencies:
       vue: 3.0.0-rc.5
+    dev: false
     peerDependencies:
       vue: ^3.0.0-beta.20
     resolution:
@@ -4055,5 +4056,5 @@ specifiers:
   vite-plugin-purge-icons: ^0.2.1
   vite-plugin-voie: ^0.2.0
   vue: ^3.0.0-rc.5
-  vue-i18n: 9.0.0-alpha.10
+  vue-i18n: 9.0.0-alpha.11
   vue-router: ^4.0.0-beta.6

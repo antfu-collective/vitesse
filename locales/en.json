@@ -1,10 +1,12 @@
 {
-  "intro": {
-    "whats-your-name": "What's your name?",
-    "hi": "Hi, {name}!"
-  },
   "button": {
-    "go": "GO",
-    "back": "Back"
+    "back": "Back",
+    "go": "GO"
+  },
+  "intro": {
+    "desc": "Opinionated Vite Starter Template",
+    "dynamic-route": "Demo of dynamic route",
+    "hi": "Hi, {name}!",
+    "whats-your-name": "What's your name?"
   }
 }

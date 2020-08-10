@@ -5,7 +5,12 @@
       <Icon class="iconify inline-block" icon="carbon:campsite" />
     </p>
     <p>
-      Vitesse
+      <a href="https://github.com/antfu/vitesse" target="_blank">
+        Vitesse
+      </a>
+    </p>
+    <p class="text-sm opacity-50">
+      <em>{{ t('intro.desc') }}</em>
     </p>
 
     <div class="py-4" />
@@ -13,7 +18,8 @@
     <input
       v-model="name"
       :placeholder="t('intro.whats-your-name')"
-      class="px-4 py-2 border border-gray-200 rounded text-center outline-none active:outline-none bg-transparent dark:border-gray-700"
+      class="px-4 py-2 border border-gray-200 rounded text-center text-sm outline-none active:outline-none bg-transparent dark:border-gray-700"
+      style="width: 250px"
       @keydown.enter="go"
     >
 

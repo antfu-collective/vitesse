@@ -10,6 +10,16 @@
       />
     </div>
 
+    <div
+      class="icon-btn mx-2"
+      @click="toggleLocales"
+    >
+      <Icon
+        class="inline-block"
+        icon="carbon:language"
+      />
+    </div>
+
     <a
       class="icon-btn mx-2"
       href="https://github.com/antfu/vitesse"
@@ -20,16 +30,6 @@
         icon="carbon:code"
       />
     </a>
-
-    <div
-      class="icon-btn mx-2"
-      @click="toggleLocales"
-    >
-      <Icon
-        class="inline-block"
-        icon="carbon:globe"
-      />
-    </div>
   </div>
 </template>
 

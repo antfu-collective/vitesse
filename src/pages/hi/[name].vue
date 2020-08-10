@@ -5,7 +5,7 @@
       <Icon class="iconify inline-block" icon="carbon:pedestrian" />
     </p>
     <p>
-      Hi, {{ name }}!
+      {{ t('intro.hi', {name}) }}
     </p>
 
     <div>
@@ -13,7 +13,7 @@
         class="btn m-3 text-sm mt-8"
         @click="back"
       >
-        Back
+        {{ t('button.back') }}
       </button>
     </div>
   </div>
@@ -21,6 +21,7 @@
 
 <script setup='props' lang='ts'>
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
 declare const props: {
   name: string
@@ -28,4 +29,7 @@ declare const props: {
 
 const router = useRouter()
 export const back = () => router.push('/')
+
+const { t } = useI18n()
+export { t }
 </script>

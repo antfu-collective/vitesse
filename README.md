@@ -11,7 +11,7 @@
 <br>
 
 <p align='center'>
-<a href="https://vitesse.netilfy.app">Live Example</a>
+<a href="https://vitesse.netilfy.app">Live Demo</a>
 </p>
 
 <br>
@@ -32,6 +32,7 @@
 
 ### Utils
 
+- [vue-i18n](https://github.com/intlify/vue-i18n-next)
 - [VueUse](https://github.com/antfu/vueuse)
 
 ### Misc
@@ -44,16 +45,22 @@
 - [pnpm](https://pnpm.js.org/)
 - [Netlify](https://www.netlify.com/)
 - [ESLint](https://eslint.org/) with [@antfu/eslint-config-vue](https://github.com/antfu/eslint-config)
+- [VS Code Extensions](./.vscode/extensions.json)
 
-## Use It!
+## Try it now!
+
+[Create a repo from this template on Github](https://github.com/antfu/vitesse/generate).
+
+Or if you prefers do to manually with cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app \
-cd my-vitesse-app \
-git init \
+npx degit antfu/vitesse my-vitesse-app
+cd my-vitesse-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
 ## Why
 
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the idea simply comes true in very a short time. So I made this starter template for myself to create apps more easily, along with some good practices that I have learned during making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks.
+I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the idea simply comes true in a very short time. 
+
+So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks.

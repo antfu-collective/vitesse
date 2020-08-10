@@ -1,0 +1,10 @@
+{
+  "button": {
+    "back": "返回",
+    "go": "确定"
+  },
+  "intro": {
+    "hi": "你好，{name}！",
+    "whats-your-name": "输入你的名字"
+  }
+}

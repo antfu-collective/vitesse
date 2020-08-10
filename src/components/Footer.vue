@@ -1,10 +1,7 @@
-
 <template>
-  <div
-    class="text-xl mt-4"
-  >
+  <div class="text-xl mt-6">
     <div
-      class="inline-block mx-2 cursor-pointer select-none"
+      class="icon-btn mx-2"
       @click="isDark = !isDark"
     >
       <Icon
@@ -14,7 +11,7 @@
     </div>
 
     <a
-      class="mx-2"
+      class="icon-btn mx-2"
       href="https://github.com/antfu/vitesse"
       target="_blank"
     >
@@ -23,9 +20,28 @@
         icon="carbon:code"
       />
     </a>
+
+    <div
+      class="icon-btn mx-2"
+      @click="toggleLocales"
+    >
+      <Icon
+        class="inline-block"
+        icon="carbon:globe"
+      />
+    </div>
   </div>
 </template>
 
 <script setup lang='ts'>
+import { useI18n } from 'vue-i18n'
+import { locales } from '../messages'
 export { isDark } from '../utils/dark'
+
+const i18n = useI18n()
+
+export const toggleLocales = () => {
+  // change to some real logic
+  i18n.locale.value = locales[(locales.indexOf(i18n.locale.value) + 1) % locales.length]
+}
 </script>

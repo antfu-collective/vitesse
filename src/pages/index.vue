@@ -12,7 +12,7 @@
 
     <input
       v-model="name"
-      placeholder="What's your name?"
+      :placeholder="t('intro.whats-your-name')"
       class="px-4 py-2 border border-gray-200 rounded text-center outline-none active:outline-none bg-transparent dark:border-gray-700"
       @keydown.enter="go"
     >
@@ -23,7 +23,7 @@
         :disabled="!name"
         @click="go"
       >
-        GO
+        {{ t('button.go') }}
       </button>
     </div>
   </div>
@@ -32,6 +32,7 @@
 <script setup='props' lang='ts'>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
 export const name = ref('')
 
@@ -40,4 +41,7 @@ export const go = () => {
   if (name.value)
     router.push(`/hi/${name.value}`)
 }
+
+const { t } = useI18n()
+export { t }
 </script>

@@ -1,0 +1,10 @@
+{
+  "intro": {
+    "whats-your-name": "What's your name?",
+    "hi": "Hi, {name}!"
+  },
+  "button": {
+    "go": "GO",
+    "back": "Back"
+  }
+}

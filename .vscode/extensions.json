@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "octref.vetur",
+    "antfu.i18n-ally",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

@@ -19,7 +19,7 @@ export const isDark = computed({
 watch(
   isDark,
   (v) => {
-    const html = document.getElementsByTagName('html')[0]
+    const html = document.documentElement
     html.classList.toggle('schema-dark', v)
   },
   { immediate: true },

@@ -3,7 +3,7 @@ dependencies:
   '@vueuse/core': 4.0.0-beta.4_vue@3.0.0-rc.5
   variantwind: 0.6.0
   vue: 3.0.0-rc.5
-  vue-i18n: 9.0.0-alpha.13_vue@3.0.0-rc.5
+  vue-i18n: 9.0.0-alpha.10_vue@3.0.0-rc.5
   vue-router: 4.0.0-beta.6_vue@3.0.0-rc.5
 devDependencies:
   '@antfu/eslint-config-vue': 0.2.14_eslint@7.6.0+typescript@3.9.7
@@ -3888,17 +3888,16 @@ packages:
       eslint: '>=5.0.0'
     resolution:
       integrity: sha512-Kr21uPfthDc63nDl27AGQEhtt9VrZ9nkYk/NTftJ2ws9XiJwzJJCnCr3AITQ2jpRMA0XPGDECxYH8E027qMK9Q==
-  /vue-i18n/9.0.0-alpha.13_vue@3.0.0-rc.5:
+  /vue-i18n/9.0.0-alpha.10_vue@3.0.0-rc.5:
     dependencies:
       vue: 3.0.0-rc.5
     dev: false
     engines:
       node: '>= 10'
     peerDependencies:
-      vue: ^3.0.0-rc.5
+      vue: ^3.0.0-beta.14
     resolution:
-      integrity: sha1-Y1SRXPruZumXOyFmnIvLbPge6rI=
-      tarball: vue-i18n/download/vue-i18n-9.0.0-alpha.13.tgz
+      integrity: sha512-tkkMo4i+/kWyq7cepB/Eo+JuOaHqtUHZzqbfKmt2KEZFJ1aOJg+bBRfJuGZUupOCgs2zJJX7R6nM58nKEK5Piw==
   /vue-router/4.0.0-beta.6_vue@3.0.0-rc.5:
     dependencies:
       vue: 3.0.0-rc.5
@@ -4038,5 +4037,5 @@ specifiers:
   vite-plugin-purge-icons: ^0.0.1
   vite-plugin-voie: ^0.2.0
   vue: ^3.0.0-rc.5
-  vue-i18n: ^9.0.0-alpha.13
+  vue-i18n: 9.0.0-alpha.10
   vue-router: ^4.0.0-beta.6

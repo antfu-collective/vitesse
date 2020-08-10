@@ -22,8 +22,12 @@
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [tailwindcss-dark-mode](https://github.com/ChanceArthur/tailwindcss-dark-mode)
-- [Iconify](https://iconify.design) - use icons from your favorite sets. [🔍Icônes](https://icones.netlify.app/)
 <!-- - [variantwind](https://github.com/sibbngheid/variantwind) -->
+
+### Icons
+
+- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
+- [PurgeIcons](https://github.com/antfu/purge-icons) - bundles only the icons that you use
 
 ### Router
 
@@ -33,7 +37,7 @@
 ### Utils
 
 - [vue-i18n](https://github.com/intlify/vue-i18n-next)
-- [VueUse](https://github.com/antfu/vueuse)
+- [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 
 ### Misc
 
@@ -42,7 +46,7 @@
 ### Dev tools
 
 - [Typescript](https://www.typescriptlang.org/)
-- [pnpm](https://pnpm.js.org/)
+- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [Netlify](https://www.netlify.com/)
 - [ESLint](https://eslint.org/) with [@antfu/eslint-config-vue](https://github.com/antfu/eslint-config)
 - [VS Code Extensions](./.vscode/extensions.json)

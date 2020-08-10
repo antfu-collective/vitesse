@@ -5,6 +5,8 @@ import { createI18n } from 'vue-i18n'
 
 // @ts-ignore: this is generated from voie, which TypeScript is not able to infer types correctly
 import routes from '/@voie/pages'
+import '/@purge-icons/icons'
+
 import { registerComponents } from './components'
 import App from './App.vue'
 import { messages } from './messages'

@@ -1,4 +1,5 @@
 import voie from 'vite-plugin-voie'
+import PurgeIcons from 'vite-plugin-purge-icons'
 
 export default {
   plugins: [
@@ -6,5 +7,6 @@ export default {
       pagesDir: 'src/pages',
       extensions: ['vue', 'ts'],
     }),
+    PurgeIcons(),
   ],
 }

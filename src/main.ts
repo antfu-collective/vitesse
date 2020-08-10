@@ -7,7 +7,7 @@ import { directive as variantwind } from 'variantwind'
 // @ts-ignore: this is generated from voie, which TypeScript is not able to infer types correctly
 import routes from '/@voie/pages'
 // import icons data genereted by PurgeIcons
-import '/@purge-icons/icons'
+import '@purge-icons/generated'
 
 import { registerComponents } from './components'
 import App from './App.vue'

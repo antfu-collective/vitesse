@@ -10,7 +10,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 3.8.0_eslint@7.6.0+typescript@3.9.7
   '@vue/compiler-sfc': 3.0.0-rc.5_vue@3.0.0-rc.5
   eslint: 7.6.0
-  pnpm: 5.4.12
+  pnpm: 5.5.0
   tailwindcss: 1.6.2
   tailwindcss-dark-mode: 1.1.6
   typescript: 3.9.7
@@ -2910,13 +2910,13 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
-  /pnpm/5.4.12:
+  /pnpm/5.5.0:
     dev: true
     engines:
       node: '>=10.13'
     hasBin: true
     resolution:
-      integrity: sha512-//Oru9g26OvTCe6bID3AJNiJ8B5SRd0vQBRH1gpoWxDh5kdPPpV4pge4B6ncWJUIl0yAVB9sSmDqDDheJP5+xQ==
+      integrity: sha512-eCI98sJWKrb8w/AClOPPbExWzilNeB9q22eh0shGwd7EeCGiMS2JloXOKWOQzHUrTGsPftivgZpdsM/nQ4L2lQ==
   /postcss-discard-comments/4.0.2:
     dependencies:
       postcss: 7.0.32
@@ -3736,7 +3736,7 @@ packages:
       integrity: sha512-w894cvCcRPaX4u/l4ARHvUbLMpF2NkG9/UCHkE9YBZIAYuQkX0xKMM9EkGeyRnaGLS/VYMX1uyjTGLeozRCwUw==
   /vite/1.0.0-rc.4:
     dependencies:
-      '@babel/parser': 7.11.2
+      '@babel/parser': 7.11.3
       '@rollup/plugin-commonjs': 14.0.0_rollup@2.23.0
       '@rollup/plugin-json': 4.1.0_rollup@2.23.0
       '@rollup/plugin-node-resolve': 8.4.0_rollup@2.23.0
@@ -3913,13 +3913,13 @@ specifiers:
   '@vue/compiler-sfc': ^3.0.0-rc.5
   '@vueuse/core': ^4.0.0-beta.4
   eslint: ^7.6.0
-  pnpm: ^5.4.12
+  pnpm: ^5.5.0
   tailwindcss: ^1.6.2
   tailwindcss-dark-mode: ^1.1.6
   typescript: ^3.9.7
   variantwind: ^0.3.4
-  vite: ^1.0.0-rc.1
+  vite: ^1.0.0-rc.4
   vite-plugin-voie: ^0.2.0
-  vue: ^3.0.0-rc.1
+  vue: ^3.0.0-rc.5
   vue-i18n: ^9.0.0-alpha.13
   vue-router: ^4.0.0-beta.6

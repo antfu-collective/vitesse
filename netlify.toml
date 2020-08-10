@@ -4,7 +4,7 @@
 
 [build]
   publish = "dist"
-  command = "npx pnpm i && npm run build"
+  command = "NPM_FLAGS='' npx pnpm i && npm run build"
 
 [[redirects]]
   from = "/*"

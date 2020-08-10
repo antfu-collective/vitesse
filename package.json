@@ -10,7 +10,7 @@
     "@iconify/core": "^1.0.0-beta.3",
     "@vueuse/core": "^4.0.0-beta.4",
     "variantwind": "^0.3.4",
-    "vue": "^3.0.0-rc.1",
+    "vue": "^3.0.0-rc.5",
     "vue-i18n": "^9.0.0-alpha.13",
     "vue-router": "^4.0.0-beta.6"
   },
@@ -19,11 +19,11 @@
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@vue/compiler-sfc": "^3.0.0-rc.5",
     "eslint": "^7.6.0",
-    "pnpm": "^5.4.12",
+    "pnpm": "^5.5.0",
     "tailwindcss": "^1.6.2",
     "tailwindcss-dark-mode": "^1.1.6",
     "typescript": "^3.9.7",
-    "vite": "^1.0.0-rc.1",
+    "vite": "^1.0.0-rc.4",
     "vite-plugin-voie": "^0.2.0"
   },
   "eslintConfig": {

@@ -28,7 +28,7 @@
 ### Router
 
 - [Vue Router](https://github.com/vuejs/vue-router)
-- [Voie](https://github.com/vamplate/vite-plugin-voie) - file based routing
+- [Voie](https://github.com/vamplate/vite-plugin-voie) - file system based routing
 
 ### Utils
 

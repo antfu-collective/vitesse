@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+const { extractor } = require('variantwind')
 
 module.exports = {
   purge: {
@@ -11,6 +12,14 @@ module.exports = {
     whitelist: [
       'schema-dark',
     ],
+    options: {
+      extractors: [
+        {
+          extractor,
+          extensions: ['vue'],
+        },
+      ],
+    },
   },
   theme: {
     darkSelector: '.schema-dark',
@@ -23,7 +32,7 @@ module.exports = {
   },
   variants: {
     backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'hover'],
-    borderColor: ['dark', 'dark-disabled', 'dark-focus', 'dark-active'],
+    borderColor: ['dark', 'dark-disabled', 'dark-focus', 'dark-active', 'active', 'focus', 'disabled'],
     textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'active'],
   },
   plugins: [

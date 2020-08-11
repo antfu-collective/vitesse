@@ -8,5 +8,6 @@
     "dynamic-route": "动态路由演示",
     "hi": "你好，{name}！",
     "whats-your-name": "输入你的名字"
-  }
+  },
+  "not-found": "未找到页面"
 }

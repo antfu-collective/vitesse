@@ -9,10 +9,10 @@ module.exports = {
       './src/**/*.js',
       './src/**/*.ts',
     ],
-    whitelist: [
-      'schema-dark',
-    ],
     options: {
+      whitelist: [
+        'schema-dark',
+      ],
       extractors: [
         {
           extractor,

@@ -8,5 +8,6 @@
     "dynamic-route": "Démo de dynamic route",
     "hi": "Salut, {name}!",
     "whats-your-name": "Comment tu t'appelles?"
-  }
+  },
+  "not-found": "Pas trouvé"
 }

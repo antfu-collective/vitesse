@@ -35,7 +35,7 @@
   </div>
 </template>
 
-<script setup='props' lang='ts'>
+<script setup lang='ts'>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'

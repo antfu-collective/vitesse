@@ -80,9 +80,9 @@
 
 [Create a repo from this template on Github](https://github.com/antfu/vitesse/generate).
 
-### Clone to Local
+### Clone to local
 
-Or if you prefers do to manually with cleaner git history
+If you prefer do to it manually with cleaner git history
 
 ```bash
 npx degit antfu/vitesse my-vitesse-app

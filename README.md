@@ -16,13 +16,31 @@
 
 <br>
 
+## Features
+
+- ⚡️ Vue3, Vite, pnpm, ESBuild - born with fastness
+
+- 🗂 File based routing
+
+- 🎨 TailwindCSS with dark mode out-of-box
+
+- 😃 Use icons from any icon sets, with no compromise
+
+- 🌍 i18n ready
+
+- 🦾 TypeScript, of course
+
+- ☁️ Deploy on Netlify, zero config
+
+<br>
+
 ## Pre-packed
 
 ### UI Frameworks
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [tailwindcss-dark-mode](https://github.com/ChanceArthur/tailwindcss-dark-mode)
-- [variantwind](https://github.com/sibbngheid/variantwind)
+- [variantwind](https://github.com/sibbngheid/variantwind) - shorthands for writing Tailwind CSS
 
 ### Icons
 
@@ -36,19 +54,19 @@
 
 ### Utils
 
-- [vue-i18n](https://github.com/intlify/vue-i18n-next)
+- [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 
-### Misc
+### Coding Style
 
 - Use Composition API with [`<script setup>` SFC](https://github.com/vuejs/rfcs/blob/sfc-improvements/active-rfcs/0000-sfc-script-setup.md)
+- [ESLint](https://eslint.org/) with [@antfu/eslint-config-vue](https://github.com/antfu/eslint-config), single colons, no semi.
 
 ### Dev tools
 
 - [Typescript](https://www.typescriptlang.org/)
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [Netlify](https://www.netlify.com/)
-- [ESLint](https://eslint.org/) with [@antfu/eslint-config-vue](https://github.com/antfu/eslint-config)
+- [Netlify](https://www.netlify.com/) - deploy.
 - [VS Code Extensions](./.vscode/extensions.json)
 
 ## Try it now!

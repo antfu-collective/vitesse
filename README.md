@@ -64,14 +64,23 @@
 
 ### Dev tools
 
-- [Typescript](https://www.typescriptlang.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [Netlify](https://www.netlify.com/) - deploy.
+- [Netlify](https://www.netlify.com/) - deploy
 - [VS Code Extensions](./.vscode/extensions.json)
+  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
+  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=antfu.i18n-ally)
+  - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+  - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Try it now!
 
+### Github Template
+
 [Create a repo from this template on Github](https://github.com/antfu/vitesse/generate).
+
+### Clone to Local
 
 Or if you prefers do to manually with cleaner git history
 

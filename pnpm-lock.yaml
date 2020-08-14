@@ -1,7 +1,7 @@
 dependencies:
-  '@iconify/iconify': 2.0.0-beta.5
+  '@iconify/iconify': 2.0.0-beta.6
   '@vueuse/core': 4.0.0-beta.4_vue@3.0.0-rc.5
-  variantwind: 0.6.6
+  variantwind: 0.10.2
   vue: 3.0.0-rc.5
   vue-i18n: 9.0.0-alpha.11_vue@3.0.0-rc.5
   vue-router: 4.0.0-beta.6_vue@3.0.0-rc.5
@@ -148,10 +148,10 @@ packages:
     resolution:
       integrity: sha512-qnKm5dIOyPGJ70kPZ5jiz0I9foVOic0j+cOzNDoo8KoCf6HjicIZ99UfO2OmE7vCYSKAAepEwJtNzpiiZAh9xw==
   /@iconify/iconify/2.0.0-beta.5:
+    dev: true
     resolution:
       integrity: sha512-+cycuWyodI5ND/YNXn9zr3lbRife8Q/wnaAWMavQQNJqxKMOPRzSlUyXMOyIT6SQRmpq2Z2oOIq5EKoV8lplDQ==
   /@iconify/iconify/2.0.0-beta.6:
-    dev: true
     resolution:
       integrity: sha512-4HMMKniJHQutHcWx7Z1TaHVRXnkAA0aD7D5zhbu93pKmcFOArW88HxmuJQY2hHQIEOg98zDlJu2SYNa5gMEnOQ==
   /@iconify/json/1.1.205:
@@ -3784,10 +3784,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==
-  /variantwind/0.6.6:
+  /variantwind/0.10.2:
     dev: false
     resolution:
-      integrity: sha512-3Ia80DnnKOhbCfhobIMM4siLTT99vJtqBZ00nRScSuzb3dt2VED/NEIvKo8lol6JQIp5xtVlolxHXLQfNYNXUg==
+      integrity: sha512-rx0f+jiKDOGmtwQNMtyhbNB7pCg2Gr5p8jCAwK5/39iK8+t6moS9SVJxjEfMV7timw+ub068v5+Ux/HFmvmsyg==
   /vary/1.1.2:
     dev: true
     engines:
@@ -3988,7 +3988,7 @@ packages:
       integrity: sha512-faQrqNMzcPCHGVC2aaOINk13K+aaBDUPjGWl0teOXywElLjyVAB6Oe2jj62jHYtwsU49jXhScYbvPENK+6zAvQ==
 specifiers:
   '@antfu/eslint-config-vue': ^0.3.2
-  '@iconify/iconify': ^2.0.0-beta.5
+  '@iconify/iconify': ^2.0.0-beta.6
   '@iconify/json': ^1.1.205
   '@purge-icons/generated': ^0.3.0
   '@typescript-eslint/eslint-plugin': ^3.9.0
@@ -3999,7 +3999,7 @@ specifiers:
   tailwindcss: ^1.6.2
   tailwindcss-dark-mode: ^1.1.6
   typescript: ^3.9.7
-  variantwind: ^0.6.0
+  variantwind: ^0.10.2
   vite: ^1.0.0-rc.4
   vite-plugin-purge-icons: ^0.3.0
   vite-plugin-voie: ^0.2.0

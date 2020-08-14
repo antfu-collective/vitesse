@@ -1,7 +1,3 @@
-[build.environment]
-  # to disable npm auto install. see https://community.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759
-  NPM_FLAGS="--prefix=/"
-
 [build]
   publish = "dist"
   command = "npx pnpm i --store=node_modules/.pnpm-store && npm run build"

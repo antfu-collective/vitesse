@@ -9,16 +9,16 @@
   "dependencies": {
     "@iconify/iconify": "^2.0.0-beta.5",
     "@vueuse/core": "^4.0.0-beta.4",
-    "variantwind": "^0.6.0",
+    "variantwind": "^0.10.2",
     "vue": "^3.0.0-rc.5",
     "vue-i18n": "9.0.0-alpha.11",
     "vue-router": "^4.0.0-beta.6"
   },
   "devDependencies": {
-    "@antfu/eslint-config-vue": "^0.2.14",
-    "@iconify/json": "^1.1.204",
-    "@purge-icons/generated": "^0.1.1",
-    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@antfu/eslint-config-vue": "^0.3.2",
+    "@iconify/json": "^1.1.205",
+    "@purge-icons/generated": "^0.3.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
     "@vue/compiler-sfc": "^3.0.0-rc.5",
     "eslint": "^7.6.0",
     "pnpm": "^5.5.1",
@@ -26,7 +26,7 @@
     "tailwindcss-dark-mode": "^1.1.6",
     "typescript": "^3.9.7",
     "vite": "^1.0.0-rc.4",
-    "vite-plugin-purge-icons": "^0.2.1",
+    "vite-plugin-purge-icons": "^0.3.0",
     "vite-plugin-voie": "^0.2.0"
   },
   "eslintConfig": {

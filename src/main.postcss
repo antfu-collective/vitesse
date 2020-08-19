@@ -14,21 +14,9 @@ html, body, #app {
 }
 
 .btn {
-  @apply px-4 py-1 rounded bg-teal-600 inline-block text-white cursor-pointer;
-}
-
-.btn:hover {
-  @apply bg-teal-700;
-}
-
-.btn[disabled] {
-  @apply cursor-default bg-gray-600 opacity-50;
+  @apply px-4 py-1 rounded bg-teal-600 inline-block text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
 }
 
 .icon-btn {
-  @apply opacity-75 transition duration-200 ease-in-out cursor-pointer inline-block select-none;
-}
-
-.icon-btn:hover {
-  @apply opacity-100;
+  @apply opacity-75 transition duration-200 ease-in-out cursor-pointer inline-block select-none hover:opacity-100;
 }

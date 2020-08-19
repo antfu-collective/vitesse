@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { extractor } = require('variantwind')
 
 module.exports = {
   purge: {
@@ -13,12 +12,6 @@ module.exports = {
       whitelist: [
         'schema-dark',
       ],
-      extractors: [
-        {
-          extractor,
-          extensions: ['vue'],
-        },
-      ],
     },
   },
   theme: {
@@ -31,11 +24,20 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'hover'],
+    cursor: ['responsive', 'disabled'],
+    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'hover', 'disabled'],
     borderColor: ['dark', 'dark-disabled', 'dark-focus', 'dark-active', 'active', 'focus', 'disabled'],
-    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'active'],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'active', 'disabled'],
+    opacity: ['dark', 'hover', 'active', 'focus', 'disabled'],
   },
   plugins: [
     require('tailwindcss-dark-mode')(),
   ],
+  experimental: {
+    applyComplexClasses: true,
+    uniformColorPalette: true,
+    extendedSpacingScale: true,
+    defaultLineHeights: true,
+    extendedFontSizeScale: true,
+  },
 }

@@ -40,7 +40,6 @@
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [tailwindcss-dark-mode](https://github.com/ChanceArthur/tailwindcss-dark-mode)
-- [variantwind](https://github.com/sibbngheid/variantwind) - shorthands for writing Tailwind CSS
 
 ### Icons
 

@@ -33,6 +33,9 @@ module.exports = {
   plugins: [
     require('tailwindcss-dark-mode')(),
   ],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
   experimental: {
     applyComplexClasses: true,
     uniformColorPalette: true,

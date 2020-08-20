@@ -1,11 +1,9 @@
-<h1 align='center'><samp>Vitesse</samp></h1>
-
 <p align='center'>
-<samp>Opinionated <a href="https://github.com/vitejs/vite">Vite</a> Starter Template</samp>
+  <img src='https://user-images.githubusercontent.com/11247099/90765536-b3010780-e31c-11ea-9297-80eb28c4f192.png' alt='Vitess - Opinionated Vite Starter Template' width='600'/>
 </p>
 
 <p align='center'>
-<sup><em>Mocking up web app with <b>⚡️vitesse</b></em></sup>
+<em>Mocking up web app with <b>⚡️Vitesse</b></em>
 </p>
 
 <br>

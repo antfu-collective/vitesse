@@ -5,7 +5,6 @@ import { createI18n } from 'vue-i18n'
 
 // import routes genereted by Voie
 import routes from 'voie-pages'
-import components from 'vite-plugin-components'
 // import icons data genereted by PurgeIcons
 import '@purge-icons/generated'
 
@@ -25,6 +24,5 @@ const i18n = createI18n({
 
 app.use(i18n)
 app.use(router)
-app.use(components)
 
 app.mount('#app')

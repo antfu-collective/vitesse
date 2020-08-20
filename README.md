@@ -16,7 +16,7 @@
 
 ## Features
 
-- ⚡️ Vue3, Vite, pnpm, ESBuild - born with fastness
+- ⚡️ [Vue3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
 - 🗂 [File based routing](./src/pages)
 
@@ -26,7 +26,7 @@
 
 - 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
-- 🌍 i18n ready
+- 🌍 [i18n ready](./locales)
 
 - 🦾 TypeScript, of course
 
@@ -87,8 +87,45 @@ cd my-vitesse-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
+## Checklist
+
+When you setup your clones, try follow the checklist to update info properly
+
+- [ ] Rename `name` field in `package.json`
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the title in `index.html`
+- [ ] Change the favicon in `public`
+- [ ] Remove the `.github` folder which contains the funding info
+- [ ] Clean up the READMEs and remove routes
+
+And, enjoy :)
+
+## Usage
+
+### Development
+
+Just run and visit http://localhost:3000
+
+```bash
+pnpm dev
+```
+
+### Build
+
+To build the App, run
+
+```bash
+pnpm build
+```
+
+And you will see the genrated file in `dist` that ready to be served.
+
+### Deploy on Netlify
+
+Go to [Netlify](https://app.netlify.com/start) and select you clone, `OK` along the way, and your App will be live in a minute.
+
 ## Why
 
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the idea simply comes true in a very short time. 
+I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time. 
 
 So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks.

@@ -10,6 +10,7 @@ devDependencies:
   '@purge-icons/generated': 0.4.0
   '@typescript-eslint/eslint-plugin': 3.9.1_eslint@7.7.0+typescript@3.9.7
   '@vue/compiler-sfc': 3.0.0-rc.5_vue@3.0.0-rc.5
+  cross-env: 7.0.2
   eslint: 7.7.0
   pnpm: 5.5.2
   tailwindcss: 1.7.1
@@ -1176,6 +1177,17 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==
+  /cross-env/7.0.2:
+    dependencies:
+      cross-spawn: 7.0.3
+    dev: true
+    engines:
+      node: '>=10.14'
+      npm: '>=6'
+      yarn: '>=1'
+    hasBin: true
+    resolution:
+      integrity: sha512-KZP/bMEOJEDCkDQAyRhu3RL2ZO/SUVrxQVI0G3YEQ+OLbRA3c6zgixe8Mq8a/z7+HKlNEjo8oiLUs8iRijY2Rw==
   /cross-spawn/7.0.3:
     dependencies:
       path-key: 3.1.1
@@ -4085,6 +4097,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^3.9.1
   '@vue/compiler-sfc': ^3.0.0-rc.5
   '@vueuse/core': ^4.0.0-beta.6
+  cross-env: ^7.0.2
   eslint: ^7.7.0
   pnpm: ^5.5.2
   tailwindcss: ^1.7.1

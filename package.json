@@ -14,6 +14,7 @@
     "vue-router": "^4.0.0-beta.6"
   },
   "devDependencies": {
+    "vite-plugin-components": "^0.1.0",
     "@antfu/eslint-config-vue": "^0.3.2",
     "@iconify/json": "^1.1.208",
     "@purge-icons/generated": "^0.4.0",
@@ -30,9 +31,6 @@
     "voie-pages": "^0.3.0"
   },
   "eslintConfig": {
-    "extends": "@antfu/eslint-config-vue",
-    "rules": {
-      "import/no-absolute-path": "off"
-    }
+    "extends": "@antfu/eslint-config-vue"
   }
 }

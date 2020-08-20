@@ -20,11 +20,13 @@
 
 - ⚡️ Vue3, Vite, pnpm, ESBuild - born with fastness
 
-- 🗂 File based routing
+- 🗂 [File based routing](./src/pages)
+
+- 📲 [Components auto importing](./src/components)
 
 - 🎨 TailwindCSS with dark mode out-of-box
 
-- 😃 Use icons from any icon sets, with no compromise
+- 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
 - 🌍 i18n ready
 
@@ -46,13 +48,11 @@
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
 - [PurgeIcons](https://github.com/antfu/purge-icons) - bundles only the icons that you use
 
-### Router
+### Plugins
 
 - [Vue Router](https://github.com/vuejs/vue-router)
-- [Voie](https://github.com/vamplate/vite-plugin-voie) - file system based routing
-
-### Utils
-
+  - [vite-plugin-voie](https://github.com/vamplate/vite-plugin-voie) - file system based routing
+- [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - components auto import
 - [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 

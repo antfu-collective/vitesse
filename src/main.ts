@@ -5,10 +5,10 @@ import { createI18n } from 'vue-i18n'
 
 // import routes genereted by Voie
 import routes from 'voie-pages'
+import components from 'vite-plugin-components'
 // import icons data genereted by PurgeIcons
 import '@purge-icons/generated'
 
-import { registerComponents } from './components'
 import App from './App.vue'
 import { messages } from './messages'
 
@@ -25,6 +25,6 @@ const i18n = createI18n({
 
 app.use(i18n)
 app.use(router)
-app.use(registerComponents)
+app.use(components)
 
 app.mount('#app')

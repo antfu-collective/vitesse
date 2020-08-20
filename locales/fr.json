@@ -1,13 +1,13 @@
 {
   "button": {
     "back": "Retour",
-    "go": "Commencer"
+    "go": "Essayer"
   },
   "intro": {
-    "desc": "Modèle de Vite dogmatique",
-    "dynamic-route": "Démo de dynamic route",
-    "hi": "Salut, {name}!",
-    "whats-your-name": "Comment tu t'appelles?"
+    "desc": "Example d'application Vite",
+    "dynamic-route": "Démo de route dynamique",
+    "hi": "Salut, {name} !",
+    "whats-your-name": "Comment t'appelles-tu ?"
   },
-  "not-found": "Pas trouvé"
+  "not-found": "Page non trouvée"
 }

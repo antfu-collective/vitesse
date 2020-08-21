@@ -1,18 +1,18 @@
-import { watch, computed, Ref } from 'vue'
-import { useStorage, usePreferredDark } from '@vueuse/core'
+import { watch, computed } from 'vue'
+import { usePreferredDark } from '@vueuse/core'
+import { colorSchema } from '../store'
 
 const preferredDark = usePreferredDark()
-const schema = useStorage('vitesse-schema', 'auto') as Ref<'auto' | 'dark' | 'light'>
 
 export const isDark = computed({
   get() {
-    return schema.value === 'auto' ? preferredDark.value : schema.value === 'dark'
+    return colorSchema.value === 'auto' ? preferredDark.value : colorSchema.value === 'dark'
   },
   set(v: boolean) {
     if (v === preferredDark.value)
-      schema.value = 'auto'
+      colorSchema.value = 'auto'
     else
-      schema.value = v ? 'dark' : 'light'
+      colorSchema.value = v ? 'dark' : 'light'
   },
 })
 

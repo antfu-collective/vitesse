@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "module": "ESNext",
     "target": "es2016",
     "lib": ["DOM", "ESNext"],
@@ -9,7 +10,10 @@
     "skipLibCheck": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "/~/*": ["src/*"]
+    }
   },
   "exclude": [
     "dist",

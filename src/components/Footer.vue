@@ -16,8 +16,8 @@
 
 <script setup lang='ts'>
 import { useI18n } from 'vue-i18n'
-import { locales } from '../messages'
-export { isDark } from '../utils/dark'
+import { locales } from '/~/messages'
+export { isDark } from '/~/utils'
 
 const i18n = useI18n()
 

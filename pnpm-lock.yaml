@@ -5,7 +5,7 @@ dependencies:
   vue-i18n: 9.0.0-alpha.13_vue@3.0.0-rc.6
   vue-router: 4.0.0-beta.7_vue@3.0.0-rc.6
 devDependencies:
-  '@antfu/eslint-config-vue': 0.3.2_eslint@7.7.0+typescript@4.0.2
+  '@antfu/eslint-config-vue': 0.3.3_eslint@7.7.0+typescript@4.0.2
   '@iconify/json': 1.1.209
   '@purge-icons/generated': 0.4.0
   '@typescript-eslint/eslint-plugin': 3.9.1_eslint@7.7.0+typescript@4.0.2
@@ -17,13 +17,13 @@ devDependencies:
   tailwindcss-dark-mode: 1.1.6
   typescript: 4.0.2
   vite: 1.0.0-rc.4
-  vite-plugin-components: 0.2.4
+  vite-plugin-components: 0.2.6
   vite-plugin-purge-icons: 0.4.0
   vite-plugin-voie: 0.3.0_4bd5b105e064f6768e7e776a7a8e8ffc
   voie-pages: 0.3.0_vue@3.0.0-rc.6
 lockfileVersion: 5.1
 packages:
-  /@antfu/eslint-config-basic/0.3.2_eslint@7.7.0:
+  /@antfu/eslint-config-basic/0.3.3_eslint@7.7.0:
     dependencies:
       eslint: 7.7.0
       eslint-config-standard: 14.1.1_1aff539ef5706692f7082fc68fc3a0aa
@@ -37,10 +37,10 @@ packages:
     peerDependencies:
       eslint: '>=7.4.0'
     resolution:
-      integrity: sha512-M/Jg8rrnW74C9anuwCmXATC07SjG1tknAYZqKWNEsF5qiQcuhOTt0TD9/LSJUf0b4pQZcBZWDIp7Dvk+3x3wKg==
-  /@antfu/eslint-config-ts/0.3.2_eslint@7.7.0+typescript@4.0.2:
+      integrity: sha512-kwKlJaqVMlnpAOjmctlUnnwYdjZDnH5B7UDzsWjAu2HtFVnFih3N4msmZKwAl1pSTEENzKao2Apavko83PjUtQ==
+  /@antfu/eslint-config-ts/0.3.3_eslint@7.7.0+typescript@4.0.2:
     dependencies:
-      '@antfu/eslint-config-basic': 0.3.2_eslint@7.7.0
+      '@antfu/eslint-config-basic': 0.3.3_eslint@7.7.0
       '@typescript-eslint/eslint-plugin': 3.6.1_bb4ed92797abd53d5d108b6007ec9d92
       '@typescript-eslint/parser': 3.9.0_eslint@7.7.0+typescript@4.0.2
       eslint: 7.7.0
@@ -50,10 +50,10 @@ packages:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
     resolution:
-      integrity: sha512-0Jt6uwodv4ukMnaRfEiig1rh3/srNm3wpavmCG0JTNR4HZzitQyF/oXGIrk4PCMxHVxXHkOdIRof8MplBUenkg==
-  /@antfu/eslint-config-vue/0.3.2_eslint@7.7.0+typescript@4.0.2:
+      integrity: sha512-PBuv4vu/5e1saE2bgue+4k6pCH3fsgCT2Uqizjs5OhkNhpRDE5wKfoG+ayfBtQtPzLVelaCU5K5fqAt0+aVYTw==
+  /@antfu/eslint-config-vue/0.3.3_eslint@7.7.0+typescript@4.0.2:
     dependencies:
-      '@antfu/eslint-config-ts': 0.3.2_eslint@7.7.0+typescript@4.0.2
+      '@antfu/eslint-config-ts': 0.3.3_eslint@7.7.0+typescript@4.0.2
       eslint: 7.7.0
       eslint-plugin-vue: 7.0.0-alpha.10_eslint@7.7.0
     dev: true
@@ -61,7 +61,7 @@ packages:
       eslint: '>=7.4.0'
       typescript: '*'
     resolution:
-      integrity: sha512-eTIWRAYFyGWerm3wbOY7OLOY+ljQ5P/zvLvDw0x0U0ye757rcSafr4Z1XVbGozzjPO0LVzhJqZ9JZDH3TNO/bw==
+      integrity: sha512-viPxvQWv+k1sEySUYRuNhCV5ouMpWK35khPkKZ2eyvuiSatV/5TaQf/f+phfg9PJApmnEC5Ny0SMcpN+oyLxrQ==
   /@babel/code-frame/7.10.4:
     dependencies:
       '@babel/highlight': 7.10.4
@@ -3965,13 +3965,13 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-  /vite-plugin-components/0.2.4:
+  /vite-plugin-components/0.2.6:
     dependencies:
       debug: 4.1.1
       fast-glob: 3.2.4
     dev: true
     resolution:
-      integrity: sha512-IhD0pj8Q68s4v1zaei2dGKD9TMMa+yHcxGnKjPTy+fJentuKM69arpp8X7L890us/G/uxcAOs8zhbB0hhcS+xw==
+      integrity: sha512-9C86bH0VreLbrlxGAB/VAX0OrU7nr7SZ1Y6DhLT7czXQLo2218WQSElT+1/2rXI0IhH7wpU1j5O5rDuYoHPJ3g==
   /vite-plugin-purge-icons/0.4.0:
     dependencies:
       '@purge-icons/core': 0.4.0
@@ -4192,7 +4192,7 @@ packages:
     resolution:
       integrity: sha512-faQrqNMzcPCHGVC2aaOINk13K+aaBDUPjGWl0teOXywElLjyVAB6Oe2jj62jHYtwsU49jXhScYbvPENK+6zAvQ==
 specifiers:
-  '@antfu/eslint-config-vue': ^0.3.2
+  '@antfu/eslint-config-vue': ^0.3.3
   '@iconify/iconify': ^2.0.0-beta.6
   '@iconify/json': ^1.1.209
   '@purge-icons/generated': ^0.4.0
@@ -4206,7 +4206,7 @@ specifiers:
   tailwindcss-dark-mode: ^1.1.6
   typescript: ^4.0.2
   vite: ^1.0.0-rc.4
-  vite-plugin-components: ^0.2.4
+  vite-plugin-components: ^0.2.6
   vite-plugin-purge-icons: ^0.4.0
   vite-plugin-voie: ^0.3.0
   voie-pages: ^0.3.0

@@ -11,12 +11,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
+    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "paths": {
       "/~/*": ["src/*"]
     }
   },
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  "exclude": ["dist", "node_modules"]
 }

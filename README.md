@@ -38,8 +38,7 @@
 
 ### UI Frameworks
 
-- [Tailwind CSS](https://tailwindcss.com/)
-- [tailwindcss-dark-mode](https://github.com/ChanceArthur/tailwindcss-dark-mode)
+- [Tailwind CSS](https://tailwindcss.com/) - with built-in dark mode!
 
 ### Icons
 

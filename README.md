@@ -61,6 +61,7 @@
 ### Dev tools
 
 - [TypeScript](https://www.typescriptlang.org/)
+  - [Vue TypeScript Plugin](https://github.com/znck/vue-developer-experience/tree/master/packages/typescript-plugin-vue) - better type support for Vue
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [Netlify](https://www.netlify.com/) - deploy
 - [VS Code Extensions](./.vscode/extensions.json)
@@ -88,7 +89,7 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
 ## Checklist
 
-When you setup your clones, try follow the checklist to update info properly
+When you use this template, try follow the checklist to update your info properly
 
 - [ ] Rename `name` field in `package.json`
 - [ ] Change the author name in `LICENSE`

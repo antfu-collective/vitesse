@@ -71,6 +71,12 @@
   - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+## Variations
+
+As this is template is strongly opinionated, the following provides a curated list for community maintained variations with different preference and feature set. Check them out as well. PR to add yours are also welcome!
+
+- [vitesse-lite](https://github.com/kn0wn/vitesse-lite) by [@kn0wn](https://github.com/kn0wn)
+
 ## Try it now!
 
 ### Github Template
@@ -128,4 +134,4 @@ Go to [Netlify](https://app.netlify.com/start) and select you clone, `OK` along 
 
 I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time. 
 
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks.
+So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks. [(see community maintained variation forks)](#variations)

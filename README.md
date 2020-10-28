@@ -20,7 +20,9 @@
 
 - 🗂 [File based routing](./src/pages)
 
-- 📲 [Components auto importing](./src/components)
+- 📦 [Components auto importing](./src/components)
+
+- 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 TailwindCSS with dark mode out-of-box
 
@@ -30,7 +32,7 @@
 
 - 🦾 TypeScript, of course
 
-- ☁️ Deploy on Netlify, zero config
+- ☁️ Deploy on Netlify, zero-config
 
 <br>
 
@@ -50,6 +52,7 @@
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [vite-plugin-voie](https://github.com/vamplate/vite-plugin-voie) - file system based routing
 - [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - components auto import
+- [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 

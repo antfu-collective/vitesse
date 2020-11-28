@@ -24,11 +24,13 @@
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 TailwindCSS with dark mode out-of-box
+- 🎨 [TailwindCSS **v2.0**](https://blog.tailwindcss.com/tailwindcss-v2) with dark mode out-of-box
 
 - 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
 - 🌍 [i18n ready](./locales)
+
+- 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
 - 🦾 TypeScript, of course
 
@@ -58,7 +60,7 @@
 
 ### Coding Style
 
-- Use Composition API with [`<script setup>` SFC](https://github.com/vuejs/rfcs/blob/sfc-improvements/active-rfcs/0000-sfc-script-setup.md)
+- Use Composition API with [`<script setup>` SFC](https://github.com/vuejs/rfcs/pull/227)
 - [ESLint](https://eslint.org/) with [@antfu/eslint-config-vue](https://github.com/antfu/eslint-config), single colons, no semi.
 
 ### Dev tools
@@ -76,7 +78,7 @@
 
 ## Variations
 
-As this is template is strongly opinionated, the following provides a curated list for community maintained variations with different preference and feature set. Check them out as well. PR to add yours are also welcome!
+As this is template is strongly opinionated, the following provides a curated list for community maintained variations with different preferences and feature sets. Check them out as well. PR to add yours are also welcome!
 
 - [vitesse-lite](https://github.com/kn0wn/vitesse-lite) by [@kn0wn](https://github.com/kn0wn)
 
@@ -88,7 +90,7 @@ As this is template is strongly opinionated, the following provides a curated li
 
 ### Clone to local
 
-If you prefer do to it manually with cleaner git history
+If you prefer to do it manually with cleaner git history
 
 ```bash
 npx degit antfu/vitesse my-vitesse-app
@@ -127,11 +129,11 @@ To build the App, run
 pnpm build
 ```
 
-And you will see the genrated file in `dist` that ready to be served.
+And you will see the generated file in `dist` that ready to be served.
 
 ### Deploy on Netlify
 
-Go to [Netlify](https://app.netlify.com/start) and select you clone, `OK` along the way, and your App will be live in a minute.
+Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
 
 ## Why
 

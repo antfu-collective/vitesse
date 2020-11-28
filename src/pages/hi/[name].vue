@@ -14,7 +14,7 @@
     <div>
       <button
         class="btn m-3 text-sm mt-8"
-        @click="back"
+        @click="router.back()"
       >
         {{ t('button.back') }}
       </button>
@@ -22,17 +22,18 @@
   </div>
 </template>
 
-<script setup='props' lang='ts'>
+<script setup lang='ts'>
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { defineProps } from 'vue'
 
-declare const props: {
-  name: string
-}
+const props = defineProps({
+  name: {
+    type: String,
+    require: true,
+  },
+})
 
 const router = useRouter()
-export const back = () => router.push('/')
-
 const { t } = useI18n()
-export { t }
 </script>

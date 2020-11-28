@@ -3,14 +3,17 @@
 </template>
 
 <script setup="props" lang="ts">
-import { watch, ref, onMounted, nextTick } from 'vue'
+import { watch, ref, onMounted, nextTick, defineProps } from 'vue'
 import Iconify from '@purge-icons/generated'
 
-declare const props: {
-  icon: string
-}
+const props = defineProps({
+  icon: {
+    type: String,
+    required: true,
+  },
+})
 
-export const el = ref<HTMLElement | null>(null)
+const el = ref<HTMLElement | null>(null)
 
 const update = async() => {
   if (el.value) {

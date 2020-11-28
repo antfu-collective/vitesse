@@ -1,6 +1,6 @@
 import { watch, computed } from 'vue'
 import { usePreferredDark } from '@vueuse/core'
-import { colorSchema } from '../store'
+import { colorSchema } from './store'
 
 const preferredDark = usePreferredDark()
 

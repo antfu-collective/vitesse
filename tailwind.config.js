@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
@@ -12,6 +13,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      colors: {
+        teal: colors.teal,
+      },
       opacity: {
         10: '0.1',
         85: '0.85',
@@ -25,17 +29,5 @@ module.exports = {
     textColor: ['dark', 'hover', 'active', 'disabled'],
     opacity: ['dark', 'hover', 'active', 'focus', 'disabled'],
   },
-  future: {
-    purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true,
-  },
-  experimental: {
-    darkModeVariant: true,
-    applyComplexClasses: true,
-    uniformColorPalette: true,
-    extendedSpacingScale: true,
-    defaultLineHeights: true,
-    extendedFontSizeScale: true,
-  },
-  dark: 'class',
+  darkMode: 'class',
 }

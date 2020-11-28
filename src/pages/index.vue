@@ -39,14 +39,13 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
-export const name = ref('')
+const name = ref('')
 
 const router = useRouter()
-export const go = () => {
+const go = () => {
   if (name.value)
     router.push(`/hi/${name.value}`)
 }
 
 const { t } = useI18n()
-export { t }
 </script>

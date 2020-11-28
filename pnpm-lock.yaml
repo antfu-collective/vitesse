@@ -17,7 +17,7 @@ devDependencies:
   tailwindcss: 2.0.1_autoprefixer@10.0.4
   typescript: 4.1.2
   vite: 1.0.0-rc.13
-  vite-plugin-components: 0.3.0
+  vite-plugin-components: 0.4.0
   vite-plugin-purge-icons: 0.4.5
   vite-plugin-pwa: 0.1.5
   vite-plugin-voie: 0.4.0_cd83cfd01612f0901ab99ed56feeb391
@@ -5635,14 +5635,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==
-  /vite-plugin-components/0.3.0:
+  /vite-plugin-components/0.4.0:
     dependencies:
-      debug: 4.3.0
+      debug: 4.3.1
       fast-glob: 3.2.4
       minimatch: 3.0.4
     dev: true
     resolution:
-      integrity: sha512-Chx+aDeaFj8xTgRPbOCpdMwskie9GRCRILJGsVIFgLHXXMRP/pIzmUsxsAw9vl/lGFYNacZmtZC4w95kk3oILQ==
+      integrity: sha512-V+XEXhFj+wiUG5xKyL4rTa3a4b7qKCHeTMK2Zlr2ejFa6+378iGwBcPIfTj3nSiOVIUVlEhHcTuWdEKAqUxpRA==
   /vite-plugin-purge-icons/0.4.5:
     dependencies:
       '@purge-icons/core': 0.4.5
@@ -6065,7 +6065,7 @@ specifiers:
   tailwindcss: ^2.0.1
   typescript: ^4.1.2
   vite: ^1.0.0-rc.13
-  vite-plugin-components: ^0.3.0
+  vite-plugin-components: ^0.4.0
   vite-plugin-purge-icons: ^0.4.5
   vite-plugin-pwa: ^0.1.5
   vite-plugin-voie: ^0.4.0

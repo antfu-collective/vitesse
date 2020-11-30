@@ -1,0 +1,13 @@
+{
+  "button": {
+    "back": "Quay lại",
+    "go": "Đi"
+  },
+  "intro": {
+    "desc": "Ý kiến cá nhân Vite Template để bắt đầu",
+    "dynamic-route": "Bản giới thiệu về dynamic route",
+    "hi": "Hi, {name}!",
+    "whats-your-name": "Tên bạn là gì?"
+  },
+  "not-found": "Không tìm thấy"
+}

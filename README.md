@@ -30,6 +30,8 @@
 
 - 🌍 [i18n ready](./locales)
 
+- 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-md)
+
 - 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
 - 🦾 TypeScript, of course
@@ -55,6 +57,7 @@
   - [vite-plugin-voie](https://github.com/vamplate/vite-plugin-voie) - file system based routing
 - [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - components auto import
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
+- [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
 - [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 

@@ -1,6 +1,6 @@
 ## Components
 
-Components in this dir will be auto registered on-demand, powered by [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components).
+Components in this dir will be auto-registered and on-demand, powered by [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components).
 
 
 ### `Icon.vue`

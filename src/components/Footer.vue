@@ -1,5 +1,9 @@
 <template>
   <div class="text-xl mt-6">
+    <router-link class="icon-btn mx-2" to="/">
+      <Icon icon="carbon:campsite" class="inline-block" />
+    </router-link>
+
     <div class="icon-btn mx-2" @click="isDark = !isDark">
       <Icon :icon="isDark ? 'carbon:moon' : 'carbon:sun'" class="inline-block" />
     </div>
@@ -8,8 +12,12 @@
       <Icon icon="carbon:language" class="inline-block" />
     </div>
 
+    <router-link class="icon-btn mx-2" to="/about">
+      <Icon icon="carbon:dicom-overlay" class="inline-block" />
+    </router-link>
+
     <a class="icon-btn mx-2" href="https://github.com/antfu/vitesse" target="_blank">
-      <Icon icon="carbon:code" class="inline-block" />
+      <Icon icon="carbon:logo-github" class="inline-block" />
     </a>
   </div>
 </template>

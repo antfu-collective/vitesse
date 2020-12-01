@@ -15,6 +15,23 @@ html.dark {
   background: #222;
 }
 
+.markdown-body {
+  max-width: 300px;
+  @apply m-auto text-left;
+
+  h3 {
+    @apply text-center;
+  }
+
+  a {
+    @apply opacity-50 hover:opacity-100 hover:text-teal-600;
+  }
+
+  p {
+    @apply my-4;
+  }
+}
+
 .btn {
   @apply
     px-4 py-1 rounded inline-block
@@ -27,5 +44,5 @@ html.dark {
   @apply
     inline-block cursor-pointer select-none
     opacity-75 transition duration-200 ease-in-out
-    hover:opacity-100;
+    hover:opacity-100 hover:text-teal-600;
 }

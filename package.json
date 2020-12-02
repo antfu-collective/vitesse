@@ -21,6 +21,7 @@
     "@vue/compiler-sfc": "^3.0.3",
     "@vuedx/typescript-plugin-vue": "^0.2.3",
     "autoprefixer": "^10.0.4",
+    "chromium": "^3.0.2",
     "cross-env": "^7.0.3",
     "eslint": "^7.14.0",
     "netlify-plugin-chromium": "^1.1.4",

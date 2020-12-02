@@ -16,6 +16,7 @@ devDependencies:
   autoprefixer: 10.0.4
   cross-env: 7.0.3
   eslint: 7.14.0
+  netlify-plugin-chromium: 1.1.4
   postcss-nested: 5.0.1
   presite: 2.0.1
   tailwindcss: 2.0.1_autoprefixer@10.0.4
@@ -4652,6 +4653,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
+  /netlify-plugin-chromium/1.1.4:
+    dev: true
+    resolution:
+      integrity: sha512-yLgw6YePOF38URWVsHg3nBBoVSKcbMabKxziJX5i01/weyXWtFQVFvDWSOhyWkQgoMJ6zwF2UznA0Icy+m4pow==
   /no-case/2.3.2:
     dependencies:
       lower-case: 1.1.4
@@ -6935,6 +6940,7 @@ specifiers:
   autoprefixer: ^10.0.4
   cross-env: ^7.0.3
   eslint: ^7.14.0
+  netlify-plugin-chromium: ^1.1.4
   nprogress: ^0.2.0
   postcss-nested: ^5.0.1
   presite: ^2.0.1

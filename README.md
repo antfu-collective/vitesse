@@ -34,6 +34,8 @@
 
 - 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
+- 🖨 Server side generation via [presite](https://github.com/egoist/presite)
+
 - 🦾 TypeScript, of course
 
 - ☁️ Deploy on Netlify, zero-config

@@ -7,6 +7,7 @@
   "dependencies": {
     "@iconify/iconify": "^2.0.0-rc.2",
     "@vueuse/core": "^4.0.0-rc.4",
+    "nprogress": "^0.2.0",
     "vue": "^3.0.3",
     "vue-i18n": "9.0.0-beta.8",
     "vue-router": "^4.0.0-rc.6"
@@ -15,6 +16,7 @@
     "@antfu/eslint-config-vue": "^0.4.3",
     "@iconify/json": "^1.1.266",
     "@purge-icons/generated": "^0.4.1",
+    "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@vue/compiler-sfc": "^3.0.3",
     "@vuedx/typescript-plugin-vue": "^0.2.3",
@@ -29,7 +31,7 @@
     "vite-plugin-md": "^0.1.2",
     "vite-plugin-purge-icons": "^0.4.5",
     "vite-plugin-pwa": "^0.1.7",
-    "vite-plugin-voie": "^0.4.0",
+    "vite-plugin-voie": "npm:@knightly/vite-plugin-voie@pr11",
     "voie-pages": "^0.4.0"
   },
   "pnpm": {

@@ -1,6 +1,7 @@
 dependencies:
   '@iconify/iconify': 2.0.0-rc.2
   '@vueuse/core': 4.0.0-rc.4_vue@3.0.3
+  nprogress: 0.2.0
   vue: 3.0.3
   vue-i18n: 9.0.0-beta.8_vue@3.0.3
   vue-router: 4.0.0-rc.6_vue@3.0.3
@@ -8,6 +9,7 @@ devDependencies:
   '@antfu/eslint-config-vue': 0.4.3_eslint@7.14.0+typescript@4.1.2
   '@iconify/json': 1.1.266
   '@purge-icons/generated': 0.4.1
+  '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 4.9.0_eslint@7.14.0+typescript@4.1.2
   '@vue/compiler-sfc': 3.0.3_vue@3.0.3
   '@vuedx/typescript-plugin-vue': 0.2.3_vue@3.0.3
@@ -22,7 +24,7 @@ devDependencies:
   vite-plugin-md: 0.1.2_@vue+compiler-sfc@3.0.3
   vite-plugin-purge-icons: 0.4.5
   vite-plugin-pwa: 0.1.7
-  vite-plugin-voie: 0.4.0_cc5f94e7f7ee5c93fc7acbfd4f2beeeb
+  vite-plugin-voie: /@knightly/vite-plugin-voie/0.2.0-knightly-pr11.202012021126_cc5f94e7f7ee5c93fc7acbfd4f2beeeb
   voie-pages: 0.4.0_vue@3.0.3
 lockfileVersion: 5.2
 overrides:
@@ -1098,6 +1100,27 @@ packages:
     dev: true
     resolution:
       integrity: sha512-I8S9lChQATaRroMGccdOQkFbBtMt4C2V/PQGiSjDq9yzdyqDCrPNN9X1qM4FoQt84zfW/+JMHIgShi42E+SXeA==
+  /@knightly/vite-plugin-voie/0.2.0-knightly-pr11.202012021126_cc5f94e7f7ee5c93fc7acbfd4f2beeeb:
+    dependencies:
+      fast-glob: 3.2.4
+      vite: 1.0.0-rc.13
+      voie-pages: /@knightly/voie-pages/0.2.0-knightly-pr11.202012021126_vue@3.0.3
+      vue-router: 4.0.0-rc.6_vue@3.0.3
+    dev: true
+    peerDependencies:
+      vite: ^1.0.0-rc.4
+      vue: '*'
+      vue-router: ^4.0.0-beta.4
+    resolution:
+      integrity: sha512-bPzG/g8VbSioVMpWtOBWfCiukcMxLncA1jAe2FHcaGPooHz3T8028ATsMnLTCSFJpNdjJlc9SQAlu7DSCoxW6g==
+  /@knightly/voie-pages/0.2.0-knightly-pr11.202012021126_vue@3.0.3:
+    dependencies:
+      vue-router: 4.0.0-rc.6_vue@3.0.3
+    dev: true
+    peerDependencies:
+      vue: '*'
+    resolution:
+      integrity: sha512-FwTt7Ym8o5mdiMOytbiY78Z17gPiNCKL92lnpvyf4bqLgGz0LbFM8lEoYPFiDvRN0MfPjwGpXX3Hzdx4PmgWSw==
   /@koa/cors/3.1.0:
     dependencies:
       vary: 1.1.2
@@ -1417,6 +1440,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
+  /@types/nprogress/0.2.0:
+    dev: true
+    resolution:
+      integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==
   /@types/parse-json/4.0.0:
     dev: true
     resolution:
@@ -4220,6 +4247,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
+  /nprogress/0.2.0:
+    dev: false
+    resolution:
+      integrity: sha1-y480xTIT2JVyP8urkH6UIq28r7E=
   /num2fraction/1.2.2:
     dev: true
     resolution:
@@ -5677,19 +5708,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-S5Hc1x/rcfb6cgKjlW7yxSTv1er6fquzGZt/+xC1wavSBa7Qf6wdf6QzYiYdwmUom5yUSDEawc2gEYgq5SsZFg==
-  /vite-plugin-voie/0.4.0_cc5f94e7f7ee5c93fc7acbfd4f2beeeb:
-    dependencies:
-      fast-glob: 3.2.4
-      vite: 1.0.0-rc.13
-      voie-pages: 0.4.0_vue@3.0.3
-      vue-router: 4.0.0-rc.6_vue@3.0.3
-    dev: true
-    peerDependencies:
-      vite: ^1.0.0-rc.4
-      vue: '*'
-      vue-router: ^4.0.0-beta.4
-    resolution:
-      integrity: sha512-X1JQc3mWfCDd847PV3w6KhfqlvNlLVwImsrYlBNvRR8KpwdxmG2ZywqyqKsw4rUIMsk7jHHb19G3NxbUbW77uA==
   /vite/1.0.0-rc.13:
     dependencies:
       '@babel/parser': 7.12.7
@@ -6071,6 +6089,7 @@ specifiers:
   '@iconify/iconify': ^2.0.0-rc.2
   '@iconify/json': ^1.1.266
   '@purge-icons/generated': ^0.4.1
+  '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.9.0
   '@vue/compiler-sfc': ^3.0.3
   '@vuedx/typescript-plugin-vue': ^0.2.3
@@ -6078,6 +6097,7 @@ specifiers:
   autoprefixer: ^10.0.4
   cross-env: ^7.0.2
   eslint: ^7.14.0
+  nprogress: ^0.2.0
   postcss-nested: ^5.0.1
   tailwindcss: ^2.0.1
   typescript: ^4.1.2
@@ -6086,7 +6106,7 @@ specifiers:
   vite-plugin-md: ^0.1.2
   vite-plugin-purge-icons: ^0.4.5
   vite-plugin-pwa: ^0.1.7
-  vite-plugin-voie: ^0.4.0
+  vite-plugin-voie: 'npm:@knightly/vite-plugin-voie@pr11'
   voie-pages: ^0.4.0
   vue: ^3.0.3
   vue-i18n: 9.0.0-beta.8

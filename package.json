@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",
-    "build": "cross-env NODE_ENV=production vite build && presite ./dist"
+    "build": "cross-env NODE_ENV=production vite build && esno scripts/ssg.ts"
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.0-rc.2",
@@ -24,6 +24,7 @@
     "chromium": "^3.0.2",
     "cross-env": "^7.0.3",
     "eslint": "^7.14.0",
+    "esno": "^0.3.0",
     "netlify-plugin-chromium": "^1.1.4",
     "postcss-nested": "^5.0.1",
     "presite": "^2.0.1",

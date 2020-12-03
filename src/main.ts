@@ -8,4 +8,5 @@ const app = createApp(App)
 
 installPlugins(app)
 
-app.mount('#app')
+// true for hydrate
+app.mount('#app', true)

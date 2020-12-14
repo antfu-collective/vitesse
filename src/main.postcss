@@ -15,23 +15,6 @@ html.dark {
   background: #222;
 }
 
-.markdown-body {
-  max-width: 300px;
-  @apply m-auto text-left;
-
-  h3 {
-    @apply text-center;
-  }
-
-  a {
-    @apply opacity-50 hover:opacity-100 hover:text-teal-600;
-  }
-
-  p {
-    @apply my-4;
-  }
-}
-
 #nprogress {
   pointer-events: none;
 
@@ -59,4 +42,20 @@ html.dark {
   @apply inline-block cursor-pointer select-none
     opacity-75 transition duration-200 ease-in-out
     hover:opacity-100 hover:text-teal-600;
+}
+
+.shiki {
+  text-align: left;
+}
+
+.shiki-light {
+  background: #fafafa !important;
+}
+
+html.dark .shiki-light {
+  display: none;
+}
+
+html:not(.dark) .shiki-dark {
+  display: none;
 }

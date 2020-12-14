@@ -47,6 +47,7 @@
 ### UI Frameworks
 
 - [Tailwind CSS](https://tailwindcss.com/) - with built-in dark mode!
+- [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) - Typography for Tailwind
 
 ### Icons
 
@@ -60,6 +61,7 @@
 - [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - components auto import
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
+  - [markdown-it-shiki](https://github.com/antfu/markdown-it-shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
 - [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 

@@ -4,6 +4,7 @@ import Voie from 'vite-plugin-voie'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import ViteComponents from 'vite-plugin-components'
 import Markdown from 'vite-plugin-md'
+import Shiki from 'markdown-it-shiki'
 import { VitePWA } from 'vite-plugin-pwa'
 
 const alias = {
@@ -13,21 +14,30 @@ const alias = {
 const config: UserConfig = {
   alias,
   plugins: [
-
     // https://github.com/vamplate/vite-plugin-voie
     Voie({
       // load index page sync and bundled with the landing page to improve first loading time.
       // feel free to remove if you don't need it
       importMode(path: string) {
-        if (path === '/src/pages/index.vue')
-          return 'sync'
-        return 'async'
+        return path === '/src/pages/index.vue' ? 'sync' : 'async'
       },
       extensions: ['vue', 'md'],
     }),
 
     // https://github.com/antfu/vite-plugin-md
-    Markdown(),
+    Markdown({
+      // for https://github.com/tailwindlabs/tailwindcss-typography
+      wrapperClasses: 'prose prose-sm m-auto',
+      markdownItSetup(md) {
+        // https://github.com/antfu/markdown-it-shiki
+        md.use(Shiki, {
+          theme: {
+            dark: 'min-dark',
+            light: 'min-light',
+          },
+        })
+      },
+    }),
 
     // https://github.com/antfu/vite-plugin-components
     ViteComponents({
@@ -39,7 +49,9 @@ const config: UserConfig = {
       extensions: ['vue', 'md'],
 
       // allow auto import and register components used in markdown
-      customLoaderMatcher: ({ path }) => path.endsWith('.md'),
+      customLoaderMatcher({ path }) {
+        return path.endsWith('.md')
+      },
     }),
 
     // https://github.com/antfu/purge-icons

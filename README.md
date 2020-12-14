@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/90765536-b3010780-e31c-11ea-9297-80eb28c4f192.png' alt='Vitess - Opinionated Vite Starter Template' width='600'/>
+  <img src='https://repository-images.githubusercontent.com/286295150/b1b1be80-354a-11eb-87c0-5dc96cae2bd9' alt='Vitess - Opinionated Vite Starter Template' width='600'/>
 </p>
 
 <p align='center'>
@@ -34,7 +34,7 @@
 
 - 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
-- 🖨 Server side generation via [presite](https://github.com/egoist/presite)
+- 🖨 Server-side generation (SSG) via [presite](https://github.com/egoist/presite)
 
 - 🦾 TypeScript, of course
 
@@ -75,6 +75,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
   - [Vue TypeScript Plugin](https://github.com/znck/vue-developer-experience/tree/master/packages/typescript-plugin-vue) - better type support for Vue
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
+- [presite](https://github.com/egoist/presite) - Server-side generation
 - [Netlify](https://www.netlify.com/) - deploy
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)

@@ -3,7 +3,7 @@
 
 [build]
   publish = ".presite"
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npm run build"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
 [[redirects]]
   from = "/*"

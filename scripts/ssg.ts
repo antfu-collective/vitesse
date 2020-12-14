@@ -1,7 +1,8 @@
-import { execSync } from 'child_process'
-// @ts-ignore
-import { path } from 'chromium'
-
+/* eslint-disable @typescript-eslint/no-var-requires */
 console.log('Starting SSG...')
-execSync(`npx cross-env CHROME_PATH="${path}" presite dist`, { stdio: 'inherit' })
+
+const { execSync } = require('child_process')
+const chromium = require('chromium')
+
+execSync(`npx cross-env CHROME_PATH="${chromium.path}" presite dist`, { stdio: 'inherit' })
 console.log('SSG Finished...')

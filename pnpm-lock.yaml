@@ -6975,7 +6975,7 @@ specifiers:
   '@vuedx/typescript-plugin-vue': ^0.2.3
   '@vueuse/core': ^4.0.0-rc.8
   autoprefixer: ^10.1.0
-  chromium: 3.0.2
+  chromium: ^3.0.2
   cross-env: ^7.0.3
   eslint: ^7.15.0
   esno: ^0.3.0

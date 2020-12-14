@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",
-    "build": "cross-env NODE_ENV=production vite build && esno scripts/ssg.ts"
+    "build": "cross-env NODE_ENV=production vite build"
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.0-rc.2",
@@ -22,7 +22,7 @@
     "@vue/compiler-sfc": "^3.0.4",
     "@vuedx/typescript-plugin-vue": "^0.2.3",
     "autoprefixer": "^10.1.0",
-    "chromium": "3.0.2",
+    "chromium": "^3.0.2",
     "cross-env": "^7.0.3",
     "eslint": "^7.15.0",
     "esno": "^0.3.0",

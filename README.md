@@ -34,7 +34,7 @@
 
 - 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
-- 🖨 Server-side generation (SSG) via [presite](https://github.com/egoist/presite)
+- 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
 - 🦾 TypeScript, of course
 

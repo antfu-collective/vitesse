@@ -75,7 +75,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
   - [Vue TypeScript Plugin](https://github.com/znck/vue-developer-experience/tree/master/packages/typescript-plugin-vue) - better type support for Vue
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [presite](https://github.com/egoist/presite) - Server-side generation
+- [vite-ssg](https://github.com/antfu/vite-ssg) - Server-side generation
 - [Netlify](https://www.netlify.com/) - deploy
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
@@ -98,7 +98,7 @@ As this template is strongly opinionated, the following provides a curated list 
 
 ### Clone to local
 
-If you prefer to do it manually with cleaner git history
+If you prefer to do it manually with the cleaner git history
 
 ```bash
 npx degit antfu/vitesse my-vitesse-app

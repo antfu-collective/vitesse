@@ -62,6 +62,7 @@ const config: UserConfig = {
       manifest: {
         name: 'Vitesse',
         short_name: 'Vitesse',
+        theme_color: '#ffffff',
         icons: [
           {
             src: '/pwa-192x192.png',

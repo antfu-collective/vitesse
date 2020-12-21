@@ -32,6 +32,7 @@ module.exports = {
       },
       opacity: {
         10: '0.1',
+        50: '0.5',
         85: '0.85',
       },
       typography: {

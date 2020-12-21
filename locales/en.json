@@ -1,7 +1,11 @@
 {
   "button": {
+    "about": "About",
     "back": "Back",
-    "go": "GO"
+    "go": "GO",
+    "home": "Home",
+    "toggle_dark": "Toggle dark mode",
+    "toggle_langs": "Change languages"
   },
   "intro": {
     "desc": "Opinionated Vite Starter Template",

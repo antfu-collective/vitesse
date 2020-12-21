@@ -33,4 +33,6 @@ const toggleLocales = () => {
   // change to some real logic
   i18n.locale.value = locales[(locales.indexOf(i18n.locale.value) + 1) % locales.length]
 }
+
+const t = i18n.t
 </script>

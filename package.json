@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",
-    "build": "cross-env NODE_ENV=production vite-ssg build"
+    "build": "cross-env NODE_ENV=production vite-ssg build --script async"
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.0-rc.4",
@@ -36,7 +36,7 @@
     "vite-plugin-purge-icons": "^0.4.5",
     "vite-plugin-pwa": "^0.1.7",
     "vite-plugin-voie": "^0.4.1",
-    "vite-ssg": "^0.0.5",
+    "vite-ssg": "^0.0.7",
     "voie-pages": "^0.4.0"
   },
   "pnpm": {

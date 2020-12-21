@@ -18,6 +18,6 @@ export const isDark = computed({
 
 watch(
   isDark,
-  v => document.documentElement.classList.toggle('dark', v),
+  v => typeof document !== 'undefined' && document.documentElement.classList.toggle('dark', v),
   { immediate: true },
 )

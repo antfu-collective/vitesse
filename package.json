@@ -9,7 +9,7 @@
     "@vueuse/core": "^4.0.0",
     "nprogress": "^0.2.0",
     "vue": "^3.0.4",
-    "vue-i18n": "^9.0.0-beta.15",
+    "vue-i18n": "9.0.0-beta.8",
     "vue-router": "^4.0.1"
   },
   "devDependencies": {

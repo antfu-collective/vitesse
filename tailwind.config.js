@@ -41,7 +41,7 @@ module.exports = {
             color: 'inherit',
             a: {
               color: 'inherit',
-              opacity: 0.6,
+              opacity: 0.75,
               '&:hover': {
                 opacity: 1,
                 color: colors.teal[600],

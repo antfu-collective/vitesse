@@ -1,6 +1,6 @@
-<div class="text-4xl text-center">
+<div class="text-4xl text-center -mb-4">
   <!-- You can use Vue components inside markdown -->
-  <Icon class="iconify inline-block" icon="carbon:dicom-overlay" />
+  <carbon-dicom-overlay class="inline-block" />
 </div>
 
 ### About

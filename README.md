@@ -52,7 +52,7 @@
 ### Icons
 
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [PurgeIcons](https://github.com/antfu/purge-icons) - bundles only the icons that you use
+- [vite-plugin-icons](https://github.com/antfu/vite-plugin-icons) - icons as Vue components
 
 ### Plugins
 

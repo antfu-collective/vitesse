@@ -1,23 +1,24 @@
 <template>
   <nav class="text-xl mt-6">
     <router-link class="icon-btn mx-2" to="/" :title="t('button.home')">
-      <Icon icon="carbon:campsite" class="inline-block" />
+      <carbon-campsite />
     </router-link>
 
-    <a class="icon-btn mx-2" @click="isDark = !isDark" :title="t('button.toggle_dark')">
-      <Icon :icon="isDark ? 'carbon:moon' : 'carbon:sun'" class="inline-block" />
+    <a class="icon-btn mx-2" :title="t('button.toggle_dark')" @click="isDark = !isDark">
+      <carbon-moon v-if="isDark" />
+      <carbon-sun v-else />
     </a>
 
-    <a class="icon-btn mx-2" @click="toggleLocales" :title="t('button.toggle_langs')">
-      <Icon icon="carbon:language" class="inline-block" />
+    <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales">
+      <carbon-language />
     </a>
 
     <router-link class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <Icon icon="carbon:dicom-overlay" class="inline-block" />
+      <carbon-dicom-overlay />
     </router-link>
 
     <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <Icon icon="carbon:logo-github" class="inline-block" />
+      <carbon-logo-github />
     </a>
   </nav>
 </template>

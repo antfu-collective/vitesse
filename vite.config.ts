@@ -1,7 +1,7 @@
 import path from 'path'
 import { UserConfig } from 'vite'
 import Voie from 'vite-plugin-voie'
-import PurgeIcons from 'vite-plugin-purge-icons'
+import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components'
 import Markdown from 'vite-plugin-md'
 import Shiki from 'markdown-it-shiki'
@@ -52,10 +52,19 @@ const config: UserConfig = {
       customLoaderMatcher({ path }) {
         return path.endsWith('.md')
       },
+
+      // auto import icons
+      customComponentResolvers: [
+        // https://github.com/antfu/vite-plugin-icons
+        ViteIconsResolver({
+          componentPrefix: '',
+          // enabledCollections: ['carbon']
+        }),
+      ],
     }),
 
-    // https://github.com/antfu/purge-icons
-    PurgeIcons(),
+    // https://github.com/antfu/vite-plugin-icons
+    ViteIcons(),
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({

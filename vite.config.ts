@@ -9,11 +9,13 @@ import Shiki from 'markdown-it-shiki'
 import { VitePWA } from 'vite-plugin-pwa'
 
 const config: UserConfig = {
-  alias: [
-    { find: /\/~\//g, replacement: `${path.resolve(__dirname, 'src')}/` },
-  ],
+  alias: {
+    '/~/': `${path.resolve(__dirname, 'src')}/`,
+  },
   plugins: [
-    Vue(),
+    Vue({
+      ssr: !!process.env.SSG
+    }),
 
     // https://github.com/vamplate/vite-plugin-voie
     Voie({

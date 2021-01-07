@@ -14,7 +14,7 @@ const config: UserConfig = {
   },
   plugins: [
     Vue({
-      ssr: !!process.env.SSG
+      ssr: !!process.env.SSG,
     }),
 
     // https://github.com/vamplate/vite-plugin-voie
@@ -66,25 +66,25 @@ const config: UserConfig = {
     ViteIcons(),
 
     // https://github.com/antfu/vite-plugin-pwa
-    VitePWA({
-      manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: '/pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-      },
-    }),
+    // VitePWA({
+    //   manifest: {
+    //     name: 'Vitesse',
+    //     short_name: 'Vitesse',
+    //     theme_color: '#ffffff',
+    //     icons: [
+    //       {
+    //         src: '/pwa-192x192.png',
+    //         sizes: '192x192',
+    //         type: 'image/png',
+    //       },
+    //       {
+    //         src: '/pwa-512x512.png',
+    //         sizes: '512x512',
+    //         type: 'image/png',
+    //       },
+    //     ],
+    //   },
+    // }),
   ],
 }
 

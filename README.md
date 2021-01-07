@@ -3,7 +3,7 @@
 </p>
 
 <p align='center'>
-Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em><sub><br>
+Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 <sub><em>Now with Vite 2.0! ⚡️</em></sub>
 </p>
 

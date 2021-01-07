@@ -1,9 +1,10 @@
 <p align='center'>
-  <img src='https://repository-images.githubusercontent.com/286295150/b1b1be80-354a-11eb-87c0-5dc96cae2bd9' alt='Vitess - Opinionated Vite Starter Template' width='600'/>
+  <img src='https://repository-images.githubusercontent.com/286295150/b1b1be80-354a-11eb-87c0-5dc96cae2bd9' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>
 
 <p align='center'>
-<em>Mocking up web app with <b>⚡️Vitesse</b></em>
+Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em><sub><br>
+<sub><em>Now with Vite 2.0! ⚡️</em></sub>
 </p>
 
 <br>
@@ -16,7 +17,7 @@
 
 ## Features
 
-- ⚡️ [Vue3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
 - 🗂 [File based routing](./src/pages)
 
@@ -61,7 +62,7 @@
 - [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - components auto import
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
-  - [markdown-it-shiki](https://github.com/antfu/markdown-it-shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
+  - [markdown-it-prism](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
 - [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 

@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import './prism.css';
 
 html,
 body,
@@ -45,18 +46,6 @@ html.dark {
   font-size: 0.9em;
 }
 
-.shiki {
+.prose pre {
   text-align: left;
-}
-
-.shiki-light {
-  background: #fafafa !important;
-}
-
-html.dark .shiki-light {
-  display: none;
-}
-
-html:not(.dark) .shiki-dark {
-  display: none;
 }

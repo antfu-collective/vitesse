@@ -7,6 +7,7 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config-vue': 0.4.3_eslint@7.17.0+typescript@4.1.3
   '@iconify/json': 1.1.282
+  '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.11
   '@tailwindcss/typography': 0.3.1_tailwindcss@2.0.2
   '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 4.12.0_eslint@7.17.0+typescript@4.1.3
@@ -1079,6 +1080,24 @@ packages:
     dev: true
     resolution:
       integrity: sha512-eLbN5gKOJeN9M1DG6+Z/HXR1WDku9E4CLvEtETPJLN5Jzsz26jSjvFpzdF10tpY40qDynqAHAktEjMmRL1IRyA==
+  /@intlify/cli/0.1.2:
+    dependencies:
+      '@intlify/core': 9.0.0-beta.16
+      '@intlify/core-base': 9.0.0-rc.1
+      '@intlify/message-compiler': 9.0.0-rc.1
+      '@intlify/shared': 9.0.0-rc.1
+      chalk: 4.1.0
+      debug: 4.3.1
+      glob: 7.1.6
+      jsonc-eslint-parser: 0.6.2
+      yaml-eslint-parser: 0.2.1
+      yargs: 16.2.0
+    dev: true
+    engines:
+      node: '>= 10'
+    hasBin: true
+    resolution:
+      integrity: sha512-MMi/wUEoTE0oBtTkaospJ2TGPMl0TPKmuN4L6KFhLkBM9Yw0tCN0pDHknlX78tyiI55wYbutddbxkEVHZT1RIw==
   /@intlify/core-base/9.0.0-beta.16:
     dependencies:
       '@intlify/message-compiler': 9.0.0-beta.16
@@ -1096,7 +1115,6 @@ packages:
       '@intlify/message-resolver': 9.0.0-rc.1
       '@intlify/runtime': 9.0.0-rc.1
       '@intlify/shared': 9.0.0-rc.1
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1124,7 +1142,6 @@ packages:
       '@intlify/message-resolver': 9.0.0-rc.1
       '@intlify/shared': 9.0.0-rc.1
       source-map: 0.6.1
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1136,7 +1153,6 @@ packages:
     resolution:
       integrity: sha512-xwjsFuDDYEv7g1KE5QZRbrPgfsrNsDhYLtNYR7Tn4inzbmB6ipak2UlDzDcQGLieSFbe1WwAoNL0IXy4sUKboQ==
   /@intlify/message-resolver/9.0.0-rc.1:
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1156,7 +1172,6 @@ packages:
       '@intlify/message-compiler': 9.0.0-rc.1
       '@intlify/message-resolver': 9.0.0-rc.1
       '@intlify/shared': 9.0.0-rc.1
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1168,11 +1183,20 @@ packages:
     resolution:
       integrity: sha512-A7GSOovcZn/NMoAmDc8FG9uRcFv6iygriK8+C6HFeOnMQ9X+T9f5A9bPtXhCOCiRpQm9SUtGqXedxO5Y8rz9/A==
   /@intlify/shared/9.0.0-rc.1:
-    dev: false
     engines:
       node: '>= 10'
     resolution:
       integrity: sha512-pOOtAKEIIuGSos+cuy5FKlANMev3x8qG7VJS9wTKy8JJcBzk98Ypt1+oNTOv0B5aIXpRRpxZVAXatvAorXT5/A==
+  /@intlify/vite-plugin-vue-i18n/1.0.0-beta.11:
+    dependencies:
+      '@intlify/cli': 0.1.2
+      '@intlify/shared': 9.0.0-rc.1
+      '@rollup/pluginutils': 4.1.0
+    dev: true
+    engines:
+      node: '>= 12'
+    resolution:
+      integrity: sha512-q5YSLrKEQ/5k5yUyOUVs4TxMnwM/0RbbrnSl7o153l8VBtwCOmlBuSQJnXI9Av0JkZLZ7DJsvGddQWvJZNWdsA==
   /@nodelib/fs.scandir/2.1.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
@@ -1254,6 +1278,17 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
+  /@rollup/pluginutils/4.1.0:
+    dependencies:
+      estree-walker: 2.0.2
+      picomatch: 2.2.2
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0
+    resolution:
+      integrity: sha512-TrBhfJkFxA+ER+ew2U2/fHbebhLT/l/2pRk0hfj9KusXUuRXd2v0R58AfaZK9VXDQ4TogOSEmICVrQAA3zFnHQ==
   /@surma/rollup-plugin-off-main-thread/1.4.2:
     dependencies:
       ejs: 2.7.4
@@ -3405,6 +3440,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-KXPvOm8K9IJKFM0bmdn8QXh7udDh1g/giieX0NLCaMnb4hEiVFqnop2ImTXCc5e0/oHz3LTqmHGtExn5hfMkOA==
+  /jsonc-eslint-parser/0.6.2:
+    dependencies:
+      eslint-visitor-keys: 1.3.0
+      espree: 7.3.1
+    dev: true
+    resolution:
+      integrity: sha512-8WlcrtXwiio5/E1J1cpaeBW5jFTHMcFLmlqOhQTbta0kn5hiOM/B56tky/ZJQP7SyHhpVj3zDvaXkVyedYi/LA==
   /jsonfile/6.1.0:
     dependencies:
       universalify: 2.0.0
@@ -5394,6 +5436,30 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
+  /yaml-eslint-parser/0.2.1:
+    dependencies:
+      eslint-visitor-keys: 1.3.0
+      yaml: 1.10.0
+      yaml-unist-parser: 1.3.1
+    dev: true
+    resolution:
+      integrity: sha512-haXfbmQV9PHFnFo7vjZ/c2uHvKjIznItJ07+g6xVvyWVvgiEtD37QM1oQ5uCf4uJtCZaDNMvLLUCvulhxnTA9w==
+  /yaml-unist-parser/1.3.1:
+    dependencies:
+      lines-and-columns: 1.1.6
+      tslib: 1.14.1
+      yaml: 1.10.0
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-4aHBMpYcnByF8l2OKj5hlBJlxSYIMON8Z1Hm57ymbBL4omXMlGgY+pEf4Di6h2qNT8ZG8seTVvAQYNOa7CZ9eA==
+  /yaml/1.10.0:
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
   /yargs-parser/18.1.3:
     dependencies:
       camelcase: 5.3.1
@@ -5444,6 +5510,7 @@ packages:
 specifiers:
   '@antfu/eslint-config-vue': ^0.4.3
   '@iconify/json': ^1.1.282
+  '@intlify/vite-plugin-vue-i18n': ^1.0.0-beta.11
   '@tailwindcss/typography': ^0.3.1
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.12.0

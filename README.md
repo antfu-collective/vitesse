@@ -29,7 +29,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
-- 🌍 [i18n ready](./locales)
+- 🌍 [I18n ready](./locales)
 
 - 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-md)
 
@@ -63,7 +63,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
   - [markdown-it-prism](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
-- [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
+- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
+  - [vite-plugin-vue-i18n](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 
 ### Coding Style

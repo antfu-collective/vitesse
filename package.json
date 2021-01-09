@@ -5,7 +5,7 @@
     "build": "cross-env NODE_ENV=production vite-ssg build --script async"
   },
   "dependencies": {
-    "@vueuse/core": "^4.0.4",
+    "@vueuse/core": "^4.0.5",
     "nprogress": "^0.2.0",
     "vue": "^3.0.5",
     "vue-i18n": "9.0.0-rc.1",
@@ -27,16 +27,16 @@
     "eslint": "^7.17.0",
     "markdown-it-prism": "^2.1.4",
     "pnpm": "^5.14.3",
-    "postcss": "^8.2.3",
+    "postcss": "^8.2.4",
     "postcss-nested": "^5.0.3",
     "tailwindcss": "^2.0.2",
     "typescript": "^4.1.3",
-    "vite": "^2.0.0-beta.12",
+    "vite": "^2.0.0-beta.15",
     "vite-plugin-components": "^0.6.3",
     "vite-plugin-icons": "^0.2.1",
     "vite-plugin-md": "^0.2.1",
     "vite-plugin-pwa": "^0.3.2",
-    "vite-plugin-voie": "^0.7.1",
+    "vite-plugin-voie": "^0.7.3",
     "vite-ssg": "^0.3.1",
     "voie-pages": "^0.4.0"
   },

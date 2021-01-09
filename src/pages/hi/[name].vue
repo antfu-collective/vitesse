@@ -2,7 +2,7 @@
 <template>
   <div>
     <p class="text-4xl">
-      <Icon class="iconify inline-block" icon="carbon:pedestrian" />
+      <carbon-pedestrian class="inline-block" />
     </p>
     <p>
       {{ t('intro.hi', {name}) }}

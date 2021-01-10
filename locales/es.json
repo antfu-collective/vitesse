@@ -5,7 +5,7 @@
     "go": "Ir",
     "home": "Inicio",
     "toggle_dark": "Alternar modo oscuro",
-    "toggle_langs": "Cambiar idiomas",
+    "toggle_langs": "Cambiar idiomas"
   },
   "intro": {
     "desc": "Plantilla de Inicio de Vite Dogmática",

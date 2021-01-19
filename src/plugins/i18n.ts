@@ -9,9 +9,9 @@ import es from '../../locales/es.json'
 import vi from '../../locales/vi.json'
 import ja from '../../locales/ja.json'
 
-
 export default (app: App) => {
   const i18n = createI18n({
+    legacy: false,
     locale: 'en',
     messages: {
       en,
@@ -20,7 +20,7 @@ export default (app: App) => {
       es,
       vi,
       ja
-    }
+    },
   })
 
   app.use(i18n)

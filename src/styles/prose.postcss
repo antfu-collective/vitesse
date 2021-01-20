@@ -1,5 +1,5 @@
-@import './prism-vscode-light.css';
-@import './prism-vscode-dark.css';
+@import './prism-light.postcss';
+@import './prism-dark.postcss';
 
 .prose {
   pre[class*='language-'],
@@ -34,5 +34,13 @@
   :not(pre) > code[class*='language-'] {
     padding: 0.1em 0.3em;
     border-radius: 0.3em;
+  }
+
+  pre {
+    text-align: left;
+  }
+
+  a code {
+    color: inherit;
   }
 }

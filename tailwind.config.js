@@ -30,11 +30,6 @@ module.exports = {
       colors: {
         teal: colors.teal,
       },
-      opacity: {
-        10: '0.1',
-        50: '0.5',
-        85: '0.85',
-      },
       typography: {
         DEFAULT: {
           css: {
@@ -47,27 +42,14 @@ module.exports = {
                 color: colors.teal[600],
               },
             },
-            b: {
-              color: 'inherit',
-            },
-            strong: {
-              color: 'inherit',
-            },
-            em: {
-              color: 'inherit',
-            },
-            h1: {
-              color: 'inherit',
-            },
-            h2: {
-              color: 'inherit',
-            },
-            h3: {
-              color: 'inherit',
-            },
-            h4: {
-              color: 'inherit',
-            },
+            b: { color: 'inherit' },
+            strong: { color: 'inherit' },
+            em: { color: 'inherit' },
+            h1: { color: 'inherit' },
+            h2: { color: 'inherit' },
+            h3: { color: 'inherit' },
+            h4: { color: 'inherit' },
+            code: { color: 'inherit' },
           },
         },
       },

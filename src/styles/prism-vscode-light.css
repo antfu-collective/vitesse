@@ -5,7 +5,7 @@
  * https://raw.githubusercontent.com/PrismJS/prism-themes/master/themes/prism-vs.css
  */
 
-html:not(.dark) .prose {
+html:not(.dark) {
   code[class*='language-'],
   pre[class*='language-'] {
     color: #393a34;
@@ -27,7 +27,7 @@ html:not(.dark) .prose {
 
   /* Code blocks */
   pre[class*='language-'] {
-    background-color: #f8f8f8;
+    background-color: #f8f8f8 !important;
   }
 
   /* Inline code */
@@ -39,7 +39,7 @@ html:not(.dark) .prose {
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #008000;
+    color: #758575;
     font-style: italic;
   }
 
@@ -73,11 +73,11 @@ html:not(.dark) .prose {
   .language-json .token.boolean,
   .language-json .token.number,
   code[class*='language-css'] {
-    color: #0000ff;
+    color: #248459;
   }
 
   .token.function {
-    color: #393a34;
+    color: #849145;
   }
 
   .token.deleted,
@@ -87,7 +87,7 @@ html:not(.dark) .prose {
 
   .token.selector,
   .language-autohotkey .token.keyword {
-    color: #00009f;
+    color: #248459;
   }
 
   .token.important,
@@ -105,6 +105,7 @@ html:not(.dark) .prose {
   }
 
   .token.tag,
+  .token.builtin,
   .token.selector {
     color: #800000;
   }
@@ -113,7 +114,7 @@ html:not(.dark) .prose {
   .token.property,
   .token.regex,
   .token.entity {
-    color: #ff0000;
+    color: #ce9178;
   }
 
   .token.directive.tag .tag {

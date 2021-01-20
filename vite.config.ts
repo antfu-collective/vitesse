@@ -5,9 +5,9 @@ import Pages from 'vite-plugin-pages'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components'
 import Markdown from 'vite-plugin-md'
-import Prism from 'markdown-it-prism'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import Prism from 'markdown-it-prism'
 
 const config: UserConfig = {
   alias: {
@@ -15,7 +15,7 @@ const config: UserConfig = {
   },
   plugins: [
     Vue({
-      ssr: !!process.env.SSG,
+      include: [/\.vue$/, /\.md$/],
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -30,7 +30,6 @@ const config: UserConfig = {
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      // for https://github.com/tailwindlabs/tailwindcss-typography
       wrapperClasses: 'prose prose-sm m-auto',
       headEnabled: true,
       markdownItSetup(md) {

@@ -2,7 +2,7 @@
  * https://raw.githubusercontent.com/PrismJS/prism-themes/master/themes/prism-vsc-dark-plus.css
  */
 
-html.dark .prose {
+html.dark {
   pre[class*='language-'],
   code[class*='language-'] {
     color: #d4d4d4;
@@ -34,7 +34,7 @@ html.dark .prose {
 
   .token.comment,
   .token.prolog {
-    color: #6a9955;
+    color: #707c70;
     font-style: italic;
   }
 
@@ -98,7 +98,7 @@ html.dark .prose {
   }
 
   .token.keyword {
-    color: #569cd6;
+    color: #38a776;
   }
 
   .token.keyword.module,
@@ -232,8 +232,8 @@ html.dark .prose {
     color: #808080;
   }
   /*********************************************************
-   * Line highlighting
-   */
+* Line highlighting
+*/
   pre[data-line] {
     position: relative;
   }
@@ -255,9 +255,5 @@ html.dark .prose {
     pointer-events: none;
     line-height: inherit;
     white-space: pre;
-  }
-
-  code, a code {
-    color: #eee;
   }
 }

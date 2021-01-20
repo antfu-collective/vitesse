@@ -58,7 +58,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 ### Plugins
 
 - [Vue Router](https://github.com/vuejs/vue-router)
-  - [vite-plugin-voie](https://github.com/vamplate/vite-plugin-voie) - file system based routing
+  - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
 - [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - components auto import
 - [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown

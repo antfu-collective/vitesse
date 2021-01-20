@@ -1,3 +1,7 @@
+---
+title: About
+---
+
 <div class="text-4xl text-center -mb-4">
   <!-- You can use Vue components inside markdown -->
   <carbon-dicom-overlay class="inline-block" />

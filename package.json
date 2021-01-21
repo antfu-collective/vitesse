@@ -35,8 +35,8 @@
     "vite": "2.0.0-beta.35",
     "vite-plugin-components": "^0.6.6",
     "vite-plugin-icons": "^0.2.1",
-    "vite-plugin-md": "^0.4.0",
-    "vite-plugin-pages": "^0.1.4",
+    "vite-plugin-md": "^0.4.1",
+    "vite-plugin-pages": "^0.1.5",
     "vite-plugin-pwa": "^0.3.9",
     "vite-ssg": "^0.4.1",
     "voie-pages": "^0.4.0"

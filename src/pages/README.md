@@ -5,7 +5,7 @@ Check out [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) f
 
 ### Path Aliasing
 
-You can use `/~/` aliasing to `./src/` folder.
+`/~/` is aliased to `./src/` folder.
 
 For example, instead of having
 

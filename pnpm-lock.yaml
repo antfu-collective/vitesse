@@ -2,6 +2,7 @@ dependencies:
   '@vueuse/core': 4.0.8_vue@3.0.5
   '@vueuse/head': 0.2.3_vue@3.0.5
   nprogress: 0.2.0
+  prism-theme-vars: 0.0.1
   vue: 3.0.5
   vue-i18n: 9.0.0-rc.3_vue@3.0.5
   vue-router: 4.0.3_vue@3.0.5
@@ -4256,6 +4257,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
+  /prism-theme-vars/0.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-Ga9N3OwRSv1f0yPTP0TrL36kZrIf99KQiBfNjA047Fv/tY+x5u725/YXAGuo+aS+FQpyvAcDhKx7lO4DGC0AAQ==
   /prismjs/1.23.0:
     dev: true
     optionalDependencies:
@@ -4427,7 +4432,7 @@ packages:
       request-promise-core: 1.1.4_request@2.88.2
       stealthy-require: 1.1.1
       tough-cookie: 2.5.0
-    deprecated: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+    deprecated: 'request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142'
     dev: true
     engines:
       node: '>=0.12.0'
@@ -4457,7 +4462,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
+    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
     dev: true
     engines:
       node: '>= 6'
@@ -5607,6 +5612,7 @@ specifiers:
   pnpm: ^5.15.1
   postcss: ^8.2.4
   postcss-nested: ^5.0.3
+  prism-theme-vars: ^0.0.1
   tailwindcss: ^2.0.2
   typescript: ^4.1.3
   vite: 2.0.0-beta.35

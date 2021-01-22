@@ -8,6 +8,7 @@
     "@vueuse/core": "^4.0.8",
     "@vueuse/head": "^0.2.3",
     "nprogress": "^0.2.0",
+    "prism-theme-vars": "^0.0.1",
     "vue": "^3.0.5",
     "vue-i18n": "^9.0.0-rc.3",
     "vue-router": "^4.0.3"

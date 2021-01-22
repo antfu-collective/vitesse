@@ -23,7 +23,6 @@
     "@vitejs/plugin-vue": "^1.1.0",
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/server-renderer": "^3.0.5",
-    "@vuedx/typescript-plugin-vue": "^0.6.0",
     "autoprefixer": "^10.2.3",
     "cross-env": "^7.0.3",
     "eslint": "^7.18.0",

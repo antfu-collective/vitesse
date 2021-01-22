@@ -1,7 +1,7 @@
 {
   "recommendations": [
     "octref.vetur",
-    "antfu.i18n-ally",
+    "lokalise.i18n-ally",
     "antfu.iconify",
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss"

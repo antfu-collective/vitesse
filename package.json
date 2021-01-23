@@ -27,7 +27,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^7.18.0",
     "markdown-it-prism": "^2.1.4",
-    "pnpm": "^5.15.2",
+    "pnpm": "^5.15.3",
     "postcss": "^8.2.4",
     "postcss-nested": "^5.0.3",
     "tailwindcss": "^2.0.2",
@@ -37,7 +37,7 @@
     "vite-plugin-icons": "^0.2.1",
     "vite-plugin-md": "^0.4.1",
     "vite-plugin-pages": "^0.1.7",
-    "vite-plugin-pwa": "^0.3.9",
+    "vite-plugin-pwa": "^0.3.10",
     "vite-ssg": "^0.4.1"
   },
   "eslintConfig": {

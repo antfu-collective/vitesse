@@ -20,7 +20,7 @@ devDependencies:
   cross-env: 7.0.3
   eslint: 7.18.0
   markdown-it-prism: 2.1.4
-  pnpm: 5.15.2
+  pnpm: 5.15.3
   postcss: 8.2.4
   postcss-nested: 5.0.3_postcss@8.2.4
   tailwindcss: 2.0.2_d337930ac9ab3cde8278bf6b015e1ea7
@@ -30,7 +30,7 @@ devDependencies:
   vite-plugin-icons: 0.2.1_2e8f12e6b4d97ee3f083bae292486e22
   vite-plugin-md: 0.4.1_vite@2.0.0-beta.44
   vite-plugin-pages: 0.1.7_vue@3.0.5
-  vite-plugin-pwa: 0.3.9
+  vite-plugin-pwa: 0.3.10
   vite-ssg: 0.4.1_9195eb4a8880478bc242442ad41b7c64
 lockfileVersion: 5.2
 packages:
@@ -116,7 +116,7 @@ packages:
       '@babel/traverse': 7.12.12
       '@babel/types': 7.12.12
       convert-source-map: 1.7.0
-      debug: 4.3.2
+      debug: 4.3.1
       gensync: 1.0.0-beta.2
       json5: 2.1.3
       lodash: 4.17.20
@@ -3993,13 +3993,13 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
-  /pnpm/5.15.2:
+  /pnpm/5.15.3:
     dev: true
     engines:
       node: '>=10.16'
     hasBin: true
     resolution:
-      integrity: sha512-YIy5GMRUPDDkcI/g3zr+kuamoaYTgTntHFU5WAVyBmQoYIo03TA2XJq70ii6lhUm6LbQbU6WtUit1cQrwRqAng==
+      integrity: sha512-3E53AIFukQA8OAgYcIb7dGN5+MA0GfNK8nMJwuT6sDnLC/bUs9uUSc+CaHKxZ34SIx/K5bH7gc6Q1kg2R/AiVg==
   /postcss-functions/3.0.0:
     dependencies:
       glob: 7.1.6
@@ -5079,7 +5079,7 @@ packages:
       vue: ^3.0.0
     resolution:
       integrity: sha512-/IBAEAX4w4EoLzQpK+hf0D66HUn2lBSZJmLedSKXVykbKCMf9VGME4hlynT91RKMa0AXKYdcXwQJM3xmbyjxdw==
-  /vite-plugin-pwa/0.3.9:
+  /vite-plugin-pwa/0.3.10:
     dependencies:
       debug: 4.3.2
       fast-glob: 3.2.5
@@ -5087,7 +5087,7 @@ packages:
       workbox-build: 6.0.2
     dev: true
     resolution:
-      integrity: sha512-7UwG/jmBBzmmwFllc6fUmEpXyMYlBZsLBpjBfteHPp4lVptNrXVRT6Ou/ggVjPK2vlJqlh3GzvSo1sCNUxecgw==
+      integrity: sha512-UMvOTsTQumIy1yJ7imIEsjdealbeOzc30PjNK1By4aEuRUHCI2kJ7Mmh8xUbLJWSLVaUfIKIG1zguk5cpmD3SQ==
   /vite-ssg/0.4.1_9195eb4a8880478bc242442ad41b7c64:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
@@ -5499,7 +5499,7 @@ specifiers:
   eslint: ^7.18.0
   markdown-it-prism: ^2.1.4
   nprogress: ^0.2.0
-  pnpm: ^5.15.2
+  pnpm: ^5.15.3
   postcss: ^8.2.4
   postcss-nested: ^5.0.3
   prism-theme-vars: ^0.1.0
@@ -5510,7 +5510,7 @@ specifiers:
   vite-plugin-icons: ^0.2.1
   vite-plugin-md: ^0.4.1
   vite-plugin-pages: ^0.1.7
-  vite-plugin-pwa: ^0.3.9
+  vite-plugin-pwa: ^0.3.10
   vite-ssg: ^0.4.1
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.4

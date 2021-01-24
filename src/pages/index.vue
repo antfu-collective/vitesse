@@ -8,7 +8,7 @@ const name = ref('')
 const router = useRouter()
 const go = () => {
   if (name.value)
-    router.push(`/hi/${name.value}`)
+    router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
 
 const { t } = useI18n()
@@ -36,7 +36,7 @@ const { t } = useI18n()
       :placeholder="t('intro.whats-your-name')"
       type="text"
       autocomplete="false"
-      class="px-4 py-2 border border-gray-200 rounded text-center text-sm outline-none active:outline-none bg-transparent dark:border-gray-700"
+      class="px-4 py-2 text-sm text-center bg-transparent border border-gray-200 rounded outline-none active:outline-none dark:border-gray-700"
       style="width: 250px"
       @keydown.enter="go"
     >
@@ -44,7 +44,7 @@ const { t } = useI18n()
 
     <div>
       <button
-        class="btn m-3 text-sm"
+        class="m-3 text-sm btn"
         :disabled="!name"
         @click="go"
       >

@@ -20,11 +20,6 @@ const config: UserConfig = {
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
-      // load index page sync and bundled with the landing page to improve first loading time.
-      // feel free to remove if you don't need it
-      importMode(path: string) {
-        return path === '/src/pages/index.vue' ? 'sync' : 'async'
-      },
       extensions: ['vue', 'md'],
     }),
 

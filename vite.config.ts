@@ -73,6 +73,9 @@ const config: UserConfig = {
           },
         ],
       },
+      workbox: {
+        navigateFallback: '/index.html',
+      },
     }),
 
     // https://github.com/intlify/vite-plugin-vue-i18n

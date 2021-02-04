@@ -6,6 +6,6 @@ declare module '*.vue' {
 }
 declare module '*.md' {
   import { ComponentOptions } from 'vue'
-  const Component: ReturnType<typeof defineComponent>
-  export default Component
+  const component: ReturnType<ComponentOptions>
+  export default component
 }

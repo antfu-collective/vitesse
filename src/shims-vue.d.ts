@@ -1,6 +1,6 @@
 /* eslint-disable import/no-duplicates */
 declare module '*.vue' {
-  import { ComponentOptions, ComponentOptions } from 'vue'
+  import { ComponentOptions } from 'vue'
   const component: ReturnType<ComponentOptions>
   export default component
 }

@@ -17,11 +17,13 @@ module.exports = {
     },
   },
   variants: {
-    cursor: ['responsive', 'disabled'],
-    backgroundColor: ['dark', 'hover', 'disabled'],
-    borderColor: ['dark', 'active', 'focus', 'disabled'],
-    textColor: ['dark', 'hover', 'active', 'disabled'],
-    opacity: ['dark', 'hover', 'active', 'focus', 'disabled'],
+    extend: {
+      cursor: ['disabled'],
+      backgroundColor: ['disabled'],
+      borderColor: ['active', 'disabled'],
+      textColor: ['active', 'disabled'],
+      opacity: ['dark', 'active', 'disabled'],
+    }
   },
   darkMode: 'class',
   plugins: [typography],

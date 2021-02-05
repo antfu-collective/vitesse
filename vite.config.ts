@@ -1,15 +1,15 @@
 import path from 'path'
-import { UserConfig } from 'vite'
+import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components'
 import Markdown from 'vite-plugin-md'
-import { VitePWA } from 'vite-plugin-pwa'
+import VitePWA from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Prism from 'markdown-it-prism'
 
-const config: UserConfig = {
+export default defineConfig({
   alias: {
     '/~/': `${path.resolve(__dirname, 'src')}/`,
   },
@@ -80,6 +80,4 @@ const config: UserConfig = {
       include: [path.resolve(__dirname, 'locales/**')],
     }),
   ],
-}
-
-export default config
+})

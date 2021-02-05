@@ -67,6 +67,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
   - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
+- [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
 
 ### Coding Style
 

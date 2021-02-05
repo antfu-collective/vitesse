@@ -15,7 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "types": ["vite/client"],
     "paths": {
-      "/~/*": ["src/*"]
+      "~/*": ["src/*"]
     }
   },
   "exclude": ["dist", "node_modules"]

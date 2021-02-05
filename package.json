@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.4.3",
-    "@iconify/json": "^1.1.296",
-    "@intlify/vite-plugin-vue-i18n": "^1.0.0-beta.12",
+    "@iconify/json": "^1.1.297",
+    "@intlify/vite-plugin-vue-i18n": "1.0.0-beta.12",
     "@tailwindcss/typography": "^0.4.0",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
@@ -27,7 +27,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^7.19.0",
     "markdown-it-prism": "^2.1.4",
-    "pnpm": "^5.16.0",
+    "pnpm": "^5.16.1",
     "postcss": "^8.2.4",
     "postcss-nested": "^5.0.3",
     "tailwindcss": "^2.0.2",
@@ -36,9 +36,9 @@
     "vite-plugin-components": "^0.6.6",
     "vite-plugin-icons": "^0.2.1",
     "vite-plugin-md": "^0.4.2",
-    "vite-plugin-pages": "^0.1.8",
-    "vite-plugin-pwa": "^0.4.2",
-    "vite-ssg": "^0.7.0"
+    "vite-plugin-pages": "^0.1.9",
+    "vite-plugin-pwa": "^0.4.3",
+    "vite-ssg": "^0.8.0"
   },
   "eslintConfig": {
     "extends": "@antfu/eslint-config",

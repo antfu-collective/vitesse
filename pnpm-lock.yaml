@@ -8,7 +8,7 @@ dependencies:
   vue-router: 4.0.3_vue@3.0.5
 devDependencies:
   '@antfu/eslint-config': 0.4.3_eslint@7.19.0+typescript@4.1.3
-  '@iconify/json': 1.1.296
+  '@iconify/json': 1.1.297
   '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.12
   '@tailwindcss/typography': 0.4.0_tailwindcss@2.0.2
   '@types/nprogress': 0.2.0
@@ -20,18 +20,18 @@ devDependencies:
   cross-env: 7.0.3
   eslint: 7.19.0
   markdown-it-prism: 2.1.4
-  pnpm: 5.16.0
+  pnpm: 5.16.1
   postcss: 8.2.4
   postcss-nested: 5.0.3_postcss@8.2.4
   tailwindcss: 2.0.2_90874d0ac9c8f3b30e7bed02cb9a0d41
   typescript: 4.1.3
   vite: 2.0.0-beta.46
   vite-plugin-components: 0.6.6
-  vite-plugin-icons: 0.2.1_f2c2b98829fb471a34d90a492f734967
+  vite-plugin-icons: 0.2.1_90cfb2856576e5dadc7ba04728831630
   vite-plugin-md: 0.4.2_vite@2.0.0-beta.46
-  vite-plugin-pages: 0.1.8_vue@3.0.5
-  vite-plugin-pwa: 0.4.2
-  vite-ssg: 0.7.0_67baffff43cafb4933a0b440cee9b6c9
+  vite-plugin-pages: 0.1.9_vite@2.0.0-beta.46+vue@3.0.5
+  vite-plugin-pwa: 0.4.3
+  vite-ssg: 0.8.0_67baffff43cafb4933a0b440cee9b6c9
 lockfileVersion: 5.2
 packages:
   /@antfu/eslint-config-basic/0.4.3_eslint@7.19.0:
@@ -1069,16 +1069,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==
-  /@iconify/json/1.1.296:
+  /@iconify/json/1.1.297:
     dev: true
     resolution:
-      integrity: sha512-xvvph36NsOmKgoZCQcLfzImTBuUJyyzIsDJUMEdP6TpD6UnI2/kaSj8/C4epq060xxMLeL0SG64yFEnR1HZdxw==
+      integrity: sha512-mq2qFnxabHoB4eak/FUUHGHGM/U8KaSp+GzwEF9YJaIsztzym5OUzSQLFyUG8V/zHrnQhnNWTbtnHNZtU9Zg1w==
   /@intlify/cli/0.1.3:
     dependencies:
       '@intlify/core': 9.0.0-beta.16
-      '@intlify/core-base': 9.0.0-rc.3
-      '@intlify/message-compiler': 9.0.0-rc.3
-      '@intlify/shared': 9.0.0-rc.3
+      '@intlify/core-base': 9.0.0-rc.5
+      '@intlify/message-compiler': 9.0.0-rc.5
+      '@intlify/shared': 9.0.0-rc.5
       chalk: 4.1.0
       debug: 4.3.1
       glob: 7.1.6
@@ -1102,24 +1102,12 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-PJLDVYy3x8Mf9+XtWljEfk4Lo6mudopYlRvB89NQR3TkR+Tqkbcsegj09XdXpTKBYiq+yQrlZKZ0KEHb7l5Zuw==
-  /@intlify/core-base/9.0.0-rc.3:
-    dependencies:
-      '@intlify/message-compiler': 9.0.0-rc.3
-      '@intlify/message-resolver': 9.0.0-rc.3
-      '@intlify/runtime': 9.0.0-rc.3
-      '@intlify/shared': 9.0.0-rc.3
-    dev: true
-    engines:
-      node: '>= 10'
-    resolution:
-      integrity: sha512-HYPNCOSTvMHUFViiyDzlnMPvcupN7HDKbCChWKSgURYgNjBMrIsMUNz9tF3x4cducZYlY6PFoAeLiPpvx0V+nA==
   /@intlify/core-base/9.0.0-rc.5:
     dependencies:
       '@intlify/message-compiler': 9.0.0-rc.5
       '@intlify/message-resolver': 9.0.0-rc.5
       '@intlify/runtime': 9.0.0-rc.5
       '@intlify/shared': 9.0.0-rc.5
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1142,22 +1130,11 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-dE4UZsbVl5TKogYdfrJ6nQKdin1R4XMKVBVa9dE1A8HVvVHBSLy6iQiYpcw8TwcEHIa+rFjuuHuh+IdN3eCw+g==
-  /@intlify/message-compiler/9.0.0-rc.3:
-    dependencies:
-      '@intlify/message-resolver': 9.0.0-rc.3
-      '@intlify/shared': 9.0.0-rc.3
-      source-map: 0.6.1
-    dev: true
-    engines:
-      node: '>= 10'
-    resolution:
-      integrity: sha512-EHz2oWuMKMOydSCVf+zkkcnOrazfteU90NmUxsRLfHJBFtl6+yssScYhwasA9UwcvzvJKuxsATzMv62ACKnjQg==
   /@intlify/message-compiler/9.0.0-rc.5:
     dependencies:
       '@intlify/message-resolver': 9.0.0-rc.5
       '@intlify/shared': 9.0.0-rc.5
       source-map: 0.6.1
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1168,14 +1145,7 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-xwjsFuDDYEv7g1KE5QZRbrPgfsrNsDhYLtNYR7Tn4inzbmB6ipak2UlDzDcQGLieSFbe1WwAoNL0IXy4sUKboQ==
-  /@intlify/message-resolver/9.0.0-rc.3:
-    dev: true
-    engines:
-      node: '>= 10'
-    resolution:
-      integrity: sha512-mU/RFpWBIf2T5FL7d5EZUozCrxmjLeypLmSCzf3FPnYLp/wL3e/0MaW7qZIU4cFhl+zhHwW8fs+zBozBDBTckw==
   /@intlify/message-resolver/9.0.0-rc.5:
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1190,22 +1160,11 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-py+stHrbkBoEB2OsBB+rySevR+54uhybF54LToGjErr740R/AVuOVTJEKRS/LF9VvinGZZTu/WVOXcPpMfqt8Q==
-  /@intlify/runtime/9.0.0-rc.3:
-    dependencies:
-      '@intlify/message-compiler': 9.0.0-rc.3
-      '@intlify/message-resolver': 9.0.0-rc.3
-      '@intlify/shared': 9.0.0-rc.3
-    dev: true
-    engines:
-      node: '>= 10'
-    resolution:
-      integrity: sha512-9ITjqDY82/quCSnxAfUDerSPYDb4LuGDpWU2RPST3GWSHIxpHM9TbnTcFNFOFChlT7/Swsyg4wcUGjg1YNnYag==
   /@intlify/runtime/9.0.0-rc.5:
     dependencies:
       '@intlify/message-compiler': 9.0.0-rc.5
       '@intlify/message-resolver': 9.0.0-rc.5
       '@intlify/shared': 9.0.0-rc.5
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1216,14 +1175,7 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-A7GSOovcZn/NMoAmDc8FG9uRcFv6iygriK8+C6HFeOnMQ9X+T9f5A9bPtXhCOCiRpQm9SUtGqXedxO5Y8rz9/A==
-  /@intlify/shared/9.0.0-rc.3:
-    dev: true
-    engines:
-      node: '>= 10'
-    resolution:
-      integrity: sha512-9NEh7MGcpwXUmhg3AVf1q8e+zLfvAUtwx4rAznv5TTirv3jWhaiUfKIRfa5QwpH+3wr2fmbwtLAKyw1kN50o4Q==
   /@intlify/shared/9.0.0-rc.5:
-    dev: false
     engines:
       node: '>= 10'
     resolution:
@@ -1231,7 +1183,7 @@ packages:
   /@intlify/vite-plugin-vue-i18n/1.0.0-beta.12:
     dependencies:
       '@intlify/cli': 0.1.3
-      '@intlify/shared': 9.0.0-rc.3
+      '@intlify/shared': 9.0.0-rc.5
       '@rollup/pluginutils': 4.1.0
     dev: true
     engines:
@@ -2322,12 +2274,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==
-  /directory-tree/2.2.5:
+  /directory-tree/2.2.6:
     dev: true
     engines:
       node: '>=4.2'
     resolution:
-      integrity: sha512-qmeuql8N7hQB5b+cnlvbcHSjKBNpRjLY5KcvyFd9CTC5uTN7sJshEQ/ExZidAcEUEYcC/76i8ikLtbBMG81YRg==
+      integrity: sha512-0xF1t4fRkd2vYCremWjhcP4xWTnshzfPZpTCH3F1yJTXhW84YQQM1MasAMnnqyMAkNwGuUEdg9UzuuUo1uoHtA==
   /doctrine/1.5.0:
     dependencies:
       esutils: 2.0.3
@@ -4106,13 +4058,13 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
-  /pnpm/5.16.0:
+  /pnpm/5.16.1:
     dev: true
     engines:
       node: '>=10.16'
     hasBin: true
     resolution:
-      integrity: sha512-f7bNVvYGK24eiZ5gYX4wKOSohg6kIybEhrprHqUtFsP3TfttGSLqid1OTzLvVzwVp58QBj9ifOVwRQ+RiSmE0A==
+      integrity: sha512-KiLVkkbn5P/8kOUdNCkVTLsOwurQpQmFzjWaKzNjn8iRPVD3cHsijmnV0aX9Q8lMPfC3T80pGn7PBOHaQlCblA==
   /postcss-functions/3.0.0:
     dependencies:
       glob: 7.1.6
@@ -4713,6 +4665,14 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
+  /source-map/0.8.0-beta.0:
+    dependencies:
+      whatwg-url: 7.1.0
+    dev: true
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==
   /sourcemap-codec/1.4.8:
     dev: true
     resolution:
@@ -4989,6 +4949,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-yQyJ0u4pZsv9D4clxO69OEjLWYw+jbgspjTue4lTQZLfV0c5l1VmK2y1JK8E9ahdpltPOaAThPcp5nKPUgSnsg==
+  /tr46/1.0.1:
+    dependencies:
+      punycode: 2.1.1
+    dev: true
+    resolution:
+      integrity: sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
   /tr46/2.0.2:
     dependencies:
       punycode: 2.1.1
@@ -5182,9 +5148,9 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tOcWm/2T+XUImJ8yFZb/i8dUWXNoraqDdKrBBpfbHGg3MES0T6AN1315iuKYHTG71fwKI0OGElw3S9B04ZUwPA==
-  /vite-plugin-icons/0.2.1_f2c2b98829fb471a34d90a492f734967:
+  /vite-plugin-icons/0.2.1_90cfb2856576e5dadc7ba04728831630:
     dependencies:
-      '@iconify/json': 1.1.296
+      '@iconify/json': 1.1.297
       '@iconify/json-tools': 1.0.10
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
     dev: true
@@ -5203,29 +5169,31 @@ packages:
       vite: ^2.0.0-beta.1
     resolution:
       integrity: sha512-gAmtGCiPj0ESdWJikKTg4h0ADqybezRVOh1a51KtWqYk4WgwrvFRpTeVq9fVqLXLFhuU0iUIKJ04V3KeXAeWdQ==
-  /vite-plugin-pages/0.1.8_vue@3.0.5:
+  /vite-plugin-pages/0.1.9_vite@2.0.0-beta.46+vue@3.0.5:
     dependencies:
       debug: 4.3.2
-      directory-tree: 2.2.5
+      directory-tree: 2.2.6
       fast-glob: 3.2.5
       glob-to-regexp: 0.4.1
+      vite: 2.0.0-beta.46
       vue: 3.0.5
       vue-router: 4.0.3_vue@3.0.5
     dev: true
     peerDependencies:
+      vite: ^2.0.0-beta.61
       vue: ^3.0.0
     resolution:
-      integrity: sha512-NHJDiDPGPiBw4i1opMYiO3YgD2KyDN7q4USI/0A8geDRAxVaLFMYsTW65dPAU+TKyMtywYvAEWlE8e4J+dGqug==
-  /vite-plugin-pwa/0.4.2:
+      integrity: sha512-N1xYT14PORPLJaUCCgDKlC8S1SYKKztsWeA7ChPeD23FS76Cs6ST6Hr/sGN4qaesRVdEfwQwUFsYU8Vv2O5t1A==
+  /vite-plugin-pwa/0.4.3:
     dependencies:
       debug: 4.3.2
       fast-glob: 3.2.5
       pretty-bytes: 5.5.0
-      workbox-build: 6.0.2
+      workbox-build: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-zlKK45jBa7hxrVQlEIbdiIU3Eds2NEd6XT8noYPZha8GFRdB6Y6Izpnp7JYRHc+H6I4JHI3bmlwifOtjSFRrbA==
-  /vite-ssg/0.7.0_67baffff43cafb4933a0b440cee9b6c9:
+      integrity: sha512-VwC/bgAAziH1WiQG0QdjuNIxwlvA/rTFCMQuWQ5VCUHXdxoYb8n0pA/u1/dDP7D7yR1myxUvYZe97wAbJxfscw==
+  /vite-ssg/0.8.0_67baffff43cafb4933a0b440cee9b6c9:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
       '@vue/server-renderer': 3.0.5_vue@3.0.5
@@ -5250,7 +5218,7 @@ packages:
       vue: ^3.0.4
       vue-router: ^4.0.1
     resolution:
-      integrity: sha512-6Jnx17J1n5NwHrVVDxdKocfR6QlRkmrVfySKu7o7uEsd+t5o1S02WTi0MD9GpqxhB98lui8thI+WWM9x5FckQw==
+      integrity: sha512-WAEs2bivu3F4nwC01KQWJjb4Z4rwob+lU12TPY5+EZsz4I2ZzD6tQJcQ9q3DPY4I1bTsPd7CdKKxD8IUuWU6qA==
   /vite/2.0.0-beta.46:
     dependencies:
       esbuild: 0.8.34
@@ -5333,6 +5301,10 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-4tzD0mF8iSiMiNs30BiLO3EpfGLZUT2MSX/G+o7ZywDzliWQ3OPtTZ0PTC3B3ca1UAf4cJMHB+2Bf56EriJuRA==
+  /webidl-conversions/4.0.2:
+    dev: true
+    resolution:
+      integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==
   /webidl-conversions/5.0.0:
     dev: true
     engines:
@@ -5355,6 +5327,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==
+  /whatwg-url/7.1.0:
+    dependencies:
+      lodash.sortby: 4.7.0
+      tr46: 1.0.1
+      webidl-conversions: 4.0.2
+    dev: true
+    resolution:
+      integrity: sha512-WUu7Rg1DroM7oQvGWfOiAK21n74Gg+T4elXEQYkOhtyLeWiJFoOGLXPKI/9gzIie9CtwVLm8wtw6YJdKyxSjeg==
   /whatwg-url/8.4.0:
     dependencies:
       lodash.sortby: 4.7.0
@@ -5380,19 +5360,19 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
-  /workbox-background-sync/6.0.2:
+  /workbox-background-sync/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-KQU2ntvbvFoBvCRm+EDpWAaykt4u/oaF5j3C6io0dZVWhFc/ZwgYDii8fb34LTenug3VPWQELdw9dNBCoP4b0w==
-  /workbox-broadcast-update/6.0.2:
+      integrity: sha512-A7YWWmAqzLkWYqqxzxoX4mciVjdSHpfX+JMADXoJ9SoLb6l/QReNJE+CNPew+gGPH6JLKNjZeecDmUpXFhzFPA==
+  /workbox-broadcast-update/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-yCXYEln7nU8FkMDysYQPirpgFXtsdBtxruHbvZzRsxMHvAELf3j/o6Ufae1zjl8XanLF696sqSNxehpCGSD6tw==
-  /workbox-build/6.0.2:
+      integrity: sha512-70G821I1Lb4Ex+rcjfKCbuFJ4WL4RSQsqvcByt/bLpPTTLoE6+VvLX3+1QtSK8P2+NmOsKkAqx9qiQkUdGbaYw==
+  /workbox-build/6.1.0:
     dependencies:
       '@babel/core': 7.12.10
       '@babel/preset-env': 7.12.11_@babel+core@7.12.10
@@ -5410,117 +5390,117 @@ packages:
       pretty-bytes: 5.5.0
       rollup: 2.37.1
       rollup-plugin-terser: 7.0.2_rollup@2.37.1
-      source-map: 0.7.3
+      source-map: 0.8.0-beta.0
       source-map-url: 0.4.0
       stringify-object: 3.3.0
       strip-comments: 2.0.1
       tempy: 0.6.0
       upath: 1.2.0
-      workbox-background-sync: 6.0.2
-      workbox-broadcast-update: 6.0.2
-      workbox-cacheable-response: 6.0.2
-      workbox-core: 6.0.2
-      workbox-expiration: 6.0.2
-      workbox-google-analytics: 6.0.2
-      workbox-navigation-preload: 6.0.2
-      workbox-precaching: 6.0.2
-      workbox-range-requests: 6.0.2
-      workbox-recipes: 6.0.2
-      workbox-routing: 6.0.2
-      workbox-strategies: 6.0.2
-      workbox-streams: 6.0.2
-      workbox-sw: 6.0.2
-      workbox-window: 6.0.2
+      workbox-background-sync: 6.1.0
+      workbox-broadcast-update: 6.1.0
+      workbox-cacheable-response: 6.1.0
+      workbox-core: 6.1.0
+      workbox-expiration: 6.1.0
+      workbox-google-analytics: 6.1.0
+      workbox-navigation-preload: 6.1.0
+      workbox-precaching: 6.1.0
+      workbox-range-requests: 6.1.0
+      workbox-recipes: 6.1.0
+      workbox-routing: 6.1.0
+      workbox-strategies: 6.1.0
+      workbox-streams: 6.1.0
+      workbox-sw: 6.1.0
+      workbox-window: 6.1.0
     dev: true
     engines:
       node: '>=10.0.0'
     resolution:
-      integrity: sha512-Dukbt+p62Yzb12SXAmycTYvHngJ8aRtXy3hymsC8B6gxTCZmCZ0u5JuKhu7lNLbDwDkYE78lhFvT9SF+MXFz5A==
-  /workbox-cacheable-response/6.0.2:
+      integrity: sha512-xJPqTEf+Pg9KAoTrNeVWpMjqi4cJIRn14i02bZjjbHsLNN38qrqc8xwAW48TwoPCYLjp104ST164/3RDgrc7yw==
+  /workbox-cacheable-response/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-OrgFiYWkmFXDIbNRYSu+fchcfoZqyJ4yZbdc8WKUjr9v/MghKHfR9u7UI077xBkjno5J3YNpbwx73/no3HkrzA==
-  /workbox-core/6.0.2:
+      integrity: sha512-oDAi0vXHGaE5p9NOo4N180UTcEKm6t2JMgmlrq0PkEW2PZEu9YR/atSnCwzMW7xpDqpKWaQr/LGP4+eixS8gcA==
+  /workbox-core/6.1.0:
     dev: true
     resolution:
-      integrity: sha512-Ksl6qeikGb+BOCILoCUJGxwlEQOeeqdpOnpOr9UDt3NtacPYbfYBmpYpKArw5DFWK+5geBsFqgUUlXThlCYfKQ==
-  /workbox-expiration/6.0.2:
+      integrity: sha512-s3KqTJfBreO4xCZpR2LB5p/EknAx8eg0QumKiIgxM4hRO0RtwS2pJvTieNEM23X3RqxRhqweriLD8To19KUvjg==
+  /workbox-expiration/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-6+nbR18cklAdI3BPT675ytftXPwnVbXGR8mPWNWTJtl5y2urRYv56ZOJLD7FBFVkZ8EjWiRhNP/A0fkxgdKtWQ==
-  /workbox-google-analytics/6.0.2:
+      integrity: sha512-jp2xGk+LC4AhCoOxO/bC06GQkq/oVp0ZIf1zXLQh6OD2fWZPkXNjLLSuDnjXoGGPibYrq7gEE/xjAdYGjNWl1A==
+  /workbox-google-analytics/6.1.0:
     dependencies:
-      workbox-background-sync: 6.0.2
-      workbox-core: 6.0.2
-      workbox-routing: 6.0.2
-      workbox-strategies: 6.0.2
+      workbox-background-sync: 6.1.0
+      workbox-core: 6.1.0
+      workbox-routing: 6.1.0
+      workbox-strategies: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-xmYJurR1M6Pzc2SBM/E7AgwmBszhu/YYDzBnU+HJPZFLbTG97ASIJyTXV1vcczA/dNaS0miIf0cFqneozVlDRw==
-  /workbox-navigation-preload/6.0.2:
+      integrity: sha512-BuUAJ747bMPC6IOKaQBXfotGybOfeHDRIC8ElF65ouB4O9kUJ3zh4EFxXmmJLgzTnji6265gXqNWcfuGiidk6A==
+  /workbox-navigation-preload/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-7+ojLrjXmTFZBfGmUQIcBWB+xrFgXLMJGNQAtxT7Ta9A23rEWo8jqAgeuwAylebcORUlM+ztgYTV7eGp+AD+Yg==
-  /workbox-precaching/6.0.2:
+      integrity: sha512-N0c5Kmzu7lPKvirukbeZ3lN8KEAZU9xA4b1wmpV0VXUfRXVEk2ayXXqwHwMGFVi6FNCHiDLOcC8a2zW5kFLAeg==
+  /workbox-precaching/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
-      workbox-routing: 6.0.2
-      workbox-strategies: 6.0.2
+      workbox-core: 6.1.0
+      workbox-routing: 6.1.0
+      workbox-strategies: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-sqKWL2emzmGnfJpna+9RjUkUiqQO++AKfwljCbgkHg8wBbVLy/rnui3eelKgAI7D8R31LJFfiZkY/kXmwkjtlQ==
-  /workbox-range-requests/6.0.2:
+      integrity: sha512-zjye8MVzieBVJ3sS0hFcbKLp7pTHMfJM17YqxCxB0KykXWnxLOpYnStQ9M+bjWJsKJOQvbkPqvq5u9+mtA923g==
+  /workbox-range-requests/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-qCrDbH9AzDbCErde71Nys2iNZO9I9M9Jgl/9/Q67dGQVwFsEq73SuIzS2DGIBKqtIdC5QUigC3d7XJONajclUQ==
-  /workbox-recipes/6.0.2:
+      integrity: sha512-BO025BdAvc6vTBXJfkfibcikMFLmLRECt0FrVrTiiQafdO3jWH9qX9zTdrjYf6GkiIjvejvvmSYegwU1mL6N3Q==
+  /workbox-recipes/6.1.0:
     dependencies:
-      workbox-cacheable-response: 6.0.2
-      workbox-core: 6.0.2
-      workbox-expiration: 6.0.2
-      workbox-precaching: 6.0.2
-      workbox-routing: 6.0.2
-      workbox-strategies: 6.0.2
+      workbox-cacheable-response: 6.1.0
+      workbox-core: 6.1.0
+      workbox-expiration: 6.1.0
+      workbox-precaching: 6.1.0
+      workbox-routing: 6.1.0
+      workbox-strategies: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-ewZIHO4jYE6bnEeUIYS6joQy3l+MydpOsVr2F6EpE8ps++z1ScbSdLtJU+yu6WuO3lH44HFZLeFxYQqYm50QAA==
-  /workbox-routing/6.0.2:
+      integrity: sha512-r8YLtMtQnvfkK1htnfrrX1CxKHglZJiVlqnct9rYIU17n2LCalHdI0zQrPqzYdLLHZxTX25UpBsdib0cAATy0A==
+  /workbox-routing/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-iQ9ch3fL1YpztDLfHNURaHQ0ispgPCdzWmZZhtSHUyy/+YkTlIiDVTbOQCIpHIrWlKQiim6X3K2ItIy1FW9+wA==
-  /workbox-strategies/6.0.2:
+      integrity: sha512-FXQ5cwb6Mk90fC0rfQLX0pN+r/N4eBafwkh/QanJUq0e6jMPdDFLrlsikZL/0LcXEx+yAkWLytoiS+d2HOEBOw==
+  /workbox-strategies/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-HjLnYCVS60U7OKhl5NIq8NAQXrotJQRDakmIONnRlQIlP2If/kAiQSUP3QCHMq4EeXGiF+/CdlR1/bhYBHZzZg==
-  /workbox-streams/6.0.2:
+      integrity: sha512-HvUknzJdZWeV3x7Eq33a7TGAv9/r1TEiQK6kQ1QNzN+IKiqhIjnhKFHmMxb5hK1Gw9/aDSJTLNPDaLPfIJRQFQ==
+  /workbox-streams/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
-      workbox-routing: 6.0.2
+      workbox-core: 6.1.0
+      workbox-routing: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-bckftu/iMlg5LFXPZ6NX/FUc/w4illgxSuwtsZkQAO6Uen1EeegjfLyenO01/dwoyc3D/AlZepMdhv87XhE7HQ==
-  /workbox-sw/6.0.2:
+      integrity: sha512-V80OIfoIXaDkjWIGFSae5sBJuaG2r4bXk6HKpntBYaVQ72LD1CgkXRmZKmLJQ9ltHCx9Vmq/7+q1OF5mTKb8Qw==
+  /workbox-sw/6.1.0:
     dev: true
     resolution:
-      integrity: sha512-EoOjbyy5bpoBoSqt2PIeDOZ/JJ41f+WJjb979PkfIUWw4F+F/w2uKJJrMA5fk+nWnVge83Fwy8nF3dWNsqOrdg==
-  /workbox-window/6.0.2:
+      integrity: sha512-e2jnIWSmNrpO9Psy4D6euDdRUW8FTXAdMxOj5O02gxa01fri1kfTSM9irDnTGKUiSGc+hlycsvzGdr8bnvzDiA==
+  /workbox-window/6.1.0:
     dependencies:
-      workbox-core: 6.0.2
+      workbox-core: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-I/X+qUh1AwN9x/MxFbXsPn7DA27BMtzkXo55w1tBD8V54fv8nUCeC5E4RpXt/mlgdSwBztnURCQTWsdhTrSUjg==
+      integrity: sha512-sjnE+nTSnrBvYx5KmpESvsTC82P3yy8h5l4Ae4Q8uLqdH29UQ3bMd8puGVVhX1JZFCmV40cvrbZ1fUj+3/TQ9g==
   /wrap-ansi/7.0.0:
     dependencies:
       ansi-styles: 4.3.0
@@ -5623,8 +5603,8 @@ packages:
       integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
 specifiers:
   '@antfu/eslint-config': ^0.4.3
-  '@iconify/json': ^1.1.296
-  '@intlify/vite-plugin-vue-i18n': ^1.0.0-beta.12
+  '@iconify/json': ^1.1.297
+  '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.12
   '@tailwindcss/typography': ^0.4.0
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.14.2
@@ -5638,7 +5618,7 @@ specifiers:
   eslint: ^7.19.0
   markdown-it-prism: ^2.1.4
   nprogress: ^0.2.0
-  pnpm: ^5.16.0
+  pnpm: ^5.16.1
   postcss: ^8.2.4
   postcss-nested: ^5.0.3
   prism-theme-vars: ^0.1.4
@@ -5648,9 +5628,9 @@ specifiers:
   vite-plugin-components: ^0.6.6
   vite-plugin-icons: ^0.2.1
   vite-plugin-md: ^0.4.2
-  vite-plugin-pages: ^0.1.8
-  vite-plugin-pwa: ^0.4.2
-  vite-ssg: ^0.7.0
+  vite-plugin-pages: ^0.1.9
+  vite-plugin-pwa: ^0.4.3
+  vite-ssg: ^0.8.0
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.5
   vue-router: ^4.0.3

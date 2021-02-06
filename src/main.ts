@@ -1,5 +1,5 @@
 import './styles/main.postcss'
-import routes from 'vite-plugin-pages/client'
+import routes from 'pages-generated'
 import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
 

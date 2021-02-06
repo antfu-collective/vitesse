@@ -86,4 +86,15 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
   },
+
+  optimizeDeps: {
+    include: [
+      'vue',
+      'vue-router',
+      '@vueuse/core',
+    ],
+    exclude: [
+      'vue-demi',
+    ],
+  },
 })

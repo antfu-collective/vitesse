@@ -37,7 +37,7 @@
     "vite-plugin-icons": "^0.2.1",
     "vite-plugin-md": "^0.4.2",
     "vite-plugin-pages": "^0.2.3",
-    "vite-plugin-pwa": "^0.4.4",
+    "vite-plugin-pwa": "^0.4.6",
     "vite-ssg": "^0.8.0"
   },
   "eslintConfig": {

@@ -30,7 +30,7 @@ devDependencies:
   vite-plugin-icons: 0.2.1_5e9fc447dd28a648e529bbaba5a2fae3
   vite-plugin-md: 0.4.2_vite@2.0.0-beta.65
   vite-plugin-pages: 0.2.3_vite@2.0.0-beta.65+vue@3.0.5
-  vite-plugin-pwa: 0.4.4
+  vite-plugin-pwa: 0.4.6
   vite-ssg: 0.8.0_c55ab035ab38f8736c0bba324bf99d97
 lockfileVersion: 5.2
 packages:
@@ -5185,7 +5185,7 @@ packages:
       vue: ^3.0.0
     resolution:
       integrity: sha512-xt8lBt6ibVHVOjPnVvs9SMjwqbZuJsNliMq80Wi5r5hmbKeiEcwvLje2B65+rLIhDAVJXHBOggqCGB8GL2eP+A==
-  /vite-plugin-pwa/0.4.4:
+  /vite-plugin-pwa/0.4.6:
     dependencies:
       debug: 4.3.2
       fast-glob: 3.2.5
@@ -5193,7 +5193,7 @@ packages:
       workbox-build: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-GboCS5XJYHtCYjmU2XU0C8VTccYstJOX8m2Qy1izoUA5YendhjQRByjj9EYTgvh+ImsoXW6gHkMK2eR+AsCFDg==
+      integrity: sha512-3LonumSG4EcH9FT61d7wWouHkCmEciy3RPfvt25b835HMx9gb2Dt71t140+85Z5d+uANMSguC3miBnnGzagAMA==
   /vite-ssg/0.8.0_c55ab035ab38f8736c0bba324bf99d97:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
@@ -5630,7 +5630,7 @@ specifiers:
   vite-plugin-icons: ^0.2.1
   vite-plugin-md: ^0.4.2
   vite-plugin-pages: ^0.2.3
-  vite-plugin-pwa: ^0.4.4
+  vite-plugin-pwa: ^0.4.6
   vite-ssg: ^0.8.0
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.5

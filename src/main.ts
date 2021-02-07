@@ -1,8 +1,8 @@
 import './styles/main.postcss'
 import generatedRoutes from 'pages-generated'
 import { ViteSSG } from 'vite-ssg'
-import { createRouterLayout } from 'vue-router-layout'
 import { RouteRecordRaw } from 'vue-router'
+import { createRouterLayout } from './logics/router-layout'
 import App from './App.vue'
 
 const RouterLayout = createRouterLayout((layout: string) => {

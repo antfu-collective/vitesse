@@ -53,3 +53,6 @@ const { t } = useI18n()
     </div>
   </div>
 </template>
+<route>
+{"meta":{"layout": "home"}}
+</route>

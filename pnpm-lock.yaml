@@ -6,6 +6,7 @@ dependencies:
   vue: 3.0.5
   vue-i18n: 9.0.0-rc.5_vue@3.0.5
   vue-router: 4.0.3_vue@3.0.5
+  vue-router-layout: 0.3.0
 devDependencies:
   '@antfu/eslint-config': 0.4.3_eslint@7.19.0+typescript@4.1.3
   '@iconify/json': 1.1.298
@@ -4420,7 +4421,7 @@ packages:
       request-promise-core: 1.1.4_request@2.88.2
       stealthy-require: 1.1.1
       tough-cookie: 2.5.0
-    deprecated: 'request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142'
+    deprecated: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>=0.12.0'
@@ -4450,7 +4451,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>= 6'
@@ -5273,6 +5274,10 @@ packages:
       vue: ^3.0.0
     resolution:
       integrity: sha512-sOi/bbUYsLH1rGeGgVeOZukeIxk4FlaeNQKcudtHM8Uc5Y7Fhnvv9APKwUoa1hs2GAflhVCiVZopPrd20HL2+w==
+  /vue-router-layout/0.3.0:
+    dev: false
+    resolution:
+      integrity: sha512-XPfeoy4kxBf/4vLeSjZoki29GT0CcySCUlbdXXM4jJWkdo9ann45wZ9DvmTFumG6/4LH0IVHPZBrhBKSLD5A0A==
   /vue-router/4.0.3_vue@3.0.5:
     dependencies:
       vue: 3.0.5
@@ -5635,3 +5640,4 @@ specifiers:
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.5
   vue-router: ^4.0.3
+  vue-router-layout: ^0.3.0

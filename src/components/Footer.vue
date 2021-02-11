@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { isDark } from '~/logics'
+import { isDark, toggleDark } from '~/logics'
 
 const { t, availableLocales, locale } = useI18n()
 
@@ -17,7 +17,7 @@ const toggleLocales = () => {
       <carbon-campsite />
     </router-link>
 
-    <a class="icon-btn mx-2" :title="t('button.toggle_dark')" @click="isDark = !isDark">
+    <a class="icon-btn mx-2" :title="t('button.toggle_dark')" @click="toggleDark">
       <carbon-moon v-if="isDark" />
       <carbon-sun v-else />
     </a>

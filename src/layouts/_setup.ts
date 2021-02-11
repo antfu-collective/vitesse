@@ -19,9 +19,11 @@ function normalizeEsModuleComponent(
   return isEsModule ? c.default : c
 }
 
+const layouts = import.meta.glob('/src/layouts/*.vue')
+
 export function setupLayouts(routes: RouteRecordRaw[]) {
   const RouterLayout = createRouterLayout((layout: string) => {
-    return import(`../layouts/${layout}.vue`)
+    return Promise.resolve(layouts[`/src/layouts/${layout}.vue`]())
   })
 
   return [

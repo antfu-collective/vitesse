@@ -1,7 +1,10 @@
 import './styles/main.postcss'
-import routes from 'pages-generated'
+import generatedRoutes from 'pages-generated'
 import { ViteSSG } from 'vite-ssg'
+import { setupLayouts } from './layouts/_setup'
 import App from './App.vue'
+
+const routes = setupLayouts(generatedRoutes)
 
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(

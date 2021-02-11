@@ -11,7 +11,8 @@
     "prism-theme-vars": "^0.1.4",
     "vue": "^3.0.5",
     "vue-i18n": "^9.0.0-rc.5",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vue-router-layout": "^0.3.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.4.3",
@@ -36,7 +37,7 @@
     "vite-plugin-components": "^0.6.6",
     "vite-plugin-icons": "^0.2.1",
     "vite-plugin-md": "^0.4.2",
-    "vite-plugin-pages": "^0.2.3",
+    "vite-plugin-pages": "0.3.0",
     "vite-plugin-pwa": "^0.4.6",
     "vite-ssg": "^0.8.0"
   },

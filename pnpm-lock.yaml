@@ -6,7 +6,6 @@ dependencies:
   vue: 3.0.5
   vue-i18n: 9.0.0-rc.6_vue@3.0.5
   vue-router: 4.0.3_vue@3.0.5
-  vue-router-layout: 0.3.0
 devDependencies:
   '@antfu/eslint-config': 0.4.3_eslint@7.19.0+typescript@4.1.5
   '@iconify/json': 1.1.301
@@ -5826,27 +5825,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
-  github.com/johncampionjr/vite-plugin-pages/76aaef753d36debbf6058a3b937e56b5f456d393_vite@2.0.0-beta.65+vue@3.0.5:
-    dependencies:
-      '@vue/compiler-sfc': 3.0.5_vue@3.0.5
-      debug: 4.3.2
-      deep-equal: 2.0.5
-      directory-tree: 2.2.6
-      fast-glob: 3.2.5
-      glob-to-regexp: 0.4.1
-      json5: 2.2.0
-      vite: 2.0.0-beta.65
-      vue: 3.0.5
-      vue-router: 4.0.3_vue@3.0.5
-    dev: true
-    id: github.com/johncampionjr/vite-plugin-pages/76aaef753d36debbf6058a3b937e56b5f456d393
-    name: vite-plugin-pages
-    peerDependencies:
-      vite: ^2.0.0-beta.64
-      vue: ^3.0.0
-    resolution:
-      tarball: https://codeload.github.com/johncampionjr/vite-plugin-pages/tar.gz/76aaef753d36debbf6058a3b937e56b5f456d393
-    version: 0.2.2
 specifiers:
   '@antfu/eslint-config': ^0.4.3
   '@iconify/json': ^1.1.301
@@ -5880,4 +5858,3 @@ specifiers:
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.6
   vue-router: ^4.0.3
-  vue-router-layout: ^0.3.0

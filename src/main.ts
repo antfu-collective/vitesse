@@ -1,21 +1,10 @@
 import './styles/main.postcss'
 import generatedRoutes from 'pages-generated'
 import { ViteSSG } from 'vite-ssg'
-import { RouteRecordRaw } from 'vue-router'
-import { createRouterLayout } from './logics/router-layout'
+import { setupLayouts } from './layouts/_setup'
 import App from './App.vue'
 
-const RouterLayout = createRouterLayout((layout: string) => {
-  return import(`./layouts/${layout}.vue`)
-})
-
-const routes: RouteRecordRaw[] = [
-  {
-    path: '/',
-    component: RouterLayout,
-    children: generatedRoutes,
-  },
-]
+const routes = setupLayouts(generatedRoutes)
 
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(

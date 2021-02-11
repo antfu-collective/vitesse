@@ -31,6 +31,7 @@ devDependencies:
   vite-plugin-md: 0.4.2_vite@2.0.0-beta.67
   vite-plugin-pages: 0.3.0_vite@2.0.0-beta.67+vue@3.0.5
   vite-plugin-pwa: 0.4.6
+  vite-plugin-vue-layouts: 0.1.0_vite@2.0.0-beta.67
   vite-ssg: 0.8.4_48c8dc7dae74de0e25414d6bbcdbc5e0
 lockfileVersion: 5.2
 packages:
@@ -1608,14 +1609,12 @@ packages:
   /@vue/reactivity/3.0.5:
     dependencies:
       '@vue/shared': 3.0.5
-    dev: false
     resolution:
       integrity: sha512-3xodUE3sEIJgS7ntwUbopIpzzvi7vDAOjVamfb2l+v1FUg0jpd3gf62N2wggJw3fxBMr+QvyxpD+dBoxLsmAjw==
   /@vue/runtime-core/3.0.5:
     dependencies:
       '@vue/reactivity': 3.0.5
       '@vue/shared': 3.0.5
-    dev: false
     resolution:
       integrity: sha512-Cnyi2NqREwOLcTEsIi1DQX1hHtkVj4eGm4hBG7HhokS05DqpK4/80jG6PCCnCH9rIJDB2FqtaODX397210plXg==
   /@vue/runtime-dom/3.0.5:
@@ -1623,7 +1622,6 @@ packages:
       '@vue/runtime-core': 3.0.5
       '@vue/shared': 3.0.5
       csstype: 2.6.14
-    dev: false
     resolution:
       integrity: sha512-iilX1KySeIzHHtErT6Y44db1rhWK5tAI0CiJIPr+SJoZ2jbjoOSE6ff/jfIQakchbm1d6jq6VtRVnp5xYdOXKA==
   /@vue/server-renderer/3.0.5_vue@3.0.5:
@@ -2195,7 +2193,6 @@ packages:
     resolution:
       integrity: sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   /csstype/2.6.14:
-    dev: false
     resolution:
       integrity: sha512-2mSc+VEpGPblzAxyeR+vZhJKgYg0Og0nnRi7pmRXFYYxSfnOnW8A5wwQb4n4cE2nIOzqKOAzLCaEX6aBmNEv8A==
   /dashdash/1.14.1:
@@ -4583,7 +4580,7 @@ packages:
       request-promise-core: 1.1.4_request@2.88.2
       stealthy-require: 1.1.1
       tough-cookie: 2.5.0
-    deprecated: 'request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142'
+    deprecated: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>=0.12.0'
@@ -4613,7 +4610,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>= 6'
@@ -5371,6 +5368,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3LonumSG4EcH9FT61d7wWouHkCmEciy3RPfvt25b835HMx9gb2Dt71t140+85Z5d+uANMSguC3miBnnGzagAMA==
+  /vite-plugin-vue-layouts/0.1.0_vite@2.0.0-beta.67:
+    dependencies:
+      '@vue/compiler-sfc': 3.0.5_vue@3.0.5
+      debug: 4.3.2
+      fast-glob: 3.2.5
+      vite: 2.0.0-beta.67
+      vue: 3.0.5
+      vue-router: 4.0.3_vue@3.0.5
+    dev: true
+    peerDependencies:
+      vite: ^2.0.0-beta.65
+    resolution:
+      integrity: sha512-rAVadLmEA5ti+AyR+JXcYUbZ8MpQTOlNgBdJswNEBvo/gC59BT2d1kSf9/Gw3lEhX8+nGCbl/uVbQcTun1Y3pQ==
   /vite-ssg/0.8.4_48c8dc7dae74de0e25414d6bbcdbc5e0:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
@@ -5462,7 +5472,6 @@ packages:
       '@vue/compiler-dom': 3.0.5
       '@vue/runtime-dom': 3.0.5
       '@vue/shared': 3.0.5
-    dev: false
     resolution:
       integrity: sha512-TfaprOmtsAfhQau7WsomXZ8d9op/dkQLNIq8qPV3A0Vxs6GR5E+c1rfJS1SDkXRQj+dFyfnec7+U0Be1huiScg==
   /w3c-hr-time/1.0.2:
@@ -5847,6 +5856,7 @@ specifiers:
   vite-plugin-md: ^0.4.2
   vite-plugin-pages: ^0.3.0
   vite-plugin-pwa: ^0.4.6
+  vite-plugin-vue-layouts: ^0.1.0
   vite-ssg: ^0.8.4
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.6

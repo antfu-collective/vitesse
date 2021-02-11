@@ -36,7 +36,7 @@
     "vite-plugin-components": "^0.6.6",
     "vite-plugin-icons": "^0.2.1",
     "vite-plugin-md": "^0.4.2",
-    "vite-plugin-pages": "0.3.0",
+    "vite-plugin-pages": "^0.3.0",
     "vite-plugin-pwa": "^0.4.6",
     "vite-ssg": "^0.8.4"
   },

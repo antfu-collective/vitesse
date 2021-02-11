@@ -11,8 +11,7 @@
     "prism-theme-vars": "^0.1.4",
     "vue": "^3.0.5",
     "vue-i18n": "^9.0.0-rc.5",
-    "vue-router": "^4.0.3",
-    "vue-router-layout": "^0.3.0"
+    "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.4.3",

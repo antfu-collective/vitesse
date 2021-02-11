@@ -53,6 +53,7 @@ const { t } = useI18n()
     </div>
   </div>
 </template>
-<route>
-{"meta":{"layout": "home"}}
+<route lang="yaml">
+meta:
+  layout: home
 </route>

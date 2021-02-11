@@ -5,6 +5,7 @@
 <router-view>
 </router-view>
 </template>
-<route>
-{"meta":{"layout": "users"}}
+<route lang="yaml">
+meta:
+  layout: users
 </route>

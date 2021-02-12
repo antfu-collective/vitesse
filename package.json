@@ -38,6 +38,7 @@
     "vite-plugin-md": "^0.4.2",
     "vite-plugin-pages": "^0.3.0",
     "vite-plugin-pwa": "^0.4.6",
+    "vite-plugin-vue-layouts": "^0.1.0",
     "vite-ssg": "^0.8.4"
   },
   "eslintConfig": {

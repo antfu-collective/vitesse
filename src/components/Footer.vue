@@ -33,9 +33,5 @@ const toggleLocales = () => {
     <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
       <carbon-logo-github />
     </a>
-
-    <router-link class="mx-2 icon-btn" to="/users" :title="t('button.about')">
-      <carbon-user />
-    </router-link>
   </nav>
 </template>

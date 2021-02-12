@@ -11,8 +11,10 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Prism from 'markdown-it-prism'
 
 export default defineConfig({
-  alias: {
-    '~/': `${path.resolve(__dirname, 'src')}/`,
+  resolve: {
+    alias: {
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+    },
   },
   plugins: [
     Vue({

@@ -34,6 +34,7 @@ const { t } = useI18n()
       id="input"
       v-model="name"
       :placeholder="t('intro.whats-your-name')"
+      :aria-label="t('intro.whats-your-name')"
       type="text"
       autocomplete="false"
       class="px-4 py-2 text-sm text-center bg-transparent border border-gray-200 rounded outline-none active:outline-none dark:border-gray-700"

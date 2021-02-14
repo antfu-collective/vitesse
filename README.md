@@ -27,7 +27,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [TailwindCSS **v2.0**](https://blog.tailwindcss.com/tailwindcss-v2) with dark mode out-of-box
+- 🎨 [WindiCSS](https://github.com/voorjaar/windicss) (On-demand TailwindCSS) with dark mode out-of-box
 
 - 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
@@ -49,8 +49,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ### UI Frameworks
 
-- [Tailwind CSS](https://tailwindcss.com/) - with built-in dark mode!
-- [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) - Typography for Tailwind
+- [WindiCSS](https://github.com/voorjaar/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster!
+  - [WindiCSS Typography](https://github.com/voorjaar/windicss/wiki/Plugins#typography) - similar to [TailwindCSS Typography](https://github.com/tailwindlabs/tailwindcss-typograph) but for WindiCSS
 
 ### Icons
 
@@ -64,6 +64,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
 - [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components) - components auto import
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
+- [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss) - WindiCSS support
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
   - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) - customizable Prism.js theme using CSS variables
@@ -87,7 +88,6 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)
-  - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Variations

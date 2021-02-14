@@ -23,6 +23,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📦 [Components auto importing](./src/components)
 
+- 📑 [Layout system](./src/layouts)
+
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 [TailwindCSS **v2.0**](https://blog.tailwindcss.com/tailwindcss-v2) with dark mode out-of-box

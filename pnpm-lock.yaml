@@ -31,8 +31,8 @@ devDependencies:
   vite-plugin-md: 0.4.2_vite@2.0.0-beta.69
   vite-plugin-pages: 0.4.2_vite@2.0.0-beta.69+vue@3.0.5
   vite-plugin-pwa: 0.4.6
-  vite-plugin-vue-layouts: 0.2.0_vite@2.0.0-beta.69
-  vite-ssg: 0.8.7_3264c5547dde4c508d141cfa8bd8ef04
+  vite-plugin-vue-layouts: 0.2.1_vite@2.0.0-beta.69
+  vite-ssg: 0.8.8_3264c5547dde4c508d141cfa8bd8ef04
 lockfileVersion: 5.2
 packages:
   /@antfu/eslint-config-basic/0.4.3_eslint@7.20.0:
@@ -5424,7 +5424,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3LonumSG4EcH9FT61d7wWouHkCmEciy3RPfvt25b835HMx9gb2Dt71t140+85Z5d+uANMSguC3miBnnGzagAMA==
-  /vite-plugin-vue-layouts/0.2.0_vite@2.0.0-beta.69:
+  /vite-plugin-vue-layouts/0.2.1_vite@2.0.0-beta.69:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
       debug: 4.3.2
@@ -5436,8 +5436,8 @@ packages:
     peerDependencies:
       vite: ^2.0.0-beta.65
     resolution:
-      integrity: sha512-6yNDWovOaG82AwV6NseTwAxIfqO2SH/0pb2DjMPZr2ep37ylIzgK4PjDfJJmwhG+Gwn1UguBDKADLD3YMObKrg==
-  /vite-ssg/0.8.7_3264c5547dde4c508d141cfa8bd8ef04:
+      integrity: sha512-vJgNmOlMdDREayXerGu8Zqbz4W7zGlGlI0h0jgjf098i4WJWC5+YpQkpE4kd/qb9Iix2EIQHqxk3RBsnBJGAYw==
+  /vite-ssg/0.8.8_3264c5547dde4c508d141cfa8bd8ef04:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
       '@vue/server-renderer': 3.0.5_vue@3.0.5
@@ -5462,7 +5462,7 @@ packages:
       vue: ^3.0.4
       vue-router: ^4.0.1
     resolution:
-      integrity: sha512-GyV35swIQA7Bf54sYvEvwl7SA5u/jgdQe8v8nF6VlHoZ+076nmOhvGgDNeehBNxYkqc9WdYWMQI/7aYk7l+ygg==
+      integrity: sha512-vHWurB5Gg9tHBbmoG9r9EyuNZITJOyH3FbyZnazRuV0szRQBCfXN0xQoC5CFx3FEGyZw7+Kim4KDUc3uLbLDRA==
   /vite/2.0.0-beta.69:
     dependencies:
       esbuild: 0.8.34
@@ -5912,8 +5912,8 @@ specifiers:
   vite-plugin-md: ^0.4.2
   vite-plugin-pages: ^0.4.2
   vite-plugin-pwa: ^0.4.6
-  vite-plugin-vue-layouts: ^0.2.0
-  vite-ssg: ^0.8.7
+  vite-plugin-vue-layouts: ^0.2.1
+  vite-ssg: ^0.8.8
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.6
   vue-router: ^4.0.3

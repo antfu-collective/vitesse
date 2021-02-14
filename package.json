@@ -38,8 +38,8 @@
     "vite-plugin-md": "^0.4.2",
     "vite-plugin-pages": "^0.4.2",
     "vite-plugin-pwa": "^0.4.6",
-    "vite-plugin-vue-layouts": "^0.2.0",
-    "vite-ssg": "^0.8.7"
+    "vite-plugin-vue-layouts": "^0.2.1",
+    "vite-ssg": "^0.8.8"
   },
   "eslintConfig": {
     "extends": "@antfu/eslint-config",

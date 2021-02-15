@@ -31,16 +31,24 @@ devDependencies:
   typescript: 4.1.5
   vite: 2.0.0-beta.69
   vite-plugin-components: 0.6.10_vite@2.0.0-beta.69
+<<<<<<< HEAD
   vite-plugin-icons: 0.2.1_d245a39ab86fd86a463f26015af05aaf
 >>>>>>> feat: switch to windicss
+=======
+  vite-plugin-icons: 0.2.1_d78d375fec6553510c7875ab0e1db883
+>>>>>>> chore: update deps
   vite-plugin-md: 0.4.2_vite@2.0.0-beta.69
   vite-plugin-pages: 0.4.2_vite@2.0.0-beta.69+vue@3.0.5
   vite-plugin-pwa: 0.4.6
   vite-plugin-vue-layouts: 0.2.2_vite@2.0.0-beta.69
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   vite-plugin-windicss: 0.1.5_vite@2.0.0-beta.69
 >>>>>>> feat: switch to windicss
+=======
+  vite-plugin-windicss: 0.1.6_vite@2.0.0-beta.69
+>>>>>>> chore: update deps
   vite-ssg: 0.8.8_3264c5547dde4c508d141cfa8bd8ef04
 lockfileVersion: 5.2
 packages:
@@ -5129,10 +5137,14 @@ packages:
     resolution:
       integrity: sha512-pgzu2/K8GnT+VquYUQxawf0QH/LR8Gx58bzoWh+6Vch6Hv+c3D0pVMYKAktARwQprArx90arvXInUH8RqCBEOQ==
 <<<<<<< HEAD
+<<<<<<< HEAD
   /vite-plugin-icons/0.2.1_d78d375fec6553510c7875ab0e1db883:
 =======
   /vite-plugin-icons/0.2.1_d245a39ab86fd86a463f26015af05aaf:
 >>>>>>> feat: switch to windicss
+=======
+  /vite-plugin-icons/0.2.1_d78d375fec6553510c7875ab0e1db883:
+>>>>>>> chore: update deps
     dependencies:
       '@iconify/json': 1.1.303
       '@iconify/json-tools': 1.0.10
@@ -5196,18 +5208,26 @@ packages:
     resolution:
       integrity: sha512-I5BfkCHwHV1WlbJE1ps2r6vwTo3N5QpLks3UpGa8XHcmHW03lavvJkdfjBpagI1bUQGEwWjLowFisG0Q/NJq3A==
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   /vite-plugin-windicss/0.1.5_vite@2.0.0-beta.69:
+=======
+  /vite-plugin-windicss/0.1.6_vite@2.0.0-beta.69:
+>>>>>>> chore: update deps
     dependencies:
       fast-glob: 3.2.5
       vite: 2.0.0-beta.69
-      windicss: 2.1.4
+      windicss: 2.1.5
     dev: true
     peerDependencies:
       vite: ^2.0.0-beta.69
     resolution:
+<<<<<<< HEAD
       integrity: sha512-Cu1e3L7Oe3F+iY5SaE26Y38Wpw89f+IooiJuzSo3AwAzWB2v7auWtLaCgMVqSo2u/wHjcwFrs/gM03LCvk5F4g==
 >>>>>>> feat: switch to windicss
+=======
+      integrity: sha512-/xun1w479kGxnBd/HAeXk63Dq03ANzcb+rvtJZxVDggPmFOYFwq8bUO28jO5UBJx9xYSGORbhjvGd1uwr5SEVw==
+>>>>>>> chore: update deps
   /vite-ssg/0.8.8_3264c5547dde4c508d141cfa8bd8ef04:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
@@ -5401,13 +5421,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
-  /windicss/2.1.4:
+  /windicss/2.1.5:
     dev: true
     engines:
       node: '>= 12'
     hasBin: true
     resolution:
-      integrity: sha512-1D8/sy24WjQ7y7YE8L3RcgQAkogEDaMuasaeMSu9ZdJ25OXUT/dAKxac7Xu2Yki/FwPwWeZMO+CI1NI06oA77A==
+      integrity: sha512-ORH5Ra1F001pJQDs1H5bIQ48KYnLEA/xmCcul+FleJtbiZBRY7SN7gWtOj+V0ho6av42ACe1IwvgOcSkGIQ/ng==
   /word-wrap/1.2.3:
     dev: true
     engines:
@@ -5686,9 +5706,13 @@ specifiers:
   vite-plugin-pwa: ^0.4.6
   vite-plugin-vue-layouts: ^0.2.2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   vite-plugin-windicss: ^0.1.5
 >>>>>>> feat: switch to windicss
+=======
+  vite-plugin-windicss: ^0.1.6
+>>>>>>> chore: update deps
   vite-ssg: ^0.8.8
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.6

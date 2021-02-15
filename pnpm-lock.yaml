@@ -8,7 +8,7 @@ dependencies:
   vue-router: 4.0.3_vue@3.0.5
 devDependencies:
   '@antfu/eslint-config': 0.4.3_eslint@7.20.0+typescript@4.1.5
-  '@iconify/json': 1.1.302
+  '@iconify/json': 1.1.303
   '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.17
   '@tailwindcss/typography': 0.4.0_tailwindcss@2.0.3
   '@types/nprogress': 0.2.0
@@ -20,18 +20,18 @@ devDependencies:
   cross-env: 7.0.3
   eslint: 7.20.0
   markdown-it-prism: 2.1.4
-  pnpm: 5.17.1
+  pnpm: 5.17.2
   postcss: 8.2.6
   postcss-nested: 5.0.3_postcss@8.2.6
   tailwindcss: 2.0.3_759587f5361760629983e9fe457a3aed
   typescript: 4.1.5
   vite: 2.0.0-beta.69
-  vite-plugin-components: 0.6.9_vite@2.0.0-beta.69
-  vite-plugin-icons: 0.2.1_d245a39ab86fd86a463f26015af05aaf
+  vite-plugin-components: 0.6.10_vite@2.0.0-beta.69
+  vite-plugin-icons: 0.2.1_d78d375fec6553510c7875ab0e1db883
   vite-plugin-md: 0.4.2_vite@2.0.0-beta.69
   vite-plugin-pages: 0.4.2_vite@2.0.0-beta.69+vue@3.0.5
   vite-plugin-pwa: 0.4.6
-  vite-plugin-vue-layouts: 0.2.1_vite@2.0.0-beta.69
+  vite-plugin-vue-layouts: 0.2.2_vite@2.0.0-beta.69
   vite-ssg: 0.8.8_3264c5547dde4c508d141cfa8bd8ef04
 lockfileVersion: 5.2
 packages:
@@ -1070,10 +1070,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==
-  /@iconify/json/1.1.302:
+  /@iconify/json/1.1.303:
     dev: true
     resolution:
-      integrity: sha512-IwPs3ZhFF/Qd9T5JYkOyaoUozA5Qr5X6y5dzTzSfZ9vioAudj5OacEshO1tmd0CXnZ8bjXusCLOh+IM2FKYaRg==
+      integrity: sha512-O8KDBcIVQolvUeVL9JiEIc2ifYKWyKu/5cX6PNC4EAPvtfvieOHs1YVPV4tphVhafjTTftR5XbZBmZHKG6uNIA==
   /@intlify/cli/0.2.0:
     dependencies:
       '@intlify/core': 9.0.0-beta.16
@@ -4263,13 +4263,13 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
-  /pnpm/5.17.1:
+  /pnpm/5.17.2:
     dev: true
     engines:
       node: '>=10.16'
     hasBin: true
     resolution:
-      integrity: sha512-jSQZCzWyf3tZSANyWnA/errzlnomqrZQO11yvURLxkLDyJvzi5D1equahjJXyT/ubd7S2iJb8dlkHvqR5ORb3w==
+      integrity: sha512-X0WEumozKhlYZObL1E+Nmi67f+ZMS+fbpE6vAymlazT2lx0B+Agw9iJsdd//tjAqIzxcsxxgZScx0EIPc42Ulw==
   /postcss-functions/3.0.0:
     dependencies:
       glob: 7.1.6
@@ -5362,7 +5362,7 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-OhBcoXBTr1XW4nDB+CiGguGNpAA=
-  /vite-plugin-components/0.6.9_vite@2.0.0-beta.69:
+  /vite-plugin-components/0.6.10_vite@2.0.0-beta.69:
     dependencies:
       chokidar: 3.5.1
       debug: 4.3.2
@@ -5373,10 +5373,10 @@ packages:
     peerDependencies:
       vite: ^2.0.0-beta.69
     resolution:
-      integrity: sha512-eFPGssBJBTPw4c3mlpAyOLQgNiLhW2NdI9ilrtSTLgvC9zZ2ofmmPukeig5VNHYpArgIAGCwSf+WbqPPESOQ7A==
-  /vite-plugin-icons/0.2.1_d245a39ab86fd86a463f26015af05aaf:
+      integrity: sha512-pgzu2/K8GnT+VquYUQxawf0QH/LR8Gx58bzoWh+6Vch6Hv+c3D0pVMYKAktARwQprArx90arvXInUH8RqCBEOQ==
+  /vite-plugin-icons/0.2.1_d78d375fec6553510c7875ab0e1db883:
     dependencies:
-      '@iconify/json': 1.1.302
+      '@iconify/json': 1.1.303
       '@iconify/json-tools': 1.0.10
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
     dev: true
@@ -5424,7 +5424,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3LonumSG4EcH9FT61d7wWouHkCmEciy3RPfvt25b835HMx9gb2Dt71t140+85Z5d+uANMSguC3miBnnGzagAMA==
-  /vite-plugin-vue-layouts/0.2.1_vite@2.0.0-beta.69:
+  /vite-plugin-vue-layouts/0.2.2_vite@2.0.0-beta.69:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
       debug: 4.3.2
@@ -5436,7 +5436,7 @@ packages:
     peerDependencies:
       vite: ^2.0.0-beta.65
     resolution:
-      integrity: sha512-vJgNmOlMdDREayXerGu8Zqbz4W7zGlGlI0h0jgjf098i4WJWC5+YpQkpE4kd/qb9Iix2EIQHqxk3RBsnBJGAYw==
+      integrity: sha512-I5BfkCHwHV1WlbJE1ps2r6vwTo3N5QpLks3UpGa8XHcmHW03lavvJkdfjBpagI1bUQGEwWjLowFisG0Q/NJq3A==
   /vite-ssg/0.8.8_3264c5547dde4c508d141cfa8bd8ef04:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
@@ -5885,7 +5885,7 @@ packages:
       integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
 specifiers:
   '@antfu/eslint-config': ^0.4.3
-  '@iconify/json': ^1.1.302
+  '@iconify/json': ^1.1.303
   '@intlify/vite-plugin-vue-i18n': ^1.0.0-beta.17
   '@tailwindcss/typography': ^0.4.0
   '@types/nprogress': ^0.2.0
@@ -5900,19 +5900,19 @@ specifiers:
   eslint: ^7.20.0
   markdown-it-prism: ^2.1.4
   nprogress: ^0.2.0
-  pnpm: ^5.17.1
+  pnpm: ^5.17.2
   postcss: ^8.2.6
   postcss-nested: ^5.0.3
   prism-theme-vars: ^0.1.4
   tailwindcss: ^2.0.3
   typescript: ^4.1.5
   vite: ^2.0.0-beta.69
-  vite-plugin-components: ^0.6.9
+  vite-plugin-components: ^0.6.10
   vite-plugin-icons: ^0.2.1
   vite-plugin-md: ^0.4.2
   vite-plugin-pages: ^0.4.2
   vite-plugin-pwa: ^0.4.6
-  vite-plugin-vue-layouts: ^0.2.1
+  vite-plugin-vue-layouts: ^0.2.2
   vite-ssg: ^0.8.8
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.6

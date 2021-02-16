@@ -1,10 +1,10 @@
 <p align='center'>
-  <img src='https://repository-images.githubusercontent.com/286295150/b1b1be80-354a-11eb-87c0-5dc96cae2bd9' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+  <img src='https://user-images.githubusercontent.com/11247099/108018558-11e8d480-7053-11eb-99a6-eb18b5da5031.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>
 
 <p align='center'>
 Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
-<sub><em>Now with Vite 2.0! ⚡️</em></sub>
+<sub><em>Now with <a href="http://windicss.netlify.app/">Windi CSS</a>! ⚡️</em></sub>
 </p>
 
 <br>

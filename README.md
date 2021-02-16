@@ -27,7 +27,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [WindiCSS](https://github.com/voorjaar/windicss) (On-demand TailwindCSS) with dark mode out-of-box
+- 🎨 [Windi CSS](https://github.com/windicss/windicss) - on-demand Tailwind CSS with speed
 
 - 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
@@ -49,8 +49,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ### UI Frameworks
 
-- [WindiCSS](https://github.com/voorjaar/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster!
-  - [WindiCSS Typography](https://github.com/voorjaar/windicss/wiki/Plugins#typography) - similar to [TailwindCSS Typography](https://github.com/tailwindlabs/tailwindcss-typograph) but for WindiCSS
+- [Windi CSS](https://github.com/voorjaar/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bundle additional features!
+  - [Windi CSS Typography](https://github.com/voorjaar/windicss/wiki/Plugins#typography) - similar to [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typograph) but for Windi CSS
 
 ### Icons
 

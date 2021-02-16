@@ -1,10 +1,10 @@
 <p align='center'>
-  <img src='https://repository-images.githubusercontent.com/286295150/b1b1be80-354a-11eb-87c0-5dc96cae2bd9' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+  <img src='https://user-images.githubusercontent.com/11247099/108018558-11e8d480-7053-11eb-99a6-eb18b5da5031.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>
 
 <p align='center'>
 Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
-<sub><em>Now with Vite 2.0! ⚡️</em></sub>
+<sub><em>Now with <a href="http://windicss.netlify.app/">Windi CSS</a>! ⚡️</em></sub>
 </p>
 
 <br>
@@ -27,7 +27,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [TailwindCSS **v2.0**](https://blog.tailwindcss.com/tailwindcss-v2) with dark mode out-of-box
+- 🎨 [Windi CSS](https://github.com/windicss/windicss) - on-demand Tailwind CSS with speed
 
 - 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
@@ -49,8 +49,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ### UI Frameworks
 
-- [Tailwind CSS](https://tailwindcss.com/) - with built-in dark mode!
-- [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) - Typography for Tailwind
+- [Windi CSS](https://github.com/voorjaar/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bundle additional features!
+  - [Windi CSS Typography](https://github.com/voorjaar/windicss/wiki/Plugins#typography) - similar to [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typograph) but for Windi CSS
 
 ### Icons
 
@@ -64,6 +64,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
 - [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components) - components auto import
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
+- [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss) - WindiCSS support
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
   - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) - customizable Prism.js theme using CSS variables
@@ -87,7 +88,6 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)
-  - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Variations

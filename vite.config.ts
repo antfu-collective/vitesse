@@ -62,7 +62,7 @@ export default defineConfig({
     ViteIcons(),
 
     // https://github.com/antfu/vite-plugin-windicss
-    ...WindiCSS({
+    WindiCSS({
       safelist: 'prose prose-sm m-auto',
     }),
 

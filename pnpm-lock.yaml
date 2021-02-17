@@ -20,15 +20,15 @@ devDependencies:
   markdown-it-prism: 2.1.4
   pnpm: 5.17.2
   typescript: 4.1.5
-  vite: 2.0.0
-  vite-plugin-components: 0.6.12_vite@2.0.0
+  vite: 2.0.1
+  vite-plugin-components: 0.6.12_vite@2.0.1
   vite-plugin-icons: 0.2.2_d78d375fec6553510c7875ab0e1db883
-  vite-plugin-md: 0.4.3_vite@2.0.0
-  vite-plugin-pages: 0.4.3_vite@2.0.0+vue@3.0.5
+  vite-plugin-md: 0.5.1_vite@2.0.1
+  vite-plugin-pages: 0.4.4_vite@2.0.1+vue@3.0.5
   vite-plugin-pwa: 0.4.7
-  vite-plugin-vue-layouts: 0.2.2_vite@2.0.0
-  vite-plugin-windicss: 0.1.17_vite@2.0.0
-  vite-ssg: 0.8.9_5271a718a96a44ed312ebc4192b5c535
+  vite-plugin-vue-layouts: 0.2.2_vite@2.0.1
+  vite-plugin-windicss: 0.3.0_vite@2.0.1
+  vite-ssg: 0.8.9_09776a6a773b9a81449cdda32cab3c64
 lockfileVersion: 5.2
 packages:
   /@antfu/eslint-config-basic/0.4.3_eslint@7.20.0:
@@ -5123,13 +5123,13 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-OhBcoXBTr1XW4nDB+CiGguGNpAA=
-  /vite-plugin-components/0.6.12_vite@2.0.0:
+  /vite-plugin-components/0.6.12_vite@2.0.1:
     dependencies:
       chokidar: 3.5.1
       debug: 4.3.2
       fast-glob: /@knightly/fast-glob/3.2.5-knightly-master.202101180131
       minimatch: 3.0.4
-      vite: 2.0.0
+      vite: 2.0.1
     dev: true
     peerDependencies:
       vite: ^2.0.0-beta.69
@@ -5146,17 +5146,17 @@ packages:
       '@vue/compiler-sfc': ^3.0.2
     resolution:
       integrity: sha512-pqA4l1f1jqSFeTGMKVXD8sXvqYZwHHlXlxhMkRZHCxPode/SQUEi1p9NAyhLHRkw+GN0I27p7DqNDdoFmmy2bA==
-  /vite-plugin-md/0.4.3_vite@2.0.0:
+  /vite-plugin-md/0.5.1_vite@2.0.1:
     dependencies:
       gray-matter: 4.0.2
       markdown-it: 12.0.4
-      vite: 2.0.0
+      vite: 2.0.1
     dev: true
     peerDependencies:
       vite: ^2.0.0-beta.1
     resolution:
-      integrity: sha512-zo8CKvVphgK5KIKAXcEfpnGCZL952XCsHJAIZv9Y2D0I9tTylkxEMsRLTPuk4/3TQaPcD6ggMYJJ3NF3BJ8ODg==
-  /vite-plugin-pages/0.4.3_vite@2.0.0+vue@3.0.5:
+      integrity: sha512-D7WeLZzAGQjb4UtCEXcSKlvGOrHYOiVGWVrzH3+snrOFNoeMc5PDLmy0IS9E/mdMperPkzgaivd5SQg+nY1olQ==
+  /vite-plugin-pages/0.4.4_vite@2.0.1+vue@3.0.5:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
       chalk: 4.1.0
@@ -5166,7 +5166,7 @@ packages:
       fast-glob: 3.2.5
       glob-to-regexp: 0.4.1
       json5: 2.2.0
-      vite: 2.0.0
+      vite: 2.0.1
       vue: 3.0.5
       vue-router: 4.0.3_vue@3.0.5
       yaml: 2.0.0-3
@@ -5175,7 +5175,7 @@ packages:
       vite: ^2.0.0-beta.64
       vue: ^3.0.0
     resolution:
-      integrity: sha512-givXuTjxOQhU5W1P4dYNnSYGtwaMrY+8nUGqRIk0PmLtblnE0kBiM4WgOAOGXdIZ4MiQWChBgHOxCPdVzvnD9w==
+      integrity: sha512-FBerNOh2snMJfhEZewbkCA57NG1ux2fMH4ZhXXNWLKT7XvsrROx7pOvcTWfmzw88SwGnFZXPp5qWoNmKSbSHBA==
   /vite-plugin-pwa/0.4.7:
     dependencies:
       debug: 4.3.2
@@ -5185,12 +5185,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-KsC9tenzn1r6AG/Hda4wg9Es6AokVRz2RqQp+R+uM3qvfNDbdDjJWAEhB/2zUx7D0YDu5Y0h+cDC0zD0vxBoog==
-  /vite-plugin-vue-layouts/0.2.2_vite@2.0.0:
+  /vite-plugin-vue-layouts/0.2.2_vite@2.0.1:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
       debug: 4.3.2
       fast-glob: 3.2.5
-      vite: 2.0.0
+      vite: 2.0.1
       vue: 3.0.5
       vue-router: 4.0.3_vue@3.0.5
     dev: true
@@ -5198,17 +5198,17 @@ packages:
       vite: ^2.0.0-beta.65
     resolution:
       integrity: sha512-I5BfkCHwHV1WlbJE1ps2r6vwTo3N5QpLks3UpGa8XHcmHW03lavvJkdfjBpagI1bUQGEwWjLowFisG0Q/NJq3A==
-  /vite-plugin-windicss/0.1.17_vite@2.0.0:
+  /vite-plugin-windicss/0.3.0_vite@2.0.1:
     dependencies:
       fast-glob: 3.2.5
-      vite: 2.0.0
-      windicss: 2.1.10
+      vite: 2.0.1
+      windicss: 2.1.11
     dev: true
     peerDependencies:
       vite: ^2.0.0-beta.69
     resolution:
-      integrity: sha512-iDRQ1hYXkV5leT7WP9gGE7ciB06XrafHi+oSdICv6LIRE/KK12O8UtZr5zz25k3OecbvDMY1QTQ8TsPXG962gQ==
-  /vite-ssg/0.8.9_5271a718a96a44ed312ebc4192b5c535:
+      integrity: sha512-hfWWABAoh5E1iOMAG+L3bP/xj7KfmviHwpSVBuhddEFCDIZ9aY0lMpMAbcqXRMLY5N1lHKDHKqI2xv/mZi25NA==
+  /vite-ssg/0.8.9_09776a6a773b9a81449cdda32cab3c64:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
       '@vue/server-renderer': 3.0.5_vue@3.0.5
@@ -5218,7 +5218,7 @@ packages:
       html-minifier: 4.0.0
       jsdom: 16.4.0
       prettier: 2.2.1
-      vite: 2.0.0
+      vite: 2.0.1
       vue: 3.0.5
       vue-router: 4.0.3_vue@3.0.5
       yargs: 16.2.0
@@ -5234,7 +5234,7 @@ packages:
       vue-router: ^4.0.1
     resolution:
       integrity: sha512-WwO2agmnlEINQmz4ZNPWP3a4ePBNJCQlVQq4Z9FKuoa1ed46t7atY376m2T23UjETM80X7nSNjyphmpMWI+1cw==
-  /vite/2.0.0:
+  /vite/2.0.1:
     dependencies:
       esbuild: 0.8.34
       postcss: 8.2.6
@@ -5247,7 +5247,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     resolution:
-      integrity: sha512-rNli5g0DaQ6+btlRqkmaR06neWaJGApmt40gocqrYDNi2XoEXYQgKiHSWzMeUgc1Cdva2HduqazaE+RaKjBpdQ==
+      integrity: sha512-x7ZfikjNs+6n4cdvwb9L5r5xBCdjmtmHFHaI4JVR3nAkJbMCK/dynfDWky8/NseZ9Ncz1jVxTQ/Bcf+n1ps1Ww==
   /vue-demi/0.6.0_vue@3.0.5:
     dependencies:
       vue: 3.0.5
@@ -5401,13 +5401,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
-  /windicss/2.1.10:
+  /windicss/2.1.11:
     dev: true
     engines:
       node: '>= 12'
     hasBin: true
     resolution:
-      integrity: sha512-Hg4UMD4Hc0kGudnzs9BfTqIwLMOx8nGUuVrybh9dUCf5rogrCJKm2cc72j7XSvLGFm/OI+oKdPmhAjZsKzGRBg==
+      integrity: sha512-79mPoUmvamwdJb+MJ/ug+XILxFzrTNCXo/HmacUn3V9sRQ6w5lA9KkpTrG70N7Oab0hbIFaq+X3Yva+QLSV0Pw==
   /word-wrap/1.2.3:
     dev: true
     engines:
@@ -5673,14 +5673,14 @@ specifiers:
   pnpm: ^5.17.2
   prism-theme-vars: ^0.1.4
   typescript: ^4.1.5
-  vite: ^2.0.0
+  vite: ^2.0.1
   vite-plugin-components: ^0.6.12
   vite-plugin-icons: ^0.2.2
-  vite-plugin-md: ^0.4.3
-  vite-plugin-pages: ^0.4.3
+  vite-plugin-md: ^0.5.1
+  vite-plugin-pages: ^0.4.4
   vite-plugin-pwa: ^0.4.7
   vite-plugin-vue-layouts: ^0.2.2
-  vite-plugin-windicss: ^0.1.17
+  vite-plugin-windicss: ^0.3.0
   vite-ssg: ^0.8.9
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.7

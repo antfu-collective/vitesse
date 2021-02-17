@@ -1,7 +1,11 @@
 {
   "button": {
+    "about": "À propos de",
     "back": "Retour",
-    "go": "Essayer"
+    "go": "Essayer",
+    "home": "Maison",
+    "toggle_dark": "Basculer en mode sombre",
+    "toggle_langs": "Changer de langue"
   },
   "intro": {
     "desc": "Example d'application Vite",

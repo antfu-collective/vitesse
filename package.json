@@ -27,15 +27,15 @@
     "markdown-it-prism": "^2.1.4",
     "pnpm": "^5.17.2",
     "typescript": "^4.1.5",
-    "vite": "^2.0.0-beta.70",
-    "vite-plugin-components": "^0.6.10",
-    "vite-plugin-icons": "^0.2.1",
-    "vite-plugin-md": "^0.4.2",
-    "vite-plugin-pages": "^0.4.2",
-    "vite-plugin-pwa": "^0.4.6",
+    "vite": "^2.0.0",
+    "vite-plugin-components": "^0.6.12",
+    "vite-plugin-icons": "^0.2.2",
+    "vite-plugin-md": "^0.4.3",
+    "vite-plugin-pages": "^0.4.3",
+    "vite-plugin-pwa": "^0.4.7",
     "vite-plugin-vue-layouts": "^0.2.2",
-    "vite-plugin-windicss": "^0.1.12",
-    "vite-ssg": "^0.8.8"
+    "vite-plugin-windicss": "^0.1.17",
+    "vite-ssg": "^0.8.9"
   },
   "eslintConfig": {
     "extends": "@antfu/eslint-config",

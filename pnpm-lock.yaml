@@ -8,7 +8,7 @@ dependencies:
   vue-router: 4.0.3_vue@3.0.5
 devDependencies:
   '@antfu/eslint-config': 0.4.3_eslint@7.20.0+typescript@4.1.5
-  '@iconify/json': 1.1.303
+  '@iconify/json': 1.1.305
   '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.17
   '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 4.15.1_eslint@7.20.0+typescript@4.1.5
@@ -22,12 +22,12 @@ devDependencies:
   typescript: 4.1.5
   vite: 2.0.1
   vite-plugin-components: 0.6.12_vite@2.0.1
-  vite-plugin-icons: 0.2.2_d78d375fec6553510c7875ab0e1db883
+  vite-plugin-icons: 0.2.2_a8df4a0f991234f4f7dc47f177794696
   vite-plugin-md: 0.5.1_vite@2.0.1
   vite-plugin-pages: 0.4.4_vite@2.0.1+vue@3.0.5
-  vite-plugin-pwa: 0.4.7
+  vite-plugin-pwa: 0.4.8
   vite-plugin-vue-layouts: 0.2.2_vite@2.0.1
-  vite-plugin-windicss: 0.3.0_vite@2.0.1
+  vite-plugin-windicss: 0.3.12_vite@2.0.1
   vite-ssg: 0.8.9_09776a6a773b9a81449cdda32cab3c64
 lockfileVersion: 5.2
 packages:
@@ -1060,10 +1060,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==
-  /@iconify/json/1.1.303:
+  /@iconify/json/1.1.305:
     dev: true
     resolution:
-      integrity: sha512-O8KDBcIVQolvUeVL9JiEIc2ifYKWyKu/5cX6PNC4EAPvtfvieOHs1YVPV4tphVhafjTTftR5XbZBmZHKG6uNIA==
+      integrity: sha512-9zV2MHpP01Qdq6CBEszb9oOahsvLY+f2D3vbtOv22tPgopz2F4Uuzl/TB6+zOuQDohCVsGJzKuU5K6gjrM4P5Q==
   /@intlify/cli/0.2.0:
     dependencies:
       '@intlify/core': 9.0.0-beta.16
@@ -1678,6 +1678,14 @@ packages:
       vue: '*'
     resolution:
       integrity: sha512-M1bNwOaJZypu/AUYKrOU87pQLRp8VgMYHQyL1hVc6V3hi3ZcUBSjZuyFVaUdxGk0OeA0NPzHoYbByTMrpxElug==
+  /@windicss/plugin-utils/0.3.12:
+    dependencies:
+      fast-glob: 3.2.5
+      micromatch: 4.0.2
+      windicss: 2.1.12
+    dev: true
+    resolution:
+      integrity: sha512-XA+xeyu5KM322dIp+EEHeXnAPuK+KxuWyoGvJnxXi9U50nIp0QraqXAH7xl9ghIkVHvVrb8pmm8vHpzFvsqF2A==
   /abab/2.0.5:
     dev: true
     resolution:
@@ -4439,7 +4447,7 @@ packages:
       request-promise-core: 1.1.4_request@2.88.2
       stealthy-require: 1.1.1
       tough-cookie: 2.5.0
-    deprecated: 'request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142'
+    deprecated: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>=0.12.0'
@@ -4469,7 +4477,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>= 6'
@@ -5135,9 +5143,9 @@ packages:
       vite: ^2.0.0-beta.69
     resolution:
       integrity: sha512-KTqUseGaeMPlq6KpvAso0VIAtI7KgZQWHB3JZXlsMYdvoy9nrqRBGQPpTd5/dadfWl3LF3PsuDuxGFzQwXd3Kg==
-  /vite-plugin-icons/0.2.2_d78d375fec6553510c7875ab0e1db883:
+  /vite-plugin-icons/0.2.2_a8df4a0f991234f4f7dc47f177794696:
     dependencies:
-      '@iconify/json': 1.1.303
+      '@iconify/json': 1.1.305
       '@iconify/json-tools': 1.0.10
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
     dev: true
@@ -5176,7 +5184,7 @@ packages:
       vue: ^3.0.0
     resolution:
       integrity: sha512-FBerNOh2snMJfhEZewbkCA57NG1ux2fMH4ZhXXNWLKT7XvsrROx7pOvcTWfmzw88SwGnFZXPp5qWoNmKSbSHBA==
-  /vite-plugin-pwa/0.4.7:
+  /vite-plugin-pwa/0.4.8:
     dependencies:
       debug: 4.3.2
       fast-glob: 3.2.5
@@ -5184,7 +5192,7 @@ packages:
       workbox-build: 6.1.0
     dev: true
     resolution:
-      integrity: sha512-KsC9tenzn1r6AG/Hda4wg9Es6AokVRz2RqQp+R+uM3qvfNDbdDjJWAEhB/2zUx7D0YDu5Y0h+cDC0zD0vxBoog==
+      integrity: sha512-+IFIeEc7FrTZIkVm/Ec8pxgAEF6hmrF+kHSsFxM1aKKXa6GU9bgOMpwDKftfpVjP11gI2XEzJGXhN6+srGg2uw==
   /vite-plugin-vue-layouts/0.2.2_vite@2.0.1:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
@@ -5198,16 +5206,16 @@ packages:
       vite: ^2.0.0-beta.65
     resolution:
       integrity: sha512-I5BfkCHwHV1WlbJE1ps2r6vwTo3N5QpLks3UpGa8XHcmHW03lavvJkdfjBpagI1bUQGEwWjLowFisG0Q/NJq3A==
-  /vite-plugin-windicss/0.3.0_vite@2.0.1:
+  /vite-plugin-windicss/0.3.12_vite@2.0.1:
     dependencies:
-      fast-glob: 3.2.5
+      '@windicss/plugin-utils': 0.3.12
       vite: 2.0.1
-      windicss: 2.1.11
+      windicss: 2.1.12
     dev: true
     peerDependencies:
-      vite: ^2.0.0-beta.69
+      vite: ^2.0.1
     resolution:
-      integrity: sha512-hfWWABAoh5E1iOMAG+L3bP/xj7KfmviHwpSVBuhddEFCDIZ9aY0lMpMAbcqXRMLY5N1lHKDHKqI2xv/mZi25NA==
+      integrity: sha512-NuzIjSrqBQKvpbLJoU9qi8PIWBBXCqBmuLg9Dl/cFl4MB/vAHIOB6sZYJatCBFTU39Kw4UU0GhAjDBSNqzTn0w==
   /vite-ssg/0.8.9_09776a6a773b9a81449cdda32cab3c64:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
@@ -5401,13 +5409,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
-  /windicss/2.1.11:
+  /windicss/2.1.12:
     dev: true
     engines:
       node: '>= 12'
     hasBin: true
     resolution:
-      integrity: sha512-79mPoUmvamwdJb+MJ/ug+XILxFzrTNCXo/HmacUn3V9sRQ6w5lA9KkpTrG70N7Oab0hbIFaq+X3Yva+QLSV0Pw==
+      integrity: sha512-VC057iG65zlvdqUI+1ynzOuKikalvYg6XqPGbG17HEAfwQ0sg1dACTk2plEp1QAEQNtKU3BnLnueWa4oKlltEQ==
   /word-wrap/1.2.3:
     dev: true
     engines:
@@ -5657,7 +5665,7 @@ packages:
       integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
 specifiers:
   '@antfu/eslint-config': ^0.4.3
-  '@iconify/json': ^1.1.303
+  '@iconify/json': ^1.1.305
   '@intlify/vite-plugin-vue-i18n': ^1.0.0-beta.17
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.15.1
@@ -5678,9 +5686,9 @@ specifiers:
   vite-plugin-icons: ^0.2.2
   vite-plugin-md: ^0.5.1
   vite-plugin-pages: ^0.4.4
-  vite-plugin-pwa: ^0.4.7
+  vite-plugin-pwa: ^0.4.8
   vite-plugin-vue-layouts: ^0.2.2
-  vite-plugin-windicss: ^0.3.0
+  vite-plugin-windicss: ^0.3.12
   vite-ssg: ^0.8.9
   vue: ^3.0.5
   vue-i18n: ^9.0.0-rc.7

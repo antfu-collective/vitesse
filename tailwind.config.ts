@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const colors = require('windicss/colors')
+import { defineConfig } from 'vite-plugin-windicss'
+import colors from 'windicss/colors'
 
-module.exports = {
+export default defineConfig({
   darkMode: 'class',
   plugins: [
     require('windicss/plugin/typography'),
@@ -36,4 +36,4 @@ module.exports = {
       },
     },
   },
-}
+})

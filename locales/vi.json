@@ -1,7 +1,11 @@
 {
   "button": {
+    "about": "",
     "back": "Quay lại",
-    "go": "Đi"
+    "go": "Đi",
+    "home": "",
+    "toggle_dark": "",
+    "toggle_langs": ""
   },
   "intro": {
     "desc": "Ý kiến cá nhân Vite Template để bắt đầu",

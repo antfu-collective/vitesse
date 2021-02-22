@@ -13,6 +13,7 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
     "types": [
       "vite/client",
       "vite-plugin-pages/client",

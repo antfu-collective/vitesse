@@ -8,11 +8,11 @@
 html:not(.dark) {
   --prism-foreground: #393a34;
   --prism-background: #fbfbfb;
-  --prism-comment: #8e8f8e;
+  --prism-comment: #737473;
   --prism-string: #a1644c;
   --prism-literal: #3a9c9b;
   --prism-keyword: #248358;
-  --prism-function: #7e8a42;
+  --prism-function: #6e793a;
   --prism-deleted: #a14f55;
   --prism-class: #2b91af;
   --prism-builtin: #a52727;
@@ -27,11 +27,11 @@ html.dark {
   --prism-scheme: dark;
   --prism-foreground: #d4cfbf;
   --prism-background: #1e1e1e;
-  --prism-comment: #758575;
+  --prism-comment: #798a79;
   --prism-string: #ce9178;
   --prism-literal: #4fb09d;
   --prism-keyword: #4d9375;
-  --prism-function: #c2c275;
+  --prism-function: #6e793a;
   --prism-deleted: #a14f55;
   --prism-class: #5ebaa8;
   --prism-builtin: #cb7676;

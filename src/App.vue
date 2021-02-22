@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import { tryOnMounted } from '@vueuse/core'
+import { isClient, tryOnMounted } from '@vueuse/core'
 import { useHead } from '@vueuse/head'
 import { nextTick } from 'vue'
 
+if (isClient)
+  window.appVersion = '0.1.0' as const
+
 // https://github.com/vueuse/head
-// you can use this to manipulate the document head in any components,
-// they will be rendered correctly in the html results with vite-ssg
+// You can use this to manipulate the document head in any components,
+// they will be rendered correctly in the html results with vite-ssg.
 useHead({
   title: 'Vitesse',
   meta: [

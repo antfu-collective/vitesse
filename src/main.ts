@@ -1,9 +1,11 @@
 import 'windi.css'
 import './styles/main.css'
-import { ViteSSG } from 'vite-ssg'
-import generatedRoutes from 'pages-generated'
 import { setupLayouts } from 'layouts-generated'
+import generatedRoutes from 'pages-generated'
+import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
+
+import type { UserModuleInstaller } from './types'
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -12,7 +14,11 @@ export const createApp = ViteSSG(
   App,
   { routes },
   (ctx) => {
-    // install all modules under `modules/`
-    Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))
+    // Install all modules under `./src/modules/`.
+    const modules = Object.values(
+      import.meta.globEager('./modules/*.ts'),
+    ) as Array<UserModuleInstaller>
+
+    modules.map(i => i.install?.(ctx))
   },
 )

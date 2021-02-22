@@ -1,0 +1,17 @@
+{
+  "button": {
+    "about": "Rólam",
+    "back": "Vissza",
+    "go": "Gyerünk",
+    "home": "Kezdőlap",
+    "toggle_dark": "Sötét mód be/ki",
+    "toggle_langs": "Nyelv váltása"
+  },
+  "intro": {
+    "desc": "Vite sablon",
+    "dynamic-route": "Dinamikus útvonal demo",
+    "hi": "Üdvözöllek, {name}!",
+    "whats-your-name": "Hogy hívnak?"
+  },
+  "not-found": "Az oldal nem található"
+}

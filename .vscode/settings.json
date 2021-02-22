@@ -4,7 +4,19 @@
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sortKeys": true,
   "cSpell.words": [
-    "Vitesse"
+    "demi",
+    "iconify",
+    "intlify",
+    "keydown",
+    "noreferrer",
+    "nprogress",
+    "pnpm",
+    "vite",
+    "vitejs",
+    "vitesse",
+    "vueuse",
+    "windi",
+    "windicss"
   ],
   "typescript.tsdk": "node_modules/typescript/lib",
   "volar.tsPluginStatus": false

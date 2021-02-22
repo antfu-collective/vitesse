@@ -1,5 +1,5 @@
 import { computed, watch } from 'vue'
-import { usePreferredDark, useToggle } from '@vueuse/core'
+import { isClient, usePreferredDark, useToggle } from '@vueuse/core'
 import { colorSchema } from './store'
 
 const preferredDark = usePreferredDark()
@@ -22,6 +22,10 @@ export const toggleDark = useToggle(isDark)
 
 watch(
   isDark,
-  v => document!.documentElement.classList.toggle('dark', v),
+  (v) => {
+    if (!isClient || typeof document === 'undefined') return
+
+    document.documentElement.classList.toggle('dark', v)
+  },
   { immediate: true },
 )

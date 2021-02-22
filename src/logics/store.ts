@@ -1,4 +1,5 @@
-import { Ref } from 'vue'
 import { useStorage } from '@vueuse/core'
 
-export const colorSchema = useStorage('color-schema', 'auto') as Ref<'auto' | 'dark' | 'light'>
+import type { SchemaValue } from '~/types'
+
+export const colorSchema = useStorage<SchemaValue>('color-schema', 'auto')

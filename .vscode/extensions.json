@@ -1,8 +1,8 @@
 {
   "recommendations": [
-    "johnsoncodehk.volar",
-    "lokalise.i18n-ally",
     "antfu.iconify",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "johnsoncodehk.volar",
+    "lokalise.i18n-ally"
   ]
 }

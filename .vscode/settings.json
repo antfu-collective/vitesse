@@ -1,5 +1,6 @@
 {
   "volar.tsPlugin": true,
+  "iconify.color": "gray",
   "i18n-ally.localesPaths": "locales",
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sortKeys": true,

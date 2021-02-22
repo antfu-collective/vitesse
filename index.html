@@ -12,14 +12,6 @@
 <body>
   <noscript>Application cannot use without javascript.</noscript>
   <div id="app"></div>
-  <script>
-    (function() {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      const setting = localStorage.getItem('color-schema') || 'auto'
-      if (setting === 'dark' || (prefersDark && setting !== 'light'))
-        document.documentElement.classList.toggle('dark', true)
-    })()
-  </script>
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

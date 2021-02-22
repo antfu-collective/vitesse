@@ -6,3 +6,4 @@ export interface UserModuleInstaller {
   install: UserModule
 }
 
+export type SchemaValue = 'auto' | 'dark' | 'light'

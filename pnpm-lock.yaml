@@ -4,11 +4,11 @@ dependencies:
   nprogress: 0.2.0
   prism-theme-vars: 0.1.4
   vue: 3.0.6
-  vue-i18n: 9.0.0-rc.8_vue@3.0.6
+  vue-i18n: 9.0.0-rc.9_vue@3.0.6
   vue-router: 4.0.4_vue@3.0.6
 devDependencies:
   '@antfu/eslint-config': 0.4.3_eslint@7.20.0+typescript@4.2.2
-  '@iconify/json': 1.1.308
+  '@iconify/json': 1.1.309
   '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.17
   '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 4.15.2_eslint@7.20.0+typescript@4.2.2
@@ -22,12 +22,12 @@ devDependencies:
   typescript: 4.2.2
   vite: 2.0.3
   vite-plugin-components: 0.7.3_vite@2.0.3
-  vite-plugin-icons: 0.2.4_b18429545830119ebeea3091893a73e7
-  vite-plugin-md: 0.5.1_vite@2.0.3
+  vite-plugin-icons: 0.3.1_240164799f4e66dc3bd000ca5a7ec237
+  vite-plugin-md: 0.6.0_0ac5795a42bdca9814c20d0a4629ec72
   vite-plugin-pages: 0.4.5_vite@2.0.3+vue@3.0.6
   vite-plugin-pwa: 0.5.5
   vite-plugin-vue-layouts: 0.2.2_vite@2.0.3
-  vite-plugin-windicss: 0.5.3_vite@2.0.3
+  vite-plugin-windicss: 0.5.4_vite@2.0.3
   vite-ssg: 0.8.11_1de1853444f1e35958ef0938d28e806b
 lockfileVersion: 5.2
 packages:
@@ -1092,10 +1092,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==
-  /@iconify/json/1.1.308:
+  /@iconify/json/1.1.309:
     dev: true
     resolution:
-      integrity: sha512-zoVnvr5A1tpuTCzuw5EvRcWYV5rcmWLGLhEzg9+SuRAXWyT2st0ShF8hYbeHzm+MJHhJWodHVfsTu2DkshMX2g==
+      integrity: sha512-L9556ireR0vOEcrIc54AJpwhts+T4YKArkB5NkxQCMk5b4Rc9+DviglggXByaR2ryqyRZT1/cv1AD/xJtQBQ6g==
   /@intlify/cli/0.2.0:
     dependencies:
       '@intlify/core': 9.0.0-beta.16
@@ -1131,10 +1131,22 @@ packages:
       '@intlify/message-resolver': 9.0.0-rc.8
       '@intlify/runtime': 9.0.0-rc.8
       '@intlify/shared': 9.0.0-rc.8
+    dev: true
     engines:
       node: '>= 10'
     resolution:
       integrity: sha512-Nwj2GTZN7gOiN7uGgAeaaJAho/UamkXTheMrdjLrj7FPjE3d1oiSeB3fBgobJxzpyBRjhmjUmpPCEs1afokSxQ==
+  /@intlify/core-base/9.0.0-rc.9:
+    dependencies:
+      '@intlify/message-compiler': 9.0.0-rc.9
+      '@intlify/message-resolver': 9.0.0-rc.9
+      '@intlify/runtime': 9.0.0-rc.9
+      '@intlify/shared': 9.0.0-rc.9
+    dev: false
+    engines:
+      node: '>= 10'
+    resolution:
+      integrity: sha512-0s7VzjQ2zqr+Kloo2rZ5zzVItEAMjz4b5ya6tjZNGe8vmnDMikmv2/QpuAdAWfyakt18MwU4Lu1kg88onsMQlQ==
   /@intlify/core/9.0.0-beta.16:
     dependencies:
       '@intlify/core-base': 9.0.0-beta.16
@@ -1158,10 +1170,21 @@ packages:
       '@intlify/message-resolver': 9.0.0-rc.8
       '@intlify/shared': 9.0.0-rc.8
       source-map: 0.6.1
+    dev: true
     engines:
       node: '>= 10'
     resolution:
       integrity: sha512-vtKk5z7ovenLUXMGHVUyS+snEYrTpHT4o6bQyjPeEL3BoXcVyHlLKIHXNJ6QzlHVQN8aN1bWyj3rMf9ZKEZF3A==
+  /@intlify/message-compiler/9.0.0-rc.9:
+    dependencies:
+      '@intlify/message-resolver': 9.0.0-rc.9
+      '@intlify/shared': 9.0.0-rc.9
+      source-map: 0.6.1
+    dev: false
+    engines:
+      node: '>= 10'
+    resolution:
+      integrity: sha512-w2zZYK6GU3KYJZBbv7Ib3bFEmqnE3SBrlO5qAWQ9NSq37OZ0PjFd5f5zCzd2Qw2vzbKHkq6ck3bmWhRb4CSL/Q==
   /@intlify/message-resolver/9.0.0-beta.16:
     dev: true
     engines:
@@ -1169,10 +1192,17 @@ packages:
     resolution:
       integrity: sha512-xwjsFuDDYEv7g1KE5QZRbrPgfsrNsDhYLtNYR7Tn4inzbmB6ipak2UlDzDcQGLieSFbe1WwAoNL0IXy4sUKboQ==
   /@intlify/message-resolver/9.0.0-rc.8:
+    dev: true
     engines:
       node: '>= 10'
     resolution:
       integrity: sha512-8Qqh23yN3sM/hIZKIgJ1S6a9mNm1LVeUxkjhHdfyGV84P6G3Q9bgwCSenX1BKuUrVUJfK45FUkg87BZnUd2Qpg==
+  /@intlify/message-resolver/9.0.0-rc.9:
+    dev: false
+    engines:
+      node: '>= 10'
+    resolution:
+      integrity: sha512-g46Iodj2fg5MW/hO+31WYHYkuXMkWu/EVZsaPEWsOsktwszDBGF0ACZ1VeIGiTZYw6GNpcUdmHiWZwgqEF8Ikw==
   /@intlify/runtime/9.0.0-beta.16:
     dependencies:
       '@intlify/message-compiler': 9.0.0-beta.16
@@ -1188,10 +1218,21 @@ packages:
       '@intlify/message-compiler': 9.0.0-rc.8
       '@intlify/message-resolver': 9.0.0-rc.8
       '@intlify/shared': 9.0.0-rc.8
+    dev: true
     engines:
       node: '>= 10'
     resolution:
       integrity: sha512-ZK0eZwZQ6wb3nxUPc+WYSebnswSSt/lRJotmaVdcmS+tT9/FFz6PJ9pO0nNFV/cGn0uEGW92buldCiNVKA5aHg==
+  /@intlify/runtime/9.0.0-rc.9:
+    dependencies:
+      '@intlify/message-compiler': 9.0.0-rc.9
+      '@intlify/message-resolver': 9.0.0-rc.9
+      '@intlify/shared': 9.0.0-rc.9
+    dev: false
+    engines:
+      node: '>= 10'
+    resolution:
+      integrity: sha512-RMxFJC5oH1jugxBHcxQWJfKNRdB32Db8/bzOQyArng01kNBiWZTmcTidVanCRoztPC8u0QIesvRum8z6FqqDtw==
   /@intlify/shared/9.0.0-beta.16:
     dev: true
     engines:
@@ -1199,10 +1240,17 @@ packages:
     resolution:
       integrity: sha512-A7GSOovcZn/NMoAmDc8FG9uRcFv6iygriK8+C6HFeOnMQ9X+T9f5A9bPtXhCOCiRpQm9SUtGqXedxO5Y8rz9/A==
   /@intlify/shared/9.0.0-rc.8:
+    dev: true
     engines:
       node: '>= 10'
     resolution:
       integrity: sha512-HH05+lD4A9q6F0VLbGY5eZmmCbfaBMuCSSQXmrGgegtsRVu7WFiUMQLNsouN1UtHabOJC9PQarxKwfTzdHyN6Q==
+  /@intlify/shared/9.0.0-rc.9:
+    dev: false
+    engines:
+      node: '>= 10'
+    resolution:
+      integrity: sha512-kLMDmB6A75i7XSHNPE18z4h9F72Tycz3Ei73KXpIZD/+Lu51KKmNehBKPVSq6M+eV6mvNhyaf4bWU/eMDe6GWQ==
   /@intlify/vite-plugin-vue-i18n/1.0.0-beta.17:
     dependencies:
       '@intlify/cli': 0.2.0
@@ -1701,7 +1749,7 @@ packages:
       vue: '*'
     resolution:
       integrity: sha512-yudh4jt0SxaW0i3j2iumI8GTloA8aUpLwGaBw9Xv2rQCdZvOZpXpvpGEz8EsMK793ySs+d5S4/opItlxuzjtSg==
-  /@windicss/plugin-utils/0.5.3:
+  /@windicss/plugin-utils/0.5.4:
     dependencies:
       esbuild: 0.8.52
       esbuild-register: 2.0.0_esbuild@0.8.52
@@ -1710,7 +1758,7 @@ packages:
       windicss: 2.2.0
     dev: true
     resolution:
-      integrity: sha512-BXNvMSRmi1TyM8j3EnF/li9HViJPN4EPeGKTiIDWemxrfkRNlgN+Gmv31CFtZwnjiAlXRO58B6LIqVTSVYaTfQ==
+      integrity: sha512-zxpHdTsVZl7TF8A3uAymJCqMRlG83dMRAXf//fXonluoLDSJCuGBJyxN3NdkAyNZZR1L1DvoUUtkZLYOba+ElQ==
   /abab/2.0.5:
     dev: true
     resolution:
@@ -5276,27 +5324,31 @@ packages:
       vite: ^2.0.0-beta.69
     resolution:
       integrity: sha512-OomlwTsyZn8M1xhth7gUxOE2FJZ1v/wn/TQhcJiFCxcsFnxvRiCMleRHzFrJUdRcN0QiM3lTCX3sKRthdOd+9w==
-  /vite-plugin-icons/0.2.4_b18429545830119ebeea3091893a73e7:
+  /vite-plugin-icons/0.3.1_240164799f4e66dc3bd000ca5a7ec237:
     dependencies:
-      '@iconify/json': 1.1.308
+      '@iconify/json': 1.1.309
       '@iconify/json-tools': 1.0.10
       '@vue/compiler-sfc': 3.0.6_vue@3.0.6
+      vue-template-es2015-compiler: 1.9.1
     dev: true
     peerDependencies:
       '@iconify/json': '*'
       '@vue/compiler-sfc': ^3.0.2
+      vue-template-compiler: ^2.6.12
     resolution:
-      integrity: sha512-Tljh95wAzGcVS1g8ExfiIw+ugDHvTjM1YCjCouk3Q/I2/z21fZsxvJCExe2ZZjv6Ww7K4G4mH/KhwjqCD5tcXQ==
-  /vite-plugin-md/0.5.1_vite@2.0.3:
+      integrity: sha512-eu+smRfcTfLVDXQfbwlpwLqy+GkKf9TuKjrB7VyRnCO0jusWxE/awcmz5/3AiZ8TT5qDJj3KId+HUDZyb573OQ==
+  /vite-plugin-md/0.6.0_0ac5795a42bdca9814c20d0a4629ec72:
     dependencies:
+      '@vue/compiler-sfc': 3.0.6_vue@3.0.6
       gray-matter: 4.0.2
       markdown-it: 12.0.4
       vite: 2.0.3
     dev: true
     peerDependencies:
+      '@vue/compiler-sfc': ^3.0.5
       vite: ^2.0.0-beta.1
     resolution:
-      integrity: sha512-D7WeLZzAGQjb4UtCEXcSKlvGOrHYOiVGWVrzH3+snrOFNoeMc5PDLmy0IS9E/mdMperPkzgaivd5SQg+nY1olQ==
+      integrity: sha512-JAYDQAqmh+HPcEFea/DnNul6+5xQIsZ+eGB69BuBdqf0IluunBRDhILRGRonqn9Tq11ZZEVpMv6Weyl7BcjUnw==
   /vite-plugin-pages/0.4.5_vite@2.0.3+vue@3.0.6:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.6
@@ -5339,16 +5391,16 @@ packages:
       vite: ^2.0.0-beta.65
     resolution:
       integrity: sha512-I5BfkCHwHV1WlbJE1ps2r6vwTo3N5QpLks3UpGa8XHcmHW03lavvJkdfjBpagI1bUQGEwWjLowFisG0Q/NJq3A==
-  /vite-plugin-windicss/0.5.3_vite@2.0.3:
+  /vite-plugin-windicss/0.5.4_vite@2.0.3:
     dependencies:
-      '@windicss/plugin-utils': 0.5.3
+      '@windicss/plugin-utils': 0.5.4
       vite: 2.0.3
       windicss: 2.2.0
     dev: true
     peerDependencies:
       vite: ^2.0.1
     resolution:
-      integrity: sha512-hVfj0QjgxBch4j5M6BfMj9Dsm7iKioP9uQUvs00RGkuUdG+Gc0PQcT9SuLrcZJjUE/2Tp9+J44BEbOYxjesqlA==
+      integrity: sha512-iPLoqfpZdnRIY1AzweumpdE8ILQQnyhywZwJDqFpj8SZ3h43e5tfQFnJb5nS6FLccOsBcCV9JFugD2w6pGyfqg==
   /vite-ssg/0.8.11_1de1853444f1e35958ef0938d28e806b:
     dependencies:
       '@vue/compiler-sfc': 3.0.6_vue@3.0.6
@@ -5416,10 +5468,10 @@ packages:
       eslint: '>=5.0.0'
     resolution:
       integrity: sha512-6EHzl00hIpy4yWZo3qSbtvtVw1A1cTKOv1w95QSuAqGgk4113XtRjvNIiEGo49r0YWOPYsrmI4Dl64axL5Agrw==
-  /vue-i18n/9.0.0-rc.8_vue@3.0.6:
+  /vue-i18n/9.0.0-rc.9_vue@3.0.6:
     dependencies:
-      '@intlify/core-base': 9.0.0-rc.8
-      '@intlify/shared': 9.0.0-rc.8
+      '@intlify/core-base': 9.0.0-rc.9
+      '@intlify/shared': 9.0.0-rc.9
       '@vue/devtools-api': 6.0.0-beta.7
       vue: 3.0.6
     dev: false
@@ -5428,7 +5480,7 @@ packages:
     peerDependencies:
       vue: ^3.0.0
     resolution:
-      integrity: sha512-WQC9q0UG1lbk+naBBoVTrJjHPZfHP6Pid35Ek9AkCxUcXolW1pXUCQg1gIMF8I0obxLd/fSx9GuOWrB/aaU3aQ==
+      integrity: sha512-1SG3m30WsQhwJHDRRCZVKNzSjhMHKJQNqC/h4JMlx4lxsmZWaehO/VqZmVHwfiRRRbnqWFpFHz0c/fe6cduAWQ==
   /vue-router/4.0.4_vue@3.0.5:
     dependencies:
       vue: 3.0.5
@@ -5444,6 +5496,10 @@ packages:
       vue: ^3.0.0
     resolution:
       integrity: sha512-uN6PDEaYdU9aRO7mU+Dkr1uaY49hV3fucEDG/Vre/Qj8ct3RoJS16vcPrvKVzn69zDDjBV5b9Xw7fZA9r6b/Iw==
+  /vue-template-es2015-compiler/1.9.1:
+    dev: true
+    resolution:
+      integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
   /vue/3.0.5:
     dependencies:
       '@vue/compiler-dom': 3.0.5
@@ -5816,7 +5872,7 @@ packages:
       integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
 specifiers:
   '@antfu/eslint-config': ^0.4.3
-  '@iconify/json': ^1.1.308
+  '@iconify/json': ^1.1.309
   '@intlify/vite-plugin-vue-i18n': ^1.0.0-beta.17
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.15.2
@@ -5834,13 +5890,13 @@ specifiers:
   typescript: ^4.2.2
   vite: ^2.0.3
   vite-plugin-components: ^0.7.3
-  vite-plugin-icons: ^0.2.4
-  vite-plugin-md: ^0.5.1
+  vite-plugin-icons: ^0.3.1
+  vite-plugin-md: ^0.6.0
   vite-plugin-pages: ^0.4.5
   vite-plugin-pwa: ^0.5.5
   vite-plugin-vue-layouts: ^0.2.2
-  vite-plugin-windicss: ^0.5.3
+  vite-plugin-windicss: ^0.5.4
   vite-ssg: ^0.8.11
   vue: ^3.0.6
-  vue-i18n: ^9.0.0-rc.8
+  vue-i18n: ^9.0.0-rc.9
   vue-router: ^4.0.4

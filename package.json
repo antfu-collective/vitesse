@@ -5,7 +5,7 @@
     "dev": "vite --port 3333 --open"
   },
   "dependencies": {
-    "@vueuse/core": "^4.2.2",
+    "@vueuse/core": "^4.3.1",
     "@vueuse/head": "^0.3.1",
     "nprogress": "^0.2.0",
     "prism-theme-vars": "^0.1.4",
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.4.3",
-    "@iconify/json": "^1.1.309",
+    "@iconify/json": "^1.1.310",
     "@intlify/vite-plugin-vue-i18n": "^1.0.0-beta.17",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
@@ -23,18 +23,18 @@
     "@vue/compiler-sfc": "^3.0.6",
     "@vue/server-renderer": "^3.0.6",
     "cross-env": "^7.0.3",
-    "eslint": "^7.20.0",
+    "eslint": "^7.21.0",
     "markdown-it-prism": "^2.1.4",
     "pnpm": "^5.18.1",
     "typescript": "^4.2.2",
     "vite": "^2.0.4",
-    "vite-plugin-components": "^0.7.4",
-    "vite-plugin-icons": "^0.3.1",
+    "vite-plugin-components": "^0.7.5",
+    "vite-plugin-icons": "^0.3.2",
     "vite-plugin-md": "^0.6.0",
-    "vite-plugin-pages": "^0.4.5",
-    "vite-plugin-pwa": "^0.5.5",
+    "vite-plugin-pages": "^0.4.7",
+    "vite-plugin-pwa": "^0.5.6",
     "vite-plugin-vue-layouts": "^0.2.2",
-    "vite-plugin-windicss": "^0.5.4",
-    "vite-ssg": "^0.8.11"
+    "vite-plugin-windicss": "^0.6.2",
+    "vite-ssg": "^0.8.12"
   }
 }

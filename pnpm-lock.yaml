@@ -9,7 +9,7 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config': 0.4.3_eslint@7.21.0+typescript@4.2.2
   '@iconify/json': 1.1.310
-  '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.17
+  '@intlify/vite-plugin-vue-i18n': 2.0.0-rc.2
   '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 4.15.2_eslint@7.21.0+typescript@4.2.2
   '@vitejs/plugin-vue': 1.1.5_@vue+compiler-sfc@3.0.6
@@ -1161,7 +1161,7 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-0r4v7dnY8g/Jfx2swUWy2GyfH/WvIpWvkU4OIupvxDTWiE8RhcpbOCVvqpVh/xGi0proHQ/r2Dhc0QSItUsfDQ==
-  /@intlify/vite-plugin-vue-i18n/1.0.0-beta.17:
+  /@intlify/vite-plugin-vue-i18n/2.0.0-rc.2:
     dependencies:
       '@intlify/cli': 0.2.0
       '@intlify/shared': 9.0.0
@@ -1171,7 +1171,7 @@ packages:
     engines:
       node: '>= 12'
     resolution:
-      integrity: sha512-Xf68q/uVwfaK17mpvZK4hGJ+zayFCdP6sjJDWp+nUVGxv1Y736vVFxpNzDVR+XYXB1eqwixdr/vo/3yFhsVxBA==
+      integrity: sha512-bH9fhfvYpIoJ8kl7NIU2SzFJOj9MMg37UcRsBNkQGi8U61OhdRt9LhZqCPkNRMhX1QARm2MM7DaftVhlmaHiJA==
   /@knightly/fast-glob/3.2.5-knightly-master.202101180131:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
@@ -5589,7 +5589,7 @@ packages:
 specifiers:
   '@antfu/eslint-config': ^0.4.3
   '@iconify/json': ^1.1.310
-  '@intlify/vite-plugin-vue-i18n': ^1.0.0-beta.17
+  '@intlify/vite-plugin-vue-i18n': ^2.0.0-rc.2
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.15.2
   '@vitejs/plugin-vue': ^1.1.5

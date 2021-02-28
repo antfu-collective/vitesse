@@ -16,7 +16,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.4.3",
     "@iconify/json": "^1.1.310",
-    "@intlify/vite-plugin-vue-i18n": "^1.0.0-beta.17",
+    "@intlify/vite-plugin-vue-i18n": "^2.0.0-rc.2",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@vitejs/plugin-vue": "^1.1.5",

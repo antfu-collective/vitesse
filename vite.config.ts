@@ -63,7 +63,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS({
-      safelist: 'prose prose-sm m-auto',
+      safelist: 'prose prose-sm m-auto text-left',
     }),
 
     // https://github.com/antfu/vite-plugin-pwa

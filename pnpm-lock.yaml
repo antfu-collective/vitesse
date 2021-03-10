@@ -24,7 +24,7 @@ devDependencies:
   vite-plugin-components: 0.8.0_vite@2.0.5
   vite-plugin-icons: 0.3.2_70f20bcde5195e446154db5ed4ff8b90
   vite-plugin-md: 0.6.1_bf48963773c10f09e90707239d00d505
-  vite-plugin-pages: 0.6.1_vite@2.0.5+vue@3.0.7
+  vite-plugin-pages: 0.7.0_vite@2.0.5+vue@3.0.7
   vite-plugin-pwa: 0.5.6
   vite-plugin-vue-layouts: 0.2.2_vite@2.0.5
   vite-plugin-windicss: 0.7.2_vite@2.0.5
@@ -5073,7 +5073,7 @@ packages:
       vite: ^2.0.0-beta.1
     resolution:
       integrity: sha512-dJ06wlic1Gprb+PLpTpwkoufm+/5wtBUwSIMvMa9mql34eqY+DZpOdz7s2FpdRAe/6XSRFH4oHVp0xfUnZp52Q==
-  /vite-plugin-pages/0.6.1_vite@2.0.5+vue@3.0.7:
+  /vite-plugin-pages/0.7.0_vite@2.0.5+vue@3.0.7:
     dependencies:
       '@vue/compiler-sfc': 3.0.7_vue@3.0.7
       chalk: 4.1.0
@@ -5092,7 +5092,7 @@ packages:
       vite: ^2.0.0
       vue: ^3.0.0
     resolution:
-      integrity: sha512-BYOC7gmRb5q5CdTMnAb5o3u99uuBxJeoHq0xImtQtHFB9qcnDf7rh1QOSKSTqcLC0nKO1K5oUVBRndv+QH7LKA==
+      integrity: sha512-nClkzBs+XPIqvlQuqqvukn/5igNkJ8i17/5aP6L6mfebhmnyngpcmSXrzuwnbEgP8VWq27L6+gLFniKWCRBrbg==
   /vite-plugin-pwa/0.5.6:
     dependencies:
       debug: 4.3.2
@@ -5603,7 +5603,7 @@ specifiers:
   vite-plugin-components: ^0.8.0
   vite-plugin-icons: ^0.3.2
   vite-plugin-md: ^0.6.1
-  vite-plugin-pages: ^0.6.1
+  vite-plugin-pages: ^0.7.0
   vite-plugin-pwa: ^0.5.6
   vite-plugin-vue-layouts: ^0.2.2
   vite-plugin-windicss: ^0.7.2

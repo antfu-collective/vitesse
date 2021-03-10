@@ -1,7 +1,7 @@
-import 'windi.css'
+import 'virtual:windi.css'
 import './styles/main.css'
 import { ViteSSG } from 'vite-ssg'
-import generatedRoutes from 'pages-generated'
+import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'layouts-generated'
 import App from './App.vue'
 

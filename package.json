@@ -5,7 +5,7 @@
     "dev": "vite --port 3333 --open"
   },
   "dependencies": {
-    "@vueuse/core": "^4.3.4",
+    "@vueuse/core": "^4.3.5",
     "@vueuse/head": "^0.5.1",
     "nprogress": "^0.2.0",
     "prism-theme-vars": "^0.2.0",
@@ -34,7 +34,7 @@
     "vite-plugin-pages": "^0.7.0",
     "vite-plugin-pwa": "^0.5.6",
     "vite-plugin-vue-layouts": "^0.2.2",
-    "vite-plugin-windicss": "^0.7.2",
+    "vite-plugin-windicss": "^0.8.1",
     "vite-ssg": "^0.8.12"
   }
 }

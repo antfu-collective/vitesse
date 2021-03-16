@@ -18,26 +18,26 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.6.2",
     "@iconify/json": "^1.1.316",
-    "@intlify/vite-plugin-vue-i18n": "^2.0.2",
+    "@intlify/vite-plugin-vue-i18n": "^2.0.3",
     "@types/nprogress": "^0.2.0",
-    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.7",
     "@vue/server-renderer": "^3.0.7",
     "cross-env": "^7.0.3",
     "eslint": "^7.22.0",
+    "https-localhost": "^4.6.4",
     "markdown-it-prism": "^2.1.6",
     "pnpm": "^5.18.7",
-    "https-localhost": "^4.6.4",
     "typescript": "^4.2.3",
     "vite": "^2.1.0",
     "vite-plugin-components": "^0.8.3",
     "vite-plugin-icons": "^0.3.2",
     "vite-plugin-md": "^0.6.1",
-    "vite-plugin-pages": "^0.7.0",
+    "vite-plugin-pages": "^0.7.1",
     "vite-plugin-pwa": "^0.5.6",
     "vite-plugin-vue-layouts": "^0.2.2",
-    "vite-plugin-windicss": "^0.8.2",
-    "vite-ssg": "^0.8.12"
+    "vite-plugin-windicss": "^0.8.3",
+    "vite-ssg": "^0.9.1"
   }
 }

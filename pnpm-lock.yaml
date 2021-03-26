@@ -28,7 +28,7 @@ devDependencies:
   vite-plugin-pages: 0.8.0_9954abeb89a16881319dd77f554257ba
   vite-plugin-pwa: 0.6.3
   vite-plugin-vue-layouts: 0.2.2_vite@2.1.3
-  vite-plugin-windicss: 0.9.11_vite@2.1.3
+  vite-plugin-windicss: 0.10.2_vite@2.1.3
   vite-ssg: 0.9.1_95d322f6e90982d66e3b763805f1ec3b
 lockfileVersion: 5.2
 packages:
@@ -1644,7 +1644,7 @@ packages:
       vue: '*'
     resolution:
       integrity: sha512-330uwtbWoIy53O0YwllckYDiK/f353aVrqeB7Z6/Sg5uFckNiKqX68g2wlDdvUnW/SIOC6cyxIZutZe/xxEFAw==
-  /@windicss/plugin-utils/0.9.11:
+  /@windicss/plugin-utils/0.10.2:
     dependencies:
       debug: 4.3.2
       fast-glob: 3.2.5
@@ -1653,7 +1653,7 @@ packages:
       windicss: 2.5.5
     dev: true
     resolution:
-      integrity: sha512-gGLe3/Ud63fcpj1FTq+0/feP/UM34j9W+iSyBtpPnmfLx8mi2a9g9vhZrojqL9X9IYY+ZhHczZ8Fn9qcHdzWVw==
+      integrity: sha512-IeKaZEZ1Ww3KO5C3AxWLotMX3aGxhrj0MsTmiyMS1H5KXm6HOgfk+zsRiB0ysxGKrGZ4pMLe2H3Riku8o7YfuQ==
   /abab/2.0.5:
     dev: true
     resolution:
@@ -5788,9 +5788,10 @@ packages:
       vite: ^2.0.0-beta.65
     resolution:
       integrity: sha512-I5BfkCHwHV1WlbJE1ps2r6vwTo3N5QpLks3UpGa8XHcmHW03lavvJkdfjBpagI1bUQGEwWjLowFisG0Q/NJq3A==
-  /vite-plugin-windicss/0.9.11_vite@2.1.3:
+  /vite-plugin-windicss/0.10.2_vite@2.1.3:
     dependencies:
-      '@windicss/plugin-utils': 0.9.11
+      '@windicss/plugin-utils': 0.10.2
+      chalk: 4.1.0
       debug: 4.3.2
       vite: 2.1.3
       windicss: 2.5.5
@@ -5798,7 +5799,7 @@ packages:
     peerDependencies:
       vite: ^2.0.1
     resolution:
-      integrity: sha512-wcF2VmglWqvtsi8Zq4kTVVU9jPiiAfdyy91TnlgaJYlgRaBZcwb7QSJ9p5SeOWIyl6RpzjlK2JFWa0djrVmG8w==
+      integrity: sha512-+kgzjwW6VNFlMlQvN4C5iCIqCAhSmTLteVz9IA7LjnpyM6X4tpZmWiTiNlLzAeiJt1eUpu9lFcA7GfuZR+OQDA==
   /vite-ssg/0.9.1_95d322f6e90982d66e3b763805f1ec3b:
     dependencies:
       '@vue/compiler-sfc': 3.0.7_vue@3.0.7
@@ -6295,7 +6296,7 @@ specifiers:
   vite-plugin-pages: ^0.8.0
   vite-plugin-pwa: ^0.6.3
   vite-plugin-vue-layouts: ^0.2.2
-  vite-plugin-windicss: ^0.9.11
+  vite-plugin-windicss: ^0.10.1
   vite-ssg: ^0.9.1
   vue: ^3.0.7
   vue-i18n: ^9.0.0

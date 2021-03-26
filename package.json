@@ -37,7 +37,7 @@
     "vite-plugin-pages": "^0.8.0",
     "vite-plugin-pwa": "^0.6.3",
     "vite-plugin-vue-layouts": "^0.2.2",
-    "vite-plugin-windicss": "^0.9.11",
+    "vite-plugin-windicss": "^0.10.1",
     "vite-ssg": "^0.9.1"
   }
 }

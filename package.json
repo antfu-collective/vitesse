@@ -20,7 +20,7 @@
     "@iconify/json": "^1.1.322",
     "@intlify/vite-plugin-vue-i18n": "^2.0.4",
     "@types/nprogress": "^0.2.0",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@vitejs/plugin-vue": "^1.2.0",
     "@vue/compiler-sfc": "^3.0.9",
     "@vue/server-renderer": "^3.0.9",
@@ -37,7 +37,7 @@
     "vite-plugin-pages": "^0.9.0",
     "vite-plugin-pwa": "^0.6.4",
     "vite-plugin-vue-layouts": "^0.2.2",
-    "vite-plugin-windicss": "^0.10.4",
+    "vite-plugin-windicss": "^0.11.1",
     "vite-ssg": "^0.9.1"
   }
 }

@@ -2,12 +2,12 @@ button:
   about: À propos de
   back: Retour
   go: Essayer
-  home: Maison
+  home: Accueil
   toggle_dark: Basculer en mode sombre
   toggle_langs: Changer de langue
 intro:
-  desc: Example d'application Vite
+  desc: Exemple d'application Vite
   dynamic-route: Démo de route dynamique
   hi: Salut, {name}!
-  whats-your-name: Comment t'appelles-tu?
+  whats-your-name: Comment t'appelles-tu ?
 not-found: Page non trouvée

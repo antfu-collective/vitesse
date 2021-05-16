@@ -4,9 +4,9 @@ button:
   go: Перейти
   home: Главная
   toggle_dark: Включить темный режим
-  toggle_langs: Сменить языки
+  toggle_langs: Сменить язык
 intro:
-  desc: Самоуверенный стартовый шаблон Vite
+  desc: Самостоятельный начальный шаблон Vite
   dynamic-route: Демо динамического маршрута
   hi: Привет, {name}!
   whats-your-name: Как тебя зовут?

@@ -99,6 +99,7 @@ As this template is strongly opinionated, the following provides a curated list 
 - [vitesse-addons](https://github.com/JohnCampionJr/vitesse-addons) by [@johncampionjr](https://github.com/johncampionjr) - additional options for integrations, including [Prettier](https://prettier.io) and [Storybook](https://storybook.js.org)
 - [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template) by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
 - [vitesse-nuxt](https://github.com/antfu/vitesse-nuxt) - Vitesse for Nuxt 2 (expiremental)
+- [vitespa](https://github.com/ctholho/vitespa) - Like Vitesse but without SSG/SSR
 
 ## Try it now!
 

@@ -48,6 +48,8 @@ export default defineConfig({
       // allow auto import and register components used in markdown
       customLoaderMatcher: id => id.endsWith('.md'),
 
+      globalComponentsDeclaration: true,
+
       // auto import icons
       customComponentResolvers: [
         // https://github.com/antfu/vite-plugin-icons

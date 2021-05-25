@@ -31,7 +31,7 @@
     "pnpm": "^6.5.0",
     "typescript": "^4.2.4",
     "vite": "^2.3.4",
-    "vite-plugin-components": "^0.10.1",
+    "vite-plugin-components": "^0.10.2",
     "vite-plugin-icons": "^0.5.1",
     "vite-plugin-md": "^0.6.7",
     "vite-plugin-pages": "^0.12.1",

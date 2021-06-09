@@ -3,12 +3,13 @@ import { UserModule } from '~/types'
 
 // import i18n resources
 // https://vitejs.dev/guide/features.html#glob-import
+const folderPath = '../../locales/'
 const messages = Object.fromEntries(
   Object.entries(
-    import.meta.globEager('../../locales/*.y(a)?ml'))
+    import.meta.globEager(`${folderPath}*.y(a)?ml`))
     .map(([key, value]) => {
       const yaml = key.endsWith('.yaml')
-      return [key.slice(14, yaml ? -5 : -4), value.default]
+      return [key.slice(folderPath.length, yaml ? -5 : -4), value.default]
     }),
 )
 

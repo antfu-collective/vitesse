@@ -37,9 +37,13 @@ const { t } = useI18n()
       :aria-label="t('intro.whats-your-name')"
       type="text"
       autocomplete="false"
-      class="px-4 py-2 text-sm text-center bg-transparent border border-gray-200 rounded outline-none active:outline-none dark:border-gray-700"
-      style="width: 250px"
       @keydown.enter="go"
+      p="x-4 y-2"
+      w="250px"
+      text="center"
+      bg="transparent"
+      border="~ rounded gray-200 dark:gray-700"
+      outline="none active:none"
     >
     <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
 

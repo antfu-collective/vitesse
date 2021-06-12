@@ -17,10 +17,10 @@ const toggleLocales = () => {
       <carbon-campsite />
     </router-link>
 
-    <a class="icon-btn mx-2" :title="t('button.toggle_dark')" @click="toggleDark">
+    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark">
       <carbon-moon v-if="isDark" />
       <carbon-sun v-else />
-    </a>
+    </button>
 
     <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales">
       <carbon-language />

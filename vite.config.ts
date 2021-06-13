@@ -10,6 +10,7 @@ import WindiCSS from 'vite-plugin-windicss'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Prism from 'markdown-it-prism'
+import LinkAttributes from 'markdown-it-link-attributes'
 
 export default defineConfig({
   resolve: {
@@ -37,32 +38,13 @@ export default defineConfig({
       markdownItSetup(md) {
         // https://prismjs.com/
         md.use(Prism)
-
-        // https://github.com/markdown-it/markdown-it/blob/master/docs/architecture.md#renderer
-        // add target="_blank" to all links with http/https
-        const defaultRender
-            = md.renderer.rules.link_open
-            || function(tokens: any, idx: any, options: any, env: any, self: any) {
-              return self.renderToken(tokens, idx, options)
-            }
-        md.renderer.rules.link_open = function(
-          tokens: any,
-          idx: string | number,
-          options: any,
-          env: any,
-          self: any,
-        ) {
-          const hrefIndex = tokens[idx].attrIndex('href')
-          const href = tokens[idx].attrs[hrefIndex][1]
-          if (href.startsWith('http://') || href.startsWith('https://')) {
-            const aIndex = tokens[idx].attrIndex('target')
-            if (aIndex < 0)
-              tokens[idx].attrPush(['target', '_blank'])
-            else
-              tokens[idx].attrs[aIndex][1] = '_blank'
-          }
-          return defaultRender(tokens, idx, options, env, self)
-        }
+        md.use(LinkAttributes, {
+          pattern: /^https?:\/\//,
+          attrs: {
+            target: '_blank',
+            rel: 'noopener',
+          },
+        })
       },
     }),
 

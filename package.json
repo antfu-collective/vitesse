@@ -27,6 +27,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^7.28.0",
     "https-localhost": "^4.6.5",
+    "markdown-it-link-attributes": "^3.0.0",
     "markdown-it-prism": "^2.1.6",
     "pnpm": "^6.7.6",
     "typescript": "^4.3.2",

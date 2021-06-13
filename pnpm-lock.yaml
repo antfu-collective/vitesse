@@ -14,6 +14,7 @@ specifiers:
   cross-env: ^7.0.3
   eslint: ^7.28.0
   https-localhost: ^4.6.5
+  markdown-it-link-attributes: ^3.0.0
   markdown-it-prism: ^2.1.6
   nprogress: ^0.2.0
   pnpm: ^6.7.6
@@ -54,6 +55,7 @@ devDependencies:
   cross-env: 7.0.3
   eslint: 7.28.0
   https-localhost: 4.6.5
+  markdown-it-link-attributes: 3.0.0
   markdown-it-prism: 2.1.6
   pnpm: 6.7.6
   typescript: 4.3.2
@@ -5047,6 +5049,10 @@ packages:
   /map-obj/2.0.0:
     resolution: {integrity: sha1-plzSkIepJZi4eRJXpSPgISIqwfk=}
     engines: {node: '>=4'}
+    dev: true
+
+  /markdown-it-link-attributes/3.0.0:
+    resolution: {integrity: sha512-B34ySxVeo6MuEGSPCWyIYryuXINOvngNZL87Mp7YYfKIf6DcD837+lXA8mo6EBbauKsnGz22ZH0zsbOiQRWTNg==}
     dev: true
 
   /markdown-it-prism/2.1.6:

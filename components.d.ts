@@ -11,7 +11,6 @@ declare module 'vue' {
     CarbonLanguage: typeof import('virtual:vite-icons/carbon/language')['default']
     CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
     CarbonLogoGithub: typeof import('virtual:vite-icons/carbon/logo-github')['default']
-    CarbonPedestrian: typeof import('virtual:vite-icons/carbon/pedestrian')['default']
   }
 }
 

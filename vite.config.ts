@@ -57,6 +57,7 @@ export default defineConfig({
       // allow auto import and register components used in markdown
       customLoaderMatcher: id => id.endsWith('.md'),
 
+      // generate `components.d.ts` for ts support with Volar
       globalComponentsDeclaration: true,
 
       // auto import icons
@@ -111,6 +112,13 @@ export default defineConfig({
       include: [path.resolve(__dirname, 'locales/**')],
     }),
   ],
+
+  server: {
+    fs: {
+      strict: true,
+    },
+  },
+
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
     script: 'async',

@@ -25,6 +25,8 @@ html:not(.dark) {
   --prism-decorator: #bd8f8f;
   --prism-regex: #ab5e3f;
   --prism-json-property: #698c96;
+
+  --md-blockquote-color: #111827;
 }
 
 html.dark {
@@ -51,4 +53,10 @@ html.dark {
   --prism-line-number-gutter: #eeeeee;
   --prism-line-highlight-background: #444444;
   --prism-selection-background: #444444;
+
+  --md-blockquote-color: #e5e7eb;
+}
+
+.prose blockquote {
+  color: var(--md-blockquote-color);
 }

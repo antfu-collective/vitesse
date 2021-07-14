@@ -7,3 +7,5 @@ dist-ssr
 node_modules
 # intellij stuff
 .idea/
+# logs
+*.log

@@ -13,6 +13,8 @@ import Prism from 'markdown-it-prism'
 // @ts-expect-error missing types
 import LinkAttributes from 'markdown-it-link-attributes'
 
+const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
+
 export default defineConfig({
   resolve: {
     alias: {
@@ -34,7 +36,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      wrapperClasses: 'prose prose-sm m-auto text-left',
+      wrapperClasses: markdownWrapperClasses,
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
@@ -75,7 +77,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS({
-      safelist: 'prose prose-sm m-auto text-left',
+      safelist: markdownWrapperClasses,
     }),
 
     // https://github.com/antfu/vite-plugin-pwa

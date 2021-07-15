@@ -23,14 +23,15 @@ specifiers:
   vite: ^2.4.2
   vite-plugin-components: ^0.12.2
   vite-plugin-icons: ^0.6.5
-  vite-plugin-md: ^0.6.7
+  vite-plugin-md: ^0.8.0
   vite-plugin-pages: ^0.15.0
   vite-plugin-pwa: ^0.8.1
   vite-plugin-vue-layouts: ^0.3.1
   vite-plugin-windicss: ^1.2.4
-  vite-ssg: ^0.11.4
+  vite-ssg: ^0.12.0
   vue: ^3.1.4
-  vue-global-api: ^0.2.3
+  vue-demi: ^0.11.2
+  vue-global-api: ^0.2.4
   vue-i18n: ^9.1.7
   vue-router: ^4.0.10
   vue-tsc: ^0.2.1
@@ -41,7 +42,8 @@ dependencies:
   nprogress: 0.2.0
   prism-theme-vars: 0.2.2
   vue: 3.1.4
-  vue-global-api: 0.2.3_vue@3.1.4
+  vue-demi: 0.11.2_vue@3.1.4
+  vue-global-api: 0.2.4_vue@3.1.4
   vue-i18n: 9.1.7_vue@3.1.4
   vue-router: 4.0.10_vue@3.1.4
 
@@ -64,12 +66,12 @@ devDependencies:
   vite: 2.4.2
   vite-plugin-components: 0.12.2_vite@2.4.2
   vite-plugin-icons: 0.6.5_e5874e55be4990ee100e9842c20f144e
-  vite-plugin-md: 0.6.7_vite@2.4.2
+  vite-plugin-md: 0.8.0_vite@2.4.2
   vite-plugin-pages: 0.15.0_e0e01332e3ba4d03357bd797e805be53
   vite-plugin-pwa: 0.8.1_vite@2.4.2
   vite-plugin-vue-layouts: 0.3.1_vite@2.4.2
   vite-plugin-windicss: 1.2.4_vite@2.4.2
-  vite-ssg: 0.11.4_c1e5873e42b56728fc515e1a4566462d
+  vite-ssg: 0.12.0_c1e5873e42b56728fc515e1a4566462d
   vue-tsc: 0.2.1_typescript@4.3.5+vue@3.1.4
 
 packages:
@@ -1988,7 +1990,7 @@ packages:
     resolution: {integrity: sha512-5CmF/epSo9L1Obz3A37UJOpDdno0BDw46zyXq0DHgvzEwL6gPb9GgJZcy4Hm5YSjQYIeQPo35uO8qsZyIjEZog==}
     dependencies:
       '@vueuse/shared': 5.1.3_vue@3.1.4
-      vue-demi: 0.11.0_vue@3.1.4
+      vue-demi: 0.11.2_vue@3.1.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -2005,7 +2007,7 @@ packages:
   /@vueuse/shared/5.1.3_vue@3.1.4:
     resolution: {integrity: sha512-p8n/69QMtSsLN5rri9c3sN5QJJXWA7cm9chgo3DowTBRYLBni1I9kGY2nz299Tur6XEFuf+63E5TvMTJVJeHHw==}
     dependencies:
-      vue-demi: 0.11.0_vue@3.1.4
+      vue-demi: 0.11.2_vue@3.1.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -6763,8 +6765,8 @@ packages:
       vue-template-es2015-compiler: 1.9.1
     dev: true
 
-  /vite-plugin-md/0.6.7_vite@2.4.2:
-    resolution: {integrity: sha512-R9i61r1y6gfelJKtHiHkw6NOkucFzGRgy7VL7bqMufiSh1UNyYKZrpiQtagzavpBlJSVk34lfEyfyKpQyeuocQ==}
+  /vite-plugin-md/0.8.0_vite@2.4.2:
+    resolution: {integrity: sha512-/fSCaK/UWONGtPFdzxZcxaddLbbibyqLHQlyOqE5aC9ntTSLEQB9WAlzSmXQ0yjzUxG8o3Q8NjX/0w8dXy43gw==}
     peerDependencies:
       vite: ^2.0.0
     dependencies:
@@ -6837,8 +6839,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg/0.11.4_c1e5873e42b56728fc515e1a4566462d:
-    resolution: {integrity: sha512-JVq45h5IRGxYpHu2yjLdWKAUaTISXrWKjPPDHetNVhP8wp/MGZ1gYhns9XOSfYfLbWSMQgDIjbANAS9XzE/X3Q==}
+  /vite-ssg/0.12.0_c1e5873e42b56728fc515e1a4566462d:
+    resolution: {integrity: sha512-r2cOxkA6b7mCago3Sn6n+8RsBpB/2UU6w3svJdlb3MtXtfmN3ueWZwXCPN8UmOnM4lfnfSL1XKNP92CNg+MWHg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -7026,14 +7028,14 @@ packages:
       - vue
     dev: true
 
-  /vue-demi/0.11.0_vue@3.1.4:
-    resolution: {integrity: sha512-fjMHzLh3KFMxC4gvSn3KLM9klh868ccj+lKfpyt/Y6LODVfHjL1hGtDrszV7B7saaHtOPVqboGPmqXKwcYwwTQ==}
+  /vue-demi/0.11.2_vue@3.1.4:
+    resolution: {integrity: sha512-J+X8Au6BhQdcej6LY4O986634hZLu55L0ewU2j8my7WIKlu8cK0dqmdUxqVHHMd/cMrKKZ9SywB/id6aLhwCtA==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
     peerDependencies:
       '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^2.6.0 || >=3.0.0
+      vue: ^3.0.0 || ^2.6.0
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
@@ -7059,10 +7061,10 @@ packages:
       - supports-color
     dev: true
 
-  /vue-global-api/0.2.3_vue@3.1.4:
-    resolution: {integrity: sha512-D9YwxaQbRtcxHiQltyGW9/t22Zlfut7fGQKXZDBj7YTosVbbZgUdMjb916mn4kI2h8qV0W71uyY4fX6YRcn7rQ==}
+  /vue-global-api/0.2.4_vue@3.1.4:
+    resolution: {integrity: sha512-Cm84AZiALt8f4CJZzPvbForTzAUYe41msnzUnRK6B7YkaDaN8g87ap8CpHWvTU0+XtyDeLLAeQoRr+uwamxfpQ==}
     dependencies:
-      vue-demi: 0.11.0_vue@3.1.4
+      vue-demi: 0.11.2_vue@3.1.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue

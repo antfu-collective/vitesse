@@ -4,7 +4,6 @@
 
 <p align='center'>
 Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
-<sub><em>Now with <a href="http://windicss.netlify.app/">Windi CSS</a>! ⚡️</em></sub>
 </p>
 
 <br>
@@ -95,8 +94,12 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ## Variations
 
-As this template is strongly opinionated, the following provides a curated list for community maintained variations with different preferences and feature sets. Check them out as well. PR to add yours are also welcome!
+As this template is strongly opinionated, the following provides a curated list for community-maintained variations with different preferences and feature sets. Check them out as well. PR to add yours is also welcome!
 
+###### Official
+- [**vitesse-lite**](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
+
+###### Community
 - [vitesse-addons](https://github.com/JohnCampionJr/vitesse-addons) by [@johncampionjr](https://github.com/johncampionjr) - additional options for integrations, including [Prettier](https://prettier.io) and [Storybook](https://storybook.js.org)
 - [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template) by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
 - [vitesse-nuxt](https://github.com/antfu/vitesse-nuxt) - Vitesse for Nuxt 2 (expiremental)

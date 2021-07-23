@@ -1,3 +1,5 @@
+// register vue composition api globally
+import 'vue-global-api'
 import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
@@ -10,12 +12,8 @@ import 'virtual:windi-components.css'
 import './styles/main.css'
 // windicss utilities should be the last style import
 import 'virtual:windi-utilities.css'
-
 // windicss devtools support (dev only)
 import 'virtual:windi-devtools'
-
-// register vue composition api globally
-import 'vue-global-api'
 
 const routes = setupLayouts(generatedRoutes)
 

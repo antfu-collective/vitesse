@@ -1,3 +1,6 @@
 {
-  "extends": "@antfu"
+  "extends": [
+    "@antfu",
+    "vue-global-api/eslint-config"
+  ]
 }

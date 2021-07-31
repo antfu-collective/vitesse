@@ -38,6 +38,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
+- 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
+
 - 🦾 TypeScript, of course
 
 - ☁️ Deploy on Netlify, zero-config
@@ -83,6 +85,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [TypeScript](https://www.typescriptlang.org/)
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
+  - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
 - [Netlify](https://www.netlify.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically

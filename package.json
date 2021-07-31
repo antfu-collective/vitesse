@@ -13,7 +13,7 @@
     "prism-theme-vars": "^0.2.2",
     "vue": "^3.1.5",
     "vue-demi": "^0.11.2",
-    "vue-global-api": "^0.4.0",
+    "vue-global-api": "^0.4.1",
     "vue-i18n": "^9.1.7",
     "vue-router": "^4.0.10"
   },

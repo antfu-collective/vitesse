@@ -31,7 +31,7 @@ specifiers:
   vite-ssg: ^0.13.0
   vue: ^3.1.5
   vue-demi: ^0.11.2
-  vue-global-api: ^0.4.0
+  vue-global-api: ^0.4.1
   vue-i18n: ^9.1.7
   vue-router: ^4.0.10
   vue-tsc: ^0.2.2
@@ -43,7 +43,7 @@ dependencies:
   prism-theme-vars: 0.2.2
   vue: 3.1.5
   vue-demi: 0.11.2_vue@3.1.5
-  vue-global-api: 0.4.0_vue@3.1.5
+  vue-global-api: 0.4.1_vue@3.1.5
   vue-i18n: 9.1.7_vue@3.1.5
   vue-router: 4.0.10_vue@3.1.5
 
@@ -2863,8 +2863,8 @@ packages:
       eslint-plugin-promise: 5.1.0_eslint@7.32.0
     dev: true
 
-  /eslint-config-vue-global-api/0.4.0:
-    resolution: {integrity: sha512-qBH1UfbF3nUAG5MzTOYKl/FjxILppSR3nI5FeRNm24uU7tc/M5so8GgroWspyYLqBW9j6gXByFuYSCKqmmFXlg==}
+  /eslint-config-vue-global-api/0.4.1:
+    resolution: {integrity: sha512-mJTiKBGLe1FXmEifYzCQzUTBpFv8OtfYzP6PAOuVRf+3hkGLMeiDh4bVzZEaJfdExtc8mPw9vp35YSLhwTselQ==}
     dev: false
 
   /eslint-import-resolver-node/0.3.4:
@@ -5975,10 +5975,10 @@ packages:
       - supports-color
     dev: true
 
-  /vue-global-api/0.4.0_vue@3.1.5:
-    resolution: {integrity: sha512-0YhtXqrtKFO2nuv+dUv7KcBt4vtFQzFE/OslTke6We42wmACRc4WefB4E905YdtMMmIWGIubWAvGOQEz62amSg==}
+  /vue-global-api/0.4.1_vue@3.1.5:
+    resolution: {integrity: sha512-283vpYOhVHJCpMkjNVEwZdgaAb+Y93zFaXGAWTI378MLoNuwQydjD/BAy1e81QYEmyA+JbxqcmMZVWcM9rbriw==}
     dependencies:
-      eslint-config-vue-global-api: 0.4.0
+      eslint-config-vue-global-api: 0.4.1
       vue-demi: 0.11.2_vue@3.1.5
     transitivePeerDependencies:
       - '@vue/composition-api'

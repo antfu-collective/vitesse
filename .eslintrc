@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@antfu",
+    "@mineiros",
     "vue-global-api"
   ]
 }

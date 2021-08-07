@@ -7,6 +7,8 @@
     "preview-https": "serve dist"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.4.0",
+    "@heroicons/vue": "^1.0.3",
     "@vueuse/core": "^5.2.0",
     "@vueuse/head": "^0.6.0",
     "nprogress": "^0.2.0",

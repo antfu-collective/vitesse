@@ -2,6 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@antfu/eslint-config': ^0.7.0
+  '@headlessui/vue': ^1.4.0
+  '@heroicons/vue': ^1.0.3
   '@iconify/json': ^1.1.381
   '@intlify/vite-plugin-vue-i18n': ^2.4.0
   '@types/nprogress': ^0.2.0
@@ -38,6 +40,8 @@ specifiers:
   vue-tsc: ^0.2.2
 
 dependencies:
+  '@headlessui/vue': 1.4.0_vue@3.1.5
+  '@heroicons/vue': 1.0.3_vue@3.1.5
   '@vueuse/core': 5.2.0_vue@3.1.5
   '@vueuse/head': 0.6.0_vue@3.1.5
   nprogress: 0.2.0
@@ -1348,6 +1352,23 @@ packages:
     dependencies:
       '@hapi/hoek': 8.5.1
     dev: true
+
+  /@headlessui/vue/1.4.0_vue@3.1.5:
+    resolution: {integrity: sha512-BBLDciyKiGK03whaSVkUacDY2Cd5AR05JCUPWQLvQ9HtjQc9tv5RyPpcdmoXJa+XWI10e3U1JxL+8FY7kJMcEQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.1.5
+    dev: false
+
+  /@heroicons/vue/1.0.3_vue@3.1.5:
+    resolution: {integrity: sha512-pj1foeBadGwRDT3ldEQ3t+C6p8Yw7LDoINvemJpH3j6Xdpm0iO4014OL288nueBnPKY7/xrHSJwy0dZIum1Eyw==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.1.5
+    dev: false
 
   /@humanwhocodes/config-array/0.5.0:
     resolution: {integrity: sha512-FagtKFz74XrTl7y6HCzQpwDfXP0yhxe9lHLD1UZxjvZIcbyRz8zTFF/yYNfSfzU414eDwZ1SrO0Qvtyf+wFMQg==}

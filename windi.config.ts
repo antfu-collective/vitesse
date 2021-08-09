@@ -12,6 +12,10 @@ export default defineConfig({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Lexend Deca', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
       typography: {
         DEFAULT: {
           css: {

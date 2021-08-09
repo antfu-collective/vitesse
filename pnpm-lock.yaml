@@ -6,7 +6,7 @@ specifiers:
   '@heroicons/vue': ^1.0.3
   '@iconify/json': ^1.1.381
   '@intlify/vite-plugin-vue-i18n': ^2.4.0
-  '@mineiros/eslint-config': ^0.4.1
+  '@mineiros/eslint-config': ^0.5.0
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.28.5
   '@vitejs/plugin-vue': ^1.3.0
@@ -26,6 +26,7 @@ specifiers:
   typescript: ^4.3.5
   vite: ^2.4.4
   vite-plugin-components: ^0.13.2
+  vite-plugin-fonts: ^0.2.2
   vite-plugin-icons: ^0.6.5
   vite-plugin-md: ^0.10.0
   vite-plugin-pages: ^0.15.1
@@ -57,7 +58,7 @@ devDependencies:
   '@antfu/ni': 0.7.0
   '@iconify/json': 1.1.381
   '@intlify/vite-plugin-vue-i18n': 2.4.0_bdfaf14c5541fb1bd751e193a94ac007
-  '@mineiros/eslint-config': 0.4.1_eslint@7.32.0+typescript@4.3.5
+  '@mineiros/eslint-config': 0.5.0_eslint@7.32.0+typescript@4.3.5
   '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 4.28.5_eslint@7.32.0+typescript@4.3.5
   '@vitejs/plugin-vue': 1.3.0_@vue+compiler-sfc@3.1.5
@@ -73,6 +74,7 @@ devDependencies:
   typescript: 4.3.5
   vite: 2.4.4
   vite-plugin-components: 0.13.2_vite@2.4.4
+  vite-plugin-fonts: 0.2.2_vite@2.4.4
   vite-plugin-icons: 0.6.5_6eadf512519e20b4bdc925b68b273b27
   vite-plugin-md: 0.10.0_vite@2.4.4
   vite-plugin-pages: 0.15.1_a95bb6b02fb0010eec7c5fe32d7277db
@@ -1414,8 +1416,8 @@ packages:
       '@intlify/runtime': 9.1.7
       '@intlify/shared': 9.1.7
 
-  /@mineiros/eslint-config-basic/0.4.1_eslint@7.32.0:
-    resolution: {integrity: sha512-GhQyPhDYP/o9bi/IBvcZKd7YlsJHQsA+QJ93i8Cg7skinx1YbwLYNR/Yljuu3zj8g0a4kalv+VZNgfF/NTJOGA==}
+  /@mineiros/eslint-config-basic/0.5.0_eslint@7.32.0:
+    resolution: {integrity: sha512-7XxiLmVop4njL0DVFbrPAuWIwc88GdQGHjQwHyN95FG6FwboFZ+iO4kGMdtoe51owwBZsMxOW98zVuU0EEByvQ==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
@@ -1436,13 +1438,13 @@ packages:
       - supports-color
     dev: true
 
-  /@mineiros/eslint-config-typescript/0.4.1_eslint@7.32.0+typescript@4.3.5:
-    resolution: {integrity: sha512-TdfWmcpTnCBRjrvlZrL5cngK5yJeo9S/mmlmPZ7d16hXNMHOGafXPOE5gN/N2Y9HbdU1YDMU8tFoBNWl1+38vw==}
+  /@mineiros/eslint-config-typescript/0.5.0_eslint@7.32.0+typescript@4.3.5:
+    resolution: {integrity: sha512-T9hqK+N75Sl7YhOo7LRE4zS5f5YyX/H4EmTuFOSTpUQ2HFMUBI51f+Zm017GOX/wXtaPQzmoEMxzEebsMJvjQg==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
     dependencies:
-      '@mineiros/eslint-config-basic': 0.4.1_eslint@7.32.0
+      '@mineiros/eslint-config-basic': 0.5.0_eslint@7.32.0
       '@typescript-eslint/eslint-plugin': 4.29.0_48ea228fa0647506aa803d17f48b59f7
       '@typescript-eslint/parser': 4.29.0_eslint@7.32.0+typescript@4.3.5
       eslint: 7.32.0
@@ -1453,13 +1455,13 @@ packages:
       - supports-color
     dev: true
 
-  /@mineiros/eslint-config-vue/0.4.1_eslint@7.32.0+typescript@4.3.5:
-    resolution: {integrity: sha512-ULB+5NwLlHySahATg3ErXoaE2fQrPLUlxbhSecG5KBlidRR5OOy6A+tggQpWa1a7g2dT6hVJiv8efxhrCHumTw==}
+  /@mineiros/eslint-config-vue/0.5.0_eslint@7.32.0+typescript@4.3.5:
+    resolution: {integrity: sha512-ua02D5f+luX8EQ7tuP0J778IokCZKQUNnkBqnX6smbAW897Ogtdofm2Pl6lR3Z4FFM88nlW2EpnHJMg2AtxiKQ==}
     peerDependencies:
       eslint: '>=7.4.0'
       prettier: '>=2.3.0'
     dependencies:
-      '@mineiros/eslint-config-typescript': 0.4.1_eslint@7.32.0+typescript@4.3.5
+      '@mineiros/eslint-config-typescript': 0.5.0_eslint@7.32.0+typescript@4.3.5
       '@vue/eslint-config-prettier': 6.0.0_e3938dbf216fb7401345ea780cddc061
       eslint: 7.32.0
       eslint-plugin-prettier: 3.4.0_eslint@7.32.0
@@ -1471,12 +1473,12 @@ packages:
       - typescript
     dev: true
 
-  /@mineiros/eslint-config/0.4.1_eslint@7.32.0+typescript@4.3.5:
-    resolution: {integrity: sha512-6+yaZJoKl8xIchK8w3N0Y/MfzldHDNeBIdMIM/Zs3Y4XWLWAQsmiuf/3d2hjKUt0GXXh60c2Pvbj1ARPi09Iog==}
+  /@mineiros/eslint-config/0.5.0_eslint@7.32.0+typescript@4.3.5:
+    resolution: {integrity: sha512-/rueIRKVEJYez7V9YTat/wXJBIIzkoeZHJoxsPK6Tzkjo2sPJ64zCvLQhPxYXVAGH+pFjyRHKQzpyY8YU5tbaA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@mineiros/eslint-config-vue': 0.4.1_eslint@7.32.0+typescript@4.3.5
+      '@mineiros/eslint-config-vue': 0.5.0_eslint@7.32.0+typescript@4.3.5
       eslint: 7.32.0
     transitivePeerDependencies:
       - eslint-config-prettier
@@ -5726,6 +5728,14 @@ packages:
       vite: 2.4.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /vite-plugin-fonts/0.2.2_vite@2.4.4:
+    resolution: {integrity: sha512-fhzhsrTiuzlDjSO6g5sV5EVIIvbb8lmsaIY6eUTBM4lcF55x40UBpHrcyvNwIhQG211g0lu83XC7oZlkmvdkMA==}
+    peerDependencies:
+      vite: ^2.0.0
+    dependencies:
+      vite: 2.4.4
     dev: true
 
   /vite-plugin-icons/0.6.5_6eadf512519e20b4bdc925b68b273b27:

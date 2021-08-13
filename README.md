@@ -28,7 +28,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🎨 [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS framework
 
-- 😃 [Use icons from any icon sets, with no compromise](./src/components)
+- 😃 [Use icons from any icon sets, with no compromise](https://github.com/antfu/vite-plugin-icons)
 
 - 🌍 [I18n ready](./locales)
 

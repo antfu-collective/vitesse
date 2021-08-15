@@ -7,19 +7,19 @@
     "preview-https": "serve dist"
   },
   "dependencies": {
-    "@vueuse/core": "^5.3.0",
+    "@vueuse/core": "^6.0.0",
     "@vueuse/head": "^0.6.0",
     "nprogress": "^0.2.0",
     "prism-theme-vars": "^0.2.2",
     "vue": "^3.2.2",
-    "vue-demi": "^0.11.2",
+    "vue-demi": "^0.11.3",
     "vue-global-api": "^0.4.1",
     "vue-i18n": "^9.1.7",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.7.0",
-    "@iconify/json": "^1.1.386",
+    "@iconify/json": "^1.1.387",
     "@intlify/vite-plugin-vue-i18n": "^2.4.0",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
@@ -32,7 +32,7 @@
     "https-localhost": "^4.6.5",
     "markdown-it-link-attributes": "^3.0.0",
     "markdown-it-prism": "^2.1.8",
-    "pnpm": "^6.12.1",
+    "pnpm": "^6.13.0",
     "typescript": "^4.3.5",
     "vite": "^2.4.4",
     "vite-plugin-components": "^0.13.2",
@@ -43,6 +43,6 @@
     "vite-plugin-vue-layouts": "^0.3.1",
     "vite-plugin-windicss": "^1.2.7",
     "vite-ssg": "^0.14.5",
-    "vue-tsc": "^0.2.2"
+    "vue-tsc": "^0.2.3"
   }
 }

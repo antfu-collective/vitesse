@@ -9,5 +9,6 @@ intro:
   desc: Plantilla de Inicio de Vite Dogmática
   dynamic-route: Demo de ruta dinámica
   hi: ¡Hola, {name}!
+  aka: También conocido como
   whats-your-name: ¿Cómo te llamas?
 not-found: No se ha encontrado

@@ -9,5 +9,6 @@ intro:
   desc: Modelo Opinativo de Partida de Vite
   dynamic-route: Demonstração de rota dinâmica
   hi: Olá, {name}!
+  aka: Também conhecido como
   whats-your-name: Qual é o seu nome?
 not-found: Não encontrado

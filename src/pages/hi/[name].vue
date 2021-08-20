@@ -8,10 +8,9 @@ const router = useRouter()
 const { t } = useI18n()
 const user = useUserStore()
 
-watch(() => props.name, (name) => {
-  user.setNewName(name)
-}, { immediate: true })
-
+watchEffect(() => {
+  user.setNewName(props.name)
+})
 </script>
 
 <template>
@@ -22,24 +21,27 @@ watch(() => props.name, (name) => {
     <p>
       {{ t('intro.hi', { name: props.name }) }}
     </p>
-    <template v-if="user.otherNames.length">
-      <p class="text-sm">
-        {{ t('intro.aka') }}:
-        <ul>
-          <li v-for="name in user.otherNames">
-            {{ name }}
-          </li>
-        </ul>
-      </p>
-    </template>
 
     <p class="text-sm opacity-50">
       <em>{{ t('intro.dynamic-route') }}</em>
     </p>
 
+    <template v-if="user.otherNames.length">
+      <p class="text-sm mt-4">
+        <span class="opacity-75">{{ t('intro.aka') }}:</span>
+        <ul>
+          <li v-for="name in user.otherNames" :key="name">
+            <router-link :to="`/hi/${name}`" replace>
+              {{ name }}
+            </router-link>
+          </li>
+        </ul>
+      </p>
+    </template>
+
     <div>
       <button
-        class="btn m-3 text-sm mt-8"
+        class="btn m-3 text-sm mt-6"
         @click="router.back()"
       >
         {{ t('button.back') }}

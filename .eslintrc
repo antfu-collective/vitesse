@@ -1,6 +1,5 @@
 {
   "extends": [
-    "@antfu",
-    "vue-global-api"
+    "@antfu"
   ]
 }

@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
 import { useUserStore } from '~/stores/user'
 
 const props = defineProps<{ name: string }>()
 const router = useRouter()
-const { t } = useI18n()
 const user = useUserStore()
+const { t } = useI18n()
 
 watchEffect(() => {
   user.setNewName(props.name)

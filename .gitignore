@@ -5,7 +5,7 @@
 dist
 dist-ssr
 node_modules
-# intellij stuff
 .idea/
-# logs
 *.log
+components.d.ts
+auto-imports.d.ts

@@ -22,9 +22,9 @@ specifiers:
   prism-theme-vars: ^0.2.2
   typescript: ^4.4.2
   unplugin-auto-import: ^0.1.7
+  unplugin-icons: ^0.7.1
   vite: ^2.5.1
   vite-plugin-components: ^0.13.2
-  vite-plugin-icons: ^0.6.5
   vite-plugin-md: ^0.11.0
   vite-plugin-pages: ^0.17.5
   vite-plugin-pwa: ^0.11.2
@@ -65,9 +65,9 @@ devDependencies:
   pnpm: 6.14.3
   typescript: 4.4.2
   unplugin-auto-import: 0.1.7_vite@2.5.1
+  unplugin-icons: 0.7.1_cb3aaa73d7c0880f08a8cad17c85a6dc
   vite: 2.5.1
   vite-plugin-components: 0.13.2_vite@2.5.1
-  vite-plugin-icons: 0.6.5_03d2c571c47277889d0f7cb457412944
   vite-plugin-md: 0.11.0_vite@2.5.1
   vite-plugin-pages: 0.17.5_0af502564fb53278e4f42e4690bab263
   vite-plugin-pwa: 0.11.2_vite@2.5.1
@@ -3490,6 +3490,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /has-pkg/0.0.1:
+    resolution: {integrity: sha512-UuzsNxcEOdEwRsz4HtaceT7jg71L2gopEq8OMOGKtPLYhHhF4RJZtkcZ4Xn0jmAmBSNhm0xPhrywgZkLu4aMYQ==}
+    dev: true
+
   /has-symbols/1.0.2:
     resolution: {integrity: sha512-chXa79rL/UC2KlX17jo3vRGz0azaWEx5tGqZg5pO3NUyEJVB17dMruQlzCCOfUvElghKcm5194+BCRvi2Rv/Gw==}
     engines: {node: '>= 0.4'}
@@ -5845,6 +5849,35 @@ packages:
       - webpack
     dev: true
 
+  /unplugin-icons/0.7.1_cb3aaa73d7c0880f08a8cad17c85a6dc:
+    resolution: {integrity: sha512-ZSl3qeynCF7KEvnLLjUB+MlrIVUxNGogf5fiwyo98QdVX/HEEYc5JMsew9yEgRBnP8dOU4tl5vHsqVddqaWE3Q==}
+    peerDependencies:
+      '@iconify/json': '*'
+      '@svgr/core': ^5.5.0
+      '@vue/compiler-sfc': ^3.0.2
+      vue-template-compiler: ^2.6.12
+      vue-template-es2015-compiler: ^1.9.0
+    peerDependenciesMeta:
+      '@svgr/core':
+        optional: true
+      '@vue/compiler-sfc':
+        optional: true
+      vue-template-compiler:
+        optional: true
+      vue-template-es2015-compiler:
+        optional: true
+    dependencies:
+      '@iconify/json': 1.1.394
+      '@iconify/json-tools': 1.0.10
+      '@vue/compiler-sfc': 3.2.6
+      has-pkg: 0.0.1
+      unplugin: 0.2.3_vite@2.5.1
+    transitivePeerDependencies:
+      - rollup
+      - vite
+      - webpack
+    dev: true
+
   /unplugin/0.2.3_vite@2.5.1:
     resolution: {integrity: sha512-j7X5c8c6O8JfsM6TPgrLSKYk82/oWkxaBBnhn9eeEVuqHMvfcW3G7OYYvgP5H6zpOtVtpdldNFEBr2gpSXBuwA==}
     peerDependencies:
@@ -5920,25 +5953,6 @@ packages:
       vite: 2.5.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /vite-plugin-icons/0.6.5_03d2c571c47277889d0f7cb457412944:
-    resolution: {integrity: sha512-lfePr8juO2ajp0571iLL+9zIoyBD9nSSSHlC4JYXbAeMOJB6WTP+Vdc2gze8yI8JRO+Z0TXCCvvL9bPgvkI4Cg==}
-    deprecated: renamed to `unplugin-icons`, see https://github.com/antfu/unplugin-icons/releases/tag/v0.7.0
-    peerDependencies:
-      '@iconify/json': '*'
-      '@vue/compiler-sfc': ^3.0.2
-      vue-template-compiler: ^2.6.12
-    peerDependenciesMeta:
-      '@vue/compiler-sfc':
-        optional: true
-      vue-template-compiler:
-        optional: true
-    dependencies:
-      '@iconify/json': 1.1.394
-      '@iconify/json-tools': 1.0.10
-      '@vue/compiler-sfc': 3.2.6
-      vue-template-es2015-compiler: 1.9.1
     dev: true
 
   /vite-plugin-md/0.11.0_vite@2.5.1:
@@ -6241,10 +6255,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.0.0-beta.15
       vue: 3.2.6
-
-  /vue-template-es2015-compiler/1.9.1:
-    resolution: {integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==}
-    dev: true
 
   /vue-tsc/0.3.0_typescript@4.4.2:
     resolution: {integrity: sha512-zaDRZBxwRIz1XjhNP92FqugG71st6BUMnA2EwPeXrAyzbEYVRz6TezNFceYl3QYqqN8CtaxbqUhaQEDj/ntoCA==}

@@ -3,11 +3,12 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
-import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
-import ViteComponents from 'vite-plugin-components'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 import Markdown from 'vite-plugin-md'
 import WindiCSS from 'vite-plugin-windicss'
-import AutoImport from 'unplugin-auto-import/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Prism from 'markdown-it-prism'
@@ -45,29 +46,27 @@ export default defineConfig({
       ],
     }),
 
-    // https://github.com/antfu/vite-plugin-components
-    ViteComponents({
+    // https://github.com/antfu/unplugin-vue-components
+    Components({
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
 
       // allow auto import and register components used in markdown
-      customLoaderMatcher: id => id.endsWith('.md'),
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
 
-      // generate `components.d.ts` for ts support with Volar
-      globalComponentsDeclaration: true,
-
-      // auto import icons
-      customComponentResolvers: [
-        // https://github.com/antfu/vite-plugin-icons
-        ViteIconsResolver({
+      // custom resolvers
+      resolvers: [
+        // auto import icons
+        // https://github.com/antfu/unplugin-icons
+        IconsResolver({
           componentPrefix: '',
           // enabledCollections: ['carbon']
         }),
       ],
     }),
 
-    // https://github.com/antfu/vite-plugin-icons
-    ViteIcons(),
+    // https://github.com/antfu/unplugin-icons
+    Icons(),
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS({

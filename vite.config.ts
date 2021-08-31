@@ -44,12 +44,15 @@ export default defineConfig({
         '@vueuse/head',
         '@vueuse/core',
       ],
+      dts: true,
     }),
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
+
+      dts: true,
 
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],

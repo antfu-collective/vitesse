@@ -20,6 +20,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🗂 [File based routing](./src/pages)
 
+- 🚪 [Nuxt like middleware](./src/middleware)
+
 - 📦 [Components auto importing](./src/components)
 
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)

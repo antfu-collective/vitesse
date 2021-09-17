@@ -1,7 +1,7 @@
 import { RouteLocationNormalized } from 'vue-router'
 import { UserModule } from '~/types'
 
-type Middleware = (to: RouteLocationNormalized, from: RouteLocationNormalized) => RouteLocationNormalized | boolean
+type Middleware = (to: RouteLocationNormalized, from: RouteLocationNormalized) => Promise<RouteLocationNormalized | boolean>
 interface MiddlewareModule {
   default: Middleware
 }

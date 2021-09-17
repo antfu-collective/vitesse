@@ -28,9 +28,9 @@ watchEffect(() => {
       <p class="text-sm mt-4">
         <span class="opacity-75">{{ t('intro.aka') }}:</span>
         <ul>
-          <li v-for="name in user.otherNames" :key="name">
-            <router-link :to="`/hi/${name}`" replace>
-              {{ name }}
+          <li v-for="otherName in user.otherNames" :key="otherName">
+            <router-link :to="`/hi/${otherName}`" replace>
+              {{ otherName }}
             </router-link>
           </li>
         </ul>

@@ -8,7 +8,7 @@
     "lint": "eslint \"**/*.{vue,ts,js}\""
   },
   "dependencies": {
-    "@vueuse/core": "^6.3.3",
+    "@vueuse/core": "^6.4.0",
     "@vueuse/head": "^0.6.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.0-rc.9",
@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.9.0",
-    "@iconify/json": "^1.1.402",
+    "@iconify/json": "^1.1.403",
     "@intlify/vite-plugin-vue-i18n": "^2.4.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
@@ -41,11 +41,11 @@
     "vite": "^2.5.8",
     "vite-plugin-inspect": "^0.3.6",
     "vite-plugin-md": "^0.11.0",
-    "vite-plugin-pages": "^0.18.0",
+    "vite-plugin-pages": "^0.18.1",
     "vite-plugin-pwa": "^0.11.2",
     "vite-plugin-vue-layouts": "^0.4.1",
     "vite-plugin-windicss": "^1.4.3",
-    "vite-ssg": "^0.15.1",
+    "vite-ssg": "^0.15.2",
     "vue-tsc": "^0.3.0"
   }
 }

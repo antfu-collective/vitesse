@@ -20,12 +20,12 @@ const routes = setupLayouts(generatedRoutes)
 export const createApp = ViteSSG(
   App,
   { routes },
-  async (ctx) => {
+  async(ctx) => {
     if (!ctx.isClient)
       await ctx.router.isReady()
 
     // install all modules under `modules/`
     Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))
-    await import('./middleware').then(({ install }) => install?.(ctx))
+    await import('./middleware').then(({ install }) => install(ctx))
   },
 )

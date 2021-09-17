@@ -12,33 +12,28 @@ export const install: UserModule = ({ router }) => {
   // Load middleware modules dynamically.
   const globMiddleware = import.meta.globEager('./*.ts') as { [key: string]: MiddlewareModule }
   const middlewares: { [key: string]: Middleware } = {}
-  for (const name of Object.keys(globMiddleware)) {
+  for (const name of Object.keys(globMiddleware))
     middlewares[name.replace(/^\.\/|\.ts$/g, '')] = globMiddleware[name].default
-  }
 
-  router.beforeEach(async (to, from) => {
+  router.beforeEach(async(to, from) => {
     // Get the middleware for all the matched components.
     const middleware = [...globalMiddleware]
     to.matched.filter(record => record.meta && record.meta.middleware).forEach((record) => {
-      if (Array.isArray(record.meta.middleware)) {
+      if (Array.isArray(record.meta.middleware))
         middleware.push(...record.meta.middleware)
-      } else {
+      else
         middleware.push(record.meta.middleware as string)
-      }
     })
 
     // call each middleware
     for (const name of middleware) {
       const middlewareFn = middlewares[name]
-      if (!middlewareFn) {
+      if (!middlewareFn)
         throw new Error(`Undefined or invalid middleware [${name}]`)
-      }
       const response = await middlewareFn(to, from)
-      if (response === true || response === undefined) {
+      if (response === true || response === undefined)
         continue
-      }
       return response
     }
-
   })
 }

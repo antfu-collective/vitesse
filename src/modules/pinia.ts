@@ -3,7 +3,7 @@ import { UserModule } from '~/types'
 
 // Setup Pinia
 // https://pinia.esm.dev/
-export const install: UserModule = ({ isClient, initialState, app, router }) => {
+export const install: UserModule = ({ isClient, initialState, app }) => {
   const pinia = createPinia()
   app.use(pinia)
   // Refer to
@@ -14,5 +14,4 @@ export const install: UserModule = ({ isClient, initialState, app, router }) => 
 
   else
     initialState.pinia = pinia.state.value
-
 }

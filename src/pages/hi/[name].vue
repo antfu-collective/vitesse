@@ -44,6 +44,12 @@ watchEffect(() => {
       >
         Auth Only Page
       </router-link>
+      <router-link
+        class="btn m-3 text-sm mt-6"
+        to="/adminonly"
+      >
+        Admin Only Page
+      </router-link>
     </div>
     <div>
       <button

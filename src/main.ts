@@ -20,7 +20,9 @@ const routes = setupLayouts(generatedRoutes)
 export const createApp = ViteSSG(
   App,
   { routes },
-  (ctx) => {
+  async (ctx) => {
+    // when we await the router, the routes don't resolve. Without this the middleware works as expected, throws error on build.
+    // await ctx.router.isReady()
     // install all modules under `modules/`
     Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))
   },

@@ -55,6 +55,14 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
+    <div>
+      <router-link
+        class="btn m-3 text-sm mt-6"
+        to="/authonly"
+      >
+        Auth Only Page
+      </router-link>
+    </div>
   </div>
 </template>
 

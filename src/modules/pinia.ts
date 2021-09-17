@@ -1,9 +1,10 @@
 import { createPinia } from 'pinia'
+import { useUserStore } from '~/stores/user'
 import { UserModule } from '~/types'
 
 // Setup Pinia
 // https://pinia.esm.dev/
-export const install: UserModule = ({ isClient, initialState, app }) => {
+export const install: UserModule = ({ isClient, initialState, app, router }) => {
   const pinia = createPinia()
   app.use(pinia)
   // Refer to
@@ -14,4 +15,15 @@ export const install: UserModule = ({ isClient, initialState, app }) => {
 
   else
     initialState.pinia = pinia.state.value
+
+  router.beforeEach((to, from) => {
+    const user = useUserStore()
+    console.log('route middleware is running', to.meta.middleware)
+    if (to.meta.middleware === 'auth' && !user.savedName) {
+      console.log('route guard redirecting to index')
+      return { name: 'index' }
+    }
+    return true
+  })
+
 }

@@ -163,6 +163,7 @@ declare global {
   const watch: typeof import('vue')['watch']
   const watchAtMost: typeof import('@vueuse/core')['watchAtMost']
   const watchEffect: typeof import('vue')['watchEffect']
+  const watchOnce: typeof import('@vueuse/core')['watchOnce']
   const watchWithFilter: typeof import('@vueuse/core')['watchWithFilter']
   const whenever: typeof import('@vueuse/core')['whenever']
 }

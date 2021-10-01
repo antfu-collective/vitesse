@@ -22,7 +22,9 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📦 [Components auto importing](./src/components)
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev/)
+- 🍍 [State Management via Pinia](https://pinia.esm.dev/) (to be removed in favor of Composition API)
+
+- 🍍 [State Management via Composition API](https://v3.vuejs.org/api/composition-api.html)
 
 - 📑 [Layout system](./src/layouts)
 

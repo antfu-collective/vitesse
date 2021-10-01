@@ -7,3 +7,6 @@ dist-ssr
 node_modules
 .idea/
 *.log
+yarn.lock
+package-lock.json
+pnpm-lock.yaml

@@ -1,13 +1,19 @@
 {
+  "name": "vite-tauri-esse",
+  "description": "A boilerplate for Vite, Vue, and Tauri",
+  "version": "0.1.0",
+  "displayName": "Vite-tauri-esse",
+  "license": "Unlicense",
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite --port 3333 --open",
-    "build": "cross-env NODE_ENV=production vite-ssg build",
-    "preview": "vite preview",
-    "preview-https": "serve dist",
-    "lint": "eslint \"**/*.{vue,ts,js}\""
+    "clean": "rm -rf node_modules yarn.lock package-lock.json pnpm-lock.yaml *.log",
+    "dev": "yarn lint && vite --port 4000 --open & tauri dev",
+    "build": "yarn lint && cross-env NODE_ENV=production vite-ssg build && tauri build",
+    "lint": "eslint --ignore-pattern 'dist' --ignore-pattern 'src-tauri' \"**/*.{vue,ts,js}\""
   },
   "dependencies": {
+    "@tauri-apps/api": "^1.0.0-beta.8",
     "@vueuse/core": "^6.5.3",
     "@vueuse/head": "^0.6.0",
     "nprogress": "^0.2.0",
@@ -20,8 +26,9 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.9.0",
-    "@iconify/json": "^1.1.408",
+    "@iconify/json": "^1.1.409",
     "@intlify/vite-plugin-vue-i18n": "^2.4.0",
+    "@tauri-apps/cli": "^1.0.0-beta.10",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^1.9.2",
@@ -33,19 +40,19 @@
     "https-localhost": "^4.7.0",
     "markdown-it-link-attributes": "^3.0.0",
     "markdown-it-prism": "^2.2.1",
-    "pnpm": "^6.16.0",
     "typescript": "^4.4.3",
     "unplugin-auto-import": "^0.4.10",
     "unplugin-icons": "^0.11.4",
     "unplugin-vue-components": "^0.15.6",
-    "vite": "^2.6.1",
-    "vite-plugin-inspect": "^0.3.7",
+    "vite": "^2.6.2",
+    "vite-plugin-inspect": "^0.3.8",
     "vite-plugin-md": "^0.11.1",
     "vite-plugin-pages": "^0.18.1",
     "vite-plugin-pwa": "^0.11.2",
     "vite-plugin-vue-layouts": "^0.5.0",
-    "vite-plugin-windicss": "^1.4.8",
+    "vite-plugin-windicss": "^1.4.9",
     "vite-ssg": "^0.15.4",
-    "vue-tsc": "^0.3.0"
+    "vue-tsc": "^0.3.0",
+    "yarn": "^1.22.15"
   }
 }

@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "displayName": "Vite-tauri-esse",
   "license": "Unlicense",
-  "type": "module",
   "private": true,
   "scripts": {
     "clean": "rm -rf node_modules yarn.lock package-lock.json pnpm-lock.yaml *.log",

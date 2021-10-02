@@ -37,7 +37,7 @@
     "pnpm": "^6.16.0",
     "typescript": "^4.4.3",
     "unplugin-auto-import": "^0.4.10",
-    "unplugin-icons": "^0.12.4",
+    "unplugin-icons": "^0.12.6",
     "unplugin-vue-components": "^0.15.6",
     "vite": "^2.6.2",
     "vite-plugin-inspect": "^0.3.8",

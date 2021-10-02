@@ -145,10 +145,17 @@ export default defineConfig({
   },
 
   // https://github.com/antfu/vite-ssg
+  build: {
+    //    target: 'es',
+    minify: 'esbuild',
+  },
+
+  /*
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
   },
+  */
 
   optimizeDeps: {
     include: [

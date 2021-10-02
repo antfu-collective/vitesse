@@ -6,9 +6,10 @@
   "license": "Unlicense",
   "private": true,
   "scripts": {
-    "clean": "rm -rf node_modules yarn.lock package-lock.json pnpm-lock.yaml *.log",
-    "dev": "yarn lint && vite --port 4000 --open & tauri dev",
     "build": "yarn lint && cross-env NODE_ENV=production vite-ssg build && tauri build",
+    "clean": "rm -rf node_modules yarn.lock package-lock.json pnpm-lock.yaml *.log",
+    "vdev": "yarn lint && vite --port 4000 --open",
+    "tdev": "yarn lint && concurrently 'vite --port 4000', 'tauri dev'",
     "lint": "eslint --ignore-pattern 'dist' --ignore-pattern 'src-tauri' \"**/*.{vue,ts,js}\""
   },
   "dependencies": {
@@ -16,7 +17,7 @@
     "@vueuse/core": "^6.5.3",
     "@vueuse/head": "^0.6.0",
     "nprogress": "^0.2.0",
-    "pinia": "^2.0.0-rc.9",
+    "pinia": "^2.0.0-rc.10",
     "prism-theme-vars": "^0.2.2",
     "vue": "^3.2.19",
     "vue-demi": "^0.11.4",
@@ -34,6 +35,7 @@
     "@vue/compiler-sfc": "^3.2.19",
     "@vue/server-renderer": "^3.2.19",
     "critters": "^0.0.10",
+    "concurrently": "^6.3.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "https-localhost": "^4.7.0",

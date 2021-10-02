@@ -9,7 +9,7 @@
     "build": "yarn lint && cross-env NODE_ENV=production vite-ssg build && tauri build",
     "clean": "rm -rf node_modules yarn.lock package-lock.json pnpm-lock.yaml *.log",
     "vdev": "yarn lint && vite --port 4000 --open",
-    "tdev": "yarn lint && concurrently 'vite --port 4000', 'tauri dev'",
+    "tdev": "tauri dev",
     "lint": "eslint --ignore-pattern 'dist' --ignore-pattern 'src-tauri' \"**/*.{vue,ts,js}\""
   },
   "dependencies": {

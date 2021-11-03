@@ -22,6 +22,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
   
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache/Cypress
+          key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:

@@ -26,8 +26,8 @@ jobs:
         with:
           path: |
             ~/.cache/Cypress
-            ~/Library/Caches/Cypress
-            C:/Users/runneradmin/.cache/Cypress
+            /Users/runner/Library/Caches/Cypress
+            C:\\Users\\runneradmin\\.cache\\Cypress
           key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
           
       - name: Install pnpm

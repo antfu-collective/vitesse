@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 16.x]
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
       fail-fast: false
 
     steps:
@@ -25,9 +25,7 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: |
-            ~/.cache/Cypress
-            /Users/runner/Library/Caches/Cypress
-            C:\\Users\\runneradmin\\.cache\\Cypress
+            ~/.cache
           key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
           
       - name: Install pnpm

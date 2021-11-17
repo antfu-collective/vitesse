@@ -1,5 +1,19 @@
 <script setup lang="ts">
+import { useQuery } from '@vue/apollo-composable'
+import { gql } from 'graphql-tag'
 import { useUserStore } from '~/stores/user'
+
+// graphql
+const { result, loading, error } = useQuery(gql`
+  query ExampleQuery {
+    company {
+      ceo
+    }
+    roadster {
+      apoapsis_au
+    }
+  }
+`)
 
 const user = useUserStore()
 const name = ref(user.savedName)
@@ -55,6 +69,27 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
+
+    <div class="py-4" />
+
+    <h1 class="text-lg underline font-semibold mb-3">
+      <a href="https://v4.apollo.vuejs.org/" target="_blank">
+        Vue Apollo GraphQL V4 (alpha)
+      </a>
+    </h1>
+    <div>
+      <div v-if="loading">
+        Loading. . .
+      </div>
+      <div v-else-if="error">
+        Error: {{ error.message }}
+      </div>
+      <code v-else-if="result">
+        {{ result }}
+      </code>
+    </div>
+
+    <div class="py-4" />
   </div>
 </template>
 

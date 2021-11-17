@@ -10,8 +10,12 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.17",
+    "@vue/apollo-composable": "^4.0.0-alpha.15",
     "@vueuse/core": "^6.7.6",
     "@vueuse/head": "^0.6.0",
+    "graphql": "^16.0.1",
+    "graphql-tag": "^2.12.6",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.2",
     "prism-theme-vars": "^0.2.2",

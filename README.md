@@ -44,6 +44,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
 
+- 👌 [Apollo GraphQL](https://www.apollographql.com/) setup out of the box [Vue Apollo V4 (alpha)](https://v4.apollo.vuejs.org/)
+
 - 🦾 TypeScript, of course
 
 - ⚙️ E2E Testing with [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)

@@ -126,6 +126,8 @@ As this template is strongly opinionated, the following provides a curated list 
 
 ## Try it now!
 
+> Vitesse requires Node >=14
+
 ### GitHub Template
 
 [Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).

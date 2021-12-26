@@ -48,6 +48,9 @@ jobs:
       - name: Type Check
         run: pnpm run typecheck
 
+      - name: Unit Test
+        run: pnpm run test:unit
+
       - name: Cypress PNPM Patch
         run: cp pnpm-lock.yaml package-lock.json
 

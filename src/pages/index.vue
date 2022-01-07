@@ -6,8 +6,7 @@ const name = ref(user.savedName)
 
 const router = useRouter()
 const go = () => {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
+  if (name.value) void router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
 
 const { t } = useI18n()
@@ -19,7 +18,11 @@ const { t } = useI18n()
       <carbon-campsite class="inline-block" />
     </p>
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
+      <a
+        rel="noreferrer"
+        href="https://github.com/antfu/vitesse"
+        target="_blank"
+      >
         Vitesse
       </a>
     </p>
@@ -43,15 +46,11 @@ const { t } = useI18n()
       border="~ rounded gray-200 dark:gray-700"
       outline="none active:none"
       @keydown.enter="go"
-    >
+    />
     <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
 
     <div>
-      <button
-        class="m-3 text-sm btn"
-        :disabled="!name"
-        @click="go"
-      >
+      <button class="m-3 text-sm btn" :disabled="!name" @click="go">
         {{ t('button.go') }}
       </button>
     </div>

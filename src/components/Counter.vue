@@ -9,11 +9,7 @@ const { count, inc, dec } = useCounter(props.initial)
 <template>
   <div>
     {{ count }}
-    <button class="inc" @click="inc()">
-      +
-    </button>
-    <button class="dec" @click="dec()">
-      -
-    </button>
+    <button class="inc" @click="inc()">+</button>
+    <button class="dec" @click="dec()">-</button>
   </div>
 </template>

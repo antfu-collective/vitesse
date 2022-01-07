@@ -1,27 +1,28 @@
 {
+  "extends": "@daotl/tsconfig/vue.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "ESNext",
-    "target": "es2016",
-    "lib": ["DOM", "ESNext"],
-    "strict": true,
-    "esModuleInterop": true,
-    "incremental": false,
-    "skipLibCheck": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
     "types": [
+      "node",
       "cypress",
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
     ],
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": [
+        "src/*"
+      ]
     }
   },
-  "exclude": ["dist", "node_modules"]
+  "include": [
+    "**/*.js",
+    "**/*.ts",
+    "src/**/*.vue",
+    ".eslintrc.js"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }

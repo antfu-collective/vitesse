@@ -26,22 +26,20 @@ watchEffect(() => {
 
     <template v-if="user.otherNames.length">
       <p class="text-sm mt-4">
-        <span class="opacity-75">{{ t('intro.aka') }}:</span>
-        <ul>
-          <li v-for="otherName in user.otherNames" :key="otherName">
+        <!-- <span class="opacity-75">{{ t('intro.aka') }}:</span> -->
+         <ul>
+          <!-- <li v-for="otherName in user.otherNames" :key="otherName">
             <router-link :to="`/hi/${otherName}`" replace>
               {{ otherName }}
             </router-link>
-          </li>
+          </li> -->
         </ul>
+      <!-- eslint-disable-next-line prettier/prettier -->
       </p>
     </template>
 
     <div>
-      <button
-        class="btn m-3 text-sm mt-6"
-        @click="router.back()"
-      >
+      <button class="btn m-3 text-sm mt-6" @click="router.back()">
         {{ t('button.back') }}
       </button>
     </div>

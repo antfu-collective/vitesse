@@ -15,7 +15,8 @@
     "test": "vitest",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@vueuse/core": "^7.4.1",
@@ -46,6 +47,8 @@
     "eslint": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
     "https-localhost": "^4.7.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.5",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.1",
     "pnpm": "^6.24.3",

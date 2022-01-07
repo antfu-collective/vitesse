@@ -30,7 +30,6 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.14.0",
     "@daotl/eslint-config-vue": "^0.2.5",
     "@daotl/tsconfig": "^0.0.4",
     "@iconify-json/carbon": "^1.0.12",

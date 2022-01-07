@@ -1,11 +1,18 @@
 {
   "recommendations": [
-    "antfu.vite",
-    "johnsoncodehk.volar",
-    "lokalise.i18n-ally",
-    "antfu.iconify",
+    "misterj.vue-volar-extention-pack",
+    "christian-kohler.npm-intellisense",
+    "coenraads.bracket-pair-colorizer-2",
+    "csstools.postcss",
+    "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
-    "voorjaar.windicss-intellisense",
-    "csstools.postcss"
+    "editorconfig.editorconfig",
+    "ibm.output-colorizer",
+    "lokalise.i18n-ally",
+    "oderwat.indent-rainbow",
+    "shardulm94.trailing-spaces",
+    "antfu.vite",
+    "antfu.iconify",
+    "voorjaar.windicss-intellisense"
   ]
 }

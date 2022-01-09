@@ -104,6 +104,11 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
   - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - IDE support for Windi CSS
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+### `element-plus` branch
+
+- [SASS](https://sass-lang.com/) with [SCSS](https://sass-lang.com/documentation/syntax#scss) syntax for styling
+- [Element Plus](https://element-plus.org/) with auto import
+
 ## Variations
 
 As this template is strongly opinionated, the following provides a curated list for community-maintained variations with different preferences and feature sets. Check them out as well. PR to add yours is also welcome!

@@ -17,7 +17,7 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.0.9",
     "prism-theme-vars": "^0.2.2",
-    "vue": "^3.2.26",
+    "vue": "^3.2.28",
     "vue-demi": "^0.12.1",
     "vue-i18n": "^9.1.9",
     "vue-router": "^4.0.12"
@@ -29,8 +29,6 @@
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^2.0.1",
-    "@vue/compiler-sfc": "^3.2.26",
-    "@vue/server-renderer": "^3.2.26",
     "@vue/test-utils": "^2.0.0-rc.18",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",

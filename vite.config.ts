@@ -89,7 +89,7 @@ export default defineConfig({
         // https://prismjs.com/
         md.use(Prism)
         md.use(LinkAttributes, {
-          pattern: /^https?:\/\//,
+          matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
             target: '_blank',
             rel: 'noopener',

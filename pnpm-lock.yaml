@@ -34,7 +34,7 @@ specifiers:
   vite-plugin-vue-layouts: ^0.5.0
   vite-plugin-windicss: ^1.6.3
   vite-ssg: ^0.17.7
-  vitest: ^0.2.1
+  vitest: 0.1.27
   vue: ^3.2.29
   vue-demi: ^0.12.1
   vue-i18n: ^9.1.9
@@ -81,7 +81,7 @@ devDependencies:
   vite-plugin-vue-layouts: 0.5.0_5be28afadb16af157591decefdfd37a0
   vite-plugin-windicss: 1.6.3_vite@2.7.13
   vite-ssg: 0.17.7_1ede6668370ad42aad1df87e2fa73e29
-  vitest: 0.2.1
+  vitest: 0.1.27
   vue-tsc: 0.31.1_typescript@4.5.5
 
 packages:
@@ -6930,8 +6930,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.2.1:
-    resolution: {integrity: sha512-9tk436ZwXXykce3XagiBc97DaSWghoJqlnbWDm2Q52JFPVmD9iaBuvbWgVhLElREHinzPPtI/RhcCrHV3/0olg==}
+  /vitest/0.1.27:
+    resolution: {integrity: sha512-w95Izu+jzust3Ov0KdvN9xZPQm8dG5P1hNOB+uKQ+HFexFcdUW/oa0C0/NR2m2wVpsr23psRPzrBPNlBKgm0qA==}
     engines: {node: '>=14.14.0'}
     hasBin: true
     peerDependencies:

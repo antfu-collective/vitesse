@@ -18,6 +18,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 Read `README` in other languages: English | [简体中文](./Readme_zh-CN.md)
 
 <br>
+
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness

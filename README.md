@@ -14,8 +14,10 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 <br>
 
-## Languages
-Read `README` in other languages: English | [简体中文](./Readme_zh-CN.md)
+<p align='center'>
+<b>English</b> | <a href="https://github.com/antfu/vitesse/blob/main/README.zh-CN.md">简体中文</a>
+<!-- Contributors: Thanks for geting interested, however we DON'T accept new transitions to the README, thanks. -->
+</p>
 
 <br>
 

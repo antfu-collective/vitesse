@@ -47,7 +47,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
-- 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
+- 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
 - 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
 
@@ -100,7 +100,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
 - [Cypress](https://cypress.io/) - E2E testing
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
+- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
   - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
 - [Netlify](https://www.netlify.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)

@@ -14,6 +14,13 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 <br>
 
+<p align='center'>
+<b>English</b> | <a href="https://github.com/antfu/vitesse/blob/main/README.zh-CN.md">简体中文</a>
+<!-- Contributors: Thanks for geting interested, however we DON'T accept new transitions to the README, thanks. -->
+</p>
+
+<br>
+
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
@@ -40,7 +47,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
-- 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
+- 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
 - 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
 
@@ -93,7 +100,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
 - [Cypress](https://cypress.io/) - E2E testing
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
+- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
   - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
 - [Netlify](https://www.netlify.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)

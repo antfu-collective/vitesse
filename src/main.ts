@@ -23,7 +23,7 @@ export const createApp = ViteSSG(
   { routes, base: import.meta.env.BASE_URL },
   (ctx) => {
     // install all modules under `modules/`
-    Object.values(import.meta.globEager('./modules/*.ts')).map((i) =>
+    Object.values(import.meta.globEager('./modules/*.ts')).forEach((i) =>
       // eslint-disable-next-line @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-return
       i.install?.(ctx),
     )

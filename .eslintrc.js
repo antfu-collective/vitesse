@@ -28,7 +28,7 @@ module.exports = {
     },
     // For tests
     {
-      files: ['**/*.spec.{j,t}s?(x)'],
+      files: '**/*.{test,spec}.{j,t}s?(x)',
       ...tsConfig,
       env: {
         jest: true,

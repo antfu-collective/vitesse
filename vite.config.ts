@@ -44,7 +44,6 @@ export default defineConfig({
         'vue-i18n',
         '@vueuse/head',
         '@vueuse/core',
-        'vitest',
       ],
       dts: 'src/auto-imports.d.ts',
     }),

@@ -74,6 +74,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
+  - [`vite-plugin-pages-sitemap`](https://github.com/jbaubree/vite-plugin-pages-sitemap) - vite-plugin-pages based sitemap generator
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
 - [Pinia](https://pinia.esm.dev) - Intuitive, type safe, light and flexible Store for Vue using the composition api
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
@@ -154,6 +155,7 @@ When you use this template, try follow the checklist to update your info properl
 
 - [ ] Change the author name in `LICENSE`
 - [ ] Change the title in `App.vue`
+- [ ] Change the hostname in `vite.config.ts`
 - [ ] Change the favicon in `public`
 - [ ] Remove the `.github` folder which contains the funding info
 - [ ] Clean up the READMEs and remove routes

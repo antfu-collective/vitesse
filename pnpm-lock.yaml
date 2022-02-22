@@ -35,6 +35,7 @@ specifiers:
   vite-plugin-inspect: ^0.3.14
   vite-plugin-md: ^0.11.8
   vite-plugin-pages: ^0.20.2
+  vite-plugin-pages-sitemap: ^1.1.10
   vite-plugin-pwa: ^0.11.13
   vite-plugin-vue-layouts: ^0.6.0
   vite-ssg: ^0.17.10
@@ -86,6 +87,7 @@ devDependencies:
   vite-plugin-inspect: 0.3.14_vite@2.8.3
   vite-plugin-md: 0.11.8_vite@2.8.3
   vite-plugin-pages: 0.20.2_vite@2.8.3
+  vite-plugin-pages-sitemap: 1.1.10
   vite-plugin-pwa: 0.11.13_vite@2.8.3
   vite-plugin-vue-layouts: 0.6.0_450d08553fc592150f6d5039c11a1f32
   vite-ssg: 0.17.10_1d9d03efcb68c10fe000b6b7ca1deeb9
@@ -7087,6 +7089,10 @@ packages:
       gray-matter: 4.0.3
       markdown-it: 12.3.2
       vite: 2.8.3
+    dev: true
+
+  /vite-plugin-pages-sitemap/1.1.10:
+    resolution: {integrity: sha512-LQv5p/pjH503E/qRBetJeJwU4611b1me1ap0/BdRirTTOidorDAGZCmFG3IaBHgZjhg3E6IY8DDBj0OeSrT+MQ==}
     dev: true
 
   /vite-plugin-pages/0.20.2_vite@2.8.3:

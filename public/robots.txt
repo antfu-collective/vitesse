@@ -1,2 +1,4 @@
-User-agent: *
+User-agent: * 
 Allow: /
+
+Sitemap: https://vitesse.netlify.app/sitemap.xml

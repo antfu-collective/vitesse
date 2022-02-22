@@ -74,6 +74,7 @@
 
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - 以文件系统为基础的路由
+  - [`vite-plugin-pages-sitemap`](https://github.com/jbaubree/vite-plugin-pages-sitemap) - 基于 vite-plugin-pages 的站点地图生成器
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - 页面布局系统
 - [Pinia](https://pinia.esm.dev) - 直接的, 类型安全的, 使用 Composition api 的轻便灵活的 Vue 状态管理
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
@@ -146,6 +147,7 @@ pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 
 - [ ] 在 `LICENSE` 中改变作者名
 - [ ] 在 `App.vue` 中改变标题
+- [ ] 在 `vite.config.ts` 更改主机名
 - [ ] 在 `public` 目录下改变favicon
 - [ ] 移除 `.github` 文件夹中包含资助的信息
 - [ ] 整理 README 并删除路由

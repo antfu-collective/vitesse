@@ -114,10 +114,8 @@ export default defineConfig({
     }),
 
     // https://github.com/antfu/vite-plugin-inspect
-    Inspect({
-      // change this to enable inspect for debugging
-      enabled: false,
-    }),
+    // Visit http://localhost:3333/__inspect/ to see the inspector
+    Inspect(),
   ],
 
   // https://github.com/antfu/vite-ssg

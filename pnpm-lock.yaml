@@ -6,11 +6,11 @@ specifiers:
   '@intlify/vite-plugin-vue-i18n': ^3.3.0
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/nprogress': ^0.2.0
-  '@unocss/preset-attributify': ^0.26.3
-  '@unocss/preset-icons': ^0.26.3
-  '@unocss/preset-typography': ^0.26.3
-  '@unocss/preset-web-fonts': ^0.26.3
-  '@unocss/reset': ^0.26.3
+  '@unocss/preset-attributify': ^0.26.4
+  '@unocss/preset-icons': ^0.26.4
+  '@unocss/preset-typography': ^0.26.4
+  '@unocss/preset-web-fonts': ^0.26.4
+  '@unocss/reset': ^0.26.4
   '@vitejs/plugin-vue': ^2.2.2
   '@vue/test-utils': ^2.0.0-rc.18
   '@vueuse/core': ^7.7.0
@@ -62,11 +62,11 @@ devDependencies:
   '@intlify/vite-plugin-vue-i18n': 3.3.0_vite@2.8.4+vue-i18n@9.1.9
   '@types/markdown-it-link-attributes': 3.0.1
   '@types/nprogress': 0.2.0
-  '@unocss/preset-attributify': 0.26.3
-  '@unocss/preset-icons': 0.26.3
-  '@unocss/preset-typography': 0.26.3
-  '@unocss/preset-web-fonts': 0.26.3
-  '@unocss/reset': 0.26.3
+  '@unocss/preset-attributify': 0.26.4
+  '@unocss/preset-icons': 0.26.4
+  '@unocss/preset-typography': 0.26.4
+  '@unocss/preset-web-fonts': 0.26.4
+  '@unocss/reset': 0.26.4
   '@vitejs/plugin-vue': 2.2.2_vite@2.8.4+vue@3.2.31
   '@vue/test-utils': 2.0.0-rc.18_vue@3.2.31
   critters: 0.0.16
@@ -1918,6 +1918,10 @@ packages:
     resolution: {integrity: sha512-nBdMq4sakpHNu8sJjb818CNc5jVBkCLiXLn86qD2hF0PU1dbgsboJefaeRF2hQbvZaeYm15cUEpuhjy+4YGonQ==}
     dev: true
 
+  /@unocss/core/0.26.4:
+    resolution: {integrity: sha512-p3hdV/feuj4Shfg5sBpZAdEuUb8b+aBAFs13rd2oxBMPTCWZRG+XyjJSjiLuYBVfYCxbG46vhzYQYZ4dfDt9tA==}
+    dev: true
+
   /@unocss/inspector/0.26.3:
     resolution: {integrity: sha512-kK0/b3/vrMp4t670bey1qPLKQm55xgW1937T84E0PuZ9ttRd8CEAoMLxPEhN3++/e6ZKEhO9F83OIxjgs//qWg==}
     dependencies:
@@ -1931,11 +1935,27 @@ packages:
       '@unocss/core': 0.26.3
     dev: true
 
+  /@unocss/preset-attributify/0.26.4:
+    resolution: {integrity: sha512-0f9w+3DnacBynVCO9aHnHw1rSbVD23pUJRRCM7VmXhb4/LnR/VkrOF3lfW8UsTxubUYBolsi7IMssohFMVWT7g==}
+    dependencies:
+      '@unocss/core': 0.26.4
+    dev: true
+
   /@unocss/preset-icons/0.26.3:
     resolution: {integrity: sha512-K2FQu5il2XOT+Q7jZ27vSM/QWqFE8dfGa/yxXdnRFyQkhSYA1sdWbQlbaKB5HjpPIRHbPXNg36PXabG4la1ehA==}
     dependencies:
       '@iconify/utils': 1.0.23
       '@unocss/core': 0.26.3
+      local-pkg: 0.4.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@unocss/preset-icons/0.26.4:
+    resolution: {integrity: sha512-H7SWDNXYBLAb7LxIXuZjn0n1Za/S9yyyCUGGfFibaV2lNzWBXEYhxVkmQw8/FP72L7uD0V1RT2UtJOsZ6xlt8Q==}
+    dependencies:
+      '@iconify/utils': 1.0.23
+      '@unocss/core': 0.26.4
       local-pkg: 0.4.1
     transitivePeerDependencies:
       - supports-color
@@ -1951,6 +1971,12 @@ packages:
     resolution: {integrity: sha512-mfpy7bDSbacYipp0Y3JvqjMIu9UcllB7w8e+pDJJ5/9MDbH1jdvqxZGg3uJm/4NkYDKLHkkElMhsrFWajJ0COQ==}
     dependencies:
       '@unocss/core': 0.26.3
+    dev: true
+
+  /@unocss/preset-typography/0.26.4:
+    resolution: {integrity: sha512-5t/owmflxVY3ihRDVzCwJbrQE6/fF9a/ZIiRT4hzLWDDblZN5dUxcdVq/EvYu4MCkK2E2EKBeU00DXUeBmd3Jw==}
+    dependencies:
+      '@unocss/core': 0.26.4
     dev: true
 
   /@unocss/preset-uno/0.26.3:
@@ -1970,6 +1996,15 @@ packages:
       - debug
     dev: true
 
+  /@unocss/preset-web-fonts/0.26.4:
+    resolution: {integrity: sha512-1GcCL9y/VTNaY/Nbr+wd/FGTTwc0l59EYlumrUSY+ThkdpYgLDQx+HXPg7igDxmsZQYZbAzHeP/7qfMlX+1/fw==}
+    dependencies:
+      '@unocss/core': 0.26.4
+      axios: 0.26.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /@unocss/preset-wind/0.26.3:
     resolution: {integrity: sha512-/kFqpyyXJj9mqNIAgs9XbWV2CtU6OaYN/xauDTIQ7hH1S6Q3FIXBLARKvvbvKnlgCN7yy/7S/hoLi+LFbKBTqA==}
     dependencies:
@@ -1979,6 +2014,10 @@ packages:
 
   /@unocss/reset/0.26.3:
     resolution: {integrity: sha512-CzrJDzdIGq76teLs4TxNpaOkfM+lmOC22iEyZCMplLJ9ig+S5cl5aPB4X3+Dcd8kAGsiOHHmDXZDcSqw9XE68A==}
+    dev: true
+
+  /@unocss/reset/0.26.4:
+    resolution: {integrity: sha512-AEKJywNmAgV+O9UAMhEWFXFblo4NC5yx8KRiyxUqwlDwRz0AXeppSPlRHi9KpZSv+mgkav6jKDUDNnmy+MUvBw==}
     dev: true
 
   /@unocss/scope/0.26.3:

@@ -34,8 +34,8 @@ specifiers:
   vite: ^2.8.5
   vite-plugin-inspect: ^0.4.3
   vite-plugin-md: ^0.11.8
-  vite-plugin-pages-sitemap: ^1.1.11
   vite-plugin-pages: ^0.21.0
+  vite-plugin-pages-sitemap: ^1.1.11
   vite-plugin-pwa: ^0.11.13
   vite-plugin-vue-layouts: ^0.6.0
   vite-ssg: ^0.17.10
@@ -87,6 +87,7 @@ devDependencies:
   vite-plugin-inspect: 0.4.3_vite@2.8.5
   vite-plugin-md: 0.11.8_vite@2.8.5
   vite-plugin-pages: 0.21.0_vite@2.8.5
+  vite-plugin-pages-sitemap: 1.1.11
   vite-plugin-pwa: 0.11.13_vite@2.8.5
   vite-plugin-vue-layouts: 0.6.0_d19c0dfa00041263a18e45e980f25206
   vite-ssg: 0.17.10_2e017905f7414368bf31cdc1be71ba5a

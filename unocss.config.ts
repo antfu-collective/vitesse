@@ -1,8 +1,13 @@
-import { defineConfig, presetUno } from 'unocss'
-import { presetTypography } from '@unocss/preset-typography'
-import presetIcons from '@unocss/preset-icons'
-import presetAttributify from '@unocss/preset-attributify'
-import presetWebFonts from '@unocss/preset-web-fonts'
+import {
+  defineConfig,
+  presetAttributify,
+  presetIcons,
+  presetTypography,
+  presetUno,
+  presetWebFonts,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss'
 
 export default defineConfig({
   shortcuts: [
@@ -24,6 +29,10 @@ export default defineConfig({
         mono: 'DM Mono',
       },
     }),
+  ],
+  transformers: [
+    transformerDirectives(),
+    transformerVariantGroup(),
   ],
   safelist: 'prose prose-sm m-auto text-left'.split(' '),
 })

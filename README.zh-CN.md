@@ -74,7 +74,6 @@
 
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - 以文件系统为基础的路由
-  - [`vite-plugin-pages-sitemap`](https://github.com/jbaubree/vite-plugin-pages-sitemap) - 基于 vite-plugin-pages 的站点地图生成器
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - 页面布局系统
 - [Pinia](https://pinia.esm.dev) - 直接的, 类型安全的, 使用 Composition api 的轻便灵活的 Vue 状态管理
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
@@ -86,6 +85,7 @@
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - 国际化
   - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n) - Vue I18n 的 Vite 插件
 - [VueUse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
+- [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap) - 站点地图生成器
 - [`@vueuse/head`](https://github.com/vueuse/head) - 响应式地操作文档头信息
 
 ### 编码风格

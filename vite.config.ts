@@ -2,7 +2,7 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
-import generateSitemap from 'vite-plugin-pages-sitemap'
+import generateSitemap from 'vite-ssg-sitemap'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -30,13 +30,6 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       extensions: ['vue', 'md'],
-      onRoutesGenerated: routes => (
-        // https://github.com/jbaubree/vite-plugin-pages-sitemap
-        generateSitemap({
-          hostname: 'https://vitesse.netlify.app/',
-          routes,
-        })
-      ),
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -132,6 +125,7 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
+    onFinished() { generateSitemap() },
   },
 
   optimizeDeps: {

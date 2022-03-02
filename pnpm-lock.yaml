@@ -35,10 +35,10 @@ specifiers:
   vite-plugin-inspect: ^0.3.14
   vite-plugin-md: ^0.11.8
   vite-plugin-pages: ^0.20.2
-  vite-plugin-pages-sitemap: ^1.1.11
   vite-plugin-pwa: ^0.11.13
   vite-plugin-vue-layouts: ^0.6.0
   vite-ssg: ^0.17.10
+  vite-ssg-sitemap: ^0.1.1
   vitest: ^0.3.6
   vue: ^3.2.31
   vue-demi: ^0.12.1
@@ -52,6 +52,7 @@ dependencies:
   nprogress: 0.2.0
   pinia: 2.0.11_typescript@4.5.5+vue@3.2.31
   prism-theme-vars: 0.2.2
+  vite-ssg-sitemap: 0.1.1
   vue: 3.2.31
   vue-demi: 0.12.1_vue@3.2.31
   vue-i18n: 9.1.9_vue@3.2.31
@@ -87,7 +88,6 @@ devDependencies:
   vite-plugin-inspect: 0.3.14_vite@2.8.3
   vite-plugin-md: 0.11.8_vite@2.8.3
   vite-plugin-pages: 0.20.2_vite@2.8.3
-  vite-plugin-pages-sitemap: 1.1.11
   vite-plugin-pwa: 0.11.13_vite@2.8.3
   vite-plugin-vue-layouts: 0.6.0_450d08553fc592150f6d5039c11a1f32
   vite-ssg: 0.17.10_1d9d03efcb68c10fe000b6b7ca1deeb9
@@ -1873,7 +1873,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       '@typescript-eslint/types': 5.10.2
-      eslint-visitor-keys: 3.2.0
+      eslint-visitor-keys: 3.3.0
     dev: true
 
   /@unocss/cli/0.24.4:
@@ -7091,10 +7091,6 @@ packages:
       vite: 2.8.3
     dev: true
 
-  /vite-plugin-pages-sitemap/1.1.11:
-    resolution: {integrity: sha512-GvC4SXiDCO4WXJCVNHwKKUoUSMiF0ofIb1iI9yokDpYUAeJMFj3hH4BH+Xdv2AH+OIMeh1yY7Xnh8RUUICZ4WQ==}
-    dev: true
-
   /vite-plugin-pages/0.20.2_vite@2.8.3:
     resolution: {integrity: sha512-A/N6Pez9sMzt7ZEfd1H7P9tmP6LrZwXMexV8xSiRahnUeNw+gz0W2dsPLJDZBvcixDZqoK8ggKdmyxgVBuTAfg==}
     peerDependencies:
@@ -7149,6 +7145,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vite-ssg-sitemap/0.1.1:
+    resolution: {integrity: sha512-+QWnhiWkukV8exwNkTziZrs8YHVSrzj0nlSvxykDvbHsnCDjDSrHWkwC9432sJKFv62jYZcyyZT8+HgfZfzjIw==}
+    dev: false
 
   /vite-ssg/0.17.10_1d9d03efcb68c10fe000b6b7ca1deeb9:
     resolution: {integrity: sha512-gPcw5RLmAq5CwZ9Q/Ca9kJWUm6KdxhkNRBzm8P4bGDCRQLNQkgTiQmK7ZwsdqD7C8bah4CMBFDeqz2MKSQintw==}

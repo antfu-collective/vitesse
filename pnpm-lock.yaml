@@ -38,7 +38,7 @@ specifiers:
   vite-plugin-pwa: ^0.11.13
   vite-plugin-vue-layouts: ^0.6.0
   vite-ssg: ^0.17.10
-  vite-ssg-sitemap: ^0.1.2
+  vite-ssg-sitemap: ^0.1.4
   vitest: ^0.5.8
   vue: ^3.2.31
   vue-demi: ^0.12.1
@@ -90,7 +90,7 @@ devDependencies:
   vite-plugin-pwa: 0.11.13_vite@2.8.5
   vite-plugin-vue-layouts: 0.6.0_d19c0dfa00041263a18e45e980f25206
   vite-ssg: 0.17.10_2e017905f7414368bf31cdc1be71ba5a
-  vite-ssg-sitemap: 0.1.2
+  vite-ssg-sitemap: 0.1.4
   vitest: 0.5.8
   vue-tsc: 0.32.0_typescript@4.5.5
 
@@ -1458,8 +1458,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.2.0-beta.30
-      '@intlify/shared': 9.2.0-beta.30
+      '@intlify/message-compiler': 9.2.0-beta.31
+      '@intlify/shared': 9.2.0-beta.31
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.1.9_vue@3.2.31
@@ -1494,11 +1494,11 @@ packages:
       source-map: 0.6.1
     dev: false
 
-  /@intlify/message-compiler/9.2.0-beta.30:
-    resolution: {integrity: sha512-2kj/0nLIFrgiO86f9VifcUUcV8LdzXt4YYPIujx/LkTEQOuSFUo/bNiMaG1hyfiU/8mfq6tsaWKjoOZjeao1eQ==}
+  /@intlify/message-compiler/9.2.0-beta.31:
+    resolution: {integrity: sha512-5ZZBAW8I8046LG/X0jqL8C8HTmuoCgjrv1ANnlQgVc+gzP3qVWQVjHOwHeS3FO5ahCZ5cOByFvDS7f6PGbZrow==}
     engines: {node: '>= 12'}
     dependencies:
-      '@intlify/shared': 9.2.0-beta.30
+      '@intlify/shared': 9.2.0-beta.31
       source-map: 0.6.1
     dev: true
 
@@ -1521,8 +1521,8 @@ packages:
     engines: {node: '>= 10'}
     dev: false
 
-  /@intlify/shared/9.2.0-beta.30:
-    resolution: {integrity: sha512-E1WHRTIlUEse3d/6t1pAagSXRxmeVeNIhx5kT80dfpYxw8lOnCWV9wLve2bq9Fkv+3TD2I5j+CdN7jvSl3LdsA==}
+  /@intlify/shared/9.2.0-beta.31:
+    resolution: {integrity: sha512-grc/wPNA7vGTduXWRDTED+yte/kbTVRpH/WRgLKNaakIHPyAU4oemFSOeUHoTlufU0Rv3SP1b4v8B0NVmzERGw==}
     engines: {node: '>= 12'}
     dev: true
 
@@ -1540,7 +1540,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 2.2.0_vue-i18n@9.1.9
-      '@intlify/shared': 9.2.0-beta.30
+      '@intlify/shared': 9.2.0-beta.31
       '@rollup/pluginutils': 4.1.2
       debug: 4.3.3
       fast-glob: 3.2.11
@@ -7176,8 +7176,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg-sitemap/0.1.2:
-    resolution: {integrity: sha512-Kgejwu9G+XBxtCI919DW7HnkouMHADya05Rvk22tZaNkSsXE4jGo+zf7iyn0QgRXP3QZs8pbphLggkwwlOQhnA==}
+  /vite-ssg-sitemap/0.1.4:
+    resolution: {integrity: sha512-O5m3UvYxE4i03cLBVrKfqHnN+gA2kYJknABHRGakqkuJZI9tGolP6Sce9cQGzDAtvs7SpTDN1pFSPGMsc3kefg==}
     dev: true
 
   /vite-ssg/0.17.10_2e017905f7414368bf31cdc1be71ba5a:

@@ -55,6 +55,7 @@
     "vite-plugin-pwa": "^0.11.13",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-ssg": "^0.17.11",
+    "vite-ssg-sitemap": "^0.1.4",
     "vitest": "^0.5.9",
     "vue-tsc": "^0.32.1"
   }

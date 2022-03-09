@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isDark, toggleDark } from '~/composables'
+import { toggleDark } from '~/composables'
 
 const { t, availableLocales, locale } = useI18n()
 
@@ -11,9 +11,9 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav class="text-xl mt-6">
+  <nav text-xl mt-6>
     <router-link class="icon-btn mx-2" to="/" :title="t('button.home')">
-      <i-carbon-campsite />
+      <div i-carbon-campsite />
     </router-link>
 
     <button
@@ -21,8 +21,7 @@ const toggleLocales = () => {
       :title="t('button.toggle_dark')"
       @click="toggleDark()"
     >
-      <i-carbon-moon v-if="isDark" />
-      <i-carbon-sun v-else />
+      <div i="carbon-sun dark:carbon-moon" />
     </button>
 
     <a
@@ -30,11 +29,11 @@ const toggleLocales = () => {
       :title="t('button.toggle_langs')"
       @click="toggleLocales"
     >
-      <i-carbon-language />
+      <div i-carbon-language />
     </a>
 
     <router-link class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <i-carbon-dicom-overlay />
+      <div i-carbon-dicom-overlay />
     </router-link>
 
     <a
@@ -44,7 +43,7 @@ const toggleLocales = () => {
       target="_blank"
       title="GitHub"
     >
-      <i-carbon-logo-github />
+      <div i-carbon-logo-github />
     </a>
   </nav>
 </template>

@@ -29,9 +29,7 @@ jobs:
           key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
           
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.15.1
+        uses: pnpm/action-setup@v2.2.1
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2

@@ -13,7 +13,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@vueuse/core": "^7.7.1",
+    "@vueuse/core": "^8.0.0",
     "@vueuse/head": "^0.7.5",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.11",
@@ -21,15 +21,15 @@
     "vue": "^3.2.31",
     "vue-demi": "^0.12.1",
     "vue-i18n": "^9.1.9",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.18.5",
+    "@antfu/eslint-config": "^0.18.8",
     "@iconify-json/carbon": "^1.1.1",
     "@intlify/vite-plugin-vue-i18n": "^3.3.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
-    "@unocss/reset": "^0.27.5",
+    "@unocss/reset": "^0.27.6",
     "@vitejs/plugin-vue": "^2.2.4",
     "@vue/test-utils": "^2.0.0-rc.18",
     "critters": "^0.0.16",
@@ -42,8 +42,8 @@
     "markdown-it-prism": "^2.2.3",
     "pnpm": "^6.32.3",
     "typescript": "^4.6.2",
-    "unocss": "^0.27.5",
-    "unplugin-auto-import": "^0.6.1",
+    "unocss": "^0.27.6",
+    "unplugin-auto-import": "^0.6.3",
     "unplugin-vue-components": "^0.17.21",
     "vite": "^2.8.6",
     "vite-plugin-inspect": "^0.4.3",

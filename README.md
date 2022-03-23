@@ -45,6 +45,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 
+- 🤙🏻 Enable [ref sugar](https://github.com/vuejs/rfcs/discussions/369) by default
+
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
 - 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)

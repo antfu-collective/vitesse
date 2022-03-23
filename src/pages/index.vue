@@ -2,12 +2,12 @@
 import { useUserStore } from '~/stores/user'
 
 const user = useUserStore()
-const name = ref(user.savedName)
+const name = $ref(user.savedName)
 
 const router = useRouter()
 const go = () => {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
+  if (name)
+    router.push(`/hi/${encodeURIComponent(name)}`)
 }
 
 const { t } = useI18n()

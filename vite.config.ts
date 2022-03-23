@@ -25,6 +25,7 @@ export default defineConfig({
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
+      reactivityTransform: true,
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -41,6 +42,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
+        'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
       ],

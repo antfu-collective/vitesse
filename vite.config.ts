@@ -22,6 +22,7 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
@@ -126,18 +127,6 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     onFinished() { generateSitemap() },
-  },
-
-  optimizeDeps: {
-    include: [
-      'vue',
-      'vue-router',
-      '@vueuse/core',
-      '@vueuse/head',
-    ],
-    exclude: [
-      'vue-demi',
-    ],
   },
 
   // https://github.com/vitest-dev/vitest

@@ -8,7 +8,7 @@ button:
 intro:
   desc: vite مثال لتطبيق 
   dynamic-route: عرض لتوجيهات ديناميكية
-  hi:  !{name} ،مرحبا
+  hi: مرحبا {name} 
   aka: معروف أيضا تحت مسمى
   whats-your-name: ما إسمك؟
 not-found: صفحة غير موجودة

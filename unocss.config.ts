@@ -16,7 +16,10 @@ export default defineConfig({
   ],
   presets: [
     presetUno(),
-    presetAttributify(),
+    presetAttributify({
+      prefix: 'un-',
+      prefixedOnly: true,
+    }),
     presetIcons({
       scale: 1.2,
       warn: true,

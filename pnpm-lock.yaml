@@ -6,7 +6,6 @@ specifiers:
   '@intlify/vite-plugin-vue-i18n': ^4.0.0
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/nprogress': ^0.2.0
-  '@unocss/reset': ^0.30.13
   '@vitejs/plugin-vue': ^2.3.1
   '@vue/test-utils': ^2.0.0-rc.19
   '@vueuse/core': ^8.2.5
@@ -59,7 +58,6 @@ devDependencies:
   '@intlify/vite-plugin-vue-i18n': 4.0.0_vite@2.9.1+vue-i18n@9.1.9
   '@types/markdown-it-link-attributes': 3.0.1
   '@types/nprogress': 0.2.0
-  '@unocss/reset': 0.30.13
   '@vitejs/plugin-vue': 2.3.1_vite@2.9.1+vue@3.2.31
   '@vue/test-utils': 2.0.0-rc.19_vue@3.2.31
   critters: 0.0.16

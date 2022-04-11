@@ -29,7 +29,6 @@
     "@intlify/vite-plugin-vue-i18n": "^4.0.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
-    "@unocss/reset": "^0.30.13",
     "@vitejs/plugin-vue": "^2.3.1",
     "@vue/test-utils": "^2.0.0-rc.19",
     "critters": "^0.0.16",

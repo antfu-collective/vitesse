@@ -9,7 +9,7 @@ describe('Counter.vue', () => {
     expect(wrapper.html()).toMatchSnapshot()
   })
 
-  it('should be interactive', async() => {
+  it('should be interactive', async () => {
     const wrapper = mount(Counter, { props: { initial: 0 } })
     expect(wrapper.text()).toContain('0')
 

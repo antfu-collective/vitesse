@@ -31,7 +31,7 @@ specifiers:
   vite-plugin-md: ^0.13.0
   vite-plugin-pages: ^0.23.0
   vite-plugin-pwa: ^0.12.0
-  vite-plugin-vue-inspector: 0.5.6
+  vite-plugin-vue-inspector: 0.5.7
   vite-plugin-vue-layouts: ^0.6.0
   vite-ssg: ^0.19.2
   vite-ssg-sitemap: ^0.2.6
@@ -79,7 +79,7 @@ devDependencies:
   vite-plugin-md: 0.13.0_vite@2.9.7
   vite-plugin-pages: 0.23.0_vite@2.9.7
   vite-plugin-pwa: 0.12.0_vite@2.9.7
-  vite-plugin-vue-inspector: 0.5.6_vite@2.9.7
+  vite-plugin-vue-inspector: 0.5.7_vite@2.9.7
   vite-plugin-vue-layouts: 0.6.0_cy27blvoe2cwdzwso5wue736a4
   vite-ssg: 0.19.2_csn2dxpwjxhcufqcjewtaqepne
   vite-ssg-sitemap: 0.2.6
@@ -7115,8 +7115,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-inspector/0.5.6_vite@2.9.7:
-    resolution: {integrity: sha512-/0sc7NKc0kJk4vd9GIBefA3WRGpYKSxF/ZqQIhJiz0N1ovsV6qGtuLVLo34/tkkibDm2WVN2z/yTTAkuyKvVcg==}
+  /vite-plugin-vue-inspector/0.5.7_vite@2.9.7:
+    resolution: {integrity: sha512-I+Dn3G8mJhOkikbwyU6nBe4h3lrZCfxtCjz1P0NaJ6QalJxcpNZ6BRMasv85QjxHL3AGJaD4tiEOecQzwuJYEA==}
     peerDependencies:
       vite: ^2.0.0
     dependencies:

@@ -2,7 +2,6 @@
   "recommendations": [
     "misterj.vue-volar-extention-pack",
     "christian-kohler.npm-intellisense",
-    "coenraads.bracket-pair-colorizer-2",
     "csstools.postcss",
     "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",

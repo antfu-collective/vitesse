@@ -45,6 +45,8 @@
 
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
+- 🤙🏻 默认开启 [响应性语法糖](https://vuejs.org/guide/extras/reactivity-transform.html) 
+
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
 - 🖨 使用 [vite-ssg](https://github.com/antfu/vite-ssg) 进行服务端生成 (SSG)
@@ -87,6 +89,7 @@
 - [VueUse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
 - [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap) - 站点地图生成器
 - [`@vueuse/head`](https://github.com/vueuse/head) - 响应式地操作文档头信息
+- [`vite-plugin-vue-inspector`](https://github.com/webfansplz/vite-plugin-vue-inspector) - 点击页面元素自动跳转到本地IDE对应的 Vue 组件
 
 ### 编码风格
 

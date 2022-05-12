@@ -4,8 +4,10 @@ import './styles/main.css'
 import 'uno.css'
 
 import { setupLayouts } from 'virtual:generated-layouts'
-import generatedRoutes from 'virtual:generated-pages'
 import { ViteSSG } from 'vite-ssg'
+
+// eslint-disable-next-line import/no-unresolved
+import generatedRoutes from '~pages'
 
 import App from './App.vue'
 

@@ -13,6 +13,7 @@ import Inspect from 'vite-plugin-inspect'
 import Markdown from 'vite-plugin-md'
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
+import Inspector from 'vite-plugin-vue-inspector'
 import Layouts from 'vite-plugin-vue-layouts'
 import generateSitemap from 'vite-ssg-sitemap'
 
@@ -24,9 +25,11 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
+      reactivityTransform: true,
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -43,6 +46,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
+        'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
       ],
@@ -121,6 +125,10 @@ export default defineConfig({
 
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
+    // https://github.com/webfansplz/vite-plugin-vue-inspector
+    Inspector({
+      enabled: false,
+    }),
   ],
 
   // https://github.com/antfu/vite-ssg
@@ -130,11 +138,6 @@ export default defineConfig({
     onFinished() {
       generateSitemap()
     },
-  },
-
-  optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
-    exclude: ['vue-demi'],
   },
 
   // https://github.com/vitest-dev/vitest

@@ -3,10 +3,10 @@ import { toggleDark } from '~/composables'
 
 const { t, availableLocales, locale } = useI18n()
 
-const toggleLocales = () => {
+const toggleLocales = (): void => {
   // change to some real logic
   const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
+  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]!
 }
 </script>
 

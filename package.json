@@ -7,8 +7,8 @@
     "dev": "vite --port 3333 --open",
     "lint": "npm run eslint && npm run stylelint",
     "lint:fix": "npm run eslint:fix && npm run stylelint:fix",
-    "eslint": "eslint '**/*.{vue,ts,js}'",
-    "eslint:fix": "eslint '**/*.{vue,ts,js}' --fix",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix",
     "stylelint": "stylelint 'src/**/*.{css,scss,vue,tsx}'",
     "stylelint:fix": "stylelint 'src/**/*.{css,scss,vue,tsx}' --fix",
     "preview": "vite preview",
@@ -31,7 +31,8 @@
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
-    "@daotl/eslint-config-vue": "^0.2.6",
+    "@daotl/eslint-config-vue": "^0.3.2",
+    "@daotl/prettier-config": "^0.1.3",
     "@daotl/tsconfig": "^0.0.4",
     "@iconify-json/carbon": "^1.1.4",
     "@intlify/vite-plugin-vue-i18n": "^4.0.0",

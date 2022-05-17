@@ -20,7 +20,7 @@ watchEffect(() => {
       {{ t('intro.hi', { name: props.name }) }}
     </p>
 
-    <p text-sm opacity-50>
+    <p text-sm opacity-75>
       <em>{{ t('intro.dynamic-route') }}</em>
     </p>
 

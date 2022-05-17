@@ -6,6 +6,7 @@ import generateSitemap from 'vite-ssg-sitemap'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import { DirResolverHelper, dirResolver } from 'vite-auto-import-resolvers'
 import Markdown from 'vite-plugin-md'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
@@ -37,6 +38,9 @@ export default defineConfig({
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
 
+    // https://github.com/dishait/vite-auto-import-resolvers
+    DirResolverHelper(),
+
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
@@ -48,6 +52,21 @@ export default defineConfig({
         '@vueuse/core',
       ],
       dts: 'src/auto-imports.d.ts',
+      resolvers: [
+        // https://github.com/dishait/vite-auto-import-resolvers
+        dirResolver({
+          normalize({ name }) {
+            return `~/composables/${name}`
+          },
+        }),
+        dirResolver({
+          target: 'src/stores',
+          suffix: 'Store',
+          normalize({ name }) {
+            return `~/stores/${name}`
+          },
+        }),
+      ],
     }),
 
     // https://github.com/antfu/unplugin-vue-components

@@ -45,6 +45,7 @@
     "unplugin-auto-import": "^0.7.1",
     "unplugin-vue-components": "^0.19.5",
     "vite": "^2.9.8",
+    "vite-auto-import-resolvers": "^3.0.0",
     "vite-plugin-inspect": "^0.5.0",
     "vite-plugin-md": "^0.13.1",
     "vite-plugin-pages": "^0.23.0",

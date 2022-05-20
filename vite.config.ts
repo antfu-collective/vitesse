@@ -121,7 +121,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-inspect
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
-    
+
     // https://github.com/webfansplz/vite-plugin-vue-inspector
     Inspector({
       toggleButtonVisibility: 'never',

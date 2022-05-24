@@ -48,6 +48,11 @@ export default defineConfig({
         '@vueuse/core',
       ],
       dts: 'src/auto-imports.d.ts',
+      dirs: [
+        'src/composables',
+        'src/store',
+      ],
+      vueTemplate: true
     }),
 
     // https://github.com/antfu/unplugin-vue-components

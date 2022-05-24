@@ -52,7 +52,7 @@ export default defineConfig({
         'src/composables',
         'src/store',
       ],
-      vueTemplate: true
+      vueTemplate: true,
     }),
 
     // https://github.com/antfu/unplugin-vue-components

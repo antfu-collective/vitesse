@@ -10,11 +10,11 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
-import Markdown from 'vite-plugin-md'
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
 import Inspector from 'vite-plugin-vue-inspector'
 import Layouts from 'vite-plugin-vue-layouts'
+import Markdown from 'vite-plugin-vue-markdown'
 import generateSitemap from 'vite-ssg-sitemap'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
@@ -51,6 +51,8 @@ export default defineConfig({
         '@vueuse/core',
       ],
       dts: 'src/types/auto-imports.d.ts',
+      dirs: ['src/composables', 'src/store'],
+      vueTemplate: true,
     }),
 
     // https://github.com/antfu/unplugin-vue-components
@@ -67,7 +69,7 @@ export default defineConfig({
     // see unocss.config.ts for config
     Unocss(),
 
-    // https://github.com/antfu/vite-plugin-md
+    // https://github.com/antfu/vite-plugin-vue-markdown
     // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
     Markdown({
       wrapperClasses: markdownWrapperClasses,

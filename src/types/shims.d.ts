@@ -4,7 +4,7 @@
 //   // extend the window
 // }
 
-// with vite-plugin-md, markdowns can be treat as Vue components
+// with vite-plugin-vue-markdown, markdown files can be treated as Vue components
 declare module '*.md' {
   import { type DefineComponent } from 'vue'
 

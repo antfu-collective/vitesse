@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useUserStore } from '~/stores/user'
-
 const props = defineProps<{ name: string }>()
 const router = useRouter()
 const user = useUserStore()
 const { t } = useI18n()
 
 watchEffect(() => {
-  user.setNewName(props.name)
+  // FIXME: False positive
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+  user.setNewName('a')
 })
 </script>
 
@@ -32,7 +32,7 @@ watchEffect(() => {
             <router-link :to="`/hi/${otherName}`" replace>
               {{ otherName }}
             </router-link>
-          </li> -->
+          </li>
         </ul>
       <!-- eslint-disable-next-line prettier/prettier -->
       </p>

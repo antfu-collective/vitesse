@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "types": [
       "node",
+      "vitest",
       "vite/client",
       "vue/ref-macros",
       "vite-plugin-pages/client",

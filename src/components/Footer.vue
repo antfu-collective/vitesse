@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { toggleDark } from '~/composables'
-
 const { t, availableLocales, locale } = useI18n()
 
 const toggleLocales = (): void => {
@@ -27,7 +25,7 @@ const toggleLocales = (): void => {
     <a
       class="icon-btn mx-2"
       :title="t('button.toggle_langs')"
-      @click="toggleLocales"
+      @click="toggleLocales()"
     >
       <div i-carbon-language />
     </a>

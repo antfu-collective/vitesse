@@ -202,7 +202,7 @@ docker build . -t vitesse:latest
 Run the image and specify port mapping with the `-p` flag.
 
 ```bash
-docker run -p 8080:80 vitesse:latest
+docker run --rm -it -p 8080:80 vitesse:latest
 ```
 
 ## Why

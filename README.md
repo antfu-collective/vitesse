@@ -191,6 +191,16 @@ And you will see the generated file in `dist` that ready to be served.
 
 Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
 
+### Docker 
+First, build the vitesse image by opening the terminal in the project's root directory. 
+```bash
+docker build . -t vitesse
+```
+Run the image and specify port mapping with the `-p` flag.
+```bash
+docker run -p 4173:4173 vitesse
+```
+
 ## Why
 
 I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.

@@ -196,7 +196,7 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 First, build the vitesse image by opening the terminal in the project's root directory.
 
 ```bash
-docker build . -t vitesse:latest
+docker buildx build . -t vitesse:latest
 ```
 
 Run the image and specify port mapping with the `-p` flag.

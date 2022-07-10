@@ -5,10 +5,11 @@ button:
   home: Início
   toggle_dark: Alternar modo escuro
   toggle_langs: Mudar de idioma
+  toggle_light: Alternar o modo de luz
 intro:
+  aka: Também conhecido como
   desc: Modelo Opinativo de Partida de Vite
   dynamic-route: Demonstração de rota dinâmica
   hi: Olá, {name}!
-  aka: Também conhecido como
   whats-your-name: Qual é o seu nome?
 not-found: Não encontrado

@@ -5,7 +5,9 @@ button:
   home: Главная
   toggle_dark: Включить темный режим
   toggle_langs: Сменить язык
+  toggle_light: Переключить световой режим
 intro:
+  aka: Также известен как
   desc: Самостоятельный начальный шаблон Vite
   dynamic-route: Демо динамического маршрута
   hi: Привет, {name}!

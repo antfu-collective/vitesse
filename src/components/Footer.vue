@@ -14,7 +14,7 @@ const toggleLocales = () => {
       <div i-carbon-campsite />
     </RouterLink>
 
-    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
+    <button class="icon-btn mx-2 !outline-none" :title="isDark ? t('button.toggle_light') : t('button.toggle_dark')" @click="toggleDark()">
       <div i="carbon-sun dark:carbon-moon" />
     </button>
 

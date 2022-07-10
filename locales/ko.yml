@@ -5,7 +5,9 @@ button:
   home: 홈
   toggle_dark: 다크모드 토글
   toggle_langs: 언어 변경
+  toggle_light: 조명 모드 전환
 intro:
+  aka: 또한 ~으로 알려진
   desc: Vite 애플리케이션 템플릿
   dynamic-route: 다이나믹 라우트 데모
   hi: 안녕, {name}!

@@ -5,7 +5,9 @@ button:
   home: Khởi đầu
   toggle_dark: Chuyển đổi chế độ tối
   toggle_langs: Thay đổi ngôn ngữ
+  toggle_light: Chuyển đổi chế độ ánh sáng
 intro:
+  aka: Còn được biết là
   desc: Ý kiến cá nhân Vite Template để bắt đầu
   dynamic-route: Bản giới thiệu về dynamic route
   hi: Hi, {name}!

@@ -5,7 +5,9 @@ button:
   home: Home
   toggle_dark: Attiva/disattiva modalità scura
   toggle_langs: Cambia lingua
+  toggle_light: Attiva/disattiva la modalità luce
 intro:
+  aka: Conosciuto anche come
   desc: Modello per una Applicazione Vite
   dynamic-route: Demo di rotta dinamica
   hi: Ciao, {name}!

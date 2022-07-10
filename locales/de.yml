@@ -5,10 +5,11 @@ button:
   home: Startseite
   toggle_dark: Dunkelmodus umschalten
   toggle_langs: Sprachen ändern
+  toggle_light: Lichtmodus umschalten
 intro:
+  aka: Auch bekannt als
   desc: Vite Startvorlage mit Vorlieben
   dynamic-route: Demo einer dynamischen Route
   hi: Hi, {name}!
-  aka: Auch bekannt als
   whats-your-name: Wie heißt du?
 not-found: Nicht gefunden

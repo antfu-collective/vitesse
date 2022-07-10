@@ -5,10 +5,11 @@ button:
   home: Strona główna
   toggle_dark: Ustaw tryb nocny
   toggle_langs: Zmień język
+  toggle_light: Przełącz tryb światła
 intro:
+  aka: Znany też jako
   desc: Opiniowany szablon startowy Vite
   dynamic-route: Demonstracja dynamicznego route
   hi: Cześć, {name}!
-  aka: Znany też jako
   whats-your-name: Jak masz na imię?
 not-found: Nie znaleziono

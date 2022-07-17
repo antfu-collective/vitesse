@@ -135,6 +135,7 @@ As this template is strongly opinionated, the following provides a curated list 
 - [vitecamp](https://github.com/nekobc1998923/vitecamp) by [@nekobc1998923](https://github.com/nekobc1998923) - Like Vitesse but without SSG/SSR/File based routing, includes Element Plus
 - [vitesse-lite-react](https://github.com/lxy-yz/vitesse-lite-react) by [@lxy-yz](https://github.com/lxy-yz) - vitesse-lite React fork
 - [vide](https://github.com/Nico-Mayer/vide) by [@nico-mayer](https://github.com/Nico-Mayer) - Vite superlight Beginner Starter Template
+- [vitesse-for-react](https://github.com/a1ooha/vitesse-for-react) by [@Aloha](https://github.com/a1ooha) - React 18/React Router 6/Vite 3/I18n
 
 ## Try it now!
 

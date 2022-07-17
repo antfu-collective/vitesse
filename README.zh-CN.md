@@ -127,7 +127,7 @@
 
 ## 现在可以试试!
 
-> Vitesse 需要 Node 版本 >=14
+> Vitesse 需要 Node 版本 >=14.18
 
 ### GitHub 模板
 

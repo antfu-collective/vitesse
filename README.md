@@ -138,7 +138,7 @@ As this template is strongly opinionated, the following provides a curated list 
 
 ## Try it now!
 
-> Vitesse requires Node >=14
+> Vitesse requires Node >=14.18
 
 ### GitHub Template
 

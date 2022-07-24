@@ -17,12 +17,10 @@ specifiers:
   eslint-plugin-cypress: ^2.12.1
   https-localhost: ^4.7.1
   markdown-it-link-attributes: ^4.0.0
-  markdown-it-prism: ^2.2.4
   markdown-it-shiki: ^0.5.1
   nprogress: ^0.2.0
   pinia: ^2.0.16
   pnpm: ^7.6.0
-  prism-theme-vars: ^0.2.4
   shiki: ^0.10.1
   typescript: ^4.7.4
   unocss: ^0.44.5
@@ -48,7 +46,6 @@ dependencies:
   '@vueuse/head': 0.7.7_vue@3.2.37
   nprogress: 0.2.0
   pinia: 2.0.16_j6bzmzd4ujpabbp5objtwxyjp4
-  prism-theme-vars: 0.2.4
   vue: 3.2.37
   vue-demi: 0.13.5_vue@3.2.37
   vue-i18n: 9.1.10_vue@3.2.37
@@ -69,7 +66,6 @@ devDependencies:
   eslint-plugin-cypress: 2.12.1_eslint@8.20.0
   https-localhost: 4.7.1
   markdown-it-link-attributes: 4.0.0
-  markdown-it-prism: 2.2.4
   markdown-it-shiki: 0.5.1
   pnpm: 7.6.0
   shiki: 0.10.1
@@ -5416,13 +5412,6 @@ packages:
     resolution: {integrity: sha512-ssjxSLlLfQBkX6BvAx1rCPrx7ZoK91llQQvS3P7KXvlbnVD34OUkfXwWecN7su/7mrI/HOW0RI5szdJOIqYC3w==}
     dev: true
 
-  /markdown-it-prism/2.2.4:
-    resolution: {integrity: sha512-7oQVppKjiZqVQo7s7eLTIs3o/0hdvqAWDW8lvRel6eUCGD4iXjKbSZjvdHZFA2ZnCkQUF47kbvtWZDVQrv7zyQ==}
-    engines: {node: '>=6.0.0'}
-    dependencies:
-      prismjs: 1.28.0
-    dev: true
-
   /markdown-it-shiki/0.5.1:
     resolution: {integrity: sha512-cidjLEt5C6x/bmhyO+JqOy92M1qPF/bu6BN8nxaah/8YpOB4gA168NoLfnSSZATf6Btr/qxn3r1Ihy75b894zw==}
     dependencies:
@@ -6091,15 +6080,6 @@ packages:
   /pretty-bytes/6.0.0:
     resolution: {integrity: sha512-6UqkYefdogmzqAZWzJ7laYeJnaXDy2/J+ZqiiMtS7t7OfpXWTlaeGMwX8U6EFvPV/YWWEKRkS8hKS4k60WHTOg==}
     engines: {node: ^14.13.1 || >=16.0.0}
-    dev: true
-
-  /prism-theme-vars/0.2.4:
-    resolution: {integrity: sha512-B3Pht+GCT87sZph7hMRLlCQXzCM0awW7Rhk08RavpqRW4LEQOeqN0uMG4QCWkul2tr8PB61YAOJGUrEW+1uuJA==}
-    dev: false
-
-  /prismjs/1.28.0:
-    resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
-    engines: {node: '>=6'}
     dev: true
 
   /process-nextick-args/2.0.1:

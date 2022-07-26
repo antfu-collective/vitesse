@@ -10,7 +10,8 @@
     "test": "vitest",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "up": "taze major -I"
   },
   "dependencies": {
     "@vueuse/core": "^9.0.0",
@@ -40,6 +41,7 @@
     "markdown-it-shiki": "^0.5.1",
     "pnpm": "^7.6.0",
     "shiki": "^0.10.1",
+    "taze": "^0.7.6",
     "typescript": "^4.7.4",
     "unocss": "^0.44.7",
     "unplugin-auto-import": "^0.10.1",

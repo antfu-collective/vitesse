@@ -134,6 +134,7 @@ As this template is strongly opinionated, the following provides a curated list 
 - [vitecamp](https://github.com/nekobc1998923/vitecamp) by [@nekobc1998923](https://github.com/nekobc1998923) - Like Vitesse but without SSG/SSR/File based routing, includes Element Plus
 - [vitesse-lite-react](https://github.com/lxy-yz/vitesse-lite-react) by [@lxy-yz](https://github.com/lxy-yz) - vitesse-lite React fork
 - [vide](https://github.com/Nico-Mayer/vide) by [@nico-mayer](https://github.com/Nico-Mayer) - Vite superlight Beginner Starter Template
+- [vitify-admin](https://github.com/kingyue737/vitify-admin) by [@kingyue737](https://github.com/kingyue737) - Admin Template with Vuetify 2 and vitesse features
 
 ## Try it now!
 

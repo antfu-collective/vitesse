@@ -6,6 +6,7 @@ specifiers:
   '@intlify/vite-plugin-vue-i18n': ^6.0.0
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/nprogress': ^0.2.0
+  '@unocss/reset': ^0.45.8
   '@vitejs/plugin-vue': ^3.0.1
   '@vue/test-utils': ^2.0.2
   '@vueuse/core': ^9.1.0
@@ -43,6 +44,7 @@ specifiers:
   vue-tsc: ^0.39.5
 
 dependencies:
+  '@unocss/reset': 0.45.8
   '@vueuse/core': 9.1.0_vue@3.2.37
   '@vueuse/head': 0.7.9_vue@3.2.37
   nprogress: 0.2.0
@@ -2126,6 +2128,10 @@ packages:
   /@unocss/reset/0.45.5:
     resolution: {integrity: sha512-JDFRoc1H0Tk1knRGI+LljOKrKkWrF1txJ50DG3oa+azTdQaX0wDQ4isyDM6PbodydhEqYCsZcJEL/2pEiPRg8A==}
     dev: true
+
+  /@unocss/reset/0.45.8:
+    resolution: {integrity: sha512-zeIYa/d/amPhX6/del0k6K8/Hdl/nN12XCeiVfBKymlilAjQQyV64V/qdLBtSKzqegT68O/xMscla7pZDto4Hw==}
+    dev: false
 
   /@unocss/scope/0.45.5:
     resolution: {integrity: sha512-+7PPbxxVp/k27YyBVSM/euKnB65KtaXA4iYHiDWRja235RnnsZ7XcSZ78o5hDuOA3dnqZU+d4rV5rt1tGy6XJA==}

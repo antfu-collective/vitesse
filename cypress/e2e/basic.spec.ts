@@ -26,6 +26,6 @@ context('Basic', () => {
       .url()
       .should('eq', 'http://localhost:3333/about')
 
-    cy.get('pre.language-js').should('exist')
+    cy.get('.shiki').should('exist')
   })
 })

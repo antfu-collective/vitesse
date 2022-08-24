@@ -1,7 +1,7 @@
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Vue from '@vitejs/plugin-vue'
 import LinkAttributes from 'markdown-it-link-attributes'
-import Prism from 'markdown-it-prism'
+import Shiki from 'markdown-it-shiki'
 import path from 'path'
 import Unocss from 'unocss/vite'
 // eslint-disable-next-line import/no-unresolved
@@ -12,12 +12,10 @@ import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
-import Inspector from 'vite-plugin-vue-inspector'
+// import Inspector from 'vite-plugin-vue-inspector'
 import Layouts from 'vite-plugin-vue-layouts'
 import Markdown from 'vite-plugin-vue-markdown'
 import generateSitemap from 'vite-ssg-sitemap'
-
-const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 export default defineConfig({
   resolve: {
@@ -72,11 +70,16 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-vue-markdown
     // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
     Markdown({
-      wrapperClasses: markdownWrapperClasses,
+      wrapperClasses: 'prose prose-sm m-auto text-left',
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
-        md.use(Prism)
+        md.use(Shiki, {
+          theme: {
+            light: 'vitesse-light',
+            dark: 'vitesse-dark',
+          },
+        })
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
@@ -127,11 +130,27 @@ export default defineConfig({
 
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
+
     // https://github.com/webfansplz/vite-plugin-vue-inspector
-    Inspector({
-      enabled: false,
-    }),
+    /* Disable for now for the issue:
+      import { parse as babelParse, traverse as babelTraverse } from "@babel/core";
+                                    ^^^^^^^^
+      SyntaxError: Named export 'traverse' not found. The requested module '@babel/core' is a CommonJS module, which may not support all module.exports as named exports.
+      CommonJS modules can always be imported via the default export, for example using:
+    */
+    // Inspector({
+    //   enabled: false,
+    // }),
   ],
+
+  // https://github.com/vitest-dev/vitest
+  test: {
+    include: ['test/**/*.test.ts'],
+    environment: 'jsdom',
+    deps: {
+      inline: ['@vue', '@vueuse', 'vue-demi'],
+    },
+  },
 
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
@@ -142,12 +161,8 @@ export default defineConfig({
     },
   },
 
-  // https://github.com/vitest-dev/vitest
-  test: {
-    include: ['test/**/*.test.ts'],
-    environment: 'jsdom',
-    deps: {
-      inline: ['@vue', '@vueuse', 'vue-demi'],
-    },
+  ssr: {
+    // TODO: workaround until they support native ESM
+    noExternal: ['workbox-window', /vue-i18n/],
   },
 })

@@ -29,7 +29,7 @@
 
 - 📦 [组件自动化加载](./src/components)
 
-- 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
+- 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 
 - 📑 [布局系统](./src/layouts)
 
@@ -77,7 +77,7 @@
 - [Vue Router](https://github.com/vuejs/router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - 以文件系统为基础的路由
   - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - 页面布局系统
-- [Pinia](https://pinia.esm.dev) - 直接的, 类型安全的, 使用 Composition api 的轻便灵活的 Vue 状态管理
+- [Pinia](https://pinia.vuejs.org) - 直接的, 类型安全的, 使用 Composition api 的轻便灵活的 Vue 状态管理
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA

@@ -136,6 +136,7 @@ As this template is strongly opinionated, the following provides a curated list 
 - [vide](https://github.com/Nico-Mayer/vide) by [@nico-mayer](https://github.com/Nico-Mayer) - Vite superlight Beginner Starter Template
 - [vitesse-h5](https://github.com/YunYouJun/vitesse-h5) by [@YunYouJun](https://github.com/YunYouJun) - Vitesse for Mobile
 - [bat](https://github.com/olgam4/bat) by [@olgam4](https://github.com/olgam4) - Vitesse for SolidJS
+- [vitesse-nuxt3-strapi](https://github.com/kuizuo/vitesse-nuxt3-strapi) by [@kuizuo](https://github.com/kuizuo) - Vitesse for Nuxt3 and Strapi
 
 ## Try it now!
 

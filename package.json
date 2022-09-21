@@ -15,6 +15,7 @@
     "up": "taze major -I"
   },
   "dependencies": {
+    "@unocss/reset": "^0.45.8",
     "@vueuse/core": "^9.1.0",
     "@vueuse/head": "^0.7.9",
     "nprogress": "^0.2.0",

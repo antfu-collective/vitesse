@@ -42,6 +42,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🌍 [I18n ready](./locales)
 
+- 🔎 [Component Preview](https://github.com/antfu/vite-plugin-vue-component-preview)
+
 - 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-vue-markdown)
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
@@ -83,6 +85,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
+- [`vite-plugin-vue-component-preview`](https://github.com/johnsoncodehk/vite-plugin-vue-component-preview) - Preview single component in VSCode
 - [`vite-plugin-vue-markdown`](https://github.com/antfu/vite-plugin-vue-markdown) - Markdown as components / components in Markdown
   - [`markdown-it-shiki`](https://github.com/antfu/markdown-it-shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization

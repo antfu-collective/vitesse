@@ -31,7 +31,7 @@ specifiers:
   vite-plugin-inspect: ^0.6.0
   vite-plugin-pages: ^0.25.0
   vite-plugin-pwa: ^0.12.3
-  vite-plugin-vue-component-preview: ^0.3.1
+  vite-plugin-vue-component-preview: ^0.3.2
   vite-plugin-vue-layouts: ^0.7.0
   vite-plugin-vue-markdown: ^0.21.1
   vite-ssg: ^0.20.2
@@ -80,7 +80,7 @@ devDependencies:
   vite-plugin-inspect: 0.6.0_vite@3.0.4
   vite-plugin-pages: 0.25.0_vite@3.0.4
   vite-plugin-pwa: 0.12.3_vite@3.0.4
-  vite-plugin-vue-component-preview: 0.3.1_vite@3.0.4
+  vite-plugin-vue-component-preview: 0.3.2_vite@3.0.4
   vite-plugin-vue-layouts: 0.7.0_2idawcohe3eegwclkuflddhqau
   vite-plugin-vue-markdown: 0.21.1_vite@3.0.4
   vite-ssg: 0.20.2_thgl23324gg75myoeph36y4c5a
@@ -1447,8 +1447,8 @@ packages:
       - supports-color
     dev: true
 
-  /@intlify/bundle-utils/3.1.0_vue-i18n@9.2.2:
-    resolution: {integrity: sha512-ghlJ0kR2cCQ8D+poKknC0Xx0ncOt3J3os7CcIAqqIWVF7k6AtGoCDnIru+YzlZcvFRNmP9wEZ7jKliojCdAWNg==}
+  /@intlify/bundle-utils/3.1.2_vue-i18n@9.2.2:
+    resolution: {integrity: sha512-amgSo0NN5OKWYdcgFmfJqo2tcUcZ6C66Bxm5ALQnB0m3MUQtS9aJzKoIo+EU9XQiOVmlBFxRtNoZm+psHa5FNA==}
     engines: {node: '>= 12'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -1525,7 +1525,7 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/bundle-utils': 3.1.0_vue-i18n@9.2.2
+      '@intlify/bundle-utils': 3.1.2_vue-i18n@9.2.2
       '@intlify/shared': 9.3.0-beta.3
       '@rollup/pluginutils': 4.2.1
       debug: 4.3.4
@@ -7901,8 +7901,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-component-preview/0.3.1_vite@3.0.4:
-    resolution: {integrity: sha512-IY0/GCswdozKB3bk9r3lPXUepCZ1zXSy2oEnZfdpwUp6MfF4SJO3c6UpEC078GFBBUzIoH37aneBDhArvrzHhA==}
+  /vite-plugin-vue-component-preview/0.3.2_vite@3.0.4:
+    resolution: {integrity: sha512-vxtrrsIKCm7BbZ6IE6WS7qF/u86EoD8mJ0czs5fqU9HGK35rLjGR85H5m2ZtieQgHv56ueVtASp6SOXThWcosQ==}
     dependencies:
       vite-plugin-vue-markdown: 0.21.1_vite@3.0.4
     transitivePeerDependencies:

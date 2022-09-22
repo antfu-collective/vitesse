@@ -13,13 +13,9 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
-
-      - name: Set node
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: pnpm
@@ -33,13 +29,9 @@ jobs:
   typecheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
-
-      - name: Set node
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: pnpm
@@ -60,37 +52,32 @@ jobs:
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
-
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
           cache: pnpm
 
       - run: pnpm install
-
-      - name: Unit Test
-        run: pnpm run test:unit
+      - run: pnpm run test:unit
 
   test-e2e:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v2
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
         with:
           path: |
             ~/.cache
           key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
+      - uses: pnpm/action-setup@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
@@ -102,7 +89,7 @@ jobs:
         run: cp pnpm-lock.yaml package-lock.json
 
       - name: Cypress
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           install-command: echo
           build: pnpm run build

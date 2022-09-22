@@ -6,10 +6,10 @@
   "i18n-ally.sortKeys": true,
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+    "source.fixAll.eslint": true
   },
   "files.associations": {
-    "*.css": "postcss",
+    "*.css": "postcss"
   },
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": false
 }

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useUserStore } from '~/stores/user'
-
 const props = defineProps<{ name: string }>()
 const router = useRouter()
 const user = useUserStore()
@@ -20,7 +18,7 @@ watchEffect(() => {
       {{ t('intro.hi', { name: props.name }) }}
     </p>
 
-    <p text-sm opacity-50>
+    <p text-sm opacity-75>
       <em>{{ t('intro.dynamic-route') }}</em>
     </p>
 

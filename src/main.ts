@@ -4,6 +4,7 @@ import './styles/main.css'
 import 'uno.css'
 
 import { setupLayouts } from 'virtual:generated-layouts'
+import Previewer from 'virtual:vue-component-preview'
 import { ViteSSG } from 'vite-ssg'
 
 // eslint-disable-next-line import/no-unresolved
@@ -28,5 +29,6 @@ export const createApp = ViteSSG(
       // eslint-disable-next-line @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-return
       i.install?.(ctx),
     )
+    ctx.app.use(Previewer)
   },
 )

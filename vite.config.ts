@@ -12,6 +12,7 @@ import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
+import Preview from 'vite-plugin-vue-component-preview'
 // import Inspector from 'vite-plugin-vue-inspector'
 import Layouts from 'vite-plugin-vue-layouts'
 import Markdown from 'vite-plugin-vue-markdown'
@@ -25,6 +26,8 @@ export default defineConfig({
   },
 
   plugins: [
+    Preview(),
+
     Vue({
       include: [/\.vue$/, /\.md$/],
       reactivityTransform: true,

@@ -6,7 +6,6 @@ const { t } = useI18n()
 
 watchEffect(() => {
   // FIXME: False positive
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   user.setNewName('a')
 })
 </script>

@@ -25,10 +25,7 @@ export const createApp = ViteSSG(
       import.meta.glob<{ install: UserModule }>('./modules/*.ts', {
         eager: true,
       }),
-    ).forEach((i) =>
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-return
-      i.install?.(ctx),
-    )
+    ).forEach((i) => i.install?.(ctx))
     ctx.app.use(Previewer)
   },
 )

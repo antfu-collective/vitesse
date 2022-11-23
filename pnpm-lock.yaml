@@ -9,34 +9,34 @@ specifiers:
   '@types/lodash-es': ^4.17.6
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/nprogress': ^0.2.0
-  '@unocss/preset-attributify': ^0.46.3
-  '@unocss/preset-icons': ^0.46.3
-  '@unocss/preset-typography': ^0.46.3
-  '@unocss/preset-web-fonts': ^0.46.3
+  '@unocss/preset-attributify': ^0.46.5
+  '@unocss/preset-icons': ^0.46.5
+  '@unocss/preset-typography': ^0.46.5
+  '@unocss/preset-web-fonts': ^0.46.5
   '@unocss/reset': ^0.46.5
   '@vitejs/plugin-vue': ^3.2.0
   '@vue/test-utils': ^2.2.4
-  '@vueuse/core': ^9.5.0
+  '@vueuse/core': ^9.6.0
   '@vueuse/head': ^1.0.18
   critters: ^0.0.16
   cross-env: ^7.0.3
-  cypress: ^11.1.0
+  cypress: ^11.2.0
   eslint: ^8.28.0
   eslint-plugin-cypress: ^2.12.1
   https-localhost: ^4.7.1
-  husky: ^8.0.1
+  husky: ^8.0.2
   lint-staged: ^13.0.3
   markdown-it-link-attributes: ^4.0.1
   markdown-it-shiki: ^0.6.1
   nprogress: ^0.2.0
   pinia: ^2.0.25
   pnpm: ^7.17.0
-  postcss: ^8.4.18
+  postcss: ^8.4.19
   postcss-html: ^1.5.0
   postcss-syntax: ^0.36.2
-  prettier: ^2.7.1
+  prettier: ^2.8.0
   shiki: ^0.11.1
-  stylelint: ^14.14.1
+  stylelint: ^14.15.0
   stylelint-config-property-sort-order-smacss: ^9.0.0
   stylelint-config-recommended-scss: ^8.0.0
   stylelint-config-recommended-vue: ^1.4.0
@@ -51,12 +51,12 @@ specifiers:
   vite-plugin-pages: ^0.27.1
   vite-plugin-pwa: ^0.13.3
   vite-plugin-vue-component-preview: ^0.3.3
-  vite-plugin-vue-inspector: 1.1.3
+  vite-plugin-vue-inspector: 1.1.4
   vite-plugin-vue-layouts: ^0.7.0
   vite-plugin-vue-markdown: ^0.22.1
   vite-ssg: ^0.22.0
   vite-ssg-sitemap: ^0.4.3
-  vitest: ^0.25.2
+  vitest: ^0.25.3
   vue: ^3.2.45
   vue-demi: ^0.13.11
   vue-i18n: ^9.2.2
@@ -120,7 +120,7 @@ devDependencies:
   vite-plugin-pages: 0.27.1_vite@3.2.4
   vite-plugin-pwa: 0.13.3_vite@3.2.4
   vite-plugin-vue-component-preview: 0.3.3_vite@3.2.4
-  vite-plugin-vue-inspector: 1.1.3_vite@3.2.4
+  vite-plugin-vue-inspector: 1.1.4_vite@3.2.4
   vite-plugin-vue-layouts: 0.7.0_ltio2jrs4h243s6indlqgywoku
   vite-plugin-vue-markdown: 0.22.1_vite@3.2.4
   vite-ssg: 0.22.0_btsslyppnm7dvf4lyxme2fuxdq
@@ -2188,7 +2188,7 @@ packages:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 14.18.33
+      '@types/node': 18.11.9
     dev: true
     optional: true
 
@@ -9868,8 +9868,8 @@ packages:
       - vite
     dev: true
 
-  /vite-plugin-vue-inspector/1.1.3_vite@3.2.4:
-    resolution: {integrity: sha512-4lkNJx1iMk0ZX5RVDe3KXqFZRI0Sni5IhAGxAo8qcc5i63/wrDp3/4HXXRaTSUS6002fFMWOAE86LWv1Ae7UVg==}
+  /vite-plugin-vue-inspector/1.1.4_vite@3.2.4:
+    resolution: {integrity: sha512-qRMPWHcCI2QdIT15c/GR6Fw+TRsh21eeL5ydMXgMAbQEFzGQR8M4NmmAX3gsDt0hYmH0XipWLJWjt0YGdYLEYQ==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0
     dependencies:

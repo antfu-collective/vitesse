@@ -18,8 +18,7 @@
     "test:e2e": "cypress open",
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
-    "up": "taze major -I",
-    "prepare": "husky install"
+    "up": "taze major -I"
   },
   "dependencies": {
     "@unocss/reset": "^0.46.5",
@@ -53,7 +52,7 @@
     "eslint": "^8.28.0",
     "eslint-plugin-cypress": "^2.12.1",
     "https-localhost": "^4.7.1",
-    "husky": "^8.0.2",
+    "lefthook": "^1.2.1",
     "lint-staged": "^13.0.3",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-shiki": "^0.6.1",

@@ -24,7 +24,7 @@ specifiers:
   eslint: ^8.28.0
   eslint-plugin-cypress: ^2.12.1
   https-localhost: ^4.7.1
-  husky: ^8.0.2
+  lefthook: ^1.2.1
   lint-staged: ^13.0.3
   markdown-it-link-attributes: ^4.0.1
   markdown-it-shiki: ^0.6.1
@@ -95,7 +95,7 @@ devDependencies:
   eslint: 8.28.0
   eslint-plugin-cypress: 2.12.1_eslint@8.28.0
   https-localhost: 4.7.1
-  husky: 8.0.2
+  lefthook: 1.2.1
   lint-staged: 13.0.3
   markdown-it-link-attributes: 4.0.1
   markdown-it-shiki: 0.6.1
@@ -5801,12 +5801,6 @@ packages:
       ms: 2.1.3
     dev: true
 
-  /husky/8.0.2:
-    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
-
   /iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
     engines: {node: '>=0.10.0'}
@@ -6478,6 +6472,67 @@ packages:
   /lazy-ass/1.6.0:
     resolution: {integrity: sha1-eZllXoZGwX8In90YfRUNMyTVRRM=}
     engines: {node: '> 0.8'}
+    dev: true
+
+  /lefthook-darwin-arm64/1.2.1:
+    resolution: {integrity: sha512-xvDC6K4KvZBYg0W3Qp7qZOcDScLS+ffwaTb5qDWa+mfE9pziYk9tUZihGjp6g7206yN9/+/fEAtgWlAjCC9Mzw==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /lefthook-darwin-x64/1.2.1:
+    resolution: {integrity: sha512-Z7l3V8yeH6Bj0LRnmh/bK9wEvaZli1gvCeEZlu6Pt5Hj8gTPtLPwlCOtubDR78qPD9zgZfJBrRnU//YcOZ+uxg==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /lefthook-linux-arm64/1.2.1:
+    resolution: {integrity: sha512-ez50a1WO4Aue9CFWmyQfH/NOvp+B1df4wNuo2nnD/rzgavoDHcEaKlEc3YS6K9IY3P/SaWI/xbHUQdQEuGp/pQ==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /lefthook-linux-x64/1.2.1:
+    resolution: {integrity: sha512-h3uLg0KLTfTs19Rrf4JHpFjFTkDLYxk+bOL4eJpNNuRAhsmOfQIXz7ze9UmQKGdeXSQ8BTzWny8eNiy9T7L79g==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /lefthook-windows-arm64/1.2.1:
+    resolution: {integrity: sha512-zm3w3gDasN2oBCClKPiLhCXcSdjo6MyL44lNbOA+C/8LkMvNR38To1sOEcm9vk0SgYCPFcY9usQP3aiLPXeUfw==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /lefthook-windows-x64/1.2.1:
+    resolution: {integrity: sha512-7CdL19qY8J83OkG3LpZPx6QC5aiq53P5ioX7BCrANQAkl7QjOOJlU/QiNkXII68al/oDNhQM5lSaIxdH0nZhWQ==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /lefthook/1.2.1:
+    resolution: {integrity: sha512-yt+RkOaXR7raBSDsGYlUeiRh4b4ijh1Xx4b/TfC6KnZp6It6Nd3vLd9+/MAavgo0CCMoFS/QoBwpFKqnlk3knQ==}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      lefthook-darwin-arm64: 1.2.1
+      lefthook-darwin-x64: 1.2.1
+      lefthook-linux-arm64: 1.2.1
+      lefthook-linux-x64: 1.2.1
+      lefthook-windows-arm64: 1.2.1
+      lefthook-windows-x64: 1.2.1
     dev: true
 
   /leven/3.1.0:

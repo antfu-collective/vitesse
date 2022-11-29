@@ -14,6 +14,7 @@ import Inspect from 'vite-plugin-inspect'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
+import VueMacros from 'unplugin-vue-macros/vite'
 
 export default defineConfig({
   resolve: {
@@ -25,9 +26,13 @@ export default defineConfig({
   plugins: [
     Preview(),
 
-    Vue({
-      include: [/\.vue$/, /\.md$/],
-      reactivityTransform: true,
+    VueMacros({
+      plugins: {
+        vue: Vue({
+          include: [/\.vue$/, /\.md$/],
+          reactivityTransform: true,
+        }),
+      },
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages

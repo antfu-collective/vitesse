@@ -22,6 +22,9 @@ export default defineConfig({
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
+    // Fix issue when component libraries in the workspace are using different versions of deps like Vue
+    // See: https://github.com/vuejs/core/issues/4344#issuecomment-1023220225
+    dedupe: ['vue', 'vue-i18n', 'vue-router'],
   },
 
   plugins: [

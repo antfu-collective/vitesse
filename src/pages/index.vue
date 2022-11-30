@@ -30,7 +30,7 @@ const { t } = useI18n()
 
     <div py-4 />
 
-    <Input
+    <TheInput
       v-model="name"
       placeholder="What's your name?"
       autocomplete="false"

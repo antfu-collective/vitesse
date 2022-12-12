@@ -89,6 +89,7 @@
 - [VueUse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
 - [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap) - 站点地图生成器
 - [`@vueuse/head`](https://github.com/vueuse/head) - 响应式地操作文档头信息
+- [`vite-plugin-vue-inspector`](https://github.com/webfansplz/vite-plugin-vue-inspector) - 点击页面元素自动跳转到本地IDE对应的 Vue 组件
 
 ### 编码风格
 

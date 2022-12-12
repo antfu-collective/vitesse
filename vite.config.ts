@@ -11,6 +11,7 @@ import Markdown from 'vite-plugin-vue-markdown'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
+import Inspector from 'vite-plugin-vue-inspector'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
@@ -136,6 +137,11 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-inspect
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
+
+    // https://github.com/webfansplz/vite-plugin-vue-inspector
+    Inspector({
+      toggleButtonVisibility: 'never',
+    }),
   ],
 
   // https://github.com/vitest-dev/vitest

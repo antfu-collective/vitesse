@@ -1,0 +1,200 @@
+# This file is inspired by https://github.com/alexkaratarakis/gitattributes
+#
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# The above will handle all files NOT found below
+# These files are text and should be normalized (Convert crlf => lf)
+
+*.coffee          text
+*.css             text
+*.cql             text
+*.df              text
+*.ejs             text
+*.html            text
+*.java            text
+*.js              text
+*.less            text
+*.properties      text
+*.sass            text
+*.scss            text
+*.sql             text
+*.txt             text
+*.ts              text
+
+# Scripts
+*.bash            text eol=lf
+*.fish            text eol=lf
+*.sh              text eol=lf
+*.zsh             text eol=lf
+# These are explicitly windows files and should use crlf
+*.bat             text eol=crlf
+*.cmd             text eol=crlf
+*.ps1             text eol=crlf
+
+# Serialisation
+*.json            text
+*.toml            text
+*.xml             text
+*.yaml            text
+*.yml             text
+
+# Documents
+*.bibtex          text diff=bibtex
+*.doc             diff=astextplain
+*.DOC             diff=astextplain
+*.docx            diff=astextplain
+*.DOCX            diff=astextplain
+*.dot             diff=astextplain
+*.DOT             diff=astextplain
+*.pdf             diff=astextplain
+*.PDF             diff=astextplain
+*.rtf             diff=astextplain
+*.RTF             diff=astextplain
+*.md              text diff=markdown
+*.mdx             text diff=markdown
+*.tex             text diff=tex
+*.adoc            text
+*.textile         text
+*.mustache        text
+*.csv             text
+*.tab             text
+*.tsv             text
+*.txt             text
+*.sql             text
+*.epub            diff=astextplain
+AUTHORS           text
+CHANGELOG         text
+CHANGES           text
+CONTRIBUTING      text
+COPYING           text
+copyright         text
+*COPYRIGHT*       text
+INSTALL           text
+license           text
+LICENSE           text
+NEWS              text
+readme            text
+*README*          text
+TODO              text
+
+# Graphics
+*.ai              binary
+*.bmp             binary
+*.eps             binary
+*.gif             binary
+*.gifv            binary
+*.ico             binary
+*.jng             binary
+*.jp2             binary
+*.jpg             binary
+*.jpeg            binary
+*.jpx             binary
+*.jxr             binary
+*.pdf             binary
+*.png             binary
+*.psb             binary
+*.psd             binary
+# SVG treated as an asset (binary) by default. If you want to treat it as text,
+# comment-out the following line and uncomment the line after.
+*.svg             binary
+#*.svg            text
+*.svgz            binary
+*.tif             binary
+*.tiff            binary
+*.wbmp            binary
+*.webp            binary
+
+# These files are binary and should be left untouched
+# (binary is a macro for -text -diff)
+*.class           binary
+*.jar             binary
+*.war             binary
+
+## LINTERS
+.csslintrc        text
+.eslintrc         text
+.jscsrc           text
+.jshintrc         text
+.jshintignore     text
+.stylelintrc      text
+
+# Configs
+*.cnf             text
+*.conf            text
+*.config          text
+.editorconfig     text
+.env              text
+.gitattributes    text
+.gitconfig        text
+.htaccess         text
+*.lock            text -diff
+package.json      text eol=lf
+package-lock.json text eol=lf -diff
+*.npmignore       text
+pnpm-lock.yaml    text eol=lf -diff
+.prettierrc       text
+yarn.lock         text -diff
+browserslist      text
+Makefile          text
+makefile          text
+
+## HEROKU
+Procfile          text
+.slugignore       text
+
+## AUDIO
+*.kar             binary
+*.m4a             binary
+*.mid             binary
+*.midi            binary
+*.mp3             binary
+*.ogg             binary
+*.ra              binary
+
+## VIDEO
+*.3gpp            binary
+*.3gp             binary
+*.as              binary
+*.asf             binary
+*.asx             binary
+*.fla             binary
+*.flv             binary
+*.m4v             binary
+*.mng             binary
+*.mov             binary
+*.mp4             binary
+*.mpeg            binary
+*.mpg             binary
+*.swc             binary
+*.swf             binary
+*.webm            binary
+
+## ARCHIVES
+*.7z              binary
+*.gz              binary
+*.rar             binary
+*.tar             binary
+*.zip             binary
+
+## FONTS
+*.ttf             binary
+*.eot             binary
+*.otf             binary
+*.woff            binary
+*.woff2           binary
+
+# Executables
+*.exe             binary
+*.pyc             binary
+
+# Text files where line endings should be preserved
+*.patch           -text
+
+#
+# Exclude files from exporting
+#
+
+.gitattributes    export-ignore
+.gitignore        export-ignore
+.gitkeep          export-ignore

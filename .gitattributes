@@ -6,21 +6,37 @@
 # The above will handle all files NOT found below
 # These files are text and should be normalized (Convert crlf => lf)
 
+# Source code
 *.coffee          text
-*.css             text
-*.cql             text
-*.df              text
-*.ejs             text
-*.html            text
+*.css             text diff=css
+*.htm             text diff=html
+*.html            text diff=html
+*.inc             text
+*.ini             text
 *.java            text
 *.js              text
+*.jsx             text
 *.less            text
-*.properties      text
+*.ls              text
+*.map             text -diff
+*.od              text
+*.onlydata        text
+*.php             text diff=php
+*.pl              text
+*.ps1             text eol=crlf
+*.py              text diff=python
+*.rb              text diff=ruby
 *.sass            text
-*.scss            text
+*.scm             text
+*.scss            text diff=css
+.husky/*          text eol=lf
 *.sql             text
-*.txt             text
+*.styl            text
+*.tag             text
 *.ts              text
+*.tsx             text
+*.xml             text
+*.xhtml           text diff=html
 
 # Scripts
 *.bash            text eol=lf

@@ -58,6 +58,7 @@
     "vite-plugin-vue-inspector": "^3.2.1",
     "vite-plugin-vue-layouts": "^0.7.0",
     "vite-plugin-vue-markdown": "^0.22.2",
+    "vite-plugin-webfont-dl": "^3.5.0",
     "vite-ssg": "^0.22.1",
     "vite-ssg-sitemap": "^0.4.3",
     "vitest": "^0.27.2",

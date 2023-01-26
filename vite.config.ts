@@ -16,6 +16,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
 import VueMacros from 'unplugin-vue-macros/vite'
+import webfontDownload from 'vite-plugin-webfont-dl'
 
 export default defineConfig({
   resolve: {
@@ -143,6 +144,9 @@ export default defineConfig({
     Inspector({
       toggleButtonVisibility: 'never',
     }),
+
+    // https://github.com/feat-agency/vite-plugin-webfont-dl
+    webfontDownload(),
   ],
 
   // https://github.com/vitest-dev/vitest

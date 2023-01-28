@@ -6,7 +6,7 @@ module.exports = {
       files: '*.{ts,tsx,vue}',
       excludedFiles: ['*.mdx', '**/*.md/*.ts'],
       parserOptions: {
-        project: 'tsconfig.json',
+        project: ['tsconfig.json', 'cypress/tsconfig.json'],
       },
     },
   ],

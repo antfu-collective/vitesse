@@ -12,8 +12,8 @@ export const install: UserModule = ({ isClient, initialState, app }) => {
   // for other serialization strategies.
   if (isClient) {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    pinia.state.value = initialState.pinia || {}
+    pinia.state.value = initialState['pinia'] || {}
   } else {
-    initialState.pinia = pinia.state.value
+    initialState['pinia'] = pinia.state.value
   }
 }

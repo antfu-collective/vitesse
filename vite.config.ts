@@ -146,6 +146,7 @@ export default defineConfig({
     // https://github.com/webfansplz/vite-plugin-vue-inspector
     Inspector({
       toggleButtonVisibility: 'never',
+      toggleComboKey: 'control-alt-i',
     }),
   ],
 

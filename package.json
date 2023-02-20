@@ -32,7 +32,7 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@daotl/eslint-config-vue": "^1.0.0-alpha.5",
+    "@daotl/eslint-config-vue": "^1.0.0-alpha.6",
     "@daotl/tsconfig": "^0.1.2",
     "@iconify-json/carbon": "^1.1.15",
     "@intlify/unplugin-vue-i18n": "^0.8.2",

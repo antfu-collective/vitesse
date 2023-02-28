@@ -38,6 +38,7 @@ specifiers:
   vite-plugin-vue-inspector: ^3.2.1
   vite-plugin-vue-layouts: ^0.7.0
   vite-plugin-vue-markdown: ^0.22.2
+  vite-plugin-webfont-dl: ^3.6.0
   vite-ssg: ^0.22.1
   vite-ssg-sitemap: ^0.4.3
   vitest: ^0.27.2
@@ -91,6 +92,7 @@ devDependencies:
   vite-plugin-vue-inspector: 3.2.1_vite@4.0.4
   vite-plugin-vue-layouts: 0.7.0_oh6kquo6biweymmreht6aj34oy
   vite-plugin-vue-markdown: 0.22.2_vite@4.0.4
+  vite-plugin-webfont-dl: 3.6.0_vite@4.0.4
   vite-ssg: 0.22.1_taxab7htm3ndplav6c3d2ozfxa
   vite-ssg-sitemap: 0.4.3
   vitest: 0.27.2
@@ -3339,6 +3341,16 @@ packages:
     resolution: {integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==}
     dev: true
 
+  /axios/1.2.5:
+    resolution: {integrity: sha512-9pU/8mmjSSOb4CXVsvGIevN+MlO/t9OWtKadTaLuN85Gge3HGorUckgp8A/2FH4V4hJ7JuQ3LIeI7KAV9ITZrQ==}
+    dependencies:
+      follow-redirects: 1.15.2
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /babel-plugin-dynamic-import-node/2.3.3:
     resolution: {integrity: sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==}
     dependencies:
@@ -3653,6 +3665,13 @@ packages:
   /clean-css/4.2.4:
     resolution: {integrity: sha512-EJUDT7nDVFDvaQgAo2G/PJvxmp1o/c6iXLbswsBbUFXi1Nr+AjA2cKmfbKDMjMvzEe75g3P6JkaDDAKk96A85A==}
     engines: {node: '>= 4.0'}
+    dependencies:
+      source-map: 0.6.1
+    dev: true
+
+  /clean-css/5.3.2:
+    resolution: {integrity: sha512-JVJbM+f3d3Q704rF4bqQ5UUyTtuJ0JRKNbTKVEeujCCBoMdkEi+V+e8oktO9qGQNSvHrFTM6JZRXrUvGR1czww==}
+    engines: {node: '>= 10.0'}
     dependencies:
       source-map: 0.6.1
     dev: true
@@ -5305,6 +5324,16 @@ packages:
 
   /flatted/3.2.6:
     resolution: {integrity: sha512-0sQoMh9s0BYsm+12Huy/rkKxVu4R1+r96YX5cG44rHV0pQ6iC3Q+mkoMFaGWObMFYQxCVT+ssG1ksneA2MI9KQ==}
+    dev: true
+
+  /follow-redirects/1.15.2:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: true
 
   /for-each/0.3.3:
@@ -7502,6 +7531,10 @@ packages:
     resolution: {integrity: sha512-F2JHgJQ1iqwnHDcQjVBsq3n/uoaFL+iPW/eAeL7kVxy/2RrWaN4WroKjjvbsoRtv0ftelNyC01bjRhn/bhcf4A==}
     dev: true
 
+  /proxy-from-env/1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: true
+
   /psl/1.9.0:
     resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
     dev: true
@@ -9044,6 +9077,20 @@ packages:
       vite: 4.0.4
     transitivePeerDependencies:
       - rollup
+    dev: true
+
+  /vite-plugin-webfont-dl/3.6.0_vite@4.0.4:
+    resolution: {integrity: sha512-3qfRrouQnBqwYZaBqjNeAkaywlZyo+VSM6jnoJk4PiOyo1/n4V4sbwby2QCTdjQwtIIsPTfggXvN6S/wuIcJdg==}
+    peerDependencies:
+      vite: ^2 || ^3 || ^4
+    dependencies:
+      axios: 1.2.5
+      clean-css: 5.3.2
+      flat-cache: 3.0.4
+      picocolors: 1.0.0
+      vite: 4.0.4
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   /vite-ssg-sitemap/0.4.3:

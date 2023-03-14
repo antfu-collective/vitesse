@@ -1,5 +1,6 @@
 import path from 'node:path'
-
+import { defineConfig } from 'vite'
+// import Preview from 'vite-plugin-vue-component-preview'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Vue from '@vitejs/plugin-vue'
 import LinkAttributes from 'markdown-it-link-attributes'
@@ -10,11 +11,9 @@ import Components from 'unplugin-vue-components/vite'
 // Cannot find module:
 // import VueMacros from 'unplugin-vue-macros/vite'
 import VueMacros from 'unplugin-vue-macros'
-import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
-import Preview from 'vite-plugin-vue-component-preview'
 import Inspector from 'vite-plugin-vue-inspector'
 import Layouts from 'vite-plugin-vue-layouts'
 import Markdown from 'vite-plugin-vue-markdown'
@@ -31,7 +30,7 @@ export default defineConfig({
   },
 
   plugins: [
-    Preview(),
+    // Preview(),
 
     VueMacros.vite({
       plugins: {

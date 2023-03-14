@@ -4,7 +4,7 @@ import './styles/main.css'
 import 'uno.css'
 
 import { setupLayouts } from 'virtual:generated-layouts'
-import Previewer from 'virtual:vue-component-preview'
+// import Previewer from 'virtual:vue-component-preview'
 import { ViteSSG } from 'vite-ssg'
 
 // eslint-disable-next-line import/no-unresolved
@@ -26,6 +26,6 @@ export const createApp = ViteSSG(
         eager: true,
       }),
     ).forEach(i => i.install?.(ctx))
-    ctx.app.use(Previewer)
+    // ctx.app.use(Previewer)
   },
 )

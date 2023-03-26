@@ -12,6 +12,7 @@ const i18n = createI18n({
   messages: {},
 })
 
+export const availableLocales = (import.meta.env.locales).split(',')
 const loadedLanguages: string[] = []
 
 function setI18nLanguage(lang: Locale) {

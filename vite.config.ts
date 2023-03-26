@@ -16,6 +16,15 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
 import VueMacros from 'unplugin-vue-macros/vite'
+import EnvironmentPlugin from 'vite-plugin-environment'
+import { readdirSync } from 'fs'
+
+const locales: string[] = []
+readdirSync('./locales/')
+  .forEach((file) => {
+    if (file.split('.')[0] !== 'README')
+      locales.push(file.split('.')[0])
+  })
 
 export default defineConfig({
   resolve: {
@@ -61,6 +70,9 @@ export default defineConfig({
       ],
       vueTemplate: true,
     }),
+    EnvironmentPlugin({
+      locales: locales.join(','),
+    }, { defineOn: 'import.meta.env' }),
 
     // https://github.com/antfu/unplugin-vue-components
     Components({

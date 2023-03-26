@@ -8,11 +8,11 @@ import { type UserModule } from '~/types'
 // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
 const i18n = createI18n({
   legacy: false,
-  locale: 'en',
+  locale: '',
   messages: {},
 })
 
-const loadedLanguages = ['en']
+const loadedLanguages: string[] = []
 
 function setI18nLanguage(lang: Locale) {
   i18n.global.locale.value = lang as any
@@ -41,5 +41,5 @@ export function loadLanguageAsync(lang: string) {
 
 export const install: UserModule = ({ app }) => {
   app.use(i18n)
-  setI18nLanguage('en')
+  loadLanguageAsync('en')
 }

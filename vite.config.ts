@@ -16,7 +16,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
 import VueMacros from 'unplugin-vue-macros/vite'
-import webfontDownload from 'vite-plugin-webfont-dl'
+import WebfontDownload from 'vite-plugin-webfont-dl'
 
 export default defineConfig({
   resolve: {
@@ -146,7 +146,7 @@ export default defineConfig({
     }),
 
     // https://github.com/feat-agency/vite-plugin-webfont-dl
-    webfontDownload(),
+    WebfontDownload(),
   ],
 
   // https://github.com/vitest-dev/vitest

@@ -38,6 +38,7 @@
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
     "cypress": "^12.8.1",
+    "cypress-vite": "^1.3.0",
     "eslint": "^8.36.0",
     "eslint-plugin-cypress": "^2.12.1",
     "https-localhost": "^4.7.1",

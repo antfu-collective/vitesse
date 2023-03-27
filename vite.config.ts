@@ -1,6 +1,6 @@
-import path from 'path'
+import path from 'node:path'
 import { defineConfig } from 'vite'
-import Preview from 'vite-plugin-vue-component-preview'
+// import Preview from 'vite-plugin-vue-component-preview'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import generateSitemap from 'vite-ssg-sitemap'
@@ -25,7 +25,7 @@ export default defineConfig({
   },
 
   plugins: [
-    Preview(),
+    // Preview(),
 
     VueMacros({
       plugins: {

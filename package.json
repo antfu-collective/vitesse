@@ -13,7 +13,8 @@
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
     "up": "taze major -I",
-    "postinstall": "npx simple-git-hooks"
+    "postinstall": "npx simple-git-hooks",
+    "sizecheck": "npx vite-bundle-visualizer"
   },
   "dependencies": {
     "@unocss/reset": "^0.50.6",
@@ -55,6 +56,7 @@
     "unplugin-vue-components": "^0.24.1",
     "unplugin-vue-macros": "^1.10.1",
     "vite": "^4.2.0",
+    "vite-bundle-visualizer": "^0.6.0",
     "vite-plugin-inspect": "^0.7.17",
     "vite-plugin-pages": "^0.29.0",
     "vite-plugin-pwa": "^0.14.4",

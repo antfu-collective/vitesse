@@ -13,7 +13,7 @@ async function toggleLocales() {
 </script>
 
 <template>
-  <nav mt-6 text-xl flex="~ gap-4">
+  <nav flex="~ gap-4" mt-6 justify-center text-xl>
     <RouterLink icon-btn to="/" :title="t('button.home')">
       <div i-carbon-campsite />
     </RouterLink>

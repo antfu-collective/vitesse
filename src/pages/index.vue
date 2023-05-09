@@ -32,7 +32,7 @@ const { t } = useI18n()
 
     <TheInput
       v-model="name"
-      placeholder="What's your name?"
+      :placeholder="t('intro.whats-your-name')"
       autocomplete="false"
       @keydown.enter="go"
     />

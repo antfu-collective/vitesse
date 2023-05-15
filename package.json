@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.5.0",
+  "packageManager": "pnpm@8.5.1",
   "scripts": {
     "build": "vite-ssg build",
     "dev": "vite --port 3333 --open",
@@ -17,7 +17,7 @@
     "sizecheck": "npx vite-bundle-visualizer"
   },
   "dependencies": {
-    "@unocss/reset": "^0.51.12",
+    "@unocss/reset": "^0.51.13",
     "@vueuse/core": "^10.1.2",
     "@vueuse/head": "^1.1.26",
     "nprogress": "^0.2.0",
@@ -33,7 +33,7 @@
     "@intlify/unplugin-vue-i18n": "^0.10.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
-    "@unocss/eslint-config": "^0.51.12",
+    "@unocss/eslint-config": "^0.51.13",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue-macros/volar": "^0.9.8",
     "@vue/test-utils": "^2.3.2",
@@ -47,12 +47,12 @@
     "lint-staged": "^13.2.2",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-shiki": "^0.9.0",
-    "pnpm": "^8.5.0",
+    "pnpm": "^8.5.1",
     "shiki": "^0.14.2",
     "simple-git-hooks": "^2.8.1",
     "taze": "^0.10.1",
     "typescript": "^5.0.4",
-    "unocss": "^0.51.12",
+    "unocss": "^0.51.13",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
     "unplugin-vue-macros": "^2.1.6",
@@ -69,7 +69,7 @@
     "vite-ssg": "^0.22.2",
     "vite-ssg-sitemap": "^0.5.1",
     "vitest": "^0.31.0",
-    "vue-tsc": "^1.6.4"
+    "vue-tsc": "^1.6.5"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

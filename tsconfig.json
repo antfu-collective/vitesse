@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "skipLibCheck": true,
+    "isolatedModules": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noUnusedLocals": true,

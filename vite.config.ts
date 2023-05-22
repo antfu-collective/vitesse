@@ -3,18 +3,21 @@ import { defineConfig } from 'vite'
 // import Preview from 'vite-plugin-vue-component-preview'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Vue from '@vitejs/plugin-vue'
-import LinkAttributes from 'markdown-it-link-attributes'
-import Shiki from 'markdown-it-shiki'
-import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 // Cannot find module:
 // import VueMacros from 'unplugin-vue-macros/vite'
-import VueMacros from 'unplugin-vue-macros'
 import Inspect from 'vite-plugin-inspect'
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
 import Inspector from 'vite-plugin-vue-inspector'
+import LinkAttributes from 'markdown-it-link-attributes'
+import Unocss from 'unocss/vite'
+import Shiki from 'markdown-it-shiki'
+
+// @ts-expect-error failed to resolve types
+import VueMacros from 'unplugin-vue-macros/vite'
+import WebfontDownload from 'vite-plugin-webfont-dl'
 import Layouts from 'vite-plugin-vue-layouts'
 import Markdown from 'vite-plugin-vue-markdown'
 import generateSitemap from 'vite-ssg-sitemap'
@@ -30,13 +33,11 @@ export default defineConfig({
   },
 
   plugins: [
-    // Preview(),
-
-    VueMacros.vite({
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    VueMacros({
       plugins: {
         vue: Vue({
           include: [/\.vue$/, /\.md$/],
-          reactivityTransform: true,
         }),
       },
     }),
@@ -55,7 +56,6 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
-        'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
       ],
@@ -73,8 +73,8 @@ export default defineConfig({
       dts: 'src/types/components.d.ts',
     }),
 
-    // https://github.com/unocss/unocss
-    // see unocss.config.ts for config
+    // https://github.com/antfu/unocss
+    // see uno.config.ts for config
     Unocss(),
 
     // https://github.com/antfu/vite-plugin-vue-markdown
@@ -147,6 +147,9 @@ export default defineConfig({
       toggleButtonVisibility: 'never',
       toggleComboKey: 'control-alt-i',
     }),
+
+    // https://github.com/feat-agency/vite-plugin-webfont-dl
+    WebfontDownload(),
   ],
 
   // https://github.com/vitest-dev/vitest
@@ -162,6 +165,9 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
+    crittersOptions: {
+      reduceInlineStyles: false,
+    },
     onFinished() {
       generateSitemap()
     },

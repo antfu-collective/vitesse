@@ -2,6 +2,20 @@
   "extends": "@daotl/tsconfig/vue.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
     "types": [
       "node",
       "vitest",
@@ -19,7 +33,7 @@
   },
   "vueCompilerOptions": {
     "plugins": [
-      "@vue-macros/volar/define-model",
+      "@vue-macros/volar/define-models",
       "@vue-macros/volar/define-slots"
     ]
   },

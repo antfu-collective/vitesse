@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@unhead/vue':
+    specifier: ^1.1.27
+    version: 1.1.27(vue@3.3.4)
   '@unocss/reset':
     specifier: ^0.52.1
     version: 0.52.1
@@ -2525,8 +2528,20 @@ packages:
       '@unhead/schema': 1.1.26
       '@unhead/shared': 1.1.26
 
+  /@unhead/dom@1.1.27:
+    resolution: {integrity: sha512-sUrzpKIVvFp8TFx1mgp5t0k5ts1+KmgjMgRRuvRTZMBMVeGQRLSuL3uo34iwuFmKxeI6BXT5lVBk5H02c1XdGg==}
+    dependencies:
+      '@unhead/schema': 1.1.27
+      '@unhead/shared': 1.1.27
+
   /@unhead/schema@1.1.26:
     resolution: {integrity: sha512-l93zaizm+pu36uMssdtzSC2Y61ncZaBBouZn0pB8rVI14V0hPxeXuSNIuPh2WjAm8wfb8EnCSE3LNguoqTar7g==}
+    dependencies:
+      hookable: 5.5.3
+      zhead: 2.0.4
+
+  /@unhead/schema@1.1.27:
+    resolution: {integrity: sha512-S+xhPoBxBXDrsW9ltcF9Cv3cntMbSx+dfSmE7RNyDhogqHd3+lDEV2dnQpHKWTGjujwwMCALV5SADunAn785bw==}
     dependencies:
       hookable: 5.5.3
       zhead: 2.0.4
@@ -2536,21 +2551,26 @@ packages:
     dependencies:
       '@unhead/schema': 1.1.26
 
+  /@unhead/shared@1.1.27:
+    resolution: {integrity: sha512-ElZ5WcMnhVlg44OAwTNq4XBkNePcL/BHZk7WKFcqpeGTJrEvSfs40lGJoo4sMsgDAd+XQdhJDd4dJu48jQB3kg==}
+    dependencies:
+      '@unhead/schema': 1.1.27
+
   /@unhead/ssr@1.1.26:
     resolution: {integrity: sha512-KYJDGgVNtU2i+NHu17o2zFXqsoLukOFEz81XrWQ8nQdY5+VNjy7IiTLp1dlx3umn1ohZjHySz4LXQCT4zUApSw==}
     dependencies:
       '@unhead/schema': 1.1.26
       '@unhead/shared': 1.1.26
 
-  /@unhead/vue@1.1.26(vue@3.3.4):
-    resolution: {integrity: sha512-UpxQ0KGmOoiN+Dg19zto5KTcnGV5chBmgiVJTDqUF4BPfr24vRrR65sZGdMoNV7weuD3AD/K0osk2ru+vXxRrA==}
+  /@unhead/vue@1.1.27(vue@3.3.4):
+    resolution: {integrity: sha512-ibe7/QW4ZtyCI/et/fI3CnwC+oxqp+7LrhmuLUS93ib1Sl70D51dcAy9eAvh0MG7wWUyMUrf3T95MRifJo7uzA==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
-      '@unhead/schema': 1.1.26
-      '@unhead/shared': 1.1.26
+      '@unhead/schema': 1.1.27
+      '@unhead/shared': 1.1.27
       hookable: 5.5.3
-      unhead: 1.1.26
+      unhead: 1.1.27
       vue: 3.3.4
 
   /@unocss/astro@0.52.1(rollup@2.79.1)(vite@4.3.8):
@@ -3374,7 +3394,7 @@ packages:
       '@unhead/dom': 1.1.26
       '@unhead/schema': 1.1.26
       '@unhead/ssr': 1.1.26
-      '@unhead/vue': 1.1.26(vue@3.3.4)
+      '@unhead/vue': 1.1.27(vue@3.3.4)
       vue: 3.3.4
 
   /@vueuse/metadata@10.1.2:
@@ -9403,12 +9423,12 @@ packages:
       jiti: 1.17.1
     dev: true
 
-  /unhead@1.1.26:
-    resolution: {integrity: sha512-MshcPoPLXSGRgYtczddGvMgLUISTbt2pxihqD5kZVXKmY2FZLj1OQIY111aX45Xq47XJxjvYavvoyeUFroKQcg==}
+  /unhead@1.1.27:
+    resolution: {integrity: sha512-KnE4xeV/mZLxnXG1VAp1nsaO2vzMq9Ch5uN4Y2SJAG4fXLEBi/A8evr3Vd81c+oAwQZjDXKFW60HDCJCkwo/Cw==}
     dependencies:
-      '@unhead/dom': 1.1.26
-      '@unhead/schema': 1.1.26
-      '@unhead/shared': 1.1.26
+      '@unhead/dom': 1.1.27
+      '@unhead/schema': 1.1.27
+      '@unhead/shared': 1.1.27
       hookable: 5.5.3
 
   /unicode-canonical-property-names-ecmascript@2.0.0:

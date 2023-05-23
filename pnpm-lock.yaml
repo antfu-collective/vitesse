@@ -132,9 +132,9 @@ devDependencies:
   vite-plugin-vue-component-preview:
     specifier: ^1.1.6
     version: 1.1.6(rollup@2.79.1)(vite@4.3.5)(vue@3.3.2)
-  vite-plugin-vue-inspector:
-    specifier: ^3.4.2
-    version: 3.4.2(vite@4.3.5)
+  vite-plugin-vue-devtools:
+    specifier: ^0.0.16
+    version: 0.0.16(rollup@2.79.1)(vite@4.3.5)(vue@3.3.2)
   vite-plugin-vue-layouts:
     specifier: ^0.8.0
     version: 0.8.0(vite@4.3.5)(vue-router@4.2.0)(vue@3.3.2)
@@ -7510,6 +7510,12 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  /nanoid@4.0.2:
+    resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
+    engines: {node: ^14 || ^16 || >=18}
+    hasBin: true
+    dev: true
+
   /natural-compare-lite@1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
     dev: true
@@ -8848,6 +8854,10 @@ packages:
       - supports-color
     dev: true
 
+  /splitpanes@3.1.5:
+    resolution: {integrity: sha512-r3Mq2ITFQ5a2VXLOy4/Sb2Ptp7OfEO8YIbhVJqJXoFc9hc5nTXXkCvtVDjIGbvC0vdE7tse+xTM9BMjsszP6bw==}
+    dev: true
+
   /sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: true
@@ -9736,6 +9746,14 @@ packages:
       - rollup
     dev: true
 
+  /vite-hot-client@0.2.1(vite@4.3.5):
+    resolution: {integrity: sha512-UqsQdw5PODnSrTDT85nr09RlhV0gkm2Xat74U2l8JZ5R8M/wTCggWSyPjxbLk5fbbVnWfr0JwW+vVoosjQnYrA==}
+    peerDependencies:
+      vite: ^2.6.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      vite: 4.3.5(@types/node@18.6.1)
+    dev: true
+
   /vite-node@0.31.0(@types/node@18.6.1):
     resolution: {integrity: sha512-8x1x1LNuPvE2vIvkSB7c1mApX5oqlgsxzHQesYF7l5n1gKrEmrClIiZuOFbFDQcjLsmcWSwwmrWrcGWm9Fxc/g==}
     engines: {node: '>=v14.18.0'}
@@ -9829,6 +9847,28 @@ packages:
     transitivePeerDependencies:
       - rollup
       - vite
+    dev: true
+
+  /vite-plugin-vue-devtools@0.0.16(rollup@2.79.1)(vite@4.3.5)(vue@3.3.2):
+    resolution: {integrity: sha512-qgyfSlv4XBpfmTbiIfcofvIK5s9ObPSek6HWUzk1CJeLnUiA5fR91Cc54GxeirPA2odpir197GPgdB7VszI+eQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vite: ^3.0.0-0 || ^4.0.0-0
+    dependencies:
+      '@vueuse/core': 10.1.2(vue@3.3.2)
+      nanoid: 4.0.2
+      sirv: 2.0.3
+      splitpanes: 3.1.5
+      vite: 4.3.5(@types/node@18.6.1)
+      vite-hot-client: 0.2.1(vite@4.3.5)
+      vite-plugin-inspect: 0.7.26(rollup@2.79.1)(vite@4.3.5)
+      vite-plugin-vue-inspector: 3.4.2(vite@4.3.5)
+      vue-router: 4.2.0(vue@3.3.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - vue
     dev: true
 
   /vite-plugin-vue-inspector@3.4.2(vite@4.3.5):

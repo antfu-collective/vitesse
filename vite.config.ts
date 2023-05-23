@@ -155,7 +155,9 @@ export default defineConfig({
     crittersOptions: {
       reduceInlineStyles: false,
     },
-    onFinished() { generateSitemap() },
+    onFinished() {
+      generateSitemap()
+    },
   },
 
   ssr: {

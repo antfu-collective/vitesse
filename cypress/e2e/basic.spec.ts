@@ -25,7 +25,7 @@ context('Basic', () => {
   })
 
   it('markdown', () => {
-    cy.get('[title="About"]')
+    cy.get('[data-test-id="about"]')
       .click()
       .url()
       .should('eq', 'http://localhost:3333/about')

@@ -15,6 +15,11 @@
 
 <br>
 
+> **Note**: 本模板创建于 Vue 3 和 Vite 的早期过渡时期。目前，如果您正在寻求更好的 Vue 开发体验和更持续的维护，我们建议您使用 [Nuxt 3](https://nuxt.com) 来代替（它也可以根据需要使用 SPA 或 SSG）。本模板仍会作为参考缓慢地维护下去，但将不会有太多的更新。
+
+<br>
+
+
 <p align='center'>
 <a href="https://github.com/antfu/vitesse/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>

@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.41.0",
-    "@daotl/eslint-config-vue": "^1.0.0-alpha.6",
+    "@daotl/eslint-config-vue": "^1.0.0",
     "@daotl/tsconfig": "^0.1.2",
     "@iconify-json/carbon": "^1.1.21",
     "@intlify/unplugin-vue-i18n": "^1.0.1",

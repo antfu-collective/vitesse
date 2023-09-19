@@ -46,11 +46,11 @@
 
 - 🌍 [I18n 国际化开箱即用](./locales)
 
-- 🗒 [Markdown 支持](https://github.com/antfu/vite-plugin-vue-markdown)
+- 🗒 [Markdown 支持](https://github.com/unplugin/unplugin-vue-markdown)
 
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
-- 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
+- 📥 [API 自动加载](https://github.com/unplugin/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
 - 🖨 使用 [vite-ssg](https://github.com/antfu/vite-ssg) 进行服务端生成 (SSG)
 
@@ -84,7 +84,7 @@
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [`vite-plugin-vue-markdown`](https://github.com/antfu/vite-plugin-vue-markdown) - Markdown 作为组件，也可以让组件在 Markdown 中使用
+- [`unplugin-vue-markdown`](https://github.com/antfu/unplugin-vue-markdown) - Markdown 作为组件，也可以让组件在 Markdown 中使用
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) 的语法高亮
   - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) - 利用 CSS 变量自定义 Prism.js 的主题
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - 国际化

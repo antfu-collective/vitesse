@@ -5,8 +5,8 @@
       "cypress"
     ]
   },
-  "exclude": [],
   "include": [
     "**/*.ts"
-  ]
+  ],
+  "exclude": []
 }

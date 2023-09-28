@@ -90,7 +90,6 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 - [`unplugin-vue-macros`](https://github.com/sxzz/unplugin-vue-macros) - Explore and extend more macros and syntax sugar to Vue.
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [`vite-plugin-vue-component-preview`](https://github.com/johnsoncodehk/vite-plugin-vue-component-preview) - Preview single component in VSCode
 - [`unplugin-vue-markdown`](https://github.com/antfu/unplugin-vue-markdown) - Markdown as components / components in Markdown
   - [`markdown-it-shiki`](https://github.com/antfu/markdown-it-shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization

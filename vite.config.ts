@@ -13,7 +13,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
-import Shiki from 'markdown-it-shiki'
+import Shiki from 'markdown-it-shikiji'
 import WebfontDownload from 'vite-plugin-webfont-dl'
 
 export default defineConfig({
@@ -75,14 +75,7 @@ export default defineConfig({
     Markdown({
       wrapperClasses: 'prose prose-sm m-auto text-left',
       headEnabled: true,
-      markdownItSetup(md) {
-        // https://prismjs.com/
-        md.use(Shiki, {
-          theme: {
-            light: 'vitesse-light',
-            dark: 'vitesse-dark',
-          },
-        })
+      async markdownItSetup(md) {
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
@@ -90,6 +83,13 @@ export default defineConfig({
             rel: 'noopener',
           },
         })
+        md.use(await Shiki({
+          defaultColor: false,
+          themes: {
+            light: 'vitesse-light',
+            dark: 'vitesse-dark',
+          },
+        }))
       },
     }),
 

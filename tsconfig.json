@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
     "jsx": "preserve",
+    "lib": ["DOM", "ESNext"],
+    "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "node",
-    "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]
     },
+    "resolveJsonModule": true,
     "types": [
       "vitest",
       "vite/client",
@@ -18,14 +19,13 @@
       "vite-plugin-pwa/client",
       "unplugin-vue-macros/macros-global"
     ],
-    "resolveJsonModule": true,
     "allowJs": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "skipLibCheck": true
   },
   "vueCompilerOptions": {

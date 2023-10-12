@@ -17,7 +17,7 @@ jobs:
       - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: lts/*
           cache: pnpm
 
       - name: Install
@@ -33,7 +33,7 @@ jobs:
       - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: lts/*
           cache: pnpm
 
       - name: Install
@@ -47,7 +47,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [18.x, 20.x]
         os: [ubuntu-latest]
       fail-fast: false
 
@@ -76,10 +76,10 @@ jobs:
 
       - uses: pnpm/action-setup@v2
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: lts/*
           registry-url: https://registry.npmjs.org/
           cache: pnpm
 

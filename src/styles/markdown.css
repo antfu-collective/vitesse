@@ -12,17 +12,14 @@
   width: 100%;
 }
 
-.shiki-light {
-  background: #f8f8f8 !important;
-}
-.shiki-dark {
-  background: #0e0e0e !important;
-}
-
-html.dark .shiki-light {
-  display: none;
+.shiki,
+.shiki span {
+  color: var(--shiki-light);
+  background: var(--shiki-light-bg);
 }
 
-html:not(.dark) .shiki-dark {
-  display: none;
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark);
+  background: var(--shiki-dark-bg);
 }

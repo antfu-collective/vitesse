@@ -1,7 +1,10 @@
-import antfu from '@antfu/eslint-config'
+import config from '@daotl/eslint-config'
 import unocss from '@unocss/eslint-plugin'
 
-export default antfu(
-  {},
+export default [
+  {
+    ignores: ['cypress'],
+  },
+  ...config(),
   unocss.configs.flat,
-)
+]

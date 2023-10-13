@@ -1,6 +1,6 @@
-import { createPinia } from 'pinia'
+import { createPinia, type StateTree } from 'pinia'
 
-import { type UserModule } from '~/types'
+import type { UserModule } from '~/types'
 
 // Setup Pinia
 // https://pinia.vuejs.org/
@@ -11,9 +11,9 @@ export const install: UserModule = ({ isClient, initialState, app }) => {
   // https://github.com/antfu/vite-ssg/blob/main/README.md#state-serialization
   // for other serialization strategies.
   if (isClient) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    pinia.state.value = initialState['pinia'] || {}
-  } else {
+    pinia.state.value = (initialState['pinia'] as Record<string, StateTree>) || {}
+  }
+  else {
     initialState['pinia'] = pinia.state.value
   }
 }

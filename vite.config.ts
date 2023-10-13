@@ -1,25 +1,24 @@
 import path from 'node:path'
-import { defineConfig } from 'vite'
 
+import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 // import Preview from 'vite-plugin-vue-component-preview'
 import Vue from '@vitejs/plugin-vue'
+import LinkAttributes from 'markdown-it-link-attributes'
+import Shiki from 'markdown-it-shikiji'
+import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-
 // Cannot find module:
 import VueMacros from 'unplugin-vue-macros/vite'
+import Markdown from 'unplugin-vue-markdown/vite'
+import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import Pages from 'vite-plugin-pages'
-import Inspector from 'vite-plugin-vue-inspector'
-import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import LinkAttributes from 'markdown-it-link-attributes'
-import Unocss from 'unocss/vite'
-import Shiki from 'markdown-it-shikiji'
-import WebfontDownload from 'vite-plugin-webfont-dl'
+import Inspector from 'vite-plugin-vue-inspector'
 import Layouts from 'vite-plugin-vue-layouts'
-import Markdown from 'unplugin-vue-markdown/vite'
+import WebfontDownload from 'vite-plugin-webfont-dl'
 import generateSitemap from 'vite-ssg-sitemap'
 
 export default defineConfig({

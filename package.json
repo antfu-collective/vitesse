@@ -65,6 +65,7 @@
     "sass": "^1.66.1",
     "shikiji": "^0.6.10",
     "stylelint": "^15.10.3",
+    "stylelint-config-html": "^1.1.0",
     "stylelint-config-property-sort-order-smacss": "^9.1.0",
     "stylelint-config-recommended-scss": "^13.0.0",
     "stylelint-config-recommended-vue": "^1.5.0",

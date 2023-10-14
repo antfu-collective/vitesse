@@ -14,6 +14,7 @@
     "lokalise.i18n-ally",
     "oderwat.indent-rainbow",
     "shardulm94.trailing-spaces",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint"
   ]
 }

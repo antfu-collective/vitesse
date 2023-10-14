@@ -1,4 +1,8 @@
-const commonExtends = ['stylelint-config-property-sort-order-smacss']
+const commonExtends = [
+  'stylelint-config-html/html',
+  'stylelint-config-html/vue',
+  'stylelint-config-property-sort-order-smacss',
+]
 
 module.exports = {
   extends: commonExtends,

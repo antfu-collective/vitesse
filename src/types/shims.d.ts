@@ -1,3 +1,5 @@
+import type { AttributifyAttributes } from '@unocss/preset-attributify'
+
 declare interface Window {
   // extend the window
 }
@@ -23,4 +25,9 @@ declare module '*.vue' {
     unknown
   >
   export default component
+}
+
+declare module '@vue/runtime-dom' {
+  // UnoCSS attributify: https:// unocss.dev/presets/attributify#vue-3
+  interface HTMLAttributes extends AttributifyAttributes {}
 }

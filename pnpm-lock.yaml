@@ -27,7 +27,7 @@ dependencies:
     specifier: ^0.2.0
     version: 0.2.0
   pinia:
-    specifier: ^2.1.6
+    specifier: ^2.1.7
     version: 2.1.7(typescript@5.2.2)(vue@3.3.4)
   vue:
     specifier: ^3.3.4
@@ -43,12 +43,9 @@ dependencies:
     version: 4.2.5(vue@3.3.4)
 
 devDependencies:
-  '@daotl/eslint-config':
-    specifier: ^2.0.0-beta.0
-    version: 2.0.0-test.0(eslint@8.51.0)(typescript@5.2.2)(vitest@0.34.6)
-  '@daotl/tsconfig':
-    specifier: ^0.1.2
-    version: 0.1.2
+  '@antfu/eslint-config':
+    specifier: ^1.0.0-beta.27
+    version: 1.0.0-beta.27(eslint@8.51.0)(typescript@5.2.2)(vitest@0.34.6)
   '@iconify-json/carbon':
     specifier: ^1.1.21
     version: 1.1.21
@@ -74,8 +71,8 @@ devDependencies:
     specifier: ^4.4.0
     version: 4.4.0(vite@4.4.11)(vue@3.3.4)
   '@vue-macros/volar':
-    specifier: ^0.16.1
-    version: 0.16.1(@vue-macros/reactivity-transform@0.3.23)(rollup@3.29.4)(typescript@5.2.2)(vue-tsc@1.8.19)(vue@3.3.4)
+    specifier: ^0.17.0
+    version: 0.17.0(@vue-macros/reactivity-transform@0.3.23)(rollup@3.29.3)(typescript@5.2.2)(vue-tsc@1.8.19)(vue@3.3.4)
   '@vue/test-utils':
     specifier: ^2.4.1
     version: 2.4.1(vue@3.3.4)
@@ -86,7 +83,7 @@ devDependencies:
     specifier: ^7.0.3
     version: 7.0.3
   cypress:
-    specifier: ^13.3.0
+    specifier: ^13.3.1
     version: 13.3.1
   cypress-vite:
     specifier: ^1.4.2
@@ -103,9 +100,9 @@ devDependencies:
   https-localhost:
     specifier: ^4.7.1
     version: 4.7.1
-  lefthook:
-    specifier: ^1.4.10
-    version: 1.5.2
+  lint-staged:
+    specifier: ^15.0.1
+    version: 15.0.1
   markdown-it-link-attributes:
     specifier: ^4.0.1
     version: 4.0.1
@@ -113,17 +110,8 @@ devDependencies:
     specifier: ^0.6.10
     version: 0.6.10
   pnpm:
-    specifier: ^8.9.0
-    version: 8.9.0
-  postcss:
-    specifier: ^8.4.29
-    version: 8.4.31
-  postcss-html:
-    specifier: ^1.5.0
-    version: 1.5.0
-  postcss-syntax:
-    specifier: ^0.36.2
-    version: 0.36.2(postcss-html@1.5.0)(postcss@8.4.31)
+    specifier: ^8.9.2
+    version: 8.9.2
   rollup:
     specifier: ^3.29.3
     version: 3.29.4
@@ -152,8 +140,8 @@ devDependencies:
     specifier: ^4.1.1
     version: 4.1.1(stylelint@15.10.3)(webpack@5.89.0)
   taze:
-    specifier: ^0.11.3
-    version: 0.11.3
+    specifier: ^0.11.4
+    version: 0.11.4
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -206,7 +194,7 @@ devDependencies:
     specifier: ^0.34.6
     version: 0.34.6(sass@1.69.3)
   vue-tsc:
-    specifier: ^1.8.18
+    specifier: ^1.8.19
     version: 1.8.19(typescript@5.2.2)
 
 packages:
@@ -2130,9 +2118,9 @@ packages:
       - supports-color
     dev: true
 
-  /@npmcli/config@6.4.0:
-    resolution: {integrity: sha512-/fQjIbuNVIT/PbXvw178Tm97bxV0E0nVUFKHivMKtSI2pcs8xKdaWkHJxf9dTI0G/y5hp/KuCvgcUu5HwAtI1w==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /@npmcli/config@8.0.0:
+    resolution: {integrity: sha512-a2ybqstXSCAbP7QghgGcOvLTBlaR3wWQyAmTfWXJld6qP6+vKQabTZQwzRPs00kKi870beNZHhV4Fvlca2l/uA==}
+    engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/map-workspaces': 3.0.4
       ci-info: 3.9.0
@@ -2360,20 +2348,6 @@ packages:
 
   /@sinclair/typebox@0.27.8:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
-    dev: true
-
-  /@stylelint/postcss-css-in-js@0.38.0(postcss-syntax@0.36.2)(postcss@8.4.31):
-    resolution: {integrity: sha512-XOz5CAe49kS95p5yRd+DAIWDojTjfmyAQ4bbDlXMdbZTQ5t0ThjSLvWI6JI2uiS7MFurVBkZ6zUqcimzcLTBoQ==}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-    peerDependencies:
-      postcss: '>=7.0.0'
-      postcss-syntax: '>=0.36.2'
-    dependencies:
-      '@babel/core': 7.23.2
-      postcss: 8.4.31
-      postcss-syntax: 0.36.2(postcss-html@1.5.0)(postcss@8.4.31)
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@stylistic/eslint-plugin-js@0.0.11(eslint@8.51.0):
@@ -3122,22 +3096,10 @@ packages:
       pretty-format: 29.7.0
     dev: true
 
-  /@volar/language-core@1.10.1:
-    resolution: {integrity: sha512-JnsM1mIPdfGPxmoOcK1c7HYAsL6YOv0TCJ4aW3AXPZN/Jb4R77epDyMZIVudSGjWMbvv/JfUa+rQ+dGKTmgwBA==}
-    dependencies:
-      '@volar/source-map': 1.10.1
-    dev: true
-
   /@volar/language-core@1.10.4:
     resolution: {integrity: sha512-Na69qA6uwVIdA0rHuOc2W3pHtVQQO8hCNim7FOaKNpRJh0oAFnu5r9i7Oopo5C4cnELZkPNjTrbmpcCTiW+CMQ==}
     dependencies:
       '@volar/source-map': 1.10.4
-    dev: true
-
-  /@volar/source-map@1.10.1:
-    resolution: {integrity: sha512-3/S6KQbqa7pGC8CxPrg69qHLpOvkiPHGJtWPkI/1AXCsktkJ6gIk/5z4hyuMp8Anvs6eS/Kvp/GZa3ut3votKA==}
-    dependencies:
-      muggle-string: 0.3.1
     dev: true
 
   /@volar/source-map@1.10.4:
@@ -3489,8 +3451,8 @@ packages:
       - vue
     dev: true
 
-  /@vue-macros/volar@0.16.1(@vue-macros/reactivity-transform@0.3.23)(rollup@3.29.4)(typescript@5.2.2)(vue-tsc@1.8.19)(vue@3.3.4):
-    resolution: {integrity: sha512-jF7L/aZreiukZ5bX8PdXyfBNwWyiZpSGeIdhL49Rp2OtaxMIxG9gmxwP45TTcwfl0pt0omBzF37ZgiI99yRP/Q==}
+  /@vue-macros/volar@0.17.0(@vue-macros/reactivity-transform@0.3.23)(rollup@3.29.3)(typescript@5.2.2)(vue-tsc@1.8.19)(vue@3.3.4):
+    resolution: {integrity: sha512-Ufv1Mt1LI3VFF7s4HVVwjAYsVuHqvO7viGJ2Hyfjic4xZdwoV1z3JV6DK8I5ab81sdda8R91s0eG53YbLy+iMg==}
     engines: {node: '>=16.14.0'}
     peerDependencies:
       vue-tsc: ^1.6.0
@@ -3498,13 +3460,13 @@ packages:
       vue-tsc:
         optional: true
     dependencies:
-      '@rollup/pluginutils': 5.0.5(rollup@3.29.4)
-      '@volar/language-core': 1.10.1
-      '@vue-macros/common': 1.8.0(rollup@3.29.4)(vue@3.3.4)
-      '@vue-macros/define-props': 1.0.21(@vue-macros/reactivity-transform@0.3.23)(rollup@3.29.4)(vue@3.3.4)
-      '@vue-macros/short-bind': 0.1.0(rollup@3.29.4)(vue@3.3.4)
-      '@vue-macros/short-vmodel': 1.3.0(rollup@3.29.4)(vue@3.3.4)
-      '@vue/language-core': 1.8.14(typescript@5.2.2)
+      '@rollup/pluginutils': 5.0.5(rollup@3.29.3)
+      '@volar/language-core': 1.10.4
+      '@vue-macros/common': 1.8.0(rollup@3.29.3)(vue@3.3.4)
+      '@vue-macros/define-props': 1.0.21(@vue-macros/reactivity-transform@0.3.23)(rollup@3.29.3)(vue@3.3.4)
+      '@vue-macros/short-bind': 0.1.0(rollup@3.29.3)(vue@3.3.4)
+      '@vue-macros/short-vmodel': 1.3.0(rollup@3.29.3)(vue@3.3.4)
+      '@vue/language-core': 1.8.19(typescript@5.2.2)
       vue-tsc: 1.8.19(typescript@5.2.2)
     transitivePeerDependencies:
       - '@vue-macros/reactivity-transform'
@@ -3572,25 +3534,6 @@ packages:
 
   /@vue/devtools-api@6.5.1:
     resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==}
-
-  /@vue/language-core@1.8.14(typescript@5.2.2):
-    resolution: {integrity: sha512-15GGOkUP/AgE/jzGdUMtOaQ+XPokrP+Q5Z0DS3aun3i72E6MjFvwB7E2k/ap0mABjdRCRjoVPnsMF1+TkzGqQg==}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@volar/language-core': 1.10.1
-      '@volar/source-map': 1.10.4
-      '@vue/compiler-dom': 3.3.4
-      '@vue/reactivity': 3.3.4
-      '@vue/shared': 3.3.4
-      minimatch: 9.0.3
-      muggle-string: 0.3.1
-      typescript: 5.2.2
-      vue-template-compiler: 2.7.14
-    dev: true
 
   /@vue/language-core@1.8.19(typescript@5.2.2):
     resolution: {integrity: sha512-nt3dodGs97UM6fnxeQBazO50yYCKBK53waFWB3qMbLmR6eL3aUryZgQtZoBe1pye17Wl8fs9HysV3si6xMgndQ==}
@@ -4752,6 +4695,11 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
+  /commander@11.1.0:
+    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
+    engines: {node: '>=16'}
+    dev: true
+
   /commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
@@ -5844,25 +5792,10 @@ packages:
     engines: {node: '>=5.0.0'}
     dev: true
 
-  /eslint-plugin-simple-import-sort@10.0.0(eslint@8.51.0):
-    resolution: {integrity: sha512-AeTvO9UCMSNzIHRkg8S6c3RPy5YEwKWSQPx3DYghLedo2ZQxowPFLGDN1AZ2evfg6r6mjBSZSLxLFsWSu3acsw==}
-    peerDependencies:
-      eslint: '>=5.0.0'
-    dependencies:
-      eslint: 8.51.0
-    dev: true
-
   /eslint-plugin-sort-keys@2.3.5:
     resolution: {integrity: sha512-2j/XKQ9sNJwK8kIp/U0EvuF6stS6/8aIc53/NskE4C5NRNh4dt3xzbZyOdrVC11cTH6Zo59/pdzA0Kb+2fQGWg==}
     dependencies:
       natural-compare: 1.4.0
-    dev: true
-
-  /eslint-plugin-tsdoc@0.2.17:
-    resolution: {integrity: sha512-xRmVi7Zx44lOBuYqG8vzTXuL6IdGOeF9nHX17bjJ8+VE6fsxpdGem0/SBTmAwgYMKYB1WBkqRJVQ+n8GK041pA==}
-    dependencies:
-      '@microsoft/tsdoc': 0.14.2
-      '@microsoft/tsdoc-config': 0.16.2
     dev: true
 
   /eslint-plugin-unicorn@48.0.1(eslint@8.51.0):
@@ -7861,7 +7794,26 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /listr2@3.14.0(enquirer@2.4.1):
+  /lint-staged@15.0.1:
+    resolution: {integrity: sha512-2IU5OWmCaxch0X0+IBF4/v7sutpB+F3qoXbro43pYjQTOo5wumckjxoxn47pQBqqBsCWrD5HnI2uG/zJA7isew==}
+    engines: {node: '>=18.12.0'}
+    hasBin: true
+    dependencies:
+      chalk: 5.3.0
+      commander: 11.1.0
+      debug: 4.3.4(supports-color@8.1.1)
+      execa: 8.0.1
+      lilconfig: 2.1.0
+      listr2: 7.0.1
+      micromatch: 4.0.5
+      pidtree: 0.6.0
+      string-argv: 0.3.2
+      yaml: 2.3.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /listr2@3.14.0(enquirer@2.3.6):
     resolution: {integrity: sha512-TyWI8G99GX9GjE54cJ+RrNMcIFBfwMPxc3XTFiAYGN4s10hWROGtOg7+O6u6LE3mNkyld7RSLE6nrKBvTfcs3g==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -7881,9 +7833,16 @@ packages:
       wrap-ansi: 7.0.0
     dev: true
 
-  /loader-runner@4.3.0:
-    resolution: {integrity: sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==}
-    engines: {node: '>=6.11.5'}
+  /listr2@7.0.1:
+    resolution: {integrity: sha512-nz+7hwgbDp8eWNoDgzdl4hA/xDSLrNRzPu1TLgOYs6l5Y+Ma6zVWWy9Oyt9TQFONwKoSPoka3H50D3vD5EuNwg==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      cli-truncate: 3.1.0
+      colorette: 2.0.20
+      eventemitter3: 5.0.1
+      log-update: 5.0.1
+      rfdc: 1.3.0
+      wrap-ansi: 8.1.0
     dev: true
 
   /local-pkg@0.4.3:
@@ -8988,8 +8947,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@8.9.0:
-    resolution: {integrity: sha512-74hZk44fBTe5/PAwkEQxE5Lzs4s0QXbmzU/e4hsiVSSwrCobCK4q4t3Vs/9LjKSW1neOlQ8+fJ9VW4EyWYJEHA==}
+  /pnpm@8.9.2:
+    resolution: {integrity: sha512-udNf6RsqWFTa3EMDSj57LmdfpLVuIOjgnvB4+lU8GPiu1EBR57Nui43UNfl+sMRMT/O0T8fG+n0h4frBe75mHg==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
@@ -10448,12 +10407,12 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /taze@0.11.3:
-    resolution: {integrity: sha512-8VbKvowHtj9aO2/NYIHXv48bD1ysBHBbHS1YuAm6Zi0WndblZdzDCVoOwKaX0eN23BHX5Q/Y8FE6kqDf/sWmdA==}
+  /taze@0.11.4:
+    resolution: {integrity: sha512-X7Dob7+n77GOHO7UUQ+Bn2gZXjRK1NLffb/lMGy41uyGUCh3zOZVlQ+M7IrntXmSsNy0DDKpdzSe40mQK5NTVw==}
     hasBin: true
     dependencies:
       '@antfu/ni': 0.21.8
-      '@npmcli/config': 6.4.0
+      '@npmcli/config': 8.0.0
       cli-progress: 3.12.0
       deepmerge: 4.3.1
       detect-indent: 7.0.1
@@ -10782,8 +10741,13 @@ packages:
       mlly: 1.4.2
     dev: true
 
-  /undici-types@5.25.3:
-    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
+  /unconfig@0.3.11:
+    resolution: {integrity: sha512-bV/nqePAKv71v3HdVUn6UefbsDKQWRX+bJIkiSm0+twIds6WiD2bJLWWT3i214+J/B4edufZpG2w7Y63Vbwxow==}
+    dependencies:
+      '@antfu/utils': 0.7.6
+      defu: 6.1.2
+      jiti: 1.20.0
+      mlly: 1.4.2
     dev: true
 
   /unhead@1.7.4:
@@ -12043,9 +12007,9 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /yargs-parser@20.2.9:
-    resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
-    engines: {node: '>=10'}
+  /yaml@2.3.2:
+    resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
+    engines: {node: '>= 14'}
     dev: true
 
   /yargs-parser@21.1.1:

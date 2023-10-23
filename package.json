@@ -60,7 +60,7 @@
     "postcss": "^8.4.31",
     "postcss-html": "^1.5.0",
     "postcss-syntax": "^0.36.2",
-    "rollup": "^3.29.3",
+    "rollup": "^4.1.4",
     "sass": "^1.69.4",
     "shikiji": "^0.6.10",
     "stylelint": "^15.11.0",

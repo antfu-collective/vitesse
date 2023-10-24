@@ -69,7 +69,7 @@ export default defineConfig({
       dts: 'src/types/components.d.ts',
     }),
 
-    // https://github.com/antfu/unocss
+    // https://github.com/unocss/unocss
     // see uno.config.ts for config
     Unocss(),
 

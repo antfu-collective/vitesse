@@ -46,8 +46,6 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🌍 [I18n ready](./locales)
 
-- 🔎 [Component Preview](https://github.com/johnsoncodehk/vite-plugin-vue-component-preview)
-
 - 🗒 [Markdown Support](https://github.com/unplugin/unplugin-vue-markdown)
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)

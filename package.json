@@ -25,7 +25,7 @@
     "pinia": "^2.1.7",
     "vue": "^3.3.7",
     "vue-demi": "^0.14.6",
-    "vue-i18n": "^9.5.0",
+    "vue-i18n": "^9.6.0",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
@@ -55,7 +55,7 @@
     "taze": "^0.12.0",
     "typescript": "^5.2.2",
     "unocss": "^0.57.1",
-    "unplugin-auto-import": "^0.16.6",
+    "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.25.2",
     "unplugin-vue-macros": "^2.6.1",
     "unplugin-vue-markdown": "^0.24.3",
@@ -67,7 +67,7 @@
     "vite-plugin-vue-devtools": "^1.0.0-rc.5",
     "vite-plugin-vue-layouts": "^0.8.0",
     "vite-plugin-webfont-dl": "^3.7.6",
-    "vite-ssg": "^0.23.3",
+    "vite-ssg": "^0.23.4",
     "vite-ssg-sitemap": "^0.6.0",
     "vitest": "^0.34.6",
     "vue-tsc": "^1.8.21"

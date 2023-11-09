@@ -127,6 +127,9 @@ devDependencies:
   unplugin-vue-markdown:
     specifier: ^0.24.3
     version: 0.24.3(rollup@4.2.0)(vite@5.0.0-beta.15)
+  unplugin-vue-router:
+    specifier: ^0.7.0
+    version: 0.7.0(rollup@4.2.0)(vue-router@4.2.5)(vue@3.3.7)
   vite:
     specifier: ^5.0.0-beta.15
     version: 5.0.0-beta.15(@types/node@20.2.3)
@@ -136,9 +139,6 @@ devDependencies:
   vite-plugin-inspect:
     specifier: ^0.7.41
     version: 0.7.41(rollup@4.2.0)(vite@5.0.0-beta.15)
-  vite-plugin-pages:
-    specifier: ^0.31.0
-    version: 0.31.0(vite@5.0.0-beta.15)
   vite-plugin-pwa:
     specifier: ^0.16.6
     version: 0.16.6(vite@5.0.0-beta.15)(workbox-build@7.0.0)(workbox-window@7.0.0)
@@ -2630,12 +2630,6 @@ packages:
     resolution: {integrity: sha512-mEo1sAde+UCE6b2hxn332f1g1E8WfYRu6p5SvTKr2ZKC1f7gFJXk4h5PyGP9Dt6gCaG8y8XhwnXWC6Iy2cmBng==}
     dev: true
 
-  /@types/debug@4.1.8:
-    resolution: {integrity: sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==}
-    dependencies:
-      '@types/ms': 0.7.31
-    dev: true
-
   /@types/estree@0.0.39:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
     dev: true
@@ -2685,10 +2679,6 @@ packages:
 
   /@types/mdurl@1.0.2:
     resolution: {integrity: sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==}
-    dev: true
-
-  /@types/ms@0.7.31:
-    resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: true
 
   /@types/node@18.17.17:
@@ -5013,29 +5003,6 @@ packages:
       type-detect: 4.0.8
     dev: true
 
-  /deep-equal@2.2.1:
-    resolution: {integrity: sha512-lKdkdV6EOGoVn65XaOsPdH4rMxTZOnmFyuIkMjM1i5HHCbfjC97dawgTAy0deYNfuqUqW+Q5VrVaQYtUpSd6yQ==}
-    dependencies:
-      array-buffer-byte-length: 1.0.0
-      call-bind: 1.0.2
-      es-get-iterator: 1.1.3
-      get-intrinsic: 1.2.1
-      is-arguments: 1.1.1
-      is-array-buffer: 3.0.2
-      is-date-object: 1.0.5
-      is-regex: 1.1.4
-      is-shared-array-buffer: 1.0.2
-      isarray: 2.0.5
-      object-is: 1.1.5
-      object-keys: 1.1.1
-      object.assign: 4.1.4
-      regexp.prototype.flags: 1.5.1
-      side-channel: 1.0.4
-      which-boxed-primitive: 1.0.2
-      which-collection: 1.0.1
-      which-typed-array: 1.1.11
-    dev: true
-
   /deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: true
@@ -5349,20 +5316,6 @@ packages:
       typed-array-length: 1.0.4
       unbox-primitive: 1.0.2
       which-typed-array: 1.1.11
-    dev: true
-
-  /es-get-iterator@1.1.3:
-    resolution: {integrity: sha512-sPZmqHBe6JIiTfN5q2pEi//TwxmAFHwj/XEuYjTuse78i8KxaqMTTzxPoFKuzRpDpTJ+0NAbpfenkmH2rePtuw==}
-    dependencies:
-      call-bind: 1.0.2
-      get-intrinsic: 1.2.1
-      has-symbols: 1.0.3
-      is-arguments: 1.1.1
-      is-map: 2.0.2
-      is-set: 2.0.2
-      is-string: 1.0.7
-      isarray: 2.0.5
-      stop-iteration-iterator: 1.0.0
     dev: true
 
   /es-set-tostringtag@2.0.1:
@@ -5871,13 +5824,6 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /esprima-extract-comments@1.1.0:
-    resolution: {integrity: sha512-sBQUnvJwpeE9QnPrxh7dpI/dp67erYG4WXEAreAMoelPRpMR7NWb4YtwRPn9b+H1uLQKl/qS8WYmyaljTpjIsw==}
-    engines: {node: '>=4'}
-    dependencies:
-      esprima: 4.0.1
-    dev: true
-
   /esprima@4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
     engines: {node: '>=4'}
@@ -6043,14 +5989,6 @@ packages:
 
   /extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
-    dev: true
-
-  /extract-comments@1.1.0:
-    resolution: {integrity: sha512-dzbZV2AdSSVW/4E7Ti5hZdHWbA+Z80RJsJhr5uiL10oyjl/gy7/o+HI1HwK4/WSZhlq4SNKU3oUzXlM13Qx02Q==}
-    engines: {node: '>=6'}
-    dependencies:
-      esprima-extract-comments: 1.1.0
-      parse-code-context: 1.0.0
     dev: true
 
   /extract-zip@2.0.1(supports-color@8.1.1):
@@ -6930,14 +6868,6 @@ packages:
       is-decimal: 1.0.4
     dev: true
 
-  /is-arguments@1.1.1:
-    resolution: {integrity: sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      call-bind: 1.0.2
-      has-tostringtag: 1.0.0
-    dev: true
-
   /is-array-buffer@3.0.2:
     resolution: {integrity: sha512-y+FyyR/w8vfIRq4eQcM1EYgSTnmHXPqaF+IgzgraytCFq5Xh8lllDVmAZolPJiZttZLeFSINPYMaEJ7/vWUa1w==}
     dependencies:
@@ -7077,10 +7007,6 @@ packages:
     resolution: {integrity: sha512-z7CMFGNrENq5iFB9Bqo64Xk6Y9sg+epq1myIcdHaGnbMTYOxvzsEtdYqQUylB7LxfkvgrrjP32T6Ywciio9UIQ==}
     dev: true
 
-  /is-map@2.0.2:
-    resolution: {integrity: sha512-cOZFQQozTha1f4MxLFzlgKYPTyj26picdZTx82hbc/Xf4K/tZOOXSCkMvU4pKioRXGDLJRn0GM7Upe7kR721yg==}
-    dev: true
-
   /is-module@1.0.0:
     resolution: {integrity: sha512-51ypPSPCoTEIN9dy5Oy+h4pShgJmPCygKfyRCISBI+JoWT/2oJvK8QPxmwv7b/p239jXrm9M1mlQbyKJ5A152g==}
     dev: true
@@ -7133,10 +7059,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /is-set@2.0.2:
-    resolution: {integrity: sha512-+2cnTEZeY5z/iXGbLhPrOAaK/Mau5k5eXq9j14CpRTftq0pAJu2MwVRSZhyZWBzx3o6X795Lz6Bpb6R0GKf37g==}
-    dev: true
-
   /is-shared-array-buffer@1.0.2:
     resolution: {integrity: sha512-sqN2UDu1/0y6uvXyStCOzyhAjCSlHceFoMKJW8W9EU9cvic/QdsZ0kEU93HEy3IUEFZIiH/3w+AH/UQbPHNdhA==}
     dependencies:
@@ -7183,21 +7105,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /is-weakmap@2.0.1:
-    resolution: {integrity: sha512-NSBR4kH5oVj1Uwvv970ruUkCV7O1mzgVFO4/rev2cLRda9Tm9HrL70ZPut4rOHgY0FNrUu9BCbXA2sdQ+x0chA==}
-    dev: true
-
   /is-weakref@1.0.2:
     resolution: {integrity: sha512-qctsuLZmIQ0+vSSMfoVvyFe2+GSEvnmZ2ezTup1SBse9+twCCeial6EEi3Nc2KFcf6+qz2FBPnjXsk8xhKSaPQ==}
     dependencies:
       call-bind: 1.0.2
-    dev: true
-
-  /is-weakset@2.0.2:
-    resolution: {integrity: sha512-t2yVvttHkQktwnNNmBQ98AhENLdPUTDTE21uPqAQ0ARwQfGeQKRVS0NNurH7bTf7RrvcVn1OOge45CnBeHCSmg==}
-    dependencies:
-      call-bind: 1.0.2
-      get-intrinsic: 1.2.1
     dev: true
 
   /is-wsl@2.2.0:
@@ -8249,14 +8160,6 @@ packages:
     resolution: {integrity: sha512-geUvdk7c+eizMNUDkRpW1wJwgfOiOeHbxBR/hLXK1aT6zmVSO0jsQcs7fj6MGw89jC/cjGfLcNOrtMYtGqm81g==}
     dev: true
 
-  /object-is@1.1.5:
-    resolution: {integrity: sha512-3cyDsyHgtmi7I7DfSSI2LDp6SK2lwvtbg0p0R1e0RvTqF5ceGx+K2dfSjm1bKDMVCFEDAQvy+o8c6a7VujOddw==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.2.0
-    dev: true
-
   /object-keys@1.1.1:
     resolution: {integrity: sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==}
     engines: {node: '>= 0.4'}
@@ -8458,11 +8361,6 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       callsites: 3.1.0
-    dev: true
-
-  /parse-code-context@1.0.0:
-    resolution: {integrity: sha512-OZQaqKaQnR21iqhlnPfVisFjBWjhnMl5J9MgbP8xC+EwoVqbXrq78lp+9Zb3ahmLzrIX5Us/qbvBnaS3hkH6OA==}
-    engines: {node: '>=6'}
     dev: true
 
   /parse-entities@2.0.0:
@@ -9592,13 +9490,6 @@ packages:
     resolution: {integrity: sha512-Rz6yejtVyWnVjC1RFvNmYL10kgjC49EOghxWn0RFqlCHGFpQx+Xe7yW3I4ceK1SGrWIGMjD5Kbue8W/udkbMJg==}
     dev: true
 
-  /stop-iteration-iterator@1.0.0:
-    resolution: {integrity: sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      internal-slot: 1.0.5
-    dev: true
-
   /string-argv@0.3.2:
     resolution: {integrity: sha512-aqD2Q0144Z+/RqG52NeHEkZauTAUWJO8c6yTftGJKO3Tja5tUgIfmIl6kExvhtxSDP7fXB6DvzkfMpCd/F3G+Q==}
     engines: {node: '>=0.6.19'}
@@ -10436,6 +10327,33 @@ packages:
       - rollup
     dev: true
 
+  /unplugin-vue-router@0.7.0(rollup@4.2.0)(vue-router@4.2.5)(vue@3.3.7):
+    resolution: {integrity: sha512-ddRreGq0t5vlSB7OMy4e4cfU1w2AwBQCwmvW3oP/0IHQiokzbx4hd3TpwBu3eIAFVuhX2cwNQwp1U32UybTVCw==}
+    peerDependencies:
+      vue-router: ^4.1.0
+    peerDependenciesMeta:
+      vue-router:
+        optional: true
+    dependencies:
+      '@babel/types': 7.22.19
+      '@rollup/pluginutils': 5.0.5(rollup@4.2.0)
+      '@vue-macros/common': 1.8.0(rollup@4.2.0)(vue@3.3.7)
+      ast-walker-scope: 0.5.0(rollup@4.2.0)
+      chokidar: 3.5.3
+      fast-glob: 3.3.1
+      json5: 2.2.3
+      local-pkg: 0.4.3
+      mlly: 1.4.2
+      pathe: 1.1.1
+      scule: 1.0.0
+      unplugin: 1.5.0
+      vue-router: 4.2.5(vue@3.3.7)
+      yaml: 2.3.3
+    transitivePeerDependencies:
+      - rollup
+      - vue
+    dev: true
+
   /unplugin@1.5.0:
     resolution: {integrity: sha512-9ZdRwbh/4gcm1JTOkp9lAkIDrtOyOxgHmY7cjuwI8L/2RTikMcVG25GsZwNAgRuap3iDw2jeq7eoqtAsz5rW3A==}
     dependencies:
@@ -10608,29 +10526,6 @@ packages:
       vite: 5.0.0-beta.15(@types/node@20.2.3)
     transitivePeerDependencies:
       - rollup
-      - supports-color
-    dev: true
-
-  /vite-plugin-pages@0.31.0(vite@5.0.0-beta.15):
-    resolution: {integrity: sha512-fw3onBfVTXQI7rOzAbSZhmfwvk50+3qNnGZpERjmD93c8nEjrGLyd53eFXYMxcJV4KA1vzi4qIHt2+6tS4dEMw==}
-    peerDependencies:
-      '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
-      vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0
-    peerDependenciesMeta:
-      '@vue/compiler-sfc':
-        optional: true
-    dependencies:
-      '@types/debug': 4.1.8
-      debug: 4.3.4(supports-color@8.1.1)
-      deep-equal: 2.2.1
-      extract-comments: 1.1.0
-      fast-glob: 3.3.1
-      json5: 2.2.3
-      local-pkg: 0.4.3
-      picocolors: 1.0.0
-      vite: 5.0.0-beta.15(@types/node@20.2.3)
-      yaml: 2.3.3
-    transitivePeerDependencies:
       - supports-color
     dev: true
 
@@ -11034,15 +10929,6 @@ packages:
       is-number-object: 1.0.7
       is-string: 1.0.7
       is-symbol: 1.0.4
-    dev: true
-
-  /which-collection@1.0.1:
-    resolution: {integrity: sha512-W8xeTUwaln8i3K/cY1nGXzdnVZlidBcagyNFtBdD5kxnb4TvGKR7FfSIS3mYpwWS1QUCutfKz8IY8RjftB0+1A==}
-    dependencies:
-      is-map: 2.0.2
-      is-set: 2.0.2
-      is-weakmap: 2.0.1
-      is-weakset: 2.0.2
     dev: true
 
   /which-typed-array@1.1.11:

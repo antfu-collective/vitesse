@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const props = defineProps<{ name: string }>()
 const router = useRouter()
+const route = useRoute('/hi/[name]')
 const user = useUserStore()
 const { t } = useI18n()
 
 watchEffect(() => {
-  user.setNewName(props.name)
+  user.setNewName(route.params.name)
 })
 </script>
 
@@ -15,7 +15,7 @@ watchEffect(() => {
       <div i-carbon-pedestrian inline-block />
     </div>
     <p>
-      {{ t('intro.hi', { name: props.name }) }}
+      {{ t('intro.hi', { name: user.savedName }) }}
     </p>
 
     <p text-sm opacity-75>

@@ -9,9 +9,10 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
-import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import Inspector from 'vite-plugin-vue-inspector'
@@ -38,9 +39,9 @@ export default defineConfig({
       },
     }),
 
-    // https://github.com/hannoeru/vite-plugin-pages
-    Pages({
-      extensions: ['vue', 'md'],
+    // https://github.com/posva/unplugin-vue-router
+    VueRouter({
+      extensions: ['.vue', '.md'],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -50,10 +51,14 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        'vue-router',
         'vue-i18n',
         '@vueuse/head',
         '@vueuse/core',
+        VueRouterAutoImports,
+        {
+          // add any other imports you were relying on
+          'vue-router/auto': ['useLink'],
+        },
       ],
       dts: 'src/types/auto-imports.d.ts',
       dirs: ['src/composables', 'src/stores'],
@@ -155,9 +160,6 @@ export default defineConfig({
   test: {
     include: ['test/**/*.test.ts'],
     environment: 'jsdom',
-    deps: {
-      inline: ['@vue', '@vueuse', 'vue-demi'],
-    },
   },
 
   // https://github.com/antfu/vite-ssg

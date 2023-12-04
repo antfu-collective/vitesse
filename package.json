@@ -29,7 +29,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.3.0",
+    "@antfu/eslint-config": "^2.3.1",
     "@iconify-json/carbon": "^1.1.24",
     "@intlify/unplugin-vue-i18n": "^1.5.0",
     "@types/markdown-it-link-attributes": "^3.0.4",

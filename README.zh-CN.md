@@ -19,7 +19,6 @@
 
 <br>
 
-
 <p align='center'>
 <a href="https://github.com/antfu/vitesse/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
@@ -100,6 +99,7 @@
 - [ESLint](https://eslint.org/) 配置为 [@antfu/eslint-config](https://github.com/antfu/eslint-config), 单引号, 无分号.
 
 ### 开发工具
+
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vitest](https://github.com/vitest-dev/vitest) - 基于 Vite 的单元测试框架
 - [Cypress](https://cypress.io/) - E2E 测试

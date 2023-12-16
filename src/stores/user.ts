@@ -9,7 +9,7 @@ export const useUserStore = defineStore('user', () => {
 
   const usedNames = computed(() => Array.from(previousNames.value))
   const otherNames = computed(() =>
-    usedNames.value.filter((name) => name !== savedName.value),
+    usedNames.value.filter(name => name !== savedName.value),
   )
 
   /**

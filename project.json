@@ -1,0 +1,24 @@
+{
+  "name": "vitesse",
+  "$schema": "./node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": ".",
+  "targets": {
+    "build": {
+      "options": {
+        "outputPath": "dist",
+        "main": "src/index.ts",
+        "tsConfig": "tsconfig.build.json",
+        "assets": []
+      }
+    },
+    "test": {
+      "options": {
+        "reportsDirectory": "../coverage"
+      }
+    },
+    "lint": {},
+    "eslint": {},
+    "stylelint": {}
+  },
+  "tags": []
+}

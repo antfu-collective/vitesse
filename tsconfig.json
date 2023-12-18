@@ -1,39 +1,13 @@
 {
-  "extends": "@daotl/tsconfig/vue.json",
-  "compilerOptions": {
-    "target": "ESNext",
-    "jsx": "preserve",
-    "lib": ["DOM", "ESNext"],
-    "baseUrl": ".",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "paths": {
-      "~/*": ["src/*"]
+  "extends": "./tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.build.json"
     },
-    "resolveJsonModule": true,
-    "types": [
-      "node",
-      "vitest",
-      "vite/client",
-      "vue/ref-macros",
-      "vite-plugin-vue-layouts/client",
-      "vite-plugin-pwa/client",
-      "unplugin-vue-macros/macros-global"
-    ],
-    "allowJs": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "skipLibCheck": true
-  },
-  "vueCompilerOptions": {
-    "plugins": [
-      "@vue-macros/volar/define-models",
-      "@vue-macros/volar/define-props-refs"
-    ]
-  },
-  "exclude": ["dist", "node_modules", "cypress"]
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
 }

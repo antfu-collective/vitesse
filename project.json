@@ -3,14 +3,7 @@
   "$schema": "./node_modules/nx/schemas/project-schema.json",
   "sourceRoot": ".",
   "targets": {
-    "build": {
-      "options": {
-        "outputPath": "dist",
-        "main": "src/index.ts",
-        "tsConfig": "tsconfig.build.json",
-        "assets": []
-      }
-    },
+    "build": {},
     "test": {
       "options": {
         "reportsDirectory": "../coverage"

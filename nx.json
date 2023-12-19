@@ -20,7 +20,7 @@
         "^build"
       ],
       "cache": true,
-      "executor": "@nx/vite:tsc",
+      "executor": "@nx/vite:build",
       "inputs": [
         "default"
       ],
@@ -28,7 +28,7 @@
         "{options.outputPath}"
       ],
       "options": {
-        "clean": false
+        "outputPath": "{projectRoot}/dist"
       },
       "configurations": {
         "ci": {

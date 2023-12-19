@@ -27,11 +27,11 @@ const config = {
     build: {
       dependsOn: ['^build'],
       cache: true,
-      executor: '@nx/vite:tsc',
+      executor: '@nx/vite:build',
       inputs: ['default'],
       outputs: ['{options.outputPath}'],
       options: {
-        clean: false,
+        outputPath: '{projectRoot}/dist',
       },
       configurations: {
         ci: {

@@ -40,6 +40,46 @@ const config = {
             generateLockfile: true,
           },
         },
+        development: {
+          skipTypeCheck: false,
+          mode: 'development',
+        },
+        production: {
+          skipTypeCheck: true,
+          mode: 'production',
+        },
+      },
+    },
+    serve: {
+      executor: '@nx/vite:dev-server',
+      defaultConfiguration: 'development',
+      options: {
+        buildTarget: 'dist:build',
+      },
+      configurations: {
+        development: {
+          buildTarget: 'dist:build:development',
+          hmr: true,
+        },
+        production: {
+          buildTarget: 'dist:build:production',
+          hmr: false,
+        },
+      },
+    },
+    preview: {
+      executor: '@nx/vite:preview-server',
+      defaultConfiguration: 'development',
+      options: {
+        buildTarget: 'dist:build',
+      },
+      configurations: {
+        development: {
+          buildTarget: 'dist:build:development',
+        },
+        production: {
+          buildTarget: 'dist:build:production',
+        },
       },
     },
 
@@ -48,6 +88,9 @@ const config = {
       cache: true,
       executor: '@nx/vite:test',
       outputs: ['{options.reportsDirectory}'],
+      options: {
+        passWithNoTests: true,
+      },
       inputs: [
         '{projectRoot}/src/**/*.js',
         '{projectRoot}/src/**/*.jsx',

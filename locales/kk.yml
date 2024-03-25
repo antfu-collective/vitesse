@@ -1,0 +1,13 @@
+button:
+  about: Шаблон туралы
+  back: Артқа
+  go: Өту
+  home: Басты бет
+  toggle_dark: Қараңғы режимді қосу
+  toggle_langs: Тілді ауыстыру
+intro:
+  desc: Дербес бастапқы Vite шаблоны
+  dynamic-route: Динамикалық маршрут демо
+  hi: Сәлем, {name}!
+  whats-your-name: Атың кім?
+not-found: Табылмады

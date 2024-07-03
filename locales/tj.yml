@@ -1,0 +1,13 @@
+button:
+  about: Дар бораи қолаб
+  back: Бозгашт
+  go: Гузаштан
+  home: Саҳифаи асосӣ
+  toggle_dark: Режими торикро фаъол кардан
+  toggle_langs: Забонро иваз кардан
+intro:
+  desc: Қолаби ибтидоии мустақил Vite
+  dynamic-route: Намоиши масири динамикӣ
+  hi: Салом, {name}!
+  whats-your-name: Номи ту чист?
+not-found: Пайдо нашуд

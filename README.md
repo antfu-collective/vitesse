@@ -141,6 +141,7 @@ As this template is strongly opinionated, the following provides a curated list 
 - [vitesse-h5](https://github.com/YunYouJun/vitesse-h5) by [@YunYouJun](https://github.com/YunYouJun) - Vitesse for Mobile
 - [bat](https://github.com/olgam4/bat) by [@olgam4](https://github.com/olgam4) - Vitesse for SolidJS
 - [vitesse-solid](https://github.com/xbmlz/vitesse-solid) by [@xbmlz](https://github.com/xbmlz) - Vitesse for SolidJS, build with [`SolidStart`](https://start.solidjs.com/), includes [UnoCSS](https://github.com/unocss/unocss) and [HopeUI](https://hope-ui.com/).
+- [vitesse-lite-bootstrap](https://github.com/blouflashdb/vitesse-lite-bootstrap) by [@blouflashdb](https://github.com/blouflashdb) - Like Vitesse Lite but without File based routing, uses [bootstrap](https://getbootstrap.com/) and [FontAwesome](https://fontawesome.com/)
 
 ## Try it now!
 

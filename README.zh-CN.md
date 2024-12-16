@@ -53,7 +53,7 @@
 
 - 🖨 使用 [vite-ssg](https://github.com/antfu/vite-ssg) 进行服务端生成 (SSG)
 
-- 🦔 使用 [critters](https://github.com/GoogleChromeLabs/critters) 的生成关键 CSS
+- 🦔 使用 [beasties](https://github.com/danielroe/beasties) 的生成关键 CSS
 
 - 🦾 TypeScript, 当然
 
@@ -105,7 +105,7 @@
 - [Cypress](https://cypress.io/) - E2E 测试
 - [pnpm](https://pnpm.js.org/) - 快, 节省磁盘空间的包管理器
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - 服务端生成
-  - [critters](https://github.com/GoogleChromeLabs/critters) - 关键 CSS 生成器
+  - [beasties](https://github.com/danielroe/beasties) - 关键 CSS 生成器
 - [Netlify](https://www.netlify.com/) - 零配置的部署
 - [VS Code 扩展](./.vscode/extensions.json)
   - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - 自动启动 Vite 服务器

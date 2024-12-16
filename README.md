@@ -55,7 +55,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
-- 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
+- 🦔 Critical CSS via [beasties](https://github.com/danielroe/beasties)
 
 - 🔤 [Webfont self-hosting](https://github.com/feat-agency/vite-plugin-webfont-dl)
 
@@ -110,7 +110,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [Cypress](https://cypress.io/) - E2E testing
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
-  - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
+  - [beasties](https://github.com/danielroe/beasties) - Critical CSS
 - [Netlify](https://www.netlify.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically

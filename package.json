@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "@unhead/vue": "^1.11.15",
-    "@unocss/reset": "^0.65.4",
-    "@vueuse/core": "^12.3.0",
+    "@unocss/reset": "^65.4.0",
+    "@vueuse/core": "^12.4.0",
     "@vueuse/head": "^2.0.0",
     "beasties": "^0.2.0",
     "nprogress": "^0.2.0",
@@ -30,20 +30,20 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.2",
+    "@antfu/eslint-config": "^3.13.0",
     "@iconify-json/carbon": "^1.2.5",
     "@intlify/unplugin-vue-i18n": "^6.0.3",
     "@shikijs/markdown-it": "^1.26.1",
     "@types/markdown-it-link-attributes": "^3.0.5",
     "@types/nprogress": "^0.2.3",
-    "@unocss/eslint-config": "^0.65.4",
+    "@unocss/eslint-config": "^65.4.0",
     "@vitejs/plugin-vue": "^5.2.1",
-    "@vue-macros/volar": "^0.30.9",
+    "@vue-macros/volar": "^0.30.10",
     "@vue/test-utils": "^2.4.6",
     "cross-env": "^7.0.3",
     "cypress": "^13.17.0",
     "cypress-vite": "^1.6.0",
-    "eslint": "^9.17.0",
+    "eslint": "^9.18.0",
     "eslint-plugin-cypress": "^4.1.0",
     "eslint-plugin-format": "^1.0.1",
     "https-localhost": "^4.7.1",
@@ -55,15 +55,15 @@
     "simple-git-hooks": "^2.11.1",
     "taze": "^18.1.0",
     "typescript": "^5.7.3",
-    "unocss": "^0.65.4",
+    "unocss": "^65.4.0",
     "unplugin-auto-import": "^19.0.0",
     "unplugin-vue-components": "^28.0.0",
-    "unplugin-vue-macros": "^2.13.7",
+    "unplugin-vue-macros": "^2.13.8",
     "unplugin-vue-markdown": "^28.0.0",
     "unplugin-vue-router": "^0.10.9",
     "vite": "^6.0.7",
     "vite-bundle-visualizer": "^1.2.1",
-    "vite-plugin-inspect": "^0.10.6",
+    "vite-plugin-inspect": "^10.0.6",
     "vite-plugin-pwa": "^0.21.1",
     "vite-plugin-vue-devtools": "^7.7.0",
     "vite-plugin-vue-layouts": "^0.11.0",
@@ -75,7 +75,7 @@
   "resolutions": {
     "unplugin": "^2.1.2",
     "vite": "^6.0.7",
-    "vite-plugin-inspect": "^0.10.6"
+    "vite-plugin-inspect": "^10.0.6"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

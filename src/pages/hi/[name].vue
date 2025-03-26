@@ -7,6 +7,9 @@ const { t } = useI18n()
 watchEffect(() => {
   user.setNewName(route.params.name)
 })
+useHead({
+  title: () => t('intro.hi', { name: user.savedName }),
+})
 </script>
 
 <template>

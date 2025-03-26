@@ -12,6 +12,9 @@ function go() {
 }
 
 const { t } = useI18n()
+useHead({
+  title: () => t('button.home'),
+})
 </script>
 
 <template>

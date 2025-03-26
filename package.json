@@ -17,10 +17,9 @@
     "sizecheck": "npx vite-bundle-visualizer"
   },
   "dependencies": {
-    "@unhead/vue": "^1.11.15",
+    "@unhead/vue": "^2.0.1",
     "@unocss/reset": "^65.4.0",
     "@vueuse/core": "^12.4.0",
-    "@vueuse/head": "^2.0.0",
     "beasties": "^0.2.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.3.0",
@@ -67,7 +66,7 @@
     "vite-plugin-pwa": "^0.21.1",
     "vite-plugin-vue-devtools": "^7.7.0",
     "vite-plugin-vue-layouts": "^0.11.0",
-    "vite-ssg": "^25.0.0",
+    "vite-ssg": "file:vite-ssg-25.2.0.tgz",
     "vite-ssg-sitemap": "^0.8.1",
     "vitest": "^2.1.8",
     "vue-tsc": "^2.2.0"

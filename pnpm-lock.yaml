@@ -4,6 +4,150 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  build:
+    '@intlify/unplugin-vue-i18n':
+      specifier: ^6.0.5
+      version: 6.0.5
+    '@shikijs/markdown-it':
+      specifier: ^3.2.1
+      version: 3.2.1
+    '@unocss/eslint-config':
+      specifier: ^66.1.0-beta.7
+      version: 66.1.0-beta.7
+    '@vitejs/plugin-vue':
+      specifier: ^5.2.3
+      version: 5.2.3
+    beasties:
+      specifier: ^0.2.0
+      version: 0.2.0
+    markdown-it-link-attributes:
+      specifier: ^4.0.1
+      version: 4.0.1
+    rollup:
+      specifier: ^4.37.0
+      version: 4.37.0
+    shiki:
+      specifier: ^3.2.1
+      version: 3.2.1
+    unocss:
+      specifier: ^66.1.0-beta.7
+      version: 66.1.0-beta.7
+    unplugin-auto-import:
+      specifier: ^19.1.2
+      version: 19.1.2
+    unplugin-vue-components:
+      specifier: ^28.4.1
+      version: 28.4.1
+    unplugin-vue-macros:
+      specifier: ^2.14.5
+      version: 2.14.5
+    unplugin-vue-markdown:
+      specifier: ^28.3.1
+      version: 28.3.1
+    unplugin-vue-router:
+      specifier: ^0.12.0
+      version: 0.12.0
+    vite-bundle-visualizer:
+      specifier: ^1.2.1
+      version: 1.2.1
+    vite-plugin-pwa:
+      specifier: ^0.21.2
+      version: 0.21.2
+    vite-plugin-vue-devtools:
+      specifier: ^7.7.2
+      version: 7.7.2
+    vite-plugin-vue-layouts:
+      specifier: ^0.11.0
+      version: 0.11.0
+    vite-ssg:
+      specifier: ^26.0.0
+      version: 26.0.0
+    vite-ssg-sitemap:
+      specifier: ^0.8.1
+      version: 0.8.1
+  dev:
+    '@antfu/eslint-config':
+      specifier: ^4.11.0
+      version: 4.11.0
+    '@iconify-json/carbon':
+      specifier: ^1.2.8
+      version: 1.2.8
+    '@vue-macros/volar':
+      specifier: ^3.0.0-beta.7
+      version: 3.0.0-beta.7
+    '@vue/test-utils':
+      specifier: ^2.4.6
+      version: 2.4.6
+    cypress:
+      specifier: ^14.2.1
+      version: 14.2.1
+    cypress-vite:
+      specifier: ^1.6.0
+      version: 1.6.0
+    eslint:
+      specifier: ^9.23.0
+      version: 9.23.0
+    eslint-plugin-cypress:
+      specifier: ^4.2.0
+      version: 4.2.0
+    eslint-plugin-format:
+      specifier: ^1.0.1
+      version: 1.0.1
+    https-localhost:
+      specifier: ^4.7.1
+      version: 4.7.1
+    lint-staged:
+      specifier: ^15.5.0
+      version: 15.5.0
+    simple-git-hooks:
+      specifier: ^2.12.1
+      version: 2.12.1
+    taze:
+      specifier: ^19.0.2
+      version: 19.0.2
+    typescript:
+      specifier: ^5.8.2
+      version: 5.8.2
+    vitest:
+      specifier: ^3.0.9
+      version: 3.0.9
+    vue-tsc:
+      specifier: ^2.2.8
+      version: 2.2.8
+  frontend:
+    '@unhead/vue':
+      specifier: ^2.0.2
+      version: 2.0.2
+    '@unocss/reset':
+      specifier: ^66.1.0-beta.7
+      version: 66.1.0-beta.7
+    '@vueuse/core':
+      specifier: ^13.0.0
+      version: 13.0.0
+    nprogress:
+      specifier: ^0.2.0
+      version: 0.2.0
+    pinia:
+      specifier: ^3.0.1
+      version: 3.0.1
+    vue:
+      specifier: ^3.5.13
+      version: 3.5.13
+    vue-i18n:
+      specifier: ^11.1.2
+      version: 11.1.2
+    vue-router:
+      specifier: ^4.5.0
+      version: 4.5.0
+  types:
+    '@types/markdown-it-link-attributes':
+      specifier: ^3.0.5
+      version: 3.0.5
+    '@types/nprogress':
+      specifier: ^0.2.3
+      version: 0.2.3
+
 overrides:
   unplugin: ^2.2.2
   vite: ^6.2.3
@@ -14,158 +158,149 @@ importers:
   .:
     dependencies:
       '@unhead/vue':
-        specifier: ^2.0.2
+        specifier: catalog:frontend
         version: 2.0.2(vue@3.5.13(typescript@5.8.2))
       '@unocss/reset':
-        specifier: ^66.1.0-beta.7
+        specifier: catalog:frontend
         version: 66.1.0-beta.7
       '@vueuse/core':
-        specifier: ^13.0.0
+        specifier: catalog:frontend
         version: 13.0.0(vue@3.5.13(typescript@5.8.2))
-      beasties:
-        specifier: ^0.2.0
-        version: 0.2.0
       nprogress:
-        specifier: ^0.2.0
+        specifier: catalog:frontend
         version: 0.2.0
       pinia:
-        specifier: ^3.0.1
+        specifier: catalog:frontend
         version: 3.0.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))
       vue:
-        specifier: ^3.5.13
+        specifier: catalog:frontend
         version: 3.5.13(typescript@5.8.2)
-      vue-demi:
-        specifier: ^0.14.10
-        version: 0.14.10(vue@3.5.13(typescript@5.8.2))
       vue-i18n:
-        specifier: ^11.1.2
+        specifier: catalog:frontend
         version: 11.1.2(vue@3.5.13(typescript@5.8.2))
       vue-router:
-        specifier: ^4.5.0
+        specifier: catalog:frontend
         version: 4.5.0(vue@3.5.13(typescript@5.8.2))
     devDependencies:
       '@antfu/eslint-config':
-        specifier: ^4.11.0
+        specifier: catalog:dev
         version: 4.11.0(@typescript-eslint/utils@8.28.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2))(@unocss/eslint-plugin@65.4.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.23.0(jiti@2.4.2)))(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.9(@types/debug@4.1.12)(@types/node@20.2.3)(jiti@2.4.2)(jsdom@26.0.0)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))
       '@iconify-json/carbon':
-        specifier: ^1.2.8
+        specifier: catalog:dev
         version: 1.2.8
       '@intlify/unplugin-vue-i18n':
-        specifier: ^6.0.5
+        specifier: catalog:build
         version: 6.0.5(@vue/compiler-dom@3.5.13)(eslint@9.23.0(jiti@2.4.2))(rollup@4.37.0)(typescript@5.8.2)(vue-i18n@11.1.2(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
       '@shikijs/markdown-it':
-        specifier: ^3.2.1
+        specifier: catalog:build
         version: 3.2.1(markdown-it-async@2.2.0)
       '@types/markdown-it-link-attributes':
-        specifier: ^3.0.5
+        specifier: catalog:types
         version: 3.0.5
       '@types/nprogress':
-        specifier: ^0.2.3
+        specifier: catalog:types
         version: 0.2.3
       '@unocss/eslint-config':
-        specifier: ^66.1.0-beta.7
+        specifier: catalog:build
         version: 66.1.0-beta.7(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2)
       '@vitejs/plugin-vue':
-        specifier: ^5.2.3
+        specifier: catalog:build
         version: 5.2.3(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
       '@vue-macros/volar':
-        specifier: ^3.0.0-beta.7
+        specifier: catalog:dev
         version: 3.0.0-beta.7(typescript@5.8.2)(vue-tsc@2.2.8(typescript@5.8.2))(vue@3.5.13(typescript@5.8.2))
       '@vue/test-utils':
-        specifier: ^2.4.6
+        specifier: catalog:dev
         version: 2.4.6
-      cross-env:
-        specifier: ^7.0.3
-        version: 7.0.3
+      beasties:
+        specifier: catalog:build
+        version: 0.2.0
       cypress:
-        specifier: ^14.2.1
+        specifier: catalog:dev
         version: 14.2.1
       cypress-vite:
-        specifier: ^1.6.0
+        specifier: catalog:dev
         version: 1.6.0(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))
       eslint:
-        specifier: ^9.23.0
+        specifier: catalog:dev
         version: 9.23.0(jiti@2.4.2)
       eslint-plugin-cypress:
-        specifier: ^4.2.0
+        specifier: catalog:dev
         version: 4.2.0(eslint@9.23.0(jiti@2.4.2))
       eslint-plugin-format:
-        specifier: ^1.0.1
+        specifier: catalog:dev
         version: 1.0.1(eslint@9.23.0(jiti@2.4.2))
       https-localhost:
-        specifier: ^4.7.1
+        specifier: catalog:dev
         version: 4.7.1
       lint-staged:
-        specifier: ^15.5.0
+        specifier: catalog:dev
         version: 15.5.0
       markdown-it-link-attributes:
-        specifier: ^4.0.1
+        specifier: catalog:build
         version: 4.0.1
-      pnpm:
-        specifier: ^10.7.0
-        version: 10.7.0
       rollup:
-        specifier: ^4.37.0
+        specifier: catalog:build
         version: 4.37.0
       shiki:
-        specifier: ^3.2.1
+        specifier: catalog:build
         version: 3.2.1
       simple-git-hooks:
-        specifier: ^2.12.1
+        specifier: catalog:dev
         version: 2.12.1
       taze:
-        specifier: ^19.0.2
+        specifier: catalog:dev
         version: 19.0.2
       typescript:
-        specifier: ^5.8.2
+        specifier: catalog:dev
         version: 5.8.2
       unocss:
-        specifier: ^66.1.0-beta.7
+        specifier: catalog:build
         version: 66.1.0-beta.7(postcss@8.5.3)(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
       unplugin-auto-import:
-        specifier: ^19.1.2
+        specifier: catalog:build
         version: 19.1.2(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.2)))
       unplugin-vue-components:
-        specifier: ^28.4.1
+        specifier: catalog:build
         version: 28.4.1(@babel/parser@7.27.0)(vue@3.5.13(typescript@5.8.2))
       unplugin-vue-macros:
-        specifier: ^2.14.5
+        specifier: catalog:build
         version: 2.14.5(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.2)))(esbuild@0.25.1)(rollup@4.37.0)(typescript@5.8.2)(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))(vue-tsc@2.2.8(typescript@5.8.2))(vue@3.5.13(typescript@5.8.2))
       unplugin-vue-markdown:
-        specifier: ^28.3.1
+        specifier: catalog:build
         version: 28.3.1(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))
       unplugin-vue-router:
-        specifier: ^0.12.0
+        specifier: catalog:build
         version: 0.12.0(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
       vite:
         specifier: ^6.2.3
         version: 6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0)
       vite-bundle-visualizer:
-        specifier: ^1.2.1
+        specifier: catalog:build
         version: 1.2.1(rollup@4.37.0)
       vite-plugin-inspect:
         specifier: ^11.0.0
         version: 11.0.0(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))
       vite-plugin-pwa:
-        specifier: ^0.21.2
+        specifier: catalog:build
         version: 0.21.2(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))(workbox-build@7.1.1)(workbox-window@7.1.0)
       vite-plugin-vue-devtools:
-        specifier: ^7.7.2
+        specifier: catalog:build
         version: 7.7.2(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
       vite-plugin-vue-layouts:
-        specifier: ^0.11.0
+        specifier: catalog:build
         version: 0.11.0(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
       vite-ssg:
-        specifier: ^26.0.0
+        specifier: catalog:build
         version: 26.0.0(beasties@0.2.0)(prettier@3.4.2)(unhead@2.0.2)(vite@6.2.3(@types/node@20.2.3)(jiti@2.4.2)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
       vite-ssg-sitemap:
-        specifier: ^0.8.1
+        specifier: catalog:build
         version: 0.8.1
       vitest:
-        specifier: ^3.0.9
+        specifier: catalog:dev
         version: 3.0.9(@types/debug@4.1.12)(@types/node@20.2.3)(jiti@2.4.2)(jsdom@26.0.0)(terser@5.17.6)(tsx@4.19.2)(yaml@2.7.0)
       vue-tsc:
-        specifier: ^2.2.8
+        specifier: catalog:dev
         version: 2.2.8(typescript@5.8.2)
 
 packages:
@@ -2769,11 +2904,6 @@ packages:
     resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
     engines: {node: '>= 0.10'}
 
-  cross-env@7.0.3:
-    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
-    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
-    hasBin: true
-
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -4646,11 +4776,6 @@ packages:
   pnpm-workspace-yaml@0.3.1:
     resolution: {integrity: sha512-3nW5RLmREmZ8Pm8MbPsO2RM+99RRjYd25ynj3NV0cFsN7CcEl4sDFzgoFmSyduFwxFQ2Qbu3y2UdCh6HlyUOeA==}
 
-  pnpm@10.7.0:
-    resolution: {integrity: sha512-a4Za1LYqHZhCth1nSjk5A7hx2SRJVPZSuIQsK1U8chdrJ49kxGPlLUD/+KujhcI1yMns9cx95P14uLttSWM6tg==}
-    engines: {node: '>=18.12'}
-    hasBin: true
-
   postcss-media-query-parser@0.2.3:
     resolution: {integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==}
 
@@ -5745,17 +5870,6 @@ packages:
 
   vue-component-type-helpers@2.0.7:
     resolution: {integrity: sha512-7e12Evdll7JcTIocojgnCgwocX4WzIYStGClBQ+QuWPinZo/vQolv2EMq4a3lg16TKfwWafLimG77bxb56UauA==}
-
-  vue-demi@0.14.10:
-    resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
-    engines: {node: '>=12'}
-    hasBin: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
 
   vue-eslint-parser@10.1.1:
     resolution: {integrity: sha512-bh2Z/Au5slro9QJ3neFYLanZtb1jH+W2bKqGHXAoYD4vZgNG3KeotL7JpPv5xzY4UXUXJl7TrIsnzECH63kd3Q==}
@@ -8858,10 +8972,6 @@ snapshots:
       object-assign: 4.1.1
       vary: 1.1.2
 
-  cross-env@7.0.3:
-    dependencies:
-      cross-spawn: 7.0.6
-
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -11148,8 +11258,6 @@ snapshots:
     dependencies:
       yaml: 2.7.0
 
-  pnpm@10.7.0: {}
-
   postcss-media-query-parser@0.2.3: {}
 
   postcss-selector-parser@6.0.15:
@@ -12453,10 +12561,6 @@ snapshots:
   vscode-uri@3.0.8: {}
 
   vue-component-type-helpers@2.0.7: {}
-
-  vue-demi@0.14.10(vue@3.5.13(typescript@5.8.2)):
-    dependencies:
-      vue: 3.5.13(typescript@5.8.2)
 
   vue-eslint-parser@10.1.1(eslint@9.23.0(jiti@2.4.2)):
     dependencies:

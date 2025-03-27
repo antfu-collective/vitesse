@@ -1,0 +1,7 @@
+packages: []
+
+onlyBuiltDependencies:
+  - cypress
+  - esbuild
+  - simple-git-hooks
+  - vue-demi

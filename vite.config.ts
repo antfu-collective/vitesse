@@ -19,6 +19,30 @@ import generateSitemap from 'vite-ssg-sitemap'
 import 'vitest/config'
 
 export default defineConfig({
+    build: {
+    rollupOptions: {
+      output: {
+        // Sanitize file names to ASCII-only
+        assetFileNames: (assetInfo) => {
+          const ext = assetInfo.name.split('.').pop()
+          return `assets/${sanitizeFileName(
+            assetInfo.name.replace(/\.[^.]*$/, ''),
+          )}-[hash].${ext}`
+        },
+        chunkFileNames: (chunkInfo) => {
+          return `assets/${sanitizeFileName(
+            chunkInfo.name || 'chunk',
+          )}-[hash].js`
+        },
+        entryFileNames: (chunkInfo) => {
+          return `assets/${sanitizeFileName(
+            chunkInfo.name || 'entry',
+          )}-[hash].js`
+        },
+      },
+    },
+  },
+  
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
@@ -165,3 +189,24 @@ export default defineConfig({
     noExternal: ['workbox-window', /vue-i18n/],
   },
 })
+
+
+// Function to convert non-ASCII characters to ASCII equivalents
+function sanitizeFileName(name: string) {
+  return (
+    name
+      // Remove path information
+      .replace(/^.*[\\/]/, '')
+      // Replace common non-ASCII characters with ASCII equivalents
+      .normalize('NFD')
+      // biome-ignore lint/suspicious/noMisleadingCharacterClass: <explanation>
+      .replace(/[\u0300-\u036f]/g, '')
+      // Replace special characters with underscores
+      .replace(/[^\w\s-]/g, '')
+      // Replace spaces with underscores
+      .replace(/\s+/g, 'a')
+      .replace(/_/g, 'a')
+      // Convert to lowercase
+      .toLowerCase()
+  )
+}

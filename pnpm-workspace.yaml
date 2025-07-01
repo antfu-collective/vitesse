@@ -1,0 +1,65 @@
+packages: []
+
+catalogs:
+
+  build:
+    '@intlify/unplugin-vue-i18n': ^6.0.5
+    '@shikijs/markdown-it': ^3.2.1
+    '@unocss/eslint-config': ^66.1.0-beta.7
+    '@vitejs/plugin-vue': ^5.2.3
+    beasties: ^0.2.0
+    markdown-it-link-attributes: ^4.0.1
+    rollup: ^4.37.0
+    shiki: ^3.2.1
+    unocss: ^66.1.0-beta.7
+    unplugin: ^2.2.2
+    unplugin-auto-import: ^19.1.2
+    unplugin-vue-components: ^28.4.1
+    unplugin-vue-macros: ^2.14.5
+    unplugin-vue-markdown: ^28.3.1
+    unplugin-vue-router: ^0.12.0
+    vite: ^6.2.3
+    vite-bundle-visualizer: ^1.2.1
+    vite-plugin-inspect: ^11.0.0
+    vite-plugin-pwa: ^0.21.2
+    vite-plugin-vue-devtools: ^7.7.2
+    vite-plugin-vue-layouts: ^0.11.0
+    vite-ssg: ^26.0.0
+    vite-ssg-sitemap: ^0.8.1
+
+  dev:
+    '@antfu/eslint-config': ^4.11.0
+    '@iconify-json/carbon': ^1.2.8
+    '@vue-macros/volar': ^3.0.0-beta.7
+    '@vue/test-utils': ^2.4.6
+    cypress: ^14.2.1
+    cypress-vite: ^1.6.0
+    eslint: ^9.23.0
+    eslint-plugin-cypress: ^4.2.0
+    eslint-plugin-format: ^1.0.1
+    https-localhost: ^4.7.1
+    lint-staged: ^15.5.0
+    simple-git-hooks: ^2.12.1
+    taze: ^19.0.2
+    typescript: ^5.8.2
+    vitest: ^3.0.9
+    vue-tsc: ^2.2.8
+
+  frontend:
+    '@unhead/vue': ^2.0.2
+    '@unocss/reset': ^66.1.0-beta.7
+    '@vueuse/core': ^13.0.0
+    nprogress: ^0.2.0
+    pinia: ^3.0.1
+    vue: ^3.5.13
+    vue-i18n: ^11.1.2
+    vue-router: ^4.5.0
+
+  types:
+    '@types/markdown-it-link-attributes': ^3.0.5
+    '@types/nprogress': ^0.2.3
+
+onlyBuiltDependencies:
+  - cypress
+  - esbuild
+  - simple-git-hooks

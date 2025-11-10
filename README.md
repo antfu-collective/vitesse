@@ -116,6 +116,15 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+
+### How does `vitesse` work under the hood?
+
+Check out this interactive walkthrough of the `vitesse` codebase on CodeCanvas [here](https://www.code-canvas.com/?session=unauthenticatedGithub&repo=vitesse&owner=antfu-collective&branch=main&OnboardingTutorial=true).
+
+To refine existing dataflow simulation or create new ones, follow the quick tutorial [here](https://docs.code-canvas.com/updating-diagram).
+
+<img width="1916" alt="CodeCanvas Screenshot" src="https://codecanvas-media-public.s3.amazonaws.com/images/codecanvas-readme-screenshot.png" />
+
 ## Variations
 
 As this template is strongly opinionated, the following provides a curated list for community-maintained variations with different preferences and feature sets. Check them out as well. PR to add yours is also welcome!

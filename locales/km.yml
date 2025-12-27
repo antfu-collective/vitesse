@@ -1,0 +1,14 @@
+button:
+  about: អំពី
+  back: ថយក្រោយ
+  go: តោះទៅ
+  home: ទំព័រដើម
+  toggle_dark: កុងតាក់ម៉ូដផ្ទៃងងឹត
+  toggle_langs: កុងតាក់ប្តូរភាសា
+intro:
+  desc: ពុម្ពគម្រូសម្រាប់អ្នកចាប់ផ្តើមប្រើ Vite ដំបូង
+  dynamic-route: តេស្តសាកល្បងនៃ dynamic route
+  hi: សួស្តី, {name}!
+  aka: ឬហៅបានថា
+  whats-your-name: តើអ្នកឈ្មោះអ្វីដែរ?
+not-found: រកមិនឃើញ

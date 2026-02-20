@@ -56,7 +56,6 @@
     "unplugin-vue-components": "catalog:build",
     "unplugin-vue-macros": "catalog:build",
     "unplugin-vue-markdown": "catalog:build",
-    "unplugin-vue-router": "catalog:build",
     "vite": "catalog:build",
     "vite-bundle-visualizer": "catalog:build",
     "vite-plugin-inspect": "catalog:build",

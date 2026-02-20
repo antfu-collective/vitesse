@@ -20,7 +20,7 @@ catalogs:
     vite: ^7.3.1
     vite-bundle-visualizer: ^1.2.1
     vite-plugin-inspect: ^11.0.0
-    vite-plugin-pwa: ^0.21.2
+    vite-plugin-pwa: ^1.2.0
     vite-plugin-vue-devtools: ^7.7.2
     vite-plugin-vue-layouts: ^0.11.0
     vite-ssg: ^28.3.0
@@ -41,7 +41,7 @@ catalogs:
     simple-git-hooks: ^2.12.1
     taze: ^19.0.2
     typescript: ^5.8.2
-    vitest: ^3.0.9
+    vitest: ^4.0.18
     vue-tsc: ^3.2.4
 
   frontend:

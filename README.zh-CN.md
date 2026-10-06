@@ -27,7 +27,7 @@
 
 ## 特性
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [Rolldown](https://rolldown.rs/) - 就是快！
 
 - 🗂 [基于文件的路由](./src/pages)
 
@@ -131,7 +131,7 @@
 
 ## 现在可以试试!
 
-> Vitesse 需要 Node 版本 >=14.18
+> Vitesse 需要 Node.js 22.22.2+、24.15.0+ 或 26+
 
 ### GitHub 模板
 

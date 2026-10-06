@@ -32,5 +32,13 @@ context('Basic', () => {
 
     cy.get('.shiki')
       .should('exist')
+
+    cy.get('.prose a[href="https://github.com/antfu/vitesse"]')
+      .should(($links) => {
+        for (const link of $links) {
+          expect(link).to.have.attr('target', '_blank')
+          expect(link.getAttribute('rel')?.split(/\s+/)).to.include('noopener')
+        }
+      })
   })
 })

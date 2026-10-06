@@ -69,12 +69,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache
-          key: cypress-cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
-
       - uses: pnpm/action-setup@v3
 
       - name: Use Node.js
@@ -86,12 +80,10 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: Cypress PNPM Patch
-        run: cp pnpm-lock.yaml package-lock.json
-
       - name: Cypress
         uses: cypress-io/github-action@v6
         with:
-          install-command: echo
+          # A cached pnpm store may skip postinstall without restoring the binary.
+          install-command: pnpm exec cypress install
           build: pnpm run build
           start: npx vite preview --port 3333

@@ -2,6 +2,9 @@
   "type": "module",
   "private": true,
   "packageManager": "pnpm@10.30.2",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
   "scripts": {
     "build": "vite-ssg build",
     "dev": "vite --port 3333 --open",
@@ -19,6 +22,7 @@
   "dependencies": {
     "@unhead/vue": "catalog:frontend",
     "@unocss/reset": "catalog:frontend",
+    "@vue/devtools-api": "catalog:frontend",
     "@vueuse/core": "catalog:frontend",
     "nprogress": "catalog:frontend",
     "pinia": "catalog:frontend",
@@ -30,7 +34,7 @@
     "@antfu/eslint-config": "catalog:dev",
     "@iconify-json/carbon": "catalog:dev",
     "@intlify/unplugin-vue-i18n": "catalog:build",
-    "@shikijs/markdown-it": "catalog:build",
+    "@shikijs/markdown-exit": "catalog:build",
     "@types/markdown-it-link-attributes": "catalog:types",
     "@types/nprogress": "catalog:types",
     "@unocss/eslint-config": "catalog:build",
@@ -44,6 +48,7 @@
     "eslint-plugin-cypress": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "https-localhost": "catalog:dev",
+    "jsdom": "catalog:dev",
     "lint-staged": "catalog:dev",
     "markdown-it-link-attributes": "catalog:build",
     "rollup": "catalog:build",
@@ -54,7 +59,6 @@
     "unocss": "catalog:build",
     "unplugin-auto-import": "catalog:build",
     "unplugin-vue-components": "catalog:build",
-    "unplugin-vue-macros": "catalog:build",
     "unplugin-vue-markdown": "catalog:build",
     "vite": "catalog:build",
     "vite-bundle-visualizer": "catalog:build",
@@ -65,9 +69,13 @@
     "vite-ssg": "catalog:build",
     "vite-ssg-sitemap": "catalog:build",
     "vitest": "catalog:dev",
-    "vue-tsc": "catalog:dev"
+    "vue-macros": "catalog:build",
+    "vue-tsc": "catalog:dev",
+    "workbox-build": "catalog:build",
+    "workbox-window": "catalog:build"
   },
   "resolutions": {
+    "@typescript-eslint/typescript-estree": "catalog:dev",
     "unplugin": "catalog:build",
     "vite": "catalog:build",
     "vite-plugin-inspect": "catalog:build"

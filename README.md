@@ -27,7 +27,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [Rolldown](https://rolldown.rs/) - born with fastness
 
 - 🗂 [File based routing](./src/pages)
 
@@ -84,10 +84,10 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 - [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [`unplugin-vue-macros`](https://github.com/sxzz/unplugin-vue-macros) - Explore and extend more macros and syntax sugar to Vue.
+- [`vue-macros`](https://github.com/vue-macros/vue-macros) - Explore and extend more macros and syntax sugar to Vue.
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [`unplugin-vue-markdown`](https://github.com/unplugin/unplugin-vue-markdown) - Markdown as components / components in Markdown
-  - [`@shikijs/markdown-it`](https://github.com/shikijs/shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
+  - [`@shikijs/markdown-exit`](https://github.com/shikijs/shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
   - [`unplugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n) - unplugin for Vue I18n
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
@@ -142,7 +142,7 @@ As this template is strongly opinionated, the following provides a curated list 
 
 ## Try it now!
 
-> Vitesse requires Node >=14.18
+> Vitesse requires Node.js 22.22.2+, 24.15.0+, or 26+
 
 ### GitHub Template
 

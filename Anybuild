@@ -1,0 +1,42 @@
+load("//anybuild/tools:node_static.bzl", "nodestatic_build", "nodestatic_config")
+load("//anybuild/tools:staticfile.bzl", "staticfile_serve")
+
+config = nodestatic_config(
+    schema = 1,
+    node_package_manager = "pnpm",
+    pnpm_version = "10.30.2",
+    node_version = "24",
+    node_framework = "vite",
+    node_build_command = "pnpm exec unocss 'src/**/*.{vue,ts,md}' --out-file node_modules/.cache/unocss/wasmer.css && pnpm run build",
+    static_dir = "dist",
+    static_redirects_config = """[[advanced.rewrites]]
+source = "/hi/**"
+destination = "/index.html"
+
+[[advanced.rewrites]]
+source = "/assets/**"
+destination = "$0"
+
+[[advanced.rewrites]]
+source = "/**/*.*"
+destination = "$0"
+
+[[advanced.rewrites]]
+source = "/**"
+destination = "/index.html"
+""",
+    commands = {"install": "pnpm install --frozen-lockfile"},
+)
+
+build = nodestatic_build(config)
+
+staticfile_serve(
+    config,
+    build,
+    provider = "node-static",
+    extra_commands = {
+        "start": "static-web-server --root='{}' --config-file='{}/sws.toml' --log-level=info --port={}".format(
+            build.static_app.serve_path, build.static_config.serve_path, config.port,
+        ),
+    },
+)

@@ -195,6 +195,12 @@ And you will see the generated file in `dist` that ready to be served.
 
 Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
 
+### Deploy on Wasmer
+
+[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=antfu-collective%2Fvitesse)
+
+[Wasmer Edge](https://docs.wasmer.io/edge/) is a cloud platform for hosting websites and applications. The included `Anybuild` configuration downloads the local fonts before running `pnpm build`, serves `dist`, and falls back to `index.html` for client-side routes. The button opens the public repository's import page; review the build settings before deploying. To publish your own app and redeploy changes, create a repository from this template and import that repository instead.
+
 ### Docker Production Build
 
 First, build the vitesse image by opening the terminal in the project's root directory.

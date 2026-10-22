@@ -3,6 +3,7 @@ load("//anybuild/tools:staticfile.bzl", "staticfile_serve")
 
 config = nodestatic_config(
     schema = 1,
+    node_install_requires_all_files = True,
     node_package_manager = "pnpm",
     pnpm_version = "10.30.2",
     node_version = "24",
